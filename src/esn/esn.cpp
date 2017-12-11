@@ -123,7 +123,37 @@ ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeuro
  * @return the new eigen matrix
  */
 MatrixXd ESN::readWeightMatrix(string matrixPath) {
-    //TODO: Complete
+    vector<vector<double>> temp;
+
+    ifstream matFile(matrixPath);
+    string item;
+
+    vector<double> currentVector;
+    //read item by item
+    while(getline(matFile,item,',')) {
+
+        currentVector.push_back(stod(item,nullptr)); //TODO: This may have to be moved after the conditional!
+        if (item.find('\n') != string::npos) { //if we reach a new line
+            temp.push_back(currentVector);
+            currentVector.clear();
+        }
+
+    }
+
+    //now put into an eigen matrix
+    //TODO: Test!!!
+
+    MatrixXd newMat = MatrixXd::Random(temp.size(),temp.at(0).size());
+
+    for (int i = 0; i < temp.size(); i++) {
+        for (int j = 0; j < temp.at(0).size(); j++) {
+            newMat(i,j) = temp.at(i).at(j);
+        }
+    }
+
+    return newMat;
+
+
 }
 
 /**
