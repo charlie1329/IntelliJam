@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.8)
 project(FYP)
 
+#need to check if this causes any improvements as well
+set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -openmp -O3")
+
+
 set(CMAKE_CXX_STANDARD 11)
 
 set(TRAINING_FILES include/esn/esn.h
