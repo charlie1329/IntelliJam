@@ -59,6 +59,43 @@ CMAKE_SOURCE_DIR = C:\Users\charl\CLionProjects\FYP
 CMAKE_BINARY_DIR = C:\Users\charl\CLionProjects\FYP\cmake-build-release
 
 #=============================================================================
+# Target rules for target CMakeFiles/TRAINING.dir
+
+# All Build rule for target.
+CMakeFiles/TRAINING.dir/all:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/depend
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=1,2 "Built target TRAINING"
+.PHONY : CMakeFiles/TRAINING.dir/all
+
+# Include target in all.
+all: CMakeFiles/TRAINING.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TRAINING.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TRAINING.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+.PHONY : CMakeFiles/TRAINING.dir/rule
+
+# Convenience name for target.
+TRAINING: CMakeFiles/TRAINING.dir/rule
+
+.PHONY : TRAINING
+
+# clean rule for target.
+CMakeFiles/TRAINING.dir/clean:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/clean
+.PHONY : CMakeFiles/TRAINING.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/TRAINING.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

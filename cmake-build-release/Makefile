@@ -109,14 +109,58 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named TRAINING
+
+# Build rule for target.
+TRAINING: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING
+.PHONY : TRAINING
+
+# fast build rule for target.
+TRAINING/fast:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
+.PHONY : TRAINING/fast
+
+src/esn/esn.obj: src/esn/esn.cpp.obj
+
+.PHONY : src/esn/esn.obj
+
+# target to build an object file
+src/esn/esn.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
+.PHONY : src/esn/esn.cpp.obj
+
+src/esn/esn.i: src/esn/esn.cpp.i
+
+.PHONY : src/esn/esn.i
+
+# target to preprocess a source file
+src/esn/esn.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.i
+.PHONY : src/esn/esn.cpp.i
+
+src/esn/esn.s: src/esn/esn.cpp.s
+
+.PHONY : src/esn/esn.s
+
+# target to generate assembly for a file
+src/esn/esn.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.s
+.PHONY : src/esn/esn.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... TRAINING
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... src/esn/esn.obj
+	@echo ... src/esn/esn.i
+	@echo ... src/esn/esn.s
 .PHONY : help
 
 
