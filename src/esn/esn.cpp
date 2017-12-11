@@ -7,9 +7,13 @@
 #include <utility>
 #include <random>
 #include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <limits>
 #include "../../include/esn/esn.h"
 
-//TODO: Check all zero initialisation is correct
+//either random or zero initial values
+//in network states seem to be reasonable
 #define INITIAL_RESERVOIR_VALUE 0.0
 
 /**
@@ -17,11 +21,10 @@
  * @param inRes file path to input-reservoir weights
  * @param resRes file path to reservoir-reservoir weights
  * @param resOut file path to reservoir-output weights
- * @param rAct reservoir activation function
  * @param oAct output activation function
  * @param cost cost function for the network
  */
-ESN::ESN(string inRes, string resRes, string resOut, double(*rAct)(double),
+ESN::ESN(string inRes, string resRes, string resOut,
          double(*oAct)(double), double(*cost)(VectorXd,VectorXd)) {
 
     //read in the weight matrices
@@ -44,7 +47,6 @@ ESN::ESN(string inRes, string resRes, string resOut, double(*rAct)(double),
     reservoir = MatrixXd::Constant(resResWeights.cols(),1, INITIAL_RESERVOIR_VALUE);
 
     //initialise activation functions
-    reservoirActivation = rAct;
     outputActivation = oAct;
     costFunction = cost;
 }
@@ -58,12 +60,11 @@ ESN::ESN(string inRes, string resRes, string resOut, double(*rAct)(double),
  * @param k the size of the jump in the bidirectional cycle
  * @param inNeurons number of input neurons
  * @param outNeurons number of output neurons
- * @param rAct the reservoir activation function
  * @param oAct the output activation function
  * @param cost the cost function for the network
  */
 ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeurons,
-         double (*rAct)(double), double(*oAct)(double), double(*cost)(VectorXd,VectorXd)){
+         double(*oAct)(double), double(*cost)(VectorXd,VectorXd)){
 
     //firstly initialise hyper-parameters
     inResWeight = v;
@@ -76,7 +77,6 @@ ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeuro
     numOutputNeurons = outNeurons;
 
     //initialise the function pointers
-    reservoirActivation = rAct;
     outputActivation = oAct;
     costFunction = cost;
 
@@ -133,7 +133,25 @@ MatrixXd ESN::readWeightMatrix(string matrixPath) {
  * @return an error code for whether write was successful
  */
 int ESN::writeWeightMatrix(string path, MatrixXd weightMatrix) {
-    //TODO: Complete!
+    //first, open the file
+    ofstream csvFile;
+    csvFile.open(path);
+    for (int i = 0; i < weightMatrix.rows(); i++) {
+        for (int j = 0; j < weightMatrix.cols(); j++) { //we want to retain the level of precision
+            if(!csvFile.is_open()) return 0; //a small level of error checking
+            csvFile << setprecision(numeric_limits<double>::digits10 + 1) << weightMatrix(i,j);
+
+            if(!csvFile.is_open()) return 0;
+            csvFile << ",";
+        }
+        if(!csvFile.is_open()) return 0;
+        csvFile << "\n";
+    }
+
+    csvFile.close();
+
+    return 1;
+
 }
 
 /**
@@ -162,7 +180,9 @@ void ESN::saveNetwork(){
  * @param newInput
  */
 void ESN::updateReservoir(VectorXd newInput) {
-    //TODO: Complete - EFFICIENCY CRITICAL
+    //TODO: There is no way this is going to be efficient enough
+    //TODO: Carry out speed tests here, try doing it around 200 times a second and see what happens
+    reservoir = tanh(((inResWeights * newInput) + (resResWeights * reservoir)).array());
 }
 
 /**
@@ -171,6 +191,8 @@ void ESN::updateReservoir(VectorXd newInput) {
  */
 VectorXd ESN::predict() {
     //TODO: Complete - EFFICIENCY CRITICAL
+    //TODO: Stop assuming linear output function
+    return resOutWeights * reservoir;
 }
 
 

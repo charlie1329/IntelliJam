@@ -36,7 +36,6 @@ private:
     MatrixXd resResWeights;
 
     //activation functions
-    double (*reservoirActivation)(double);
     double (*outputActivation)(double);
 
 
@@ -69,12 +68,11 @@ public:
      * @param k size of jumps for inner reservoir cycle
      * @param inNeurons number of input neurons
      * @param outNeurons number of output neurons
-     * @param rAct reservoir activation function
      * @param oAct output activation function
      * @param cost cost function for network
      */
     ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeurons,
-        double (*rAct)(double), double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
+        double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
 
     /**
      * constructor for situatuon where network weights already found (i.e. run-time)
@@ -82,11 +80,10 @@ public:
      * @param inRes file path to input-reservoir weights
      * @param resRes file path to reservoir-reservoir weights
      * @param resOut file path to reservoir-output weights
-     * @param rAct reservoir activation function
      * @param oAct output activation function
      * @param cost cost function
      */
-    ESN(string inRes, string resRes, string resOut, double (*rAct)(double),
+    ESN(string inRes, string resRes, string resOut,
         double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
 
 
