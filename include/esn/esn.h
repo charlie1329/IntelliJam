@@ -33,15 +33,12 @@ private:
 
     //weight matrices
     MatrixXd inResWeights;
-    MatrixXd resResWrights;
-    MatrixXd resOutWeights;
+    MatrixXd resResWeights;
 
     //activation functions
     double (*reservoirActivation)(double);
     double (*outputActivation)(double);
 
-    //cost function
-    double (*costFunction)(VectorXd groundTruth, VectorXd prediction);
 
     /**
      * an auxillary function for reading in a weight matrix from a file and
@@ -55,10 +52,11 @@ private:
      * an auxillary function for writing an eigen matrix to a file
      * so I can load it back in at a later date
      * @param weightMatrix the eigen matrix of weights
+     * @param path the file path to store the matrix at
      * @return a status code of whether the operation succeeded
      * 1 = success, 0 = failure
      */
-    int writeWeightMatrix(MatrixXd weightMatrix);
+    int writeWeightMatrix(string path, MatrixXd weightMatrix);
 
 public:
 
@@ -76,7 +74,7 @@ public:
      * @param cost cost function for network
      */
     ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeurons,
-        double (*rAct)(double), double(*oAct)(double),double(*cost)(VectorXd,VectorXd));
+        double (*rAct)(double), double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
 
     /**
      * constructor for situatuon where network weights already found (i.e. run-time)
@@ -84,14 +82,12 @@ public:
      * @param inRes file path to input-reservoir weights
      * @param resRes file path to reservoir-reservoir weights
      * @param resOut file path to reservoir-output weights
-     * @param inNeurons number of input neurons
-     * @param outNeurons number of output neurons
      * @param rAct reservoir activation function
      * @param oAct output activation function
      * @param cost cost function
      */
-    ESN(string inRes, string resRes, string resOut, int inNeurons, int outNeurons,
-        double (*rAct)(double), double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
+    ESN(string inRes, string resRes, string resOut, double (*rAct)(double),
+        double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
 
 
     /**
@@ -105,6 +101,18 @@ public:
      * @return
      */
     VectorXd predict();
+
+    /**
+     * saves all weight matrices for the network
+     * so they can be re-loaded in the future
+     */
+    void saveNetwork();
+
+    //I want this matrix public so it can be adjusted through training
+    MatrixXd resOutWeights;
+
+    //Cost function kept public for use in training
+    double (*costFunction)(VectorXd groundTruth, VectorXd prediction);
 
 };
 
