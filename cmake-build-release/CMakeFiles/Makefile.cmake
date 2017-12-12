@@ -50,5 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TRAINING.dir/DependInfo.cmake"
+  "CMakeFiles/ESN_SPEED_TEST.dir/DependInfo.cmake"
   "CMakeFiles/ESN_CORE_TEST.dir/DependInfo.cmake"
   )

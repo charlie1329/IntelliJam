@@ -20,6 +20,12 @@ set(ESN_TEST_FILES include/esn/esn.h
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
+#executable for speed testing
+set(ESN_SPEED_FILES include/esn/esn.h
+                    src/esn/esn.cpp
+                    test/esn/esn_speed.cpp)
+
+add_executable(ESN_SPEED_TEST ${ESN_SPEED_FILES})
 
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files

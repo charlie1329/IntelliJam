@@ -123,6 +123,19 @@ TRAINING/fast:
 .PHONY : TRAINING/fast
 
 #=============================================================================
+# Target rules for targets named ESN_SPEED_TEST
+
+# Build rule for target.
+ESN_SPEED_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ESN_SPEED_TEST
+.PHONY : ESN_SPEED_TEST
+
+# fast build rule for target.
+ESN_SPEED_TEST/fast:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/build
+.PHONY : ESN_SPEED_TEST/fast
+
+#=============================================================================
 # Target rules for targets named ESN_CORE_TEST
 
 # Build rule for target.
@@ -142,6 +155,7 @@ src/esn/esn.obj: src/esn/esn.cpp.obj
 # target to build an object file
 src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
 .PHONY : src/esn/esn.cpp.obj
 
@@ -152,6 +166,7 @@ src/esn/esn.i: src/esn/esn.cpp.i
 # target to preprocess a source file
 src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
 .PHONY : src/esn/esn.cpp.i
 
@@ -162,6 +177,7 @@ src/esn/esn.s: src/esn/esn.cpp.s
 # target to generate assembly for a file
 src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
 
@@ -192,6 +208,33 @@ test/esn/esn_correctness.cpp.s:
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/test/esn/esn_correctness.cpp.s
 .PHONY : test/esn/esn_correctness.cpp.s
 
+test/esn/esn_speed.obj: test/esn/esn_speed.cpp.obj
+
+.PHONY : test/esn/esn_speed.obj
+
+# target to build an object file
+test/esn/esn_speed.cpp.obj:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/test/esn/esn_speed.cpp.obj
+.PHONY : test/esn/esn_speed.cpp.obj
+
+test/esn/esn_speed.i: test/esn/esn_speed.cpp.i
+
+.PHONY : test/esn/esn_speed.i
+
+# target to preprocess a source file
+test/esn/esn_speed.cpp.i:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/test/esn/esn_speed.cpp.i
+.PHONY : test/esn/esn_speed.cpp.i
+
+test/esn/esn_speed.s: test/esn/esn_speed.cpp.s
+
+.PHONY : test/esn/esn_speed.s
+
+# target to generate assembly for a file
+test/esn/esn_speed.cpp.s:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/test/esn/esn_speed.cpp.s
+.PHONY : test/esn/esn_speed.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -199,6 +242,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... TRAINING
+	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... edit_cache
 	@echo ... rebuild_cache
@@ -208,6 +252,9 @@ help:
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s
+	@echo ... test/esn/esn_speed.obj
+	@echo ... test/esn/esn_speed.i
+	@echo ... test/esn/esn_speed.s
 .PHONY : help
 
 
