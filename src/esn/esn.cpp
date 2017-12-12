@@ -88,12 +88,12 @@ ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeuro
     inResWeights = MatrixXd::Constant(reservoirSize,numInputNeurons,inResWeight);
     //set +/- signs on these values with an average pseudo-random number generator
     default_random_engine gen;
-    uniform_int_distribution<int> dis(0,1); //make a heads or tails choice so to speak
+    bernoulli_distribution dis(0.5); //make a 'heads or tails' choice from bernoulli distribution with p = 0.5
 
     //efficiency isn't really an issue here, this is a one off operation on the start of a training cycle.
     for (int i = 0; i < inResWeights.rows(); i++) {
         for (int j = 0; j < inResWeights.cols(); j++) {
-            inResWeights(i,j) *= (-1 + (2 * dis(gen))); //either multiply by -1 or 1
+            inResWeights(i,j) *= ((dis(gen)) ? -1 : 1); //either multiply by -1 or 1 depending on random draw
         }
     }
 
@@ -146,15 +146,12 @@ MatrixXd ESN::readWeightMatrix(string matrixPath) {
 
 
         double currentVal = stod(item,nullptr);
-        //cout << currentVal << endl;
-        //cout << "---" << endl;
         currentVector.push_back(currentVal);
 
 
     }
 
     //now put into an eigen matrix
-    //TODO: Test!!!
 
     MatrixXd newMat = MatrixXd::Random(temp.size(),temp.at(0).size());
 
@@ -201,7 +198,7 @@ int ESN::writeWeightMatrix(string path, MatrixXd weightMatrix) {
  * saves the ESN weight matrices to file
  */
 void ESN::saveNetwork(){
-    //TODO: Check file paths are OK
+
     int write1 = writeWeightMatrix("inputReservoirWeights.csv", inResWeights);
     int write2 = writeWeightMatrix("reservoirReservoirWeights.csv", resResWeights);
     int write3 = writeWeightMatrix("reservoirOutputWeights.csv", resOutWeights);

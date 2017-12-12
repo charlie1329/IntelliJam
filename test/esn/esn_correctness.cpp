@@ -68,8 +68,6 @@ TEST_CASE("Check read/write functionality works properly", "[checkpoints]") {
             REQUIRE(test);
         }
     }
-
-
 }
 
 /**
@@ -165,14 +163,70 @@ TEST_CASE("Check network setup has desired effect", "[setup]") {
         bool test = reservoir(i,0) == Approx(0.0).margin(0.0);
         REQUIRE(test);
     }
-
-
 }
 
+/**
+ * testing that the network update is calculated correctly
+ * will test with a small matrix so I can hand calculate it
+ */
 TEST_CASE("Check network update works as expected", "[update]") {
 
+    auto *echo = new ESN("test_mats/fake_inRes_weights.csv",
+                         "test_mats/fake_reservoir_weights.csv",
+                         "test_mats/fake_resOut_weights.csv",
+                         nullptr, nullptr);
+
+    VectorXd inputVec = MatrixXd::Zero(3,1);
+    inputVec(0,0) = 1.0;
+    inputVec(1,0) = 2.0;
+    inputVec(2,0) = 3.0;
+
+    //update reservoir upon arrival of new input vector
+    echo->updateReservoir(inputVec);
+
+    VectorXd newRes = echo->getReservoir();
+
+    delete echo; //don't need the object anymore
+
+    //do the checks on the reservoir
+
+    REQUIRE(newRes.rows() == 2);
+    REQUIRE(newRes.cols() == 1);
+
+    bool test1 = newRes(0,0) == Approx(0.995055);
+    bool test2 = newRes(1,0) == Approx(0.995055);
+    REQUIRE(test1);
+    REQUIRE(test2);
 }
 
+/**
+ * test that the networks outputs appropriately for a known reservoir state (see update test)
+ */
 TEST_CASE("Check prediction functionality works as expected", "[predict]") {
 
+    auto *echo = new ESN("test_mats/fake_inRes_weights.csv",
+                         "test_mats/fake_reservoir_weights.csv",
+                         "test_mats/fake_resOut_weights.csv",
+                         nullptr, nullptr);
+
+    //provide new input vector for echo state network
+    VectorXd inputVec  = MatrixXd::Zero(3,1);
+    inputVec(0,0) = 1.0;
+    inputVec(1,0) = 2.0;
+    inputVec(2,0) = 3.0;
+
+    //update the reservoir
+    echo->updateReservoir(inputVec);
+
+    //make a prediction from the network
+    VectorXd testOut = echo->predict();
+
+    delete echo; //the object is no longer needed
+
+    //carry out checks on output vector
+    REQUIRE(testOut.rows() == 1);
+    REQUIRE(testOut.cols() == 1);
+
+    bool valTest = testOut(0,0) == Approx(1.99011);
+    REQUIRE(valTest);
 }
