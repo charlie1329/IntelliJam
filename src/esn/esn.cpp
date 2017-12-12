@@ -129,14 +129,27 @@ MatrixXd ESN::readWeightMatrix(string matrixPath) {
     string item;
 
     vector<double> currentVector;
+
     //read item by item
     while(getline(matFile,item,',')) {
 
-        currentVector.push_back(stod(item,nullptr)); //TODO: This may have to be moved after the conditional!
+        if(!item.compare("\n")) { //exit condition, item only has a newline
+            temp.push_back(currentVector);
+            currentVector.clear();
+            break;
+        }
+
         if (item.find('\n') != string::npos) { //if we reach a new line
             temp.push_back(currentVector);
             currentVector.clear();
         }
+
+
+        double currentVal = stod(item,nullptr);
+        //cout << currentVal << endl;
+        //cout << "---" << endl;
+        currentVector.push_back(currentVal);
+
 
     }
 
@@ -226,11 +239,29 @@ VectorXd ESN::predict() {
 }
 
 
-//TODO: Remove this function!
-/** temporarily placed so I can build the program
- *
- * @return 0
+//Get Functions
+
+/**
+ * implemented from esn.h
+ * @return input-reservoir weights
  */
-int main(){
-      return 0;
+MatrixXd ESN::getInRes() {
+    return inResWeights;
+}
+
+/**
+ * implemented from esn.h
+ * @return reservoir-reservoir weights
+ */
+MatrixXd ESN::getResRes() {
+    return resResWeights;
+}
+
+
+/**
+ * implemented from esn.h
+ * @return current reservoir activations
+ */
+VectorXd ESN::getReservoir() {
+    return reservoir;
 }

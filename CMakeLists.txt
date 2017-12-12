@@ -7,9 +7,19 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 
 set(CMAKE_CXX_STANDARD 11)
 
+#executable for esn training
 set(TRAINING_FILES include/esn/esn.h
-                    src/esn/esn.cpp) #files required for ESN training
+                    src/esn/esn.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
+
+#executable for testing esn functionality
+set(ESN_TEST_FILES include/esn/esn.h
+                    src/esn/esn.cpp
+                    test/esn/esn_correctness.cpp)
+
+add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
+
+
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files

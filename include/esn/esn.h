@@ -105,6 +105,25 @@ public:
      */
     void saveNetwork();
 
+    /**
+     * gets the input-reservoir weight matrix
+     * used predominantely for testing purposes
+     * @return the input reservoir weight matrix
+     */
+    MatrixXd getInRes();
+
+    /**
+     * gets the reservoir-reservoir connection weight matrix
+     * @return the reservoir-reservoir weight matrix
+     */
+    MatrixXd getResRes();
+
+    /**
+     * get the current reservoir activations
+     * @return the current reservoir activations
+     */
+    VectorXd getReservoir();
+
     //I want this matrix public so it can be adjusted through training
     MatrixXd resOutWeights;
 
