@@ -4,6 +4,8 @@
 # Author: Charlie Street
 
 import math
+import numpy as np 
+import scipy.io.wavfile as wav
 
 
 # function generates arrays representing lookup tables
@@ -46,3 +48,57 @@ def findClosestNote(freq,freqList,noteList):
 					return noteList[i+1]
 
 
+# takes the wav file at filePath and segments it based on silences that appear within it
+# maxSilence is the maximum amount of silence tolerable in a segment in seconds
+def removeSilence(filePath, maxSilence):
+	
+	rate, data = wav.read(filePath) #everything I read in should be mono
+
+	#data = data.astype(float)
+
+	silenceSamples = round(rate * maxSilence) # max number of samples of silence before segmentation
+
+
+	segments = [] # list of segments, all of which can be written back to wave files
+	start = 0 # start of current segment
+	end = 0 # end of current segment
+	silent = False
+	justAppend = False
+	nonZero = False
+
+	for i in range(0,data.shape[0]):
+
+		# don't do anything until we reach at least some nonzero value 
+		if (not nonZero):
+			start = i
+			if(data[i] != 0.0):
+				nonZero = True
+			else:
+				continue 
+
+		if ((not silent) and (data[i] == 0.0)):
+			end = i
+			silent = True
+		elif (silent and (data[i] != 0.0) and i <= (end + silenceSamples)):
+			silent = False
+		elif (silent and (data[i] != 0.0) and i > (end + silenceSamples)):
+			silent = False
+			start = i
+			justAppend = False
+		elif (silent and (data[i] == 0.0) and i >= (end + silenceSamples) and (not justAppend)):
+			segments.append(data[start:end]) # append the current segment
+			justAppend = True
+		elif (i == data.shape[0] - 1 and (not justAppend)):
+			endPoint = end if silent else i
+			segments.append(data[start:endPoint]) # make sure to append the final segment
+
+	return segments
+
+
+segs = removeSilence('test/silence_test.wav',0.5)
+
+for i in range(0,len(segs)):
+	print(segs[i].shape)
+	wav.write('test'+str(i)+'.wav',44100,segs[i])
+
+print(len(segs))
