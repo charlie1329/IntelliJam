@@ -95,10 +95,10 @@ def removeSilence(filePath, maxSilence):
 	return segments
 
 
-segs = removeSilence('test/silence_test.wav',0.5)
+segs = removeSilence('test/silence_test6.wav',0.5)
 
 for i in range(0,len(segs)):
 	print(segs[i].shape)
-	wav.write('test'+str(i)+'.wav',44100,segs[i])
+	wav.write('test/test'+str(i)+'.wav',44100,segs[i])
 
 print(len(segs))
