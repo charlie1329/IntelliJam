@@ -56,7 +56,7 @@ def removeSilence(filePath, maxSilence):
 	
 	rate, data = wav.read(filePath) #everything I read in should be mono
 
-	data = data.astype(float)
+	#data = data.astype(float)
 
 	silenceSamples = round(rate * maxSilence) # max number of samples of silence before segmentation
 
@@ -114,6 +114,9 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 	# i always opt to go over the threshold rather than below
 	# i'd much rather have a longer min note length
 
+	# have data stored as floats
+	data = data.astype(float)
+
 	# get frequency, note lists
 	freqList, noteList = genFreqNoteArrs()
 
@@ -128,26 +131,34 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 
 	# now attempt to find the last numNotes notes
 	endNotes = []
-	currentNote = 0 # 0 is not a valid note in my convention
+	currentNote = 0 # 0 represents silence here
 	currentLength = 0
+	splitAtNextChange = False
 	splitPoint = ZxxMag.shape[1] - 1 # the point at which to split between input and output
 
 	for j in range(ZxxMag.shape[1]-1, -1, -1): # for each column going backwards in time
 
 		# find max index in current column
-		activeNote = findClosestNote((freqRes/2.0)*(np.argmax(ZxxMag[:,j])+1),freqList,noteList)
+		maxIndex = np.argmax(ZxxMag[:,j])
+		if(ZxxMag[maxIndex,j] == 0.0): # trying to account for silence
+			activeNote = 0
+		else:
+			activeNote = findClosestNote((freqRes/2.0)*(maxIndex+1),freqList,noteList)
+
 		if (activeNote == currentNote): # if the same note remains
 			currentLength += 1
-			if (currentLength == minTimeBins): # if now a proper note
-				endNotes.append(cuurentNote)
+			if (currentLength == minTimeBins and activeNote != 0): # if now considered a proper note
+				endNotes.append(currentNote)
 				if (len(endNotes) == numNotes):
-					splitPoint = j
-					break
+					splitAtNextChange = True # when this note finishes, stop and split
 		else:
+			if (splitAtNextChange):
+				splitPoint = j + 1 if (j+1 < ZxxMag.shape[1]) else ZxxMag.shape[1] - 1
+				break
 			currentNote = activeNote
 			currentLength = 1
 
-	splitSpectrogram = Zxx[:,0:j] # remove the section of time included in our output value list
+	splitSpectrogram = Zxx[:,0:splitPoint] # remove the section of time included in our output value list
 
 	# convert remaining spectrogram back into the time domain
 	_,inputSample = sig.istft(splitSpectrogram,fs=fs,window='hann',nperseg=segmentSize,noverlap=overlap)
@@ -160,10 +171,19 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 
 if __name__ == '__main__':
 
-	segs, fs = removeSilence('test/silence_test6.wav',0.5)
+	'''segs, fs = removeSilence('test/silence_test6.wav',0.5)
 
 	for i in range(0,len(segs)):
 		print(segs[i].shape)
 		wav.write('test/test'+str(i)+'.wav',44100,segs[i])
 
-	print(len(segs))
+	print(len(segs))'''
+
+	rate, wavFile = wav.read('test/notes_with_gap_at_split.wav')
+
+	print('Started Function')
+	inputSample, notes = getInOut(wavFile,rate,int(8192),int(7680),0.05,8)
+
+	wav.write('test/inputSampleTestGapsSplit.wav',rate,inputSample)
+
+	print(notes)
