@@ -6,6 +6,7 @@
 import math
 import numpy as np 
 import scipy.io.wavfile as wav
+import scipy.signal as sig
 
 
 # function generates arrays representing lookup tables
@@ -50,11 +51,12 @@ def findClosestNote(freq,freqList,noteList):
 
 # takes the wav file at filePath and segments it based on silences that appear within it
 # maxSilence is the maximum amount of silence tolerable in a segment in seconds
+# the sampling rate is also returned for completeness
 def removeSilence(filePath, maxSilence):
 	
 	rate, data = wav.read(filePath) #everything I read in should be mono
 
-	#data = data.astype(float)
+	data = data.astype(float)
 
 	silenceSamples = round(rate * maxSilence) # max number of samples of silence before segmentation
 
@@ -92,13 +94,76 @@ def removeSilence(filePath, maxSilence):
 			endPoint = end if silent else i
 			segments.append(data[start:endPoint]) # make sure to append the final segment
 
-	return segments
+	return segments, rate
+
+# function takes a segment from a wave file and splits it
+# into an input sample with an associated predicted output
+# this will be returned as a numpy array for the input
+# and a list of integers for the predicted output
+# data is the mono wave file segment
+# fs is the sampling frequency
+# segmentSize, overlap are parameters for the short time fourier transform
+# minNoteLength is the minimum amount of time a note must last for if it is to be considered valid
+# numNotes is how many notes I wish to split by 
+def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
+
+	# first calculate the minimum number of bins for a note
+	samplesPerBin = float(segmentSize - overlap)
+	minLengthSamples = minNoteLength * fs
+	minTimeBins = math.ceil(minLengthSamples/samplesPerBin)
+	# i always opt to go over the threshold rather than below
+	# i'd much rather have a longer min note length
+
+	# get frequency, note lists
+	freqList, noteList = genFreqNoteArrs()
+
+	# now convert the signal into a spectrogram
+	_, _, Zxx = sig.stft(data,fs=fs,window='hann',nperseg=segmentSize,noverlap=overlap)
+
+	# have matrix in terms of power spectral density
+	ZxxMag = np.abs(Zxx)
+
+	# calculate information about frequency bins
+	freqRes = float(fs)/float(segmentSize)
+
+	# now attempt to find the last numNotes notes
+	endNotes = []
+	currentNote = 0 # 0 is not a valid note in my convention
+	currentLength = 0
+	splitPoint = ZxxMag.shape[1] - 1 # the point at which to split between input and output
+
+	for j in range(ZxxMag.shape[1]-1, -1, -1): # for each column going backwards in time
+
+		# find max index in current column
+		activeNote = findClosestNote((freqRes/2.0)*(np.argmax(ZxxMag[:,j])+1),freqList,noteList)
+		if (activeNote == currentNote): # if the same note remains
+			currentLength += 1
+			if (currentLength == minTimeBins): # if now a proper note
+				endNotes.append(cuurentNote)
+				if (len(endNotes) == numNotes):
+					splitPoint = j
+					break
+		else:
+			currentNote = activeNote
+			currentLength = 1
+
+	splitSpectrogram = Zxx[:,0:j] # remove the section of time included in our output value list
+
+	# convert remaining spectrogram back into the time domain
+	_,inputSample = sig.istft(splitSpectrogram,fs=fs,window='hann',nperseg=segmentSize,noverlap=overlap)
+
+	# convert back into the range [-1, 1] such that it can be written back to a wave file
+	inputSample = inputSample / np.max(inputSample) 
+
+	return inputSample, list(reversed(endNotes)) # reverse the list so it lies in chronological order
 
 
-segs = removeSilence('test/silence_test6.wav',0.5)
+if __name__ == '__main__':
 
-for i in range(0,len(segs)):
-	print(segs[i].shape)
-	wav.write('test/test'+str(i)+'.wav',44100,segs[i])
+	segs, fs = removeSilence('test/silence_test6.wav',0.5)
 
-print(len(segs))
+	for i in range(0,len(segs)):
+		print(segs[i].shape)
+		wav.write('test/test'+str(i)+'.wav',44100,segs[i])
+
+	print(len(segs))

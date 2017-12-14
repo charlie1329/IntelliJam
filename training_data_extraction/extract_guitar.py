@@ -62,7 +62,6 @@ def showSpectrogram(input_path, segment_size, overlap, low_cut_off, threshold, l
 
 	Zxx = np.multiply(highBM,Zxx)
 
-	#TODO: Add a lo-pass filter here!
 
 	
 	'''plt.pcolormesh(t, f, np.abs(Zxx))
