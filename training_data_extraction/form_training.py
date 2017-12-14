@@ -143,7 +143,7 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 		if(ZxxMag[maxIndex,j] == 0.0): # trying to account for silence
 			activeNote = 0
 		else:
-			activeNote = findClosestNote((freqRes/2.0)*(maxIndex+1),freqList,noteList)
+			activeNote = findClosestNote((freqRes*maxIndex) + (freqRes/2.0),freqList,noteList)
 
 		if (activeNote == currentNote): # if the same note remains
 			currentLength += 1
