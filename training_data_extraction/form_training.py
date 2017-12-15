@@ -143,7 +143,15 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 		if(ZxxMag[maxIndex,j] == 0.0): # trying to account for silence
 			activeNote = 0
 		else:
-			activeNote = findClosestNote((freqRes*maxIndex) + (freqRes/2.0),freqList,noteList)
+			activeNoteOne = findClosestNote((freqRes*maxIndex),freqList,noteList)
+			activeNoteTwo = findClosestNote((freqRes*maxIndex) + (freqRes/2.0),freqList,noteList)
+			if (activeNoteOne == activeNoteTwo):
+				activeNote = activeNoteOne
+			elif (activeNoteOne == currentNote or activeNoteTwo == currentNote):
+				activeNote = currentNote
+			else:
+				activeNote = activeNoteTwo
+
 
 		if (activeNote == currentNote): # if the same note remains
 			currentLength += 1
@@ -179,11 +187,11 @@ if __name__ == '__main__':
 
 	print(len(segs))'''
 
-	rate, wavFile = wav.read('test/bending.wav')
+	rate, wavFile = wav.read('../../../Dropbox/audio_extraction/permanatingHystPoint3LowPoint1.wav')
 
 	print('Started Function')
 	inputSample, notes = getInOut(wavFile,rate,int(8192),int(7680),0.07,8)
 
-	wav.write('test/bendingSplit.wav',rate,inputSample)
+	wav.write('test/permSplit.wav',rate,inputSample)
 
 	print(notes)
