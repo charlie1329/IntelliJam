@@ -179,11 +179,11 @@ if __name__ == '__main__':
 
 	print(len(segs))'''
 
-	rate, wavFile = wav.read('test/notes_with_gap_at_split.wav')
+	rate, wavFile = wav.read('test/bending.wav')
 
 	print('Started Function')
-	inputSample, notes = getInOut(wavFile,rate,int(8192),int(7680),0.05,8)
+	inputSample, notes = getInOut(wavFile,rate,int(8192),int(7680),0.07,8)
 
-	wav.write('test/inputSampleTestGapsSplit.wav',rate,inputSample)
+	wav.write('test/bendingSplit.wav',rate,inputSample)
 
 	print(notes)
