@@ -44,4 +44,8 @@ add_executable(MIDI_TWINKLE ${MIDI_EXAMPLE})
 
 target_link_libraries(MIDI_TWINKLE winmm.lib)
 
+
+#for future when I want to use port audio for things, add this line to the target
+#target_link_libraries(TARGET ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
