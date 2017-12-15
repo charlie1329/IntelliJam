@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
 
     auto start = chrono::high_resolution_clock::now(); //start timer
     for(int i = 0; i < 200; i++) {
-        echo->updateReservoir(inputVec);
+        echo->updateReservoir(0.5);
     }
     auto finish = chrono::high_resolution_clock::now();
 

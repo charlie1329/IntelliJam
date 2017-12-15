@@ -94,6 +94,12 @@ public:
     void updateReservoir(VectorXd newInput);
 
     /**
+     * version of updateReservoir for 1D input
+     * @param newInput the new input into the network
+     */
+    void updateReservoir(double newInput);
+
+    /**
      * generates a set of predictions for the network
      * @return
      */

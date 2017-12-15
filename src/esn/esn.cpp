@@ -217,11 +217,19 @@ void ESN::saveNetwork(){
 
 /**
  * updates ESN reservoir on the arrival of new data
- * @param newInput
+ * @param newInput the new input to be fed into the network
  */
 void ESN::updateReservoir(VectorXd newInput) {
     //TODO: There is no way this is going to be efficient enough
     //TODO: Carry out speed tests here, try doing it around 200 times a second and see what happens
+    reservoir = tanh(((inResWeights * newInput) + (resResWeights * reservoir)).array());
+}
+
+/**
+ * updates ESN reservoir on the arrival of new (1D) data
+ * @param newInput the new input to be fed into the network
+ */
+void ESN::updateReservoir(double newInput) {
     reservoir = tanh(((inResWeights * newInput) + (resResWeights * reservoir)).array());
 }
 
