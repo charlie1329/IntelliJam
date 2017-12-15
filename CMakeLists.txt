@@ -28,4 +28,20 @@ set(ESN_SPEED_FILES include/esn/esn.h
 add_executable(ESN_SPEED_TEST ${ESN_SPEED_FILES})
 
 
+#executable for midi library testing
+set(MIDI_TESTS include/midi/midi.h
+                src/midi/midi.cpp
+                test/midi/testMidi.cpp)
+
+add_executable(MIDI_TEST ${MIDI_TESTS})
+
+#executable for midi library example test
+set(MIDI_EXAMPLE include/midi/midi.h
+                 src/midi/midi.cpp
+                 test/midi/twinkle_twinkle.cpp)
+
+add_executable(MIDI_TWINKLE ${MIDI_EXAMPLE})
+
+target_link_libraries(MIDI_TWINKLE winmm.lib)
+
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files

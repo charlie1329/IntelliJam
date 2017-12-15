@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MIDI_TWINKLE
+
+# Build rule for target.
+MIDI_TWINKLE: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_TWINKLE
+.PHONY : MIDI_TWINKLE
+
+# fast build rule for target.
+MIDI_TWINKLE/fast:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/build
+.PHONY : MIDI_TWINKLE/fast
+
+#=============================================================================
 # Target rules for targets named TRAINING
 
 # Build rule for target.
@@ -148,6 +161,19 @@ ESN_CORE_TEST/fast:
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/build
 .PHONY : ESN_CORE_TEST/fast
 
+#=============================================================================
+# Target rules for targets named MIDI_TEST
+
+# Build rule for target.
+MIDI_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_TEST
+.PHONY : MIDI_TEST
+
+# fast build rule for target.
+MIDI_TEST/fast:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/build
+.PHONY : MIDI_TEST/fast
+
 src/esn/esn.obj: src/esn/esn.cpp.obj
 
 .PHONY : src/esn/esn.obj
@@ -180,6 +206,36 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
+
+src/midi/midi.obj: src/midi/midi.cpp.obj
+
+.PHONY : src/midi/midi.obj
+
+# target to build an object file
+src/midi/midi.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.obj
+.PHONY : src/midi/midi.cpp.obj
+
+src/midi/midi.i: src/midi/midi.cpp.i
+
+.PHONY : src/midi/midi.i
+
+# target to preprocess a source file
+src/midi/midi.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.i
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.i
+.PHONY : src/midi/midi.cpp.i
+
+src/midi/midi.s: src/midi/midi.cpp.s
+
+.PHONY : src/midi/midi.s
+
+# target to generate assembly for a file
+src/midi/midi.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.s
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.s
+.PHONY : src/midi/midi.cpp.s
 
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
@@ -235,26 +291,91 @@ test/esn/esn_speed.cpp.s:
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/test/esn/esn_speed.cpp.s
 .PHONY : test/esn/esn_speed.cpp.s
 
+test/midi/testMidi.obj: test/midi/testMidi.cpp.obj
+
+.PHONY : test/midi/testMidi.obj
+
+# target to build an object file
+test/midi/testMidi.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/test/midi/testMidi.cpp.obj
+.PHONY : test/midi/testMidi.cpp.obj
+
+test/midi/testMidi.i: test/midi/testMidi.cpp.i
+
+.PHONY : test/midi/testMidi.i
+
+# target to preprocess a source file
+test/midi/testMidi.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/test/midi/testMidi.cpp.i
+.PHONY : test/midi/testMidi.cpp.i
+
+test/midi/testMidi.s: test/midi/testMidi.cpp.s
+
+.PHONY : test/midi/testMidi.s
+
+# target to generate assembly for a file
+test/midi/testMidi.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/test/midi/testMidi.cpp.s
+.PHONY : test/midi/testMidi.cpp.s
+
+test/midi/twinkle_twinkle.obj: test/midi/twinkle_twinkle.cpp.obj
+
+.PHONY : test/midi/twinkle_twinkle.obj
+
+# target to build an object file
+test/midi/twinkle_twinkle.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.obj
+.PHONY : test/midi/twinkle_twinkle.cpp.obj
+
+test/midi/twinkle_twinkle.i: test/midi/twinkle_twinkle.cpp.i
+
+.PHONY : test/midi/twinkle_twinkle.i
+
+# target to preprocess a source file
+test/midi/twinkle_twinkle.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.i
+.PHONY : test/midi/twinkle_twinkle.cpp.i
+
+test/midi/twinkle_twinkle.s: test/midi/twinkle_twinkle.cpp.s
+
+.PHONY : test/midi/twinkle_twinkle.s
+
+# target to generate assembly for a file
+test/midi/twinkle_twinkle.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.s
+.PHONY : test/midi/twinkle_twinkle.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... MIDI_TWINKLE
 	@echo ... TRAINING
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
+	@echo ... MIDI_TEST
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... src/esn/esn.obj
 	@echo ... src/esn/esn.i
 	@echo ... src/esn/esn.s
+	@echo ... src/midi/midi.obj
+	@echo ... src/midi/midi.i
+	@echo ... src/midi/midi.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s
 	@echo ... test/esn/esn_speed.obj
 	@echo ... test/esn/esn_speed.i
 	@echo ... test/esn/esn_speed.s
+	@echo ... test/midi/testMidi.obj
+	@echo ... test/midi/testMidi.i
+	@echo ... test/midi/testMidi.s
+	@echo ... test/midi/twinkle_twinkle.obj
+	@echo ... test/midi/twinkle_twinkle.i
+	@echo ... test/midi/twinkle_twinkle.s
 .PHONY : help
 
 

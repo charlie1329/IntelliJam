@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/charl/CLionProjects/FYP/include/midi/midi.h
+vector
+-
+fstream
+-
+
+C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp
+iostream
+-
+iterator
+-
+utility
+-
+algorithm
+-
+../../include/midi/midi.h
+C:/Users/charl/CLionProjects/FYP/include/midi/midi.h
+
+C:/Users/charl/CLionProjects/FYP/test/midi/twinkle_twinkle.cpp
+../../include/midi/midi.h
+C:/Users/charl/CLionProjects/FYP/include/midi/midi.h
+Windows.h
+-
+MMSystem.h
+-
+
