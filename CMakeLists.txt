@@ -50,7 +50,8 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/port_audio/pa_win_util.c
                   src/esn/esn.cpp
                   src/midi/midi.cpp
-                  include/runtime/port_processing.h)
+                  include/runtime/port_processing.h
+                  src/runtime/port_processing.cpp)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)

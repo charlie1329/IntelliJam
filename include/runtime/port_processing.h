@@ -10,9 +10,11 @@
 #include "../port_audio/portaudio.h"
 #include "../port_audio/pa_ringbuffer.h"
 #include <vector>
-#include <string>
+#include <utility>
 
 using namespace std;
+
+#define RING_ELEMENT sizeof(double)
 
 /**
  * a structure used within the callback function
@@ -22,7 +24,7 @@ using namespace std;
 struct passToCallback {
     PaUtilRingBuffer ring;
     const void *ringBufferData;
-    int sampleJump; //interval of how often to write samples
+    int sampleJump; //interval of how often to write samples to ring buffer
 };
 
 /**
@@ -49,6 +51,17 @@ int audioCallback(const void *input, void *output,
  * will be used later for selection on a GUI
  * @return the list/vector of all usable devices
  */
-vector<string> getUsableDevices();
+vector<pair<unsigned int, const PaDeviceInfo*>> getUsableDevices();
+
+/**
+ * function deals with opening up a stream on a particular device
+ * @param device all of the device information as well as its internal identifier
+ * @param sampleRate the desired sample rate for reading from the device
+ * @param stream the port audio stream
+ * @param callbackData info about the ring buffer etc.
+ * @return the return code from Pa_OpenStream
+ */
+PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device,
+                           int sampleRate, PaStream *stream, passToCallback *callbackData);
 
 #endif //FYP_PORT_PROCESSING_H

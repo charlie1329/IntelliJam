@@ -334,6 +334,9 @@
 			<Option target="MIDI_TEST"/>
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/esn/esn_correctness.cpp">
 			<Option target="ESN_CORE_TEST"/>
 		</Unit>

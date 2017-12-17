@@ -310,6 +310,33 @@ src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
 
+src/runtime/port_processing.obj: src/runtime/port_processing.cpp.obj
+
+.PHONY : src/runtime/port_processing.obj
+
+# target to build an object file
+src/runtime/port_processing.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj
+.PHONY : src/runtime/port_processing.cpp.obj
+
+src/runtime/port_processing.i: src/runtime/port_processing.cpp.i
+
+.PHONY : src/runtime/port_processing.i
+
+# target to preprocess a source file
+src/runtime/port_processing.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.i
+.PHONY : src/runtime/port_processing.cpp.i
+
+src/runtime/port_processing.s: src/runtime/port_processing.cpp.s
+
+.PHONY : src/runtime/port_processing.s
+
+# target to generate assembly for a file
+src/runtime/port_processing.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
+.PHONY : src/runtime/port_processing.cpp.s
+
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
 .PHONY : test/esn/esn_correctness.obj
@@ -444,6 +471,9 @@ help:
 	@echo ... src/midi/midi.obj
 	@echo ... src/midi/midi.i
 	@echo ... src/midi/midi.s
+	@echo ... src/runtime/port_processing.obj
+	@echo ... src/runtime/port_processing.i
+	@echo ... src/runtime/port_processing.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s
