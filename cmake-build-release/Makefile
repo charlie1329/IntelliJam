@@ -310,6 +310,33 @@ src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
 
+src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
+
+.PHONY : src/runtime/init_close.obj
+
+# target to build an object file
+src/runtime/init_close.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj
+.PHONY : src/runtime/init_close.cpp.obj
+
+src/runtime/init_close.i: src/runtime/init_close.cpp.i
+
+.PHONY : src/runtime/init_close.i
+
+# target to preprocess a source file
+src/runtime/init_close.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.i
+.PHONY : src/runtime/init_close.cpp.i
+
+src/runtime/init_close.s: src/runtime/init_close.cpp.s
+
+.PHONY : src/runtime/init_close.s
+
+# target to generate assembly for a file
+src/runtime/init_close.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.s
+.PHONY : src/runtime/init_close.cpp.s
+
 src/runtime/port_processing.obj: src/runtime/port_processing.cpp.obj
 
 .PHONY : src/runtime/port_processing.obj
@@ -471,6 +498,9 @@ help:
 	@echo ... src/midi/midi.obj
 	@echo ... src/midi/midi.i
 	@echo ... src/midi/midi.s
+	@echo ... src/runtime/init_close.obj
+	@echo ... src/runtime/init_close.i
+	@echo ... src/runtime/init_close.s
 	@echo ... src/runtime/port_processing.obj
 	@echo ... src/runtime/port_processing.i
 	@echo ... src/runtime/port_processing.s

@@ -14,7 +14,6 @@
 
 using namespace std;
 
-#define RING_ELEMENT sizeof(double)
 
 /**
  * a structure used within the callback function
@@ -22,9 +21,12 @@ using namespace std;
  * as well as info about the effective sample rate
  */
 struct passToCallback {
-    PaUtilRingBuffer ring;
-    const void *ringBufferData;
+    PaUtilRingBuffer ring{};
+    void *ringBufferData;
     int sampleJump; //interval of how often to write samples to ring buffer
+
+    passToCallback(PaUtilRingBuffer r, void *rbd, int sj): ring(r), ringBufferData(rbd), sampleJump(sj) {}
+
 };
 
 /**

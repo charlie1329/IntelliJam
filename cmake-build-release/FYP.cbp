@@ -320,6 +320,9 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_win_util.c">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h">
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/port_processing.h">
 			<Option target="RUNTIME"/>
 		</Unit>
@@ -332,6 +335,9 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp">
 			<Option target="MIDI_TWINKLE"/>
 			<Option target="MIDI_TEST"/>
+			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">

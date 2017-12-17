@@ -25,6 +25,9 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
     auto *out = (double*)output;
     auto *in = (double*)input;
 
+    (void) timeInfo; //tip from port audio examples, stops IDE from moaning at me
+    (void) statusFlags;
+
     int sampleJump = info->sampleJump; //save me de-referencing every time
 
     //loop through frames in input and copy when appropriate
@@ -93,5 +96,5 @@ PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int s
     //return the return value from this function
     return Pa_OpenStream(&stream,&inParams,&outParams,sampleRate,
                          paFramesPerBufferUnspecified,
-                         paNoFlag,audioCallback, callbackData);
+                         paNoFlag,audioCallback,callbackData);
 }
