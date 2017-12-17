@@ -44,16 +44,30 @@ add_executable(MIDI_TWINKLE ${MIDI_EXAMPLE})
 
 target_link_libraries(MIDI_TWINKLE winmm.lib)
 
+
+#executable
+set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
+                  include/port_audio/pa_win_util.c
+                  src/esn/esn.cpp
+                  src/midi/midi.cpp
+                  include/runtime/port_processing.h)
+
+add_executable(RUNTIME ${RUNTIME_FILES})
+target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+target_link_libraries(RUNTIME winmm.lib)
+
+
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
+
+
 #to compile with port audio, and ring buffers do the following
 #port audio compilation test
-#set(PORT_TEST_FILE <my own source files>
+#set(TARGET_FILES <my own source files>
 #                    include/port_audio/pa_ringbuffer.c
 #                    include/port_audio/pa_win_util.c)
-#add_executable(PORT_TEST ${PORT_TEST_FILE})
-#target_link_libraries(PORT_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
-#target_link_libraries(PORT_TEST winmm.lib)
+#add_executable(TARGET ${TARGET_FILES})
+#target_link_libraries(TARGET ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+#target_link_libraries(TARGET winmm.lib)
 
 #for future when I want to use port audio for things, add this line to the target
 #target_link_libraries(TARGET ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
-
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files

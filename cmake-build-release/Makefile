@@ -174,6 +174,73 @@ MIDI_TEST/fast:
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/build
 .PHONY : MIDI_TEST/fast
 
+#=============================================================================
+# Target rules for targets named RUNTIME
+
+# Build rule for target.
+RUNTIME: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME
+.PHONY : RUNTIME
+
+# fast build rule for target.
+RUNTIME/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
+.PHONY : RUNTIME/fast
+
+include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
+
+.PHONY : include/port_audio/pa_ringbuffer.obj
+
+# target to build an object file
+include/port_audio/pa_ringbuffer.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.obj
+.PHONY : include/port_audio/pa_ringbuffer.c.obj
+
+include/port_audio/pa_ringbuffer.i: include/port_audio/pa_ringbuffer.c.i
+
+.PHONY : include/port_audio/pa_ringbuffer.i
+
+# target to preprocess a source file
+include/port_audio/pa_ringbuffer.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.i
+.PHONY : include/port_audio/pa_ringbuffer.c.i
+
+include/port_audio/pa_ringbuffer.s: include/port_audio/pa_ringbuffer.c.s
+
+.PHONY : include/port_audio/pa_ringbuffer.s
+
+# target to generate assembly for a file
+include/port_audio/pa_ringbuffer.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.s
+.PHONY : include/port_audio/pa_ringbuffer.c.s
+
+include/port_audio/pa_win_util.obj: include/port_audio/pa_win_util.c.obj
+
+.PHONY : include/port_audio/pa_win_util.obj
+
+# target to build an object file
+include/port_audio/pa_win_util.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.obj
+.PHONY : include/port_audio/pa_win_util.c.obj
+
+include/port_audio/pa_win_util.i: include/port_audio/pa_win_util.c.i
+
+.PHONY : include/port_audio/pa_win_util.i
+
+# target to preprocess a source file
+include/port_audio/pa_win_util.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.i
+.PHONY : include/port_audio/pa_win_util.c.i
+
+include/port_audio/pa_win_util.s: include/port_audio/pa_win_util.c.s
+
+.PHONY : include/port_audio/pa_win_util.s
+
+# target to generate assembly for a file
+include/port_audio/pa_win_util.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.s
+.PHONY : include/port_audio/pa_win_util.c.s
+
 src/esn/esn.obj: src/esn/esn.cpp.obj
 
 .PHONY : src/esn/esn.obj
@@ -183,6 +250,7 @@ src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj
 .PHONY : src/esn/esn.cpp.obj
 
 src/esn/esn.i: src/esn/esn.cpp.i
@@ -194,6 +262,7 @@ src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.i
 .PHONY : src/esn/esn.cpp.i
 
 src/esn/esn.s: src/esn/esn.cpp.s
@@ -205,6 +274,7 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
 
 src/midi/midi.obj: src/midi/midi.cpp.obj
@@ -215,6 +285,7 @@ src/midi/midi.obj: src/midi/midi.cpp.obj
 src/midi/midi.cpp.obj:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.obj
 .PHONY : src/midi/midi.cpp.obj
 
 src/midi/midi.i: src/midi/midi.cpp.i
@@ -225,6 +296,7 @@ src/midi/midi.i: src/midi/midi.cpp.i
 src/midi/midi.cpp.i:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.i
 .PHONY : src/midi/midi.cpp.i
 
 src/midi/midi.s: src/midi/midi.cpp.s
@@ -235,6 +307,7 @@ src/midi/midi.s: src/midi/midi.cpp.s
 src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
 
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
@@ -356,8 +429,15 @@ help:
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
+	@echo ... RUNTIME
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... include/port_audio/pa_ringbuffer.obj
+	@echo ... include/port_audio/pa_ringbuffer.i
+	@echo ... include/port_audio/pa_ringbuffer.s
+	@echo ... include/port_audio/pa_win_util.obj
+	@echo ... include/port_audio/pa_win_util.i
+	@echo ... include/port_audio/pa_win_util.s
 	@echo ... src/esn/esn.obj
 	@echo ... src/esn/esn.i
 	@echo ... src/esn/esn.s

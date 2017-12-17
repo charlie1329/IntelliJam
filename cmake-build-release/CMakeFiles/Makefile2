@@ -102,7 +102,7 @@ clean: CMakeFiles/MIDI_TWINKLE.dir/clean
 CMakeFiles/TRAINING.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=13,14 "Built target TRAINING"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=18,19 "Built target TRAINING"
 .PHONY : CMakeFiles/TRAINING.dir/all
 
 # Include target in all.
@@ -240,6 +240,43 @@ CMakeFiles/MIDI_TEST.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/MIDI_TEST.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RUNTIME.dir
+
+# All Build rule for target.
+CMakeFiles/RUNTIME.dir/all:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/depend
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=13,14,15,16,17 "Built target RUNTIME"
+.PHONY : CMakeFiles/RUNTIME.dir/all
+
+# Include target in all.
+all: CMakeFiles/RUNTIME.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RUNTIME.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 5
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+.PHONY : CMakeFiles/RUNTIME.dir/rule
+
+# Convenience name for target.
+RUNTIME: CMakeFiles/RUNTIME.dir/rule
+
+.PHONY : RUNTIME
+
+# clean rule for target.
+CMakeFiles/RUNTIME.dir/clean:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/clean
+.PHONY : CMakeFiles/RUNTIME.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RUNTIME.dir/clean
 
 .PHONY : clean
 
