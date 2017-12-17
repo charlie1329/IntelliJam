@@ -33,13 +33,16 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
     //loop through frames in input and copy when appropriate
     for(int i = 0; i < frameCount; i++) {
 
-        if(i % sampleJump == 0) { //makes assumption input is effectively mono
+        if(info->nextSample == 0) { //makes assumption input is effectively mono
             PaUtil_WriteRingBuffer(&(info->ring),in,1); //write to ring buffer
+            info->nextSample = sampleJump;
         }
 
         //TODO: CHECK THIS IS CORRECT, RELATED TO WHETHER STEREO OR MONO INPUT
         *out++ = *in++;  //copy input to output
         *out++ = *in++;
+
+        info->nextSample--; //in using an extra variable over modulo, I can keep it consistent across callbacks
     }
 
     return paContinue; //0
@@ -92,6 +95,12 @@ PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int s
     outParams.hostApiSpecificStreamInfo = nullptr;
     outParams.sampleFormat = paFloat32;
     outParams.suggestedLatency = device.second->defaultLowOutputLatency;
+
+    //check if desired sample rate is supported by the device
+    PaError err = Pa_IsFormatSupported(&inParams,&outParams,sampleRate);
+    if(err != paFormatIsSupported) {
+       return err; //don't open the stream if the sample rate isn't supported
+    }
 
     //return the return value from this function
     return Pa_OpenStream(&stream,&inParams,&outParams,sampleRate,

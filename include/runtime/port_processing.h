@@ -24,9 +24,9 @@ struct passToCallback {
     PaUtilRingBuffer ring{};
     void *ringBufferData;
     int sampleJump; //interval of how often to write samples to ring buffer
-
-    passToCallback(PaUtilRingBuffer r, void *rbd, int sj): ring(r), ringBufferData(rbd), sampleJump(sj) {}
-
+    int nextSample; //allow me to go through multiple consecutive callbacks correctly
+    passToCallback(PaUtilRingBuffer r, void *rbd, int sj): ring(r), ringBufferData(rbd),
+                                                           sampleJump(sj), nextSample(0) {}
 };
 
 /**
