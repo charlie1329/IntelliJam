@@ -44,6 +44,14 @@ add_executable(MIDI_TWINKLE ${MIDI_EXAMPLE})
 
 target_link_libraries(MIDI_TWINKLE winmm.lib)
 
+#to compile with port audio, and ring buffers do the following
+#port audio compilation test
+#set(PORT_TEST_FILE <my own source files>
+#                    include/port_audio/pa_ringbuffer.c
+#                    include/port_audio/pa_win_util.c)
+#add_executable(PORT_TEST ${PORT_TEST_FILE})
+#target_link_libraries(PORT_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+#target_link_libraries(PORT_TEST winmm.lib)
 
 #for future when I want to use port audio for things, add this line to the target
 #target_link_libraries(TARGET ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
