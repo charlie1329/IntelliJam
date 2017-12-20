@@ -1,4 +1,95 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" C:\Users\charl\CLionProjects\FYP
+"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" C:\Users\charl\CLionProjects\FYP
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1059 ] _boost_TEST_VERSIONS = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1061 ] Boost_USE_MULTITHREADED = TRUE
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1063 ] Boost_USE_STATIC_LIBS = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1065 ] Boost_USE_STATIC_RUNTIME = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1067 ] Boost_ADDITIONAL_VERSIONS = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1069 ] Boost_NO_SYSTEM_PATHS = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1137 ] Declared as CMake or Environmental Variables:
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1139 ]   BOOST_ROOT = C:/Program Files/boost_1_66_0
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1141 ]   BOOST_INCLUDEDIR = C:/Program Files/boost/include/boost_1_66
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1143 ]   BOOST_LIBRARYDIR = C:/Program Files/boost/lib
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1145 ] _boost_TEST_VERSIONS = 
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1244 ] location of version.hpp: C:/Program Files/boost_1_66_0/boost/version.hpp
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1268 ] version.hpp reveals boost 1.66.0
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1354 ] guessed _boost_COMPILER = -mgw63
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1364 ] _boost_MULTITHREADED = -mt
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1408 ] _boost_RELEASE_ABI_TAG = -
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1410 ] _boost_DEBUG_ABI_TAG = -d
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1472 ] _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH_boost_LIBRARY_SEARCH_DIRS_DEBUG   = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:14 (find_package)
+
+
+CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:14 (find_package)
+
+
+CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:14 (find_package)
+
+
+CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:14 (find_package)
+
+
+CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
+  New Boost version may have incorrect or missing dependencies and imported
+  targets
+Call Stack (most recent call first):
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
+  C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
+  CMakeLists.txt:14 (find_package)
+
+
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1618 ] Searching for SYSTEM_LIBRARY_RELEASE: boost_system-mgw63-mt-1_66;boost_system-mgw63-mt;boost_system-mt-1_66;boost_system-mt;boost_system
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_RELEASE = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1667 ] Searching for SYSTEM_LIBRARY_DEBUG: boost_system-mgw63-mt-d-1_66;boost_system-mgw63-mt-d;boost_system-mt-d-1_66;boost_system-mt-d;boost_system-mt;boost_system
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_DEBUG = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1618 ] Searching for THREAD_LIBRARY_RELEASE: boost_thread-mgw63-mt-1_66;boost_thread-mgw63-mt;boost_thread-mt-1_66;boost_thread-mt;boost_thread
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_RELEASE = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1667 ] Searching for THREAD_LIBRARY_DEBUG: boost_thread-mgw63-mt-d-1_66;boost_thread-mgw63-mt-d;boost_thread-mt-d-1_66;boost_thread-mt-d;boost_thread-mt;boost_thread
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_DEBUG = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1618 ] Searching for CHRONO_LIBRARY_RELEASE: boost_chrono-mgw63-mt-1_66;boost_chrono-mgw63-mt;boost_chrono-mt-1_66;boost_chrono-mt;boost_chrono
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_RELEASE = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1667 ] Searching for CHRONO_LIBRARY_DEBUG: boost_chrono-mgw63-mt-d-1_66;boost_chrono-mgw63-mt-d;boost_chrono-mt-d-1_66;boost_chrono-mt-d;boost_chrono-mt;boost_chrono
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_DEBUG = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1618 ] Searching for DATE_TIME_LIBRARY_RELEASE: boost_date_time-mgw63-mt-1_66;boost_date_time-mgw63-mt;boost_date_time-mt-1_66;boost_date_time-mt;boost_date_time
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_RELEASE = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1667 ] Searching for DATE_TIME_LIBRARY_DEBUG: boost_date_time-mgw63-mt-d-1_66;boost_date_time-mgw63-mt-d;boost_date_time-mt-d-1_66;boost_date_time-mt-d;boost_date_time-mt;boost_date_time
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_DEBUG = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1618 ] Searching for ATOMIC_LIBRARY_RELEASE: boost_atomic-mgw63-mt-1_66;boost_atomic-mgw63-mt;boost_atomic-mt-1_66;boost_atomic-mt;boost_atomic
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_RELEASE = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_RELEASE = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1667 ] Searching for ATOMIC_LIBRARY_DEBUG: boost_atomic-mgw63-mt-d-1_66;boost_atomic-mgw63-mt-d;boost_atomic-mt-d-1_66;boost_atomic-mt-d;boost_atomic-mt;boost_atomic
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:365 ]  Boost_LIBRARY_DIR_DEBUG = C:/Program Files/boost/lib _boost_LIBRARY_SEARCH_DIRS_DEBUG = C:/Program Files/boost/lib;NO_DEFAULT_PATH;NO_CMAKE_FIND_ROOT_PATH
+-- [ C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1740 ] Boost_FOUND = 1
+-- Boost version: 1.66.0
+-- Found the following Boost libraries:
+--   system
+--   thread
+--   chrono
+--   date_time
+--   atomic
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/charl/CLionProjects/FYP/cmake-build-release

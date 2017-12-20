@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.9)
 project(FYP)
 
 #need to check if this causes any improvements as well
@@ -6,6 +6,19 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 
 
 set(CMAKE_CXX_STANDARD 11)
+
+# get boost setup properly
+set(Boost_DEBUG ON)
+set(BOOST_ROOT "C:/Program Files/boost_1_66_0")
+set(BOOST_INCLUDEDIR "C:/Program Files/boost/include/boost_1_66")
+set(BOOST_LIBRARYDIR "C:/Program Files/boost/lib")
+find_package(Boost 1.66.0 REQUIRED COMPONENTS system thread chrono)
+
+
+# if boost found, include it
+if(Boost_FOUND)
+    include_directories(${Boost_INCLUDE_DIRS})
+endif()
 
 #executable for esn training
 set(TRAINING_FILES include/esn/esn.h
@@ -59,7 +72,16 @@ target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib
 target_link_libraries(RUNTIME winmm.lib)
 
 
+
+#test for boost
+set (TEST_FILES test/boost_test.cpp)
+add_executable(TEST ${TEST_FILES})
+if(Boost_FOUND)
+    target_link_libraries(TEST ${Boost_LIBRARIES})
+endif()
+
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
+
 
 
 #to compile with port audio, and ring buffers do the following

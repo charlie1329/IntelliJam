@@ -28,7 +28,7 @@ This list may be incomplete, but some of the libraries I have used are:
 * libsndfile (Dealing with audio files)
 * PortAudio (Real-time audio library)
 * Catch (Unit testing library)
-
+* Boost (Threading among other things)
 
 PortAudio
 ---------
