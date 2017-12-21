@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 set(CMAKE_CXX_STANDARD 11)
 
 # get boost setup properly
-set(Boost_DEBUG ON)
+#set(Boost_DEBUG ON)
 set(BOOST_ROOT "C:/Program Files/boost_1_66_0")
 set(BOOST_INCLUDEDIR "C:/Program Files/boost/include/boost_1_66")
 set(BOOST_LIBRARYDIR "C:/Program Files/boost/lib")
@@ -29,7 +29,7 @@ add_executable(TRAINING ${TRAINING_FILES})
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_correctness.cpp)
+                    test/esn/esn_correctness.cpp include/runtime/globalState.h)
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
@@ -65,24 +65,26 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   src/midi/midi.cpp
                   include/runtime/port_processing.h
                   src/runtime/port_processing.cpp
-                  include/runtime/init_close.h src/runtime/init_close.cpp)
+                  include/runtime/init_close.h src/runtime/init_close.cpp include/runtime/globalState.h)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
 target_link_libraries(RUNTIME winmm.lib)
-
-
-
-#test for boost
-set (TEST_FILES test/boost_test.cpp)
-add_executable(TEST ${TEST_FILES})
+#link up the boost libraries
 if(Boost_FOUND)
-    target_link_libraries(TEST ${Boost_LIBRARIES})
+    target_link_libraries(RUNTIME ${Boost_LIBRARIES})
 endif()
+
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
 
 
+#test for boost
+#set (TEST_FILES test/boost_test.cpp)
+#add_executable(TEST ${TEST_FILES})
+#if(Boost_FOUND)
+#    target_link_libraries(TEST ${Boost_LIBRARIES})
+#endif()
 
 #to compile with port audio, and ring buffers do the following
 #port audio compilation test

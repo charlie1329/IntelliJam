@@ -5,27 +5,12 @@
 #ifndef FYP_INIT_CLOSE_H
 #define FYP_INIT_CLOSE_H
 
-#include "port_processing.h"
-#include "../esn/esn.h"
-#include <memory>
+#include "globalState.h"
 
 #define RING_ELEMENT sizeof(double)
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer
 #define SAMPLE_JUMP 10
 
-/**
- * a structure to hold the global state of the system
- */
-struct globalState {
-    PaUtilRingBuffer ring{};
-    void *ringData;
-    shared_ptr<passToCallback> callbackData;
-    shared_ptr<ESN> echo;
-    PaStream *stream{};
-
-    globalState(PaUtilRingBuffer r, void *rd, shared_ptr<passToCallback> cd, shared_ptr<ESN> e, PaStream *s):
-            ring(r), ringData(rd), callbackData(cd), echo(e), stream(s){}
-};
 
 /**
  * function initialises the global state of the system

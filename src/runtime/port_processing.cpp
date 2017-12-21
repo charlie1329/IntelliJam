@@ -34,7 +34,7 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
     for(int i = 0; i < frameCount; i++) {
 
         if(info->nextSample == 0) { //makes assumption input is effectively mono
-            PaUtil_WriteRingBuffer(&(info->ring),in,1); //write to ring buffer
+            PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to ring buffer
             info->nextSample = sampleJump;
         }
 

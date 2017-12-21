@@ -226,6 +226,11 @@ RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/build.make
 RUNTIME.exe: ../libs/portaudio_x86.lib
+RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_system-mgw63-mt-1_66.a
+RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_thread-mgw63-mt-1_66.a
+RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_chrono-mgw63-mt-1_66.a
+RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_date_time-mgw63-mt-1_66.a
+RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_atomic-mgw63-mt-1_66.a
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/linklibs.rsp
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/objects1.rsp
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/link.txt

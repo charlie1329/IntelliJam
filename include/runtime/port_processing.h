@@ -21,12 +21,21 @@ using namespace std;
  * as well as info about the effective sample rate
  */
 struct passToCallback {
-    PaUtilRingBuffer ring{};
-    void *ringBufferData;
+
+    PaUtilRingBuffer ringUpdate{}; //ring buffer for updating esn
+    void *ringDataUpdate;
+
+    PaUtilRingBuffer ringTimer{}; //ring buffer for keeping timer informed
+    void *ringDataTimer;
+
     int sampleJump; //interval of how often to write samples to ring buffer
     int nextSample; //allow me to go through multiple consecutive callbacks correctly
-    passToCallback(PaUtilRingBuffer r, void *rbd, int sj): ring(r), ringBufferData(rbd),
-                                                           sampleJump(sj), nextSample(0) {}
+
+    //copying constructor
+    passToCallback(PaUtilRingBuffer r, void *rd,
+                   PaUtilRingBuffer rt, void *rdt, int sj): ringUpdate(r), ringDataUpdate(rd),
+                                                            ringTimer(rt), ringDataTimer(rdt),
+                                                            sampleJump(sj), nextSample(0) {}
 };
 
 /**
