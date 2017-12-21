@@ -29,7 +29,7 @@ add_executable(TRAINING ${TRAINING_FILES})
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_correctness.cpp include/runtime/globalState.h include/runtime/updateThread.h)
+                    test/esn/esn_correctness.cpp include/runtime/globalState.h include/runtime/updateThread.h include/runtime/timerThread.h)
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
@@ -61,7 +61,9 @@ target_link_libraries(MIDI_TWINKLE winmm.lib)
 #executable
 set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/port_audio/pa_win_util.c
+                  include/esn/esn.h
                   src/esn/esn.cpp
+                  include/midi/midi.h
                   src/midi/midi.cpp
                   include/runtime/port_processing.h
                   src/runtime/port_processing.cpp
@@ -69,7 +71,9 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   src/runtime/init_close.cpp
                   include/runtime/globalState.h
                   include/runtime/updateThread.h
-                  src/runtime/updateThread.cpp)
+                  src/runtime/updateThread.cpp
+                  include/runtime/timerThread.h
+                  src/runtime/timerThread.cpp)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)

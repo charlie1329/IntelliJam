@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj"
   "CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj"
   "CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj"
+  "CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj"
   "RUNTIME.pdb"
   "RUNTIME.exe"
   "RUNTIME.exe.manifest"

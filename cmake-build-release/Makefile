@@ -364,6 +364,33 @@ src/runtime/port_processing.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
 
+src/runtime/timerThread.obj: src/runtime/timerThread.cpp.obj
+
+.PHONY : src/runtime/timerThread.obj
+
+# target to build an object file
+src/runtime/timerThread.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj
+.PHONY : src/runtime/timerThread.cpp.obj
+
+src/runtime/timerThread.i: src/runtime/timerThread.cpp.i
+
+.PHONY : src/runtime/timerThread.i
+
+# target to preprocess a source file
+src/runtime/timerThread.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.i
+.PHONY : src/runtime/timerThread.cpp.i
+
+src/runtime/timerThread.s: src/runtime/timerThread.cpp.s
+
+.PHONY : src/runtime/timerThread.s
+
+# target to generate assembly for a file
+src/runtime/timerThread.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.s
+.PHONY : src/runtime/timerThread.cpp.s
+
 src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
 
 .PHONY : src/runtime/updateThread.obj
@@ -531,6 +558,9 @@ help:
 	@echo ... src/runtime/port_processing.obj
 	@echo ... src/runtime/port_processing.i
 	@echo ... src/runtime/port_processing.s
+	@echo ... src/runtime/timerThread.obj
+	@echo ... src/runtime/timerThread.i
+	@echo ... src/runtime/timerThread.s
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s
