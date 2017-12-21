@@ -364,6 +364,33 @@ src/runtime/port_processing.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
 
+src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
+
+.PHONY : src/runtime/updateThread.obj
+
+# target to build an object file
+src/runtime/updateThread.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj
+.PHONY : src/runtime/updateThread.cpp.obj
+
+src/runtime/updateThread.i: src/runtime/updateThread.cpp.i
+
+.PHONY : src/runtime/updateThread.i
+
+# target to preprocess a source file
+src/runtime/updateThread.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.i
+.PHONY : src/runtime/updateThread.cpp.i
+
+src/runtime/updateThread.s: src/runtime/updateThread.cpp.s
+
+.PHONY : src/runtime/updateThread.s
+
+# target to generate assembly for a file
+src/runtime/updateThread.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
+.PHONY : src/runtime/updateThread.cpp.s
+
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
 .PHONY : test/esn/esn_correctness.obj
@@ -504,6 +531,9 @@ help:
 	@echo ... src/runtime/port_processing.obj
 	@echo ... src/runtime/port_processing.i
 	@echo ... src/runtime/port_processing.s
+	@echo ... src/runtime/updateThread.obj
+	@echo ... src/runtime/updateThread.i
+	@echo ... src/runtime/updateThread.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s

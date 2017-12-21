@@ -342,6 +342,10 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/port_processing.h">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h">
+			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
 			<Option target="TRAINING"/>
 			<Option target="ESN_SPEED_TEST"/>
@@ -357,6 +361,9 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
+			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/updateThread.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/esn/esn_correctness.cpp">

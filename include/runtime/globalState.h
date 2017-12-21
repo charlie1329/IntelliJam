@@ -1,6 +1,9 @@
-//
-// Created by charl on 21/12/2017.
-//
+/**
+ * this file contains the definition of a structure
+ * containing all information to accurately represent the global 
+ * state of the system
+ * Author: Charlie Street
+ */
 
 #ifndef FYP_GLOBALSTATE_H
 #define FYP_GLOBALSTATE_H
