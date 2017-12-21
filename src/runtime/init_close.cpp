@@ -9,6 +9,25 @@
 
 /**
  * implemented from init_close.h
+ * ALWAYS call this function before making any calls to initSystem()
+ * @return any errors returned in initialisation, and the list of available devices
+ */
+pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInitSearch() {
+
+    PaError err;
+    vector<pair<unsigned int, const PaDeviceInfo*>> devices;
+
+    err = Pa_Initialize();
+    if(err != paNoError) return make_pair(err, devices);
+
+    devices = getUsableDevices(); //find all (asio) devices available for use - will be linked to GUI later
+
+    return make_pair(paNoError, devices);
+}
+
+/**
+ * implemented from init_close.h
+ *  * DO NOT call this function before first calling preInitSearch()
  * @param sampleRate the sample rate of the input/output of the device
  * @param device the device being used for recording/playback
  * @return an error code, and the new global state
@@ -18,9 +37,7 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
 
     PaError err; // initially everything's fine
 
-    //initialise port audio
-    err = Pa_Initialize();
-    if(err != paNoError) return make_pair(err, nullptr);
+    //NOTE: PortAudio initialised in preInitSearch()
 
     //initialise ESN
     //TODO REPLACE ONCE NETWORK OPTIMISED

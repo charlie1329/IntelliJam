@@ -34,9 +34,13 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
     for(int i = 0; i < frameCount; i++) {
 
         if(info->nextSample == 0) { //makes assumption input is effectively mono
-            PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to ring buffer
+            PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to update ring buffer
             info->nextSample = sampleJump;
         }
+
+        //write to timer buffer as well as update buffer
+        //update buffer currently being written to at a different sample rate
+        PaUtil_WriteRingBuffer(&(info->ringTimer),in,1);
 
         //TODO: CHECK THIS IS CORRECT, RELATED TO WHETHER STEREO OR MONO INPUT
         *out++ = *in++;  //copy input to output
@@ -84,7 +88,7 @@ PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int s
     PaStreamParameters inParams{};
     PaStreamParameters outParams{};
 
-    inParams.channelCount = 1;//TODO COME BACK TO THIS
+    inParams.channelCount = 1;//TODO COME BACK TO THIS AND CHECK!
     inParams.device = device.first;
     inParams.hostApiSpecificStreamInfo = nullptr;
     inParams.sampleFormat = paFloat32; //this internally gets cast to a double

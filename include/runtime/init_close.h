@@ -13,7 +13,16 @@
 
 
 /**
+ * this function should be called prior to any calls to initSystem
+ * this function initialises portAudio, and also returns the list of devices
+ * currently available
+ * @return a pair of the list of devices and any errors generated during initialisation
+ */
+pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInitSearch();
+
+/**
  * function initialises the global state of the system
+ * DO NOT call this function before first calling preInitSearch()
  * @param sampleRate the sample rate to be used with the device
  * @param device the device information as well as its portAudio Identifier
  * @return an error code (if needed), as well as the newly formed system state
