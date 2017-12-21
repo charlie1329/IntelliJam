@@ -29,7 +29,7 @@ add_executable(TRAINING ${TRAINING_FILES})
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_correctness.cpp include/runtime/globalState.h include/runtime/updateThread.h include/runtime/timerThread.h)
+                    test/esn/esn_correctness.cpp)
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
@@ -73,7 +73,8 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/runtime/updateThread.h
                   src/runtime/updateThread.cpp
                   include/runtime/timerThread.h
-                  src/runtime/timerThread.cpp)
+                  src/runtime/timerThread.cpp
+                  include/midi/esnToMidi.h src/midi/esnToMidi.cpp)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)

@@ -277,6 +277,33 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
 
+src/midi/esnToMidi.obj: src/midi/esnToMidi.cpp.obj
+
+.PHONY : src/midi/esnToMidi.obj
+
+# target to build an object file
+src/midi/esnToMidi.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj
+.PHONY : src/midi/esnToMidi.cpp.obj
+
+src/midi/esnToMidi.i: src/midi/esnToMidi.cpp.i
+
+.PHONY : src/midi/esnToMidi.i
+
+# target to preprocess a source file
+src/midi/esnToMidi.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.i
+.PHONY : src/midi/esnToMidi.cpp.i
+
+src/midi/esnToMidi.s: src/midi/esnToMidi.cpp.s
+
+.PHONY : src/midi/esnToMidi.s
+
+# target to generate assembly for a file
+src/midi/esnToMidi.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.s
+.PHONY : src/midi/esnToMidi.cpp.s
+
 src/midi/midi.obj: src/midi/midi.cpp.obj
 
 .PHONY : src/midi/midi.obj
@@ -549,6 +576,9 @@ help:
 	@echo ... src/esn/esn.obj
 	@echo ... src/esn/esn.i
 	@echo ... src/esn/esn.s
+	@echo ... src/midi/esnToMidi.obj
+	@echo ... src/midi/esnToMidi.i
+	@echo ... src/midi/esnToMidi.s
 	@echo ... src/midi/midi.obj
 	@echo ... src/midi/midi.i
 	@echo ... src/midi/midi.s

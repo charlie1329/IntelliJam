@@ -5,6 +5,7 @@
  */
 
 #include "../../include/runtime/globalState.h"
+#include "../../include/midi/esnToMidi.h"
 
 /**
  * implemented from timerThread.h
@@ -48,7 +49,9 @@ void timerWorker(const shared_ptr<globalState> &state) {
         VectorXd output = echo->predict();
         esnMutex->unlock();
 
-        //TODO: Play/generate some form of MIDI output
+        string fileName = naiveMidi(output); //generate a midi file for the output
+        //TODO: Play the MIDI file in some apprporiate manner
+
 
         //advance along the read index to ignore any data brought through due to
         //callbacks still running when stream stopped (if that can indeed happen)

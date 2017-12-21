@@ -320,6 +320,9 @@
 			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/midi/esnToMidi.h">
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/midi/midi.h">
 			<Option target="MIDI_TWINKLE"/>
 			<Option target="MIDI_TEST"/>
@@ -335,7 +338,6 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/globalState.h">
-			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h">
@@ -345,17 +347,18 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h">
-			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h">
-			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
 			<Option target="TRAINING"/>
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp">
