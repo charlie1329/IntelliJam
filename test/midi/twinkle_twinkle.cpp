@@ -7,9 +7,12 @@
 #include "../../include/midi/midi.h"
 #include <Windows.h>
 #include <MMSystem.h>
+#include <iostream>
+#include <chrono>
 
 int main(int argc, char **argv) {
 
+    auto start = std::chrono::high_resolution_clock::now(); //start timer
     std::string fileName = "twinkle_twinkle.mid";
 
     uint16_t division = 4;
@@ -75,6 +78,9 @@ int main(int argc, char **argv) {
 
     //play it!
     mciSendString("play twinkle_twinkle.mid",nullptr,0,nullptr);
+    auto finish = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = finish - start;
+    std::cout << "Elapsed Time To Start Playing: " << elapsed.count() << " (s)" << std::endl;
     Sleep(5000);
     return 0;
 }

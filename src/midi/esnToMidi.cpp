@@ -48,6 +48,66 @@ string naiveMidi(VectorXd prediction) {
 
 /**
  * implemented from esnToMidi.h
+ * assumes output stream already opened
+ * @param prediction the esn prediction
+ * @param out the output handle for the midi device
+ * @return an array of midi events
+ */
+MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
+
+    unsigned int quarterNote = 20;
+
+    unsigned long err; //error variable for problems in midi
+
+    //set division value of midi track (PPQN)
+    MIDIPROPTIMEDIV prop1{};
+    prop1.cbStruct = sizeof(MIDIPROPTIMEDIV);
+    prop1.dwTimeDiv = 4;
+    err = midiStreamProperty(*out, (LPBYTE)&prop1, MIDIPROP_SET|MIDIPROP_TIMEDIV);
+    if(err) {
+        return nullptr;
+    }
+
+    //set the tempo
+    MIDIPROPTEMPO prop2{};
+    prop2.cbStruct = sizeof(MIDIPROPTIMEDIV);
+    prop2.dwTempo = 50000;
+    err = midiStreamProperty(*out, (LPBYTE)&prop2, MIDIPROP_SET|MIDIPROP_TEMPO);
+    if(err) {
+        return nullptr;
+    }
+
+    //number of messages = 1 program change message + however many notes predicted
+    auto *events = new MIDIEVENT[(prediction.rows() * 2) + 1];
+
+    events[0].dwDeltaTime = 0;
+    events[0].dwStreamID = 0; //Windows and its stupid redundant parameters
+    events[0].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | 0x00001EC0; //set to guitar sound
+    //bit shifting tip from http://midi.teragonaudio.com/tech/stream.htm
+
+    //note on and note off message for each note played
+    for(int i = 0; i < prediction.rows(); i++) {
+        int noteOn = (i * 2) + 1;
+        int noteOff = (i * 2) + 2;
+
+        auto currentNote = static_cast<unsigned char>(prediction(0, i));
+        DWORD event = 0x00400090;
+        event |= (currentNote << 8); //TODO: Test this!
+
+        events[noteOn].dwDeltaTime = 0;
+        events[noteOn].dwStreamID = 0;
+        events[noteOn].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | event;
+
+        events[noteOff].dwDeltaTime = quarterNote;
+        events[noteOff].dwStreamID = 0;
+        events[noteOff].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | event;
+    }
+
+    return events;
+}
+
+/**
+ * implemented from esnToMidi.h
  * @return an integer timestamp as a string
  */
 string generateTimestamp() {

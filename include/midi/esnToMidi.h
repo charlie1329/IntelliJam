@@ -11,8 +11,11 @@
 #define FYP_ESNTOMIDI_H
 
 #include "midi.h"
+#include <Windows.h>
+#include <mmsystem.h>
 #include "../Eigen/Dense" //data arrives in form of Eigen vectors
 #include <string>
+#include <memory>
 
 using namespace std;
 using namespace Eigen;
@@ -28,6 +31,18 @@ using namespace Eigen;
  * @return the filename of the new output
  */
 string naiveMidi(VectorXd prediction);
+
+/**
+ * an alternate version of naiveMidi to
+ * use Microsoft's MIDI API over my own
+ * this is due to the severe time lag in
+ * using mcisendstring()
+ * @param prediction the echo state network prediction
+ * @param out the output handle for the midi device
+ * @return an array of midi events
+ */
+MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out);
+
 
 /**
  * used to provide me with a timestamp
