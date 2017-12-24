@@ -13,6 +13,9 @@
 #include <memory>
 #include <atomic>
 #include <boost/thread.hpp>
+#include <Windows.h>
+#include <mmsystem.h>
+
 /**
  * a structure to hold the global state of the system
  */
@@ -36,14 +39,19 @@ struct globalState {
     shared_ptr<boost::mutex> streamMutex;
     shared_ptr<boost::condition_variable_any> cond;
 
+    //for midi output
+    shared_ptr<HMIDISTRM> outHandle;
+    shared_ptr<HANDLE> event;
+
     //constructor for structure just copies everything in
     globalState(PaUtilRingBuffer r, void *rd, PaUtilRingBuffer rt, void *rdt,
                 shared_ptr<passToCallback> cd, shared_ptr<ESN> e, PaStream *s,
                 shared_ptr<atomic<bool>> run, shared_ptr<boost::mutex> eMtx,
-                shared_ptr<boost::mutex> sMtx, shared_ptr<boost::condition_variable_any> cv):
+                shared_ptr<boost::mutex> sMtx, shared_ptr<boost::condition_variable_any> cv,
+                shared_ptr<HMIDISTRM> oh, shared_ptr<HANDLE> ev):
             ringUpdate(r), ringDataUpdate(rd), ringTimer(rt), ringDataTimer(rdt),
             callbackData(cd), echo(e), stream(s), running(run), esnMutex(eMtx),
-            streamMutex(sMtx), cond(cv){}
+            streamMutex(sMtx), cond(cv), outHandle(oh), event(ev){}
 };
 
 #endif //FYP_GLOBALSTATE_H

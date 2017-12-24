@@ -62,8 +62,20 @@ int main() {
 
             }
 
-            midiStreamClose(out);
+            midiStreamPause(out);
+            MIDIHDR hdr2{};
+            hdr2.lpData = reinterpret_cast<LPSTR>(midiEvents);
+            hdr2.dwBufferLength = hdr2.dwBytesRecorded =  sizeof(unsigned long) * 51;
+            hdr2.dwFlags = 0;
+            Sleep(5000);
+            ResetEvent(event);
+            midiOutPrepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr2, sizeof(MIDIHDR));
+            midiStreamOut(out, &hdr2, sizeof(MIDIHDR));
 
+            midiStreamRestart(out);
+            WaitForSingleObject(event,INFINITE);
+            midiOutUnprepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr2, sizeof(MIDIHDR));
+            midiStreamClose(out);
             delete [] midiEvents;
 
         }

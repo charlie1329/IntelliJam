@@ -33,7 +33,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
 
         streamMutex->lock();
         while((err = Pa_IsStreamStopped(state->stream)) && *stillRunning) { //second check in case abnormal termination
-            cond->wait(streamMutex);
+            cond->wait(*streamMutex);
 
             //ignore any data made available while sleeping
             //not much should be available but its a fairly neat check to make

@@ -6,6 +6,7 @@
 
 #include "../../include/runtime/globalState.h"
 #include "../../include/midi/esnToMidi.h"
+#include "../../include/runtime/timerThread.h"
 
 /**
  * implemented from timerThread.h
@@ -39,7 +40,7 @@ void timerWorker(const shared_ptr<globalState> &state) {
 
         if(err != paNoError) { //if something gone wrong
             //start a graceful shutdown
-            *stillRunning = true;
+            *stillRunning = false;
             cond->notify_all(); //make sure update thread doesn't block
             break;
         }
@@ -49,8 +50,14 @@ void timerWorker(const shared_ptr<globalState> &state) {
         VectorXd output = echo->predict();
         esnMutex->unlock();
 
-        string fileName = naiveMidi(output); //generate a midi file for the output
-        //TODO: Play the MIDI file in some apprporiate manner
+        int midiErr = handleMIDI(output, state->outHandle, state->event);
+
+        if(midiErr != 0) {
+            //graceful shutdown
+            *stillRunning = false;
+            cond->notify_all();
+            break;
+        }
 
 
         //advance along the read index to ignore any data brought through due to
@@ -72,5 +79,59 @@ void timerWorker(const shared_ptr<globalState> &state) {
             break;
         }
     }
+}
 
+/**
+ * implemented from timerThread.h
+ * handles all the midi output for us
+ * @param prediction the prediction/output from the ESN
+ * @param outHandle the output handle for the midi stream
+ * @param event the event handle for the midi stream
+ * @return any error codes
+ */
+int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event) {
+
+    MIDIHDR hdr{};
+    unsigned long err;
+
+    unsigned long *midiEvents = naiveMidiWin(prediction,outHandle.get()); //form our new output
+
+    //fill header struct
+    hdr.lpData = reinterpret_cast<LPSTR>(midiEvents);
+    hdr.dwBufferLength = hdr.dwBytesRecorded = sizeof(unsigned long) * ((prediction.rows() * 2 + 1) * 3);
+    hdr.dwFlags = 0;
+
+    //queue up header into midi event queue
+    err = midiOutPrepareHeader(reinterpret_cast<HMIDIOUT>(*outHandle), &hdr, sizeof(MIDIHDR));
+    if(err) {
+        delete [] midiEvents; //memory clean up
+        return 1;
+    }
+
+    err = midiStreamOut(*outHandle, &hdr, sizeof(MIDIHDR));
+    if(err) {
+        delete [] midiEvents; //clean up
+        return 1;
+    }
+
+    //reset event before restarting stream
+    ResetEvent(*event);
+
+    //restart the midi stream
+    err = midiStreamRestart(*outHandle);
+    if(err) {
+        delete [] midiEvents; //de-allocation
+        return 1;
+    }
+
+    //wait/sleep while MIDI is being played
+    WaitForSingleObject(*event,INFINITE);
+
+    //clean up (for now)
+    midiOutUnprepareHeader(reinterpret_cast<HMIDIOUT>(*outHandle), &hdr, sizeof(MIDIHDR));
+    err = midiStreamPause(*outHandle); //pause the stream for now until next output
+    delete [] midiEvents; //midiEvents is heap allocated within naiveMidiWin
+    if(err) return 1; //something gone wrong in pausing
+
+    return 0; //all is good
 }

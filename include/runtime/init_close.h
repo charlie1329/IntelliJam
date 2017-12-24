@@ -25,10 +25,13 @@ pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInitSearch();
  * DO NOT call this function before first calling preInitSearch()
  * @param sampleRate the sample rate to be used with the device
  * @param device the device information as well as its portAudio Identifier
+ * @param outHandle the output handle for the midi stream
+ * @param event handle for notifications from the midi stream
  * @return an error code (if needed), as well as the newly formed system state
  */
 pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
-                                                  pair<unsigned int,const PaDeviceInfo*> device);
+                                                  pair<unsigned int,const PaDeviceInfo*> device,
+                                                  shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event);
 
 
 /**

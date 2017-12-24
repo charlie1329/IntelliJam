@@ -30,10 +30,13 @@ pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInitSearch() {
  *  * DO NOT call this function before first calling preInitSearch()
  * @param sampleRate the sample rate of the input/output of the device
  * @param device the device being used for recording/playback
+ * @param outHandle output handle for the midi stream
+ * @param event the event handle for the midi stream
  * @return an error code, and the new global state
  */
 pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
-                                                  pair<unsigned int,const PaDeviceInfo*> device) {
+                                                  pair<unsigned int,const PaDeviceInfo*> device,
+                                                  shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event) {
 
     PaError err; // initially everything's fine
 
@@ -89,7 +92,7 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
     shared_ptr<globalState> global(std::make_shared<globalState>(ringUpdate,ringDataUpdate,
                                                             ringTimer,ringDataTimer,callbackData,
                                                             echo,stream,running,esnMutex,
-                                                            streamMutex,cond));
+                                                            streamMutex,cond,outHandle,event));
 
     //return global state with no errors found
     return make_pair(paNoError,global);
