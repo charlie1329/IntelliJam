@@ -58,6 +58,16 @@ add_executable(MIDI_TWINKLE ${MIDI_EXAMPLE})
 target_link_libraries(MIDI_TWINKLE winmm.lib)
 
 
+#executable for windows midi api test
+set(MIDI_WIN_FILES include/midi/midi.h
+                   src/midi/midi.cpp
+                   include/midi/esnToMidi.h
+                   src/midi/esnToMidi.cpp
+                   test/midi/midiWinTest.cpp)
+
+add_executable(MIDI_WIN ${MIDI_WIN_FILES})
+target_link_libraries(MIDI_WIN winmm.lib)
+
 #executable
 set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/port_audio/pa_win_util.c

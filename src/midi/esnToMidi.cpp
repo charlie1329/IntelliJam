@@ -7,6 +7,7 @@
 
 #include "../../include/midi/esnToMidi.h"
 #include <ctime>
+#include <iostream>
 
 /**
  * implemented from esnToMidi.h
@@ -90,9 +91,9 @@ MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
         int noteOn = (i * 2) + 1;
         int noteOff = (i * 2) + 2;
 
-        auto currentNote = static_cast<unsigned char>(prediction(0, i));
+        auto currentNote = static_cast<unsigned char>(prediction(i, 0) + NOTE_OFFSET);
         DWORD event = 0x00400090;
-        event |= (currentNote << 8); //TODO: Test this!
+        event |= (currentNote << 8);
 
         events[noteOn].dwDeltaTime = 0;
         events[noteOn].dwStreamID = 0;
@@ -100,7 +101,8 @@ MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
 
         events[noteOff].dwDeltaTime = quarterNote;
         events[noteOff].dwStreamID = 0;
-        events[noteOff].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | event;
+        events[noteOff].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | (event & 0xFFFFFF80);
+
     }
 
     return events;

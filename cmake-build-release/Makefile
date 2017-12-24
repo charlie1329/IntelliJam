@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\charl\CLionProjects\FYP\cmake-build-release
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -173,6 +173,19 @@ MIDI_TEST: cmake_check_build_system
 MIDI_TEST/fast:
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/build
 .PHONY : MIDI_TEST/fast
+
+#=============================================================================
+# Target rules for targets named MIDI_WIN
+
+# Build rule for target.
+MIDI_WIN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_WIN
+.PHONY : MIDI_WIN
+
+# fast build rule for target.
+MIDI_WIN/fast:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/build
+.PHONY : MIDI_WIN/fast
 
 #=============================================================================
 # Target rules for targets named RUNTIME
@@ -283,6 +296,7 @@ src/midi/esnToMidi.obj: src/midi/esnToMidi.cpp.obj
 
 # target to build an object file
 src/midi/esnToMidi.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj
 .PHONY : src/midi/esnToMidi.cpp.obj
 
@@ -292,6 +306,7 @@ src/midi/esnToMidi.i: src/midi/esnToMidi.cpp.i
 
 # target to preprocess a source file
 src/midi/esnToMidi.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.i
 .PHONY : src/midi/esnToMidi.cpp.i
 
@@ -301,6 +316,7 @@ src/midi/esnToMidi.s: src/midi/esnToMidi.cpp.s
 
 # target to generate assembly for a file
 src/midi/esnToMidi.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.s
 .PHONY : src/midi/esnToMidi.cpp.s
 
@@ -312,6 +328,7 @@ src/midi/midi.obj: src/midi/midi.cpp.obj
 src/midi/midi.cpp.obj:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.obj
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.obj
 .PHONY : src/midi/midi.cpp.obj
 
@@ -323,6 +340,7 @@ src/midi/midi.i: src/midi/midi.cpp.i
 src/midi/midi.cpp.i:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.i
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.i
 .PHONY : src/midi/midi.cpp.i
 
@@ -334,6 +352,7 @@ src/midi/midi.s: src/midi/midi.cpp.s
 src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.s
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
 
@@ -499,6 +518,33 @@ test/esn/esn_speed.cpp.s:
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/test/esn/esn_speed.cpp.s
 .PHONY : test/esn/esn_speed.cpp.s
 
+test/midi/midiWinTest.obj: test/midi/midiWinTest.cpp.obj
+
+.PHONY : test/midi/midiWinTest.obj
+
+# target to build an object file
+test/midi/midiWinTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/test/midi/midiWinTest.cpp.obj
+.PHONY : test/midi/midiWinTest.cpp.obj
+
+test/midi/midiWinTest.i: test/midi/midiWinTest.cpp.i
+
+.PHONY : test/midi/midiWinTest.i
+
+# target to preprocess a source file
+test/midi/midiWinTest.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/test/midi/midiWinTest.cpp.i
+.PHONY : test/midi/midiWinTest.cpp.i
+
+test/midi/midiWinTest.s: test/midi/midiWinTest.cpp.s
+
+.PHONY : test/midi/midiWinTest.s
+
+# target to generate assembly for a file
+test/midi/midiWinTest.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/test/midi/midiWinTest.cpp.s
+.PHONY : test/midi/midiWinTest.cpp.s
+
 test/midi/testMidi.obj: test/midi/testMidi.cpp.obj
 
 .PHONY : test/midi/testMidi.obj
@@ -564,9 +610,10 @@ help:
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
+	@echo ... rebuild_cache
+	@echo ... MIDI_WIN
 	@echo ... RUNTIME
 	@echo ... edit_cache
-	@echo ... rebuild_cache
 	@echo ... include/port_audio/pa_ringbuffer.obj
 	@echo ... include/port_audio/pa_ringbuffer.i
 	@echo ... include/port_audio/pa_ringbuffer.s
@@ -600,6 +647,9 @@ help:
 	@echo ... test/esn/esn_speed.obj
 	@echo ... test/esn/esn_speed.i
 	@echo ... test/esn/esn_speed.s
+	@echo ... test/midi/midiWinTest.obj
+	@echo ... test/midi/midiWinTest.i
+	@echo ... test/midi/midiWinTest.s
 	@echo ... test/midi/testMidi.obj
 	@echo ... test/midi/testMidi.i
 	@echo ... test/midi/testMidi.s
