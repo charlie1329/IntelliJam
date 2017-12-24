@@ -33,14 +33,11 @@ int main() {
             prediction(6,0) = 36;
             prediction(7,0) = 36;
 
-            MIDIEVENT *midiEvents = naiveMidiWin(prediction, &out);
-            
 
-            unsigned long myNotes[] = {0, 0, 0x007F3C90, /* A note-on */
-                                       192, 0, 0x00003C90};
+            unsigned long *midiEvents = naiveMidiWin(prediction, &out);
 
-            hdr.lpData = reinterpret_cast<LPSTR>(&myNotes[0]);
-            hdr.dwBufferLength = hdr.dwBytesRecorded =  sizeof(myNotes);
+            hdr.lpData = reinterpret_cast<LPSTR>(midiEvents);
+            hdr.dwBufferLength = hdr.dwBytesRecorded =  sizeof(unsigned long) * 51;
             hdr.dwFlags = 0;
 
             err = midiOutPrepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr, sizeof(MIDIHDR));
@@ -61,7 +58,7 @@ int main() {
                 midiOutUnprepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr, sizeof(MIDIHDR));
 
             }
-            //TODO: delete midiEvents
+            delete [] midiEvents;
             midiStreamClose(out);
         }
 

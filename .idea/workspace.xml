@@ -19,17 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" afterPath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" />
+      <change beforePath="$PROJECT_DIR$/include/midi/esnToMidi.h" afterPath="$PROJECT_DIR$/include/midi/esnToMidi.h" />
       <change beforePath="$PROJECT_DIR$/src/midi/esnToMidi.cpp" afterPath="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
+      <change beforePath="$PROJECT_DIR$/test/midi/midiWinTest.cpp" afterPath="$PROJECT_DIR$/test/midi/midiWinTest.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -43,11 +35,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="esnToMidi.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="esnToMidi.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/midi/esnToMidi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+            <state relative-caret-position="237">
+              <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
               <folding>
                 <element signature="e#167#208#0" expanded="true" />
               </folding>
@@ -55,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="midiWinTest.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="midiWinTest.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/midi/midiWinTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
               <folding>
                 <element signature="e#112#153#0" expanded="true" />
               </folding>
@@ -80,8 +72,8 @@
       <file leaf-file-name="esnToMidi.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/midi/esnToMidi.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+            <state relative-caret-position="349">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="e#329#346#0" expanded="true" />
               </folding>
@@ -121,11 +113,11 @@
         <option value="$PROJECT_DIR$/include/runtime/timerThread.h" />
         <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
-        <option value="$PROJECT_DIR$/include/midi/esnToMidi.h" />
         <option value="$PROJECT_DIR$/test/midi/twinkle_twinkle.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
         <option value="$PROJECT_DIR$/test/midi/midiWinTest.cpp" />
+        <option value="$PROJECT_DIR$/include/midi/esnToMidi.h" />
+        <option value="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
       </list>
     </option>
   </component>
@@ -304,12 +296,12 @@
       <workItem from="1513764371593" duration="7370000" />
       <workItem from="1513848392214" duration="14246000" />
       <workItem from="1513965723039" duration="4567000" />
-      <workItem from="1514109892099" duration="3922000" />
+      <workItem from="1514109892099" duration="5782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84694000" />
+    <option name="totallyTimeSpent" value="86554000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,30 +678,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/midi/esnToMidi.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="78" lean-forward="false" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
+        <state relative-caret-position="349">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="e#329#346#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/midi/esnToMidi.cpp">
+    <entry file="file://$PROJECT_DIR$/test/midi/midiWinTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+        <state relative-caret-position="34">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
           <folding>
-            <element signature="e#167#208#0" expanded="true" />
+            <element signature="e#112#153#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/midi/midiWinTest.cpp">
+    <entry file="file://$PROJECT_DIR$/src/midi/esnToMidi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="237">
+          <caret line="85" column="63" lean-forward="false" selection-start-line="85" selection-start-column="63" selection-end-line="85" selection-end-column="63" />
           <folding>
-            <element signature="e#112#153#0" expanded="true" />
+            <element signature="e#167#208#0" expanded="true" />
           </folding>
         </state>
       </provider>

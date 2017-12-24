@@ -39,9 +39,9 @@ string naiveMidi(VectorXd prediction);
  * using mcisendstring()
  * @param prediction the echo state network prediction
  * @param out the output handle for the midi device
- * @return an array of midi events
+ * @return an array of midi events, 3 longs represent 1 event
  */
-MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out);
+unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out);
 
 
 /**

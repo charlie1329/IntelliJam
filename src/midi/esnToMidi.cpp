@@ -52,11 +52,11 @@ string naiveMidi(VectorXd prediction) {
  * assumes output stream already opened
  * @param prediction the esn prediction
  * @param out the output handle for the midi device
- * @return an array of midi events
+ * @return an array of midi events, where 3 longs represent one event
  */
-MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
+unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
 
-    unsigned int quarterNote = 20;
+    unsigned int quarterNote = 30;
 
     unsigned long err; //error variable for problems in midi
 
@@ -79,31 +79,39 @@ MIDIEVENT *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
     }
 
     //number of messages = 1 program change message + however many notes predicted
-    auto *events = new MIDIEVENT[(prediction.rows() * 2) + 1];
+    auto *events = new unsigned long[((prediction.rows() * 2) + 1) * 3];
 
-    events[0].dwDeltaTime = 0;
-    events[0].dwStreamID = 0; //Windows and its stupid redundant parameters
-    events[0].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | 0x00001EC0; //set to guitar sound
+    events[0] = 0;
+    events[1] = 0; //stupid Windows and its redundant parameters
+    events[2] = ((unsigned long)MEVT_SHORTMSG << 24) | 0x00001EC0; //set to guitar sound
     //bit shifting tip from http://midi.teragonaudio.com/tech/stream.htm
 
     //note on and note off message for each note played
     for(int i = 0; i < prediction.rows(); i++) {
-        int noteOn = (i * 2) + 1;
-        int noteOff = (i * 2) + 2;
+        int noteOn = ((i * 2) + 1) * 3;
+        int noteOff = ((i * 2) + 2) * 3;
 
         auto currentNote = static_cast<unsigned char>(prediction(i, 0) + NOTE_OFFSET);
         DWORD event = 0x00400090;
         event |= (currentNote << 8);
 
-        events[noteOn].dwDeltaTime = 0;
-        events[noteOn].dwStreamID = 0;
-        events[noteOn].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | event;
+        events[noteOn] = 0;
+        events[noteOn + 1] = 0;
+        events[noteOn + 2] = ((unsigned long)MEVT_SHORTMSG << 24) | event;
 
-        events[noteOff].dwDeltaTime = quarterNote;
-        events[noteOff].dwStreamID = 0;
-        events[noteOff].dwEvent = ((unsigned long)MEVT_SHORTMSG << 24) | (event & 0xFFFFFF80);
+        events[noteOff] = quarterNote;
+        events[noteOff + 1] = 0;
+        events[noteOff + 2] = ((unsigned long)MEVT_SHORTMSG << 24) | (event & 0xFFFFFF80);
 
     }
+
+    unsigned long *toRet = new unsigned long[6];
+    toRet[0] = 0;
+    toRet[1] = 0;
+    toRet[2] = 0x007F3C90;
+    toRet[3] = 192;
+    toRet[4] = 0;
+    toRet[5] = 0x00003C90;
 
     return events;
 }
