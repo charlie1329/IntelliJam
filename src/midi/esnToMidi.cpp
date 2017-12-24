@@ -33,7 +33,7 @@ string naiveMidi(VectorXd prediction) {
     //note sequence
     for(int i = 0; i < prediction.rows(); i++) {
         auto currentNote = static_cast<byte>(prediction(i, 0) + NOTE_OFFSET);
-        trk.noteOn(0,currentNote,0x40); //TODO: Check offset is correct
+        trk.noteOn(0,currentNote,0x40);
         trk.noteOff(quarterNote,currentNote,0x40);
     }
 
@@ -104,14 +104,6 @@ unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
         events[noteOff + 2] = ((unsigned long)MEVT_SHORTMSG << 24) | (event & 0xFFFFFF80);
 
     }
-
-    unsigned long *toRet = new unsigned long[6];
-    toRet[0] = 0;
-    toRet[1] = 0;
-    toRet[2] = 0x007F3C90;
-    toRet[3] = 192;
-    toRet[4] = 0;
-    toRet[5] = 0x00003C90;
 
     return events;
 }

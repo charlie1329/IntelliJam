@@ -17,21 +17,22 @@ int main() {
     MIDIHDR hdr{};
     unsigned long err = 0;
 
-    if((event = CreateEvent(nullptr, FALSE, FALSE, nullptr))) {
 
+    if((event = CreateEvent(nullptr, FALSE, FALSE, nullptr))) {
         if(!(err = midiStreamOpen(&out, (LPUINT)&err, 1, (DWORD)event, 0, CALLBACK_EVENT))) {
 
+            auto start = chrono::high_resolution_clock::now(); //start timer
             ResetEvent(event);
 
             VectorXd prediction = VectorXd::Zero(8,1);
-            prediction(0,0) = 31;
-            prediction(1,0) = 31;
-            prediction(2,0) = 33;
-            prediction(3,0) = 33;
-            prediction(4,0) = 34;
-            prediction(5,0) = 34;
-            prediction(6,0) = 36;
-            prediction(7,0) = 36;
+            prediction(0,0) = 39;
+            prediction(1,0) = 43;
+            prediction(2,0) = 46;
+            prediction(3,0) = 50;
+            prediction(4,0) = 46;
+            prediction(5,0) = 43;
+            prediction(6,0) = 39;
+            prediction(7,0) = 39;
 
 
             unsigned long *midiEvents = naiveMidiWin(prediction, &out);
@@ -43,14 +44,16 @@ int main() {
             err = midiOutPrepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr, sizeof(MIDIHDR));
             if(!err) {
                 err = midiStreamOut(out, &hdr, sizeof(MIDIHDR));
-                cout << "Prepared Header" << endl;
+
                 if(!err) {
-                    cout << "Done midiStreamOut" << endl;
+
                     err = midiStreamRestart(out);
                     if(!err) {
-                        cout << "Restarted" << endl;
+                        auto finish = chrono::high_resolution_clock::now(); //start timer
+                        chrono::duration<double> elapsed = finish - start;
+                        cout << "Elapsed Time To Start Playing: " << elapsed.count() << " (s)" << endl;
+
                         WaitForSingleObject(event,INFINITE);
-                        cout << "Done" << endl;
 
                     }
                 }
@@ -58,12 +61,16 @@ int main() {
                 midiOutUnprepareHeader(reinterpret_cast<HMIDIOUT>(out), &hdr, sizeof(MIDIHDR));
 
             }
-            delete [] midiEvents;
+
             midiStreamClose(out);
+
+            delete [] midiEvents;
+
         }
 
 
     }
+
     CloseHandle(event);
 
 }
