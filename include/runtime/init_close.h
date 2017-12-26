@@ -6,6 +6,9 @@
 #define FYP_INIT_CLOSE_H
 
 #include "globalState.h"
+#include <vector>
+
+using namespace std;
 
 #define RING_ELEMENT sizeof(double)
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer

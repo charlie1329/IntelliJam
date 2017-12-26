@@ -23,6 +23,7 @@ void silenceTimer(PaUtilRingBuffer *ring) {
     while(keepLooping) {
 
         ring_buffer_size_t elementsToRead = PaUtil_GetRingBufferReadAvailable(ring);
+        if(elementsToRead == 0) continue; // if nothing to read then don't bother allocating
         auto *read = new double[elementsToRead];
         ring_buffer_size_t inArr = PaUtil_ReadRingBuffer(ring,read,elementsToRead);
 

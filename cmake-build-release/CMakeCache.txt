@@ -44,6 +44,12 @@ Boost_LIBRARY_DIR_DEBUG:PATH=C:/Program Files/boost/lib
 //Boost library directory RELEASE
 Boost_LIBRARY_DIR_RELEASE:PATH=C:/Program Files/boost/lib
 
+//Boost ref library (debug)
+Boost_REF_LIBRARY_DEBUG:FILEPATH=Boost_REF_LIBRARY_DEBUG-NOTFOUND
+
+//Boost ref library (release)
+Boost_REF_LIBRARY_RELEASE:FILEPATH=Boost_REF_LIBRARY_RELEASE-NOTFOUND
+
 //Boost system library (debug)
 Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/Program Files/boost/lib/libboost_system-mgw63-mt-d-1_66.a
 
@@ -290,6 +296,10 @@ Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
 Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_REF_LIBRARY_DEBUG
+Boost_REF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_REF_LIBRARY_RELEASE
+Boost_REF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
 Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
@@ -467,7 +477,7 @@ _BOOST_LIBRARYDIR_LAST:INTERNAL=C:/Program Files/boost/lib
 //Last used BOOST_ROOT value.
 _BOOST_ROOT_LAST:INTERNAL=C:/Program Files/boost_1_66_0
 //Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;system;thread
+_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;ref;system;thread
 //Last used Boost_INCLUDE_DIR value.
 _Boost_INCLUDE_DIR_LAST:INTERNAL=C:/Program Files/boost_1_66_0
 //Last used Boost_LIBRARY_DIR_DEBUG value.

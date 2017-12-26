@@ -87,7 +87,8 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/midi/esnToMidi.h
                   src/midi/esnToMidi.cpp
                   include/runtime/timers.h
-                  src/runtime/timers.cpp)
+                  src/runtime/timers.cpp
+                  src/runtime/runSystem.cpp)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)

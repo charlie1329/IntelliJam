@@ -52,6 +52,16 @@ void timerWorker(const shared_ptr<globalState> &state) {
         VectorXd output = echo->predict();
         esnMutex->unlock();
 
+        //TODO: REMOVE THE LICK!!!!!
+        output(0,0) = 48;
+        output(1,0) = 50;
+        output(2,0) = 51;
+        output(3,0) = 53;
+        output(4,0) = 50;
+        output(5,0) = 46;
+        output(6,0) = 48;
+        output(7,0) = 48;
+
         int midiErr = handleMIDI(output, state->outHandle, state->event);
         //TODO: Improve prediction to MIDI function!
 

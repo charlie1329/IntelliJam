@@ -410,6 +410,33 @@ src/runtime/port_processing.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
 
+src/runtime/runSystem.obj: src/runtime/runSystem.cpp.obj
+
+.PHONY : src/runtime/runSystem.obj
+
+# target to build an object file
+src/runtime/runSystem.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj
+.PHONY : src/runtime/runSystem.cpp.obj
+
+src/runtime/runSystem.i: src/runtime/runSystem.cpp.i
+
+.PHONY : src/runtime/runSystem.i
+
+# target to preprocess a source file
+src/runtime/runSystem.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.i
+.PHONY : src/runtime/runSystem.cpp.i
+
+src/runtime/runSystem.s: src/runtime/runSystem.cpp.s
+
+.PHONY : src/runtime/runSystem.s
+
+# target to generate assembly for a file
+src/runtime/runSystem.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.s
+.PHONY : src/runtime/runSystem.cpp.s
+
 src/runtime/timerThread.obj: src/runtime/timerThread.cpp.obj
 
 .PHONY : src/runtime/timerThread.obj
@@ -662,6 +689,9 @@ help:
 	@echo ... src/runtime/port_processing.obj
 	@echo ... src/runtime/port_processing.i
 	@echo ... src/runtime/port_processing.s
+	@echo ... src/runtime/runSystem.obj
+	@echo ... src/runtime/runSystem.i
+	@echo ... src/runtime/runSystem.s
 	@echo ... src/runtime/timerThread.obj
 	@echo ... src/runtime/timerThread.i
 	@echo ... src/runtime/timerThread.s

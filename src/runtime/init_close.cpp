@@ -117,11 +117,11 @@ PaError destroySystem(shared_ptr<globalState> state) {
     PaUtil_FreeMemory(state->ringDataTimer);
 
     //now terminate port audio
-    if(err != paNoError) { //return the earliest error found
+    /*if(err != paNoError) { //return the earliest error found
         err = Pa_Terminate();
     } else {
         Pa_Terminate();
-    }
+    }*/
 
 
     return err;

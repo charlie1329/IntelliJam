@@ -426,6 +426,9 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/runSystem.cpp">
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/timerThread.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
