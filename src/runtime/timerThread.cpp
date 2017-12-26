@@ -7,6 +7,7 @@
 #include "../../include/runtime/globalState.h"
 #include "../../include/midi/esnToMidi.h"
 #include "../../include/runtime/timerThread.h"
+#include "../../include/runtime/timers.h"
 
 /**
  * implemented from timerThread.h
@@ -32,7 +33,8 @@ void timerWorker(const shared_ptr<globalState> &state) {
 
     while(*stillRunning) {
 
-        //TODO: Condition while loop here
+        silenceTimer(&(state->ringTimer)); //use this function to wait on a condition
+        //TODO: Improve Timer!!!
 
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
@@ -51,6 +53,7 @@ void timerWorker(const shared_ptr<globalState> &state) {
         esnMutex->unlock();
 
         int midiErr = handleMIDI(output, state->outHandle, state->event);
+        //TODO: Improve prediction to MIDI function!
 
         if(midiErr != 0) {
             //graceful shutdown

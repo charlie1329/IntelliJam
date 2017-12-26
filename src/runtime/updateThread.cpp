@@ -54,12 +54,13 @@ void updateWorker(const shared_ptr<globalState> &state) {
 
         if(PaUtil_GetRingBufferReadAvailable(&(state->ringUpdate))) {
 
-            PaUtil_ReadRingBuffer(&(state->ringUpdate),&newInput,1); //read from echo state network
+            ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(state->ringUpdate),&newInput,1); //read from echo state network
 
-            esnMutex->lock();
-            echo->updateReservoir(newInput); //update echo state network
-            esnMutex->unlock();
-
+            if(read == 1) {
+                esnMutex->lock();
+                echo->updateReservoir(newInput); //update echo state network
+                esnMutex->unlock();
+            }
         }
 
     }

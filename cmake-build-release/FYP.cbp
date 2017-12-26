@@ -397,6 +397,10 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timers.h">
+			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h">
 			<Option target="RUNTIME"/>
 		</Unit>
@@ -423,6 +427,9 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/timerThread.cpp">
+			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/timers.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/updateThread.cpp">

@@ -437,6 +437,33 @@ src/runtime/timerThread.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.s
 .PHONY : src/runtime/timerThread.cpp.s
 
+src/runtime/timers.obj: src/runtime/timers.cpp.obj
+
+.PHONY : src/runtime/timers.obj
+
+# target to build an object file
+src/runtime/timers.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj
+.PHONY : src/runtime/timers.cpp.obj
+
+src/runtime/timers.i: src/runtime/timers.cpp.i
+
+.PHONY : src/runtime/timers.i
+
+# target to preprocess a source file
+src/runtime/timers.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.i
+.PHONY : src/runtime/timers.cpp.i
+
+src/runtime/timers.s: src/runtime/timers.cpp.s
+
+.PHONY : src/runtime/timers.s
+
+# target to generate assembly for a file
+src/runtime/timers.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.s
+.PHONY : src/runtime/timers.cpp.s
+
 src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
 
 .PHONY : src/runtime/updateThread.obj
@@ -638,6 +665,9 @@ help:
 	@echo ... src/runtime/timerThread.obj
 	@echo ... src/runtime/timerThread.i
 	@echo ... src/runtime/timerThread.s
+	@echo ... src/runtime/timers.obj
+	@echo ... src/runtime/timers.i
+	@echo ... src/runtime/timers.s
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj"
   "CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj"
   "CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj"
+  "CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj"
   "RUNTIME.pdb"
   "RUNTIME.exe"
   "RUNTIME.exe.manifest"
