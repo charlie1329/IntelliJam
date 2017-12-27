@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\charl\CLionProjects\FYP\cmake-build-release
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -134,6 +134,19 @@ TRAINING: cmake_check_build_system
 TRAINING/fast:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
 .PHONY : TRAINING/fast
+
+#=============================================================================
+# Target rules for targets named RUNTIME_UNIT
+
+# Build rule for target.
+RUNTIME_UNIT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_UNIT
+.PHONY : RUNTIME_UNIT
+
+# fast build rule for target.
+RUNTIME_UNIT/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/build
+.PHONY : RUNTIME_UNIT/fast
 
 #=============================================================================
 # Target rules for targets named ESN_SPEED_TEST
@@ -206,6 +219,7 @@ include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 # target to build an object file
 include/port_audio/pa_ringbuffer.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.obj
 .PHONY : include/port_audio/pa_ringbuffer.c.obj
 
@@ -215,6 +229,7 @@ include/port_audio/pa_ringbuffer.i: include/port_audio/pa_ringbuffer.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_ringbuffer.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.i
 .PHONY : include/port_audio/pa_ringbuffer.c.i
 
@@ -224,6 +239,7 @@ include/port_audio/pa_ringbuffer.s: include/port_audio/pa_ringbuffer.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_ringbuffer.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.s
 .PHONY : include/port_audio/pa_ringbuffer.c.s
 
@@ -233,6 +249,7 @@ include/port_audio/pa_win_util.obj: include/port_audio/pa_win_util.c.obj
 
 # target to build an object file
 include/port_audio/pa_win_util.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.obj
 .PHONY : include/port_audio/pa_win_util.c.obj
 
@@ -242,6 +259,7 @@ include/port_audio/pa_win_util.i: include/port_audio/pa_win_util.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_win_util.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.i
 .PHONY : include/port_audio/pa_win_util.c.i
 
@@ -251,6 +269,7 @@ include/port_audio/pa_win_util.s: include/port_audio/pa_win_util.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_win_util.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.s
 .PHONY : include/port_audio/pa_win_util.c.s
 
@@ -261,6 +280,7 @@ src/esn/esn.obj: src/esn/esn.cpp.obj
 # target to build an object file
 src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj
@@ -273,6 +293,7 @@ src/esn/esn.i: src/esn/esn.cpp.i
 # target to preprocess a source file
 src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.i
@@ -285,6 +306,7 @@ src/esn/esn.s: src/esn/esn.cpp.s
 # target to generate assembly for a file
 src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
@@ -362,6 +384,7 @@ src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
 
 # target to build an object file
 src/runtime/init_close.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj
 .PHONY : src/runtime/init_close.cpp.obj
 
@@ -371,6 +394,7 @@ src/runtime/init_close.i: src/runtime/init_close.cpp.i
 
 # target to preprocess a source file
 src/runtime/init_close.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.i
 .PHONY : src/runtime/init_close.cpp.i
 
@@ -380,6 +404,7 @@ src/runtime/init_close.s: src/runtime/init_close.cpp.s
 
 # target to generate assembly for a file
 src/runtime/init_close.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.s
 .PHONY : src/runtime/init_close.cpp.s
 
@@ -389,6 +414,7 @@ src/runtime/port_processing.obj: src/runtime/port_processing.cpp.obj
 
 # target to build an object file
 src/runtime/port_processing.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj
 .PHONY : src/runtime/port_processing.cpp.obj
 
@@ -398,6 +424,7 @@ src/runtime/port_processing.i: src/runtime/port_processing.cpp.i
 
 # target to preprocess a source file
 src/runtime/port_processing.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.i
 .PHONY : src/runtime/port_processing.cpp.i
 
@@ -407,6 +434,7 @@ src/runtime/port_processing.s: src/runtime/port_processing.cpp.s
 
 # target to generate assembly for a file
 src/runtime/port_processing.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
 
@@ -653,6 +681,33 @@ test/midi/twinkle_twinkle.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.s
 .PHONY : test/midi/twinkle_twinkle.cpp.s
 
+test/runtime/runtimeUnitTests.obj: test/runtime/runtimeUnitTests.cpp.obj
+
+.PHONY : test/runtime/runtimeUnitTests.obj
+
+# target to build an object file
+test/runtime/runtimeUnitTests.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.obj
+.PHONY : test/runtime/runtimeUnitTests.cpp.obj
+
+test/runtime/runtimeUnitTests.i: test/runtime/runtimeUnitTests.cpp.i
+
+.PHONY : test/runtime/runtimeUnitTests.i
+
+# target to preprocess a source file
+test/runtime/runtimeUnitTests.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.i
+.PHONY : test/runtime/runtimeUnitTests.cpp.i
+
+test/runtime/runtimeUnitTests.s: test/runtime/runtimeUnitTests.cpp.s
+
+.PHONY : test/runtime/runtimeUnitTests.s
+
+# target to generate assembly for a file
+test/runtime/runtimeUnitTests.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.s
+.PHONY : test/runtime/runtimeUnitTests.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -661,13 +716,14 @@ help:
 	@echo ... depend
 	@echo ... MIDI_TWINKLE
 	@echo ... TRAINING
+	@echo ... RUNTIME_UNIT
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
-	@echo ... rebuild_cache
 	@echo ... MIDI_WIN
 	@echo ... RUNTIME
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... include/port_audio/pa_ringbuffer.obj
 	@echo ... include/port_audio/pa_ringbuffer.i
 	@echo ... include/port_audio/pa_ringbuffer.s
@@ -716,6 +772,9 @@ help:
 	@echo ... test/midi/twinkle_twinkle.obj
 	@echo ... test/midi/twinkle_twinkle.i
 	@echo ... test/midi/twinkle_twinkle.s
+	@echo ... test/runtime/runtimeUnitTests.obj
+	@echo ... test/runtime/runtimeUnitTests.i
+	@echo ... test/runtime/runtimeUnitTests.s
 .PHONY : help
 
 

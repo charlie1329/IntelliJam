@@ -5,6 +5,7 @@
  */
 
 #include "../../include/runtime/globalState.h"
+#include <iostream>
 
 /**
  * implemented from updateThread.h
@@ -13,7 +14,6 @@
  * @param state the global state of the system
  */
 void updateWorker(const shared_ptr<globalState> &state) {
-
     shared_ptr<atomic<bool>> stillRunning = state->running;
 
     //get all the synchronisation stuff out of the global state for ease of access
@@ -41,7 +41,6 @@ void updateWorker(const shared_ptr<globalState> &state) {
             PaUtil_AdvanceRingBufferReadIndex(&(state->ringUpdate), howManyMissed);
         }
         streamMutex->unlock();
-
         //do a little bit of error checking
         //by documentation, negative return values are errors
         //probably the best thing to do here is quit
@@ -53,7 +52,6 @@ void updateWorker(const shared_ptr<globalState> &state) {
         }
 
         if(PaUtil_GetRingBufferReadAvailable(&(state->ringUpdate))) {
-
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(state->ringUpdate),&newInput,1); //read from echo state network
 
             if(read == 1) { //check read was actually successful

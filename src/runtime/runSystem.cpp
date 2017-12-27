@@ -8,7 +8,7 @@
 #include "../../include/runtime/updateThread.h"
 #include <cstring>
 
-#define MY_DEVICE "Scarlett"
+#define MY_DEVICE "Input (Scarlett 2i2 USB)"
 
 //function prototype
 PaError runSystem();
@@ -39,7 +39,7 @@ PaError runSystem() {
     //Step 2: open the midi stream on the default MIDI device
     shared_ptr<HMIDISTRM> outHandle = make_shared<HMIDISTRM>();
     err = midiStreamOpen(outHandle.get(), (LPUINT)&err, 1, (DWORD)(*event), 0, CALLBACK_EVENT);
-    if(!err) {
+    if(err) {
         CloseHandle(*event);
         return (PaError)err;
     }
@@ -87,7 +87,6 @@ PaError runSystem() {
         return paErr;
     }
 
-    //Step 7: Start up both the threads
     boost::thread updateThread(updateWorker, boost::cref(global.second));
     boost::thread timerThread(timerWorker, boost::cref(global.second));
 

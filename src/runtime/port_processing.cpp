@@ -22,11 +22,10 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
                   void *userData) {
 
     auto *info = (passToCallback*)userData; //cast from void pointer
-    auto *out = (double*)output;
     auto *in = (double*)input;
-
     (void) timeInfo; //tip from port audio examples, stops IDE from moaning at me
     (void) statusFlags;
+    (void) output;
 
     int sampleJump = info->sampleJump; //save me de-referencing every time
 
@@ -43,8 +42,7 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
         PaUtil_WriteRingBuffer(&(info->ringTimer),in,1);
 
         //TODO: CHECK THIS IS CORRECT, RELATED TO WHETHER STEREO OR MONO INPUT
-        *out++ = *in++;  //copy input to output
-        *out++ = *in++;
+        in += 2;
 
         info->nextSample--; //in using an extra variable over modulo, I can keep it consistent across callbacks
     }
@@ -83,31 +81,26 @@ vector<pair<unsigned int, const PaDeviceInfo*>> getUsableDevices() {
  * @return the error code from Pa_OpenStream
  */
 PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int sampleRate,
-                           PaStream *stream, passToCallback *callbackData) {
+                           PaStream **stream, passToCallback *callbackData) {
 
     PaStreamParameters inParams{};
-    PaStreamParameters outParams{};
 
-    inParams.channelCount = 1;//TODO COME BACK TO THIS AND CHECK!
+    inParams.channelCount = device.second->maxInputChannels;
     inParams.device = device.first;
     inParams.hostApiSpecificStreamInfo = nullptr;
     inParams.sampleFormat = paFloat32; //this internally gets cast to a double
     inParams.suggestedLatency = device.second->defaultLowInputLatency;
 
-    outParams.channelCount = device.second->maxOutputChannels; //should always be 2
-    outParams.device = device.first;
-    outParams.hostApiSpecificStreamInfo = nullptr;
-    outParams.sampleFormat = paFloat32;
-    outParams.suggestedLatency = device.second->defaultLowOutputLatency;
-
-    //check if desired sample rate is supported by the device
-    PaError err = Pa_IsFormatSupported(&inParams,&outParams,sampleRate);
+    //TODO: If system doesn't work, take another look at this
+    /*PaError err = Pa_IsFormatSupported(&inParams,nullptr,sampleRate);
     if(err != paFormatIsSupported) {
-       return err; //don't open the stream if the sample rate isn't supported
-    }
+        std::cout << Pa_GetErrorText(err) << std::endl;
+        return err; //don't open the stream if the sample rate isn't supported
+    }*/
+
 
     //return the return value from this function
-    return Pa_OpenStream(&stream,&inParams,&outParams,sampleRate,
+    return Pa_OpenStream(stream,&inParams,nullptr,sampleRate,
                          paFramesPerBufferUnspecified,
                          paNoFlag,audioCallback,callbackData);
 }

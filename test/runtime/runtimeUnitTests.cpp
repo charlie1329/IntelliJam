@@ -1,0 +1,82 @@
+/**
+ * this file contains unit tests for various functionality within
+ * the runtime part of the system
+ * Author: Charlie Street
+ */
+
+
+#define CATCH_CONFIG_MAIN
+
+#include "../../include/test/catch.hpp"
+#include "../../include/runtime/init_close.h"
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+/**
+ * tests the init_close file functionality
+ * Note: this test will only pass if a suitable device is plugged in to the computer
+ */
+TEST_CASE("Tests the device searching and setup/teardown of the system","[init_close]") {
+
+    pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInit = preInitSearch();
+
+    REQUIRE(preInit.first == paNoError);
+    cout << "Completed Search" << endl;
+
+    int devNum = -1;
+    for(unsigned int i = 0; i < preInit.second.size(); i++) {
+        cout << preInit.second.at(i).second->name << endl;
+        if(strstr(preInit.second.at(i).second->name,"Scarlett") != nullptr) {
+            devNum = i;
+        }
+    }
+
+    REQUIRE(devNum != -1);
+    cout << "Found Device: " << devNum << endl;
+
+    shared_ptr<HANDLE> event = make_shared<HANDLE>();
+    *event = CreateEvent(nullptr, FALSE, FALSE, nullptr);
+    REQUIRE(*event);
+    cout << "Created Event" << endl;
+
+
+    shared_ptr<HMIDISTRM> outHandle = make_shared<HMIDISTRM>();
+    unsigned long err = 0;
+    err = midiStreamOpen(outHandle.get(), (LPUINT)&err, 1, (DWORD)(*event), 0, CALLBACK_EVENT);
+    REQUIRE(!err);
+    cout << "Set Up Midi Output Stream" << endl;
+
+    ResetEvent(*event);
+
+    pair<PaError, shared_ptr<globalState>> global = initSystem(44100,preInit.second.at(
+            static_cast<unsigned int>(devNum)),outHandle,event);
+
+    REQUIRE(global.first == paNoError);
+    cout << "Completed Initialisation" << endl;
+
+
+    //check global state seems fine
+    shared_ptr<globalState> state = global.second;
+    CHECK(state->callbackData->sampleJump == 10);
+    CHECK(state->callbackData->nextSample == 0);
+    CHECK(*(state->running));
+
+    //tear down the system
+    PaError paErr = destroySystem(state);
+    REQUIRE(paErr == paNoError);
+    cout << "Destroyed System" << endl;
+
+    paErr = Pa_Terminate();
+
+    REQUIRE(paErr == paNoError);
+    cout << "Terminated Port Audio" << endl;
+
+    midiStreamClose(*outHandle);
+    CloseHandle(*event);
+
+
+
+
+}

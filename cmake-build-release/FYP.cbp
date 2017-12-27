@@ -109,6 +109,52 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="RUNTIME_UNIT">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_UNIT/fast">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ESN_SPEED_TEST">
 				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_SPEED_TEST.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -247,16 +293,6 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="MIDI_WIN">
 				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -359,6 +395,16 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/esn/esn.h">
 			<Option target="TRAINING"/>
@@ -377,21 +423,27 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.c">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.h">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_win_util.c">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/globalState.h">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/port_processing.h">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h">
@@ -404,8 +456,12 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/test/catch.hpp">
+			<Option target="RUNTIME_UNIT"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
 			<Option target="TRAINING"/>
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
@@ -421,9 +477,11 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
+			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/runSystem.cpp">
@@ -452,6 +510,9 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/midi/twinkle_twinkle.cpp">
 			<Option target="MIDI_TWINKLE"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/runtime/runtimeUnitTests.cpp">
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

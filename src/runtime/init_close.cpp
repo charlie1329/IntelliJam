@@ -6,6 +6,7 @@
 
 #include "../../include/runtime/init_close.h"
 #include "../../include/port_audio/pa_util.h"
+#include <iostream>
 
 /**
  * implemented from init_close.h
@@ -27,7 +28,8 @@ pair<PaError, vector<pair<unsigned int, const PaDeviceInfo*>>> preInitSearch() {
 
 /**
  * implemented from init_close.h
- *  * DO NOT call this function before first calling preInitSearch()
+ * DO NOT call this function before first calling preInitSearch()
+ * or Pa_Initialize(), either is fine
  * @param sampleRate the sample rate of the input/output of the device
  * @param device the device being used for recording/playback
  * @param outHandle output handle for the midi stream
@@ -69,11 +71,10 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
 
     //open up stream
     PaStream *stream = nullptr;
-    err = openStreamOnDevice(device,sampleRate,stream,callbackData.get());
+    err = openStreamOnDevice(device,sampleRate,&stream,callbackData.get());
     if (err != paNoError) {
         PaUtil_FreeMemory(ringDataUpdate);
         PaUtil_FreeMemory(ringDataTimer);
-
         return make_pair(err, nullptr);
     }
     //the getting of the raw pointer is necessary here

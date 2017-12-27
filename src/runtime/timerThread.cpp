@@ -18,6 +18,7 @@
  */
 void timerWorker(const shared_ptr<globalState> &state) {
 
+
     PaError err; //some level of error checking at the portAudio level is needed
 
     //unpack large amounts of the global state to reduce de-referencing
@@ -35,7 +36,6 @@ void timerWorker(const shared_ptr<globalState> &state) {
 
         silenceTimer(&(state->ringTimer)); //use this function to wait on a condition
         //TODO: Improve Timer!!!
-
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
         streamMutex->unlock();

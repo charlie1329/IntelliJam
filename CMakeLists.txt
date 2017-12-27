@@ -98,6 +98,24 @@ if(Boost_FOUND)
     target_link_libraries(RUNTIME ${Boost_LIBRARIES})
 endif()
 
+set(RUNTIME_UNIT_FILES include/test/catch.hpp
+                       include/runtime/init_close.h
+                       include/runtime/globalState.h
+                       include/runtime/port_processing.h
+                       include/port_audio/pa_ringbuffer.c
+                       include/port_audio/pa_win_util.c
+                       test/runtime/runtimeUnitTests.cpp
+                       src/runtime/init_close.cpp
+                       src/esn/esn.cpp
+                       src/runtime/port_processing.cpp)
+add_executable(RUNTIME_UNIT ${RUNTIME_UNIT_FILES})
+target_link_libraries(RUNTIME_UNIT ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+target_link_libraries(RUNTIME_UNIT winmm.lib)
+#link up the boost libraries
+if(Boost_FOUND)
+    target_link_libraries(RUNTIME_UNIT ${Boost_LIBRARIES})
+endif()
+
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
 

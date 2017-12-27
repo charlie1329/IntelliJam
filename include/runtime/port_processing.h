@@ -73,6 +73,6 @@ vector<pair<unsigned int, const PaDeviceInfo*>> getUsableDevices();
  * @return the return code from Pa_OpenStream
  */
 PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device,
-                           int sampleRate, PaStream *stream, passToCallback *callbackData);
+                           int sampleRate, PaStream **stream, passToCallback *callbackData);
 
 #endif //FYP_PORT_PROCESSING_H
