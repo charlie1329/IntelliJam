@@ -68,6 +68,7 @@ PaError runSystem() {
         Pa_Terminate(); //best effort attempt to gracefully close system
         midiStreamClose(*outHandle);
         CloseHandle(*event);
+        return 1;
     }
 
     //Step 5: Initialise System

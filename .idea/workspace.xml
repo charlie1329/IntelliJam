@@ -21,20 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME.exe" afterPath="$PROJECT_DIR$/cmake-build-release/RUNTIME.exe" />
-      <change beforePath="$PROJECT_DIR$/include/runtime/globalState.h" afterPath="$PROJECT_DIR$/include/runtime/globalState.h" />
-      <change beforePath="$PROJECT_DIR$/src/midi/esnToMidi.cpp" afterPath="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/init_close.cpp" afterPath="$PROJECT_DIR$/src/runtime/init_close.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/port_processing.cpp" afterPath="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/timerThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/timers.cpp" afterPath="$PROJECT_DIR$/src/runtime/timers.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/runtime/runSystem.cpp" afterPath="$PROJECT_DIR$/src/runtime/runSystem.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -70,17 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runSystem.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="runSystem.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="59" column="3" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+            <state relative-caret-position="242">
+              <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="esnToMidi.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="esnToMidi.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/midi/esnToMidi.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
@@ -181,7 +168,6 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/port_audio/pa_fuzz.c" />
         <option value="$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/runSystem.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/init_close.h" />
         <option value="$PROJECT_DIR$/include/runtime/globalState.h" />
         <option value="$PROJECT_DIR$/src/runtime/init_close.cpp" />
@@ -190,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
         <option value="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/timers.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/runSystem.cpp" />
       </list>
     </option>
   </component>
@@ -368,12 +355,12 @@
       <workItem from="1514282847422" duration="9525000" />
       <workItem from="1514293735199" duration="1418000" />
       <workItem from="1514387827641" duration="6847000" />
-      <workItem from="1514456538180" duration="11628000" />
+      <workItem from="1514456538180" duration="11766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122487000" />
+    <option name="totallyTimeSpent" value="122625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,14 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="59" column="3" lean-forward="false" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-762">
@@ -805,6 +784,14 @@
           <folding>
             <element signature="e#167#208#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
