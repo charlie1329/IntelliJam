@@ -26,7 +26,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
 
     PaError err; //for any port audio error checking
 
-    double newInput; //stop constant reallocation
+    float newInput; //stop constant reallocation
 
     //repeat until system is stopped
     while(*stillRunning) {
@@ -51,12 +51,12 @@ void updateWorker(const shared_ptr<globalState> &state) {
             break;
         }
 
-        if(PaUtil_GetRingBufferReadAvailable(&(state->ringUpdate))) {
+        if(PaUtil_GetRingBufferReadAvailable(&(state->ringUpdate)) > 0) {
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(state->ringUpdate),&newInput,1); //read from echo state network
 
             if(read == 1) { //check read was actually successful
                 esnMutex->lock();
-                echo->updateReservoir(newInput); //update echo state network
+                echo->updateReservoir((double)newInput); //update echo state network (now cast to double)
                 esnMutex->unlock();
             }
         }

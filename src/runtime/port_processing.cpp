@@ -5,7 +5,7 @@
  */
 
 #include "../../include/runtime/port_processing.h"
-
+#include <iostream>
 /**
  * implemented from port_processing.h
  * callback function for port audio stream
@@ -22,16 +22,14 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
                   void *userData) {
 
     auto *info = (passToCallback*)userData; //cast from void pointer
-    auto *in = (double*)input;
+    auto *in = (float*)input;
     (void) timeInfo; //tip from port audio examples, stops IDE from moaning at me
     (void) statusFlags;
     (void) output;
 
     int sampleJump = info->sampleJump; //save me de-referencing every time
-
     //loop through frames in input and copy when appropriate
     for(int i = 0; i < frameCount; i++) {
-
         if(info->nextSample == 0) { //makes assumption input is effectively mono
             PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to update ring buffer
             info->nextSample = sampleJump;
@@ -62,10 +60,8 @@ vector<pair<unsigned int, const PaDeviceInfo*>> getUsableDevices() {
     int numDevices = Pa_GetDeviceCount(); //how many devices are available?
     for(unsigned int i = 0; i < numDevices; i++) {
         const PaDeviceInfo *currentDevice = Pa_GetDeviceInfo(i);
-        //TODO Check this check is reasonable
-        if(currentDevice && currentDevice->hostApi == paASIO) {
-            devices.emplace_back(i,currentDevice); //makes things a little easier for the optimiser it seems
-        }
+        devices.emplace_back(i,currentDevice);
+
     }
 
     return devices;
@@ -88,17 +84,16 @@ PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int s
     inParams.channelCount = device.second->maxInputChannels;
     inParams.device = device.first;
     inParams.hostApiSpecificStreamInfo = nullptr;
-    inParams.sampleFormat = paFloat32; //this internally gets cast to a double
+    inParams.sampleFormat = paFloat32; //this internally gets cast to a double when input to ESN
     inParams.suggestedLatency = device.second->defaultLowInputLatency;
 
-    //TODO: If system doesn't work, take another look at this
-    /*PaError err = Pa_IsFormatSupported(&inParams,nullptr,sampleRate);
+    PaError err = Pa_IsFormatSupported(&inParams,nullptr,sampleRate);
     if(err != paFormatIsSupported) {
         std::cout << Pa_GetErrorText(err) << std::endl;
         return err; //don't open the stream if the sample rate isn't supported
-    }*/
+    }
 
-
+    //only want input stream, no need for output
     //return the return value from this function
     return Pa_OpenStream(stream,&inParams,nullptr,sampleRate,
                          paFramesPerBufferUnspecified,

@@ -24,7 +24,7 @@ void silenceTimer(PaUtilRingBuffer *ring) {
 
         ring_buffer_size_t elementsToRead = PaUtil_GetRingBufferReadAvailable(ring);
         if(elementsToRead == 0) continue; // if nothing to read then don't bother allocating
-        auto *read = new double[elementsToRead];
+        auto *read = new float[elementsToRead];
         ring_buffer_size_t inArr = PaUtil_ReadRingBuffer(ring,read,elementsToRead);
 
         for (int i = 0; i < inArr; i++) {

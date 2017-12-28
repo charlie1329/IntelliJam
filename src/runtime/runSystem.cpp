@@ -7,8 +7,9 @@
 #include "../../include/runtime/timerThread.h"
 #include "../../include/runtime/updateThread.h"
 #include <cstring>
+#include <iostream>
 
-#define MY_DEVICE "Input (Scarlett 2i2 USB)"
+#define MY_DEVICE "Line In (Scarlett 2i2 USB)"
 
 //function prototype
 PaError runSystem();

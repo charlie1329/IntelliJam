@@ -213,6 +213,19 @@ RUNTIME/fast:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
 .PHONY : RUNTIME/fast
 
+#=============================================================================
+# Target rules for targets named PORT_FUZZ_TEST
+
+# Build rule for target.
+PORT_FUZZ_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 PORT_FUZZ_TEST
+.PHONY : PORT_FUZZ_TEST
+
+# fast build rule for target.
+PORT_FUZZ_TEST/fast:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/build
+.PHONY : PORT_FUZZ_TEST/fast
+
 include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 .PHONY : include/port_audio/pa_ringbuffer.obj
@@ -681,6 +694,33 @@ test/midi/twinkle_twinkle.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.s
 .PHONY : test/midi/twinkle_twinkle.cpp.s
 
+test/port_audio/pa_fuzz.obj: test/port_audio/pa_fuzz.c.obj
+
+.PHONY : test/port_audio/pa_fuzz.obj
+
+# target to build an object file
+test/port_audio/pa_fuzz.c.obj:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/test/port_audio/pa_fuzz.c.obj
+.PHONY : test/port_audio/pa_fuzz.c.obj
+
+test/port_audio/pa_fuzz.i: test/port_audio/pa_fuzz.c.i
+
+.PHONY : test/port_audio/pa_fuzz.i
+
+# target to preprocess a source file
+test/port_audio/pa_fuzz.c.i:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/test/port_audio/pa_fuzz.c.i
+.PHONY : test/port_audio/pa_fuzz.c.i
+
+test/port_audio/pa_fuzz.s: test/port_audio/pa_fuzz.c.s
+
+.PHONY : test/port_audio/pa_fuzz.s
+
+# target to generate assembly for a file
+test/port_audio/pa_fuzz.c.s:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/test/port_audio/pa_fuzz.c.s
+.PHONY : test/port_audio/pa_fuzz.c.s
+
 test/runtime/runtimeUnitTests.obj: test/runtime/runtimeUnitTests.cpp.obj
 
 .PHONY : test/runtime/runtimeUnitTests.obj
@@ -722,6 +762,7 @@ help:
 	@echo ... MIDI_TEST
 	@echo ... MIDI_WIN
 	@echo ... RUNTIME
+	@echo ... PORT_FUZZ_TEST
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... include/port_audio/pa_ringbuffer.obj
@@ -772,6 +813,9 @@ help:
 	@echo ... test/midi/twinkle_twinkle.obj
 	@echo ... test/midi/twinkle_twinkle.i
 	@echo ... test/midi/twinkle_twinkle.s
+	@echo ... test/port_audio/pa_fuzz.obj
+	@echo ... test/port_audio/pa_fuzz.i
+	@echo ... test/port_audio/pa_fuzz.s
 	@echo ... test/runtime/runtimeUnitTests.obj
 	@echo ... test/runtime/runtimeUnitTests.i
 	@echo ... test/runtime/runtimeUnitTests.s

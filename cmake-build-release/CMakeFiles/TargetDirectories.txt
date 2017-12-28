@@ -6,5 +6,6 @@ C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/ESN_CORE_TEST.di
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_TEST.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME.dir
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/PORT_FUZZ_TEST.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/edit_cache.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/rebuild_cache.dir

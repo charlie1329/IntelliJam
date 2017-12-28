@@ -10,7 +10,7 @@
 
 using namespace std;
 
-#define RING_ELEMENT sizeof(double)
+#define RING_ELEMENT sizeof(float)
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer
 #define SAMPLE_JUMP 10
 

@@ -116,6 +116,10 @@ if(Boost_FOUND)
     target_link_libraries(RUNTIME_UNIT ${Boost_LIBRARIES})
 endif()
 
+set(PORT_FUZZ_TEST_FILES test/port_audio/pa_fuzz.c)
+add_executable(PORT_FUZZ_TEST ${PORT_FUZZ_TEST_FILES})
+target_link_libraries(PORT_FUZZ_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
 

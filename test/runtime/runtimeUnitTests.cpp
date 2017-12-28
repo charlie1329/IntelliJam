@@ -28,8 +28,9 @@ TEST_CASE("Tests the device searching and setup/teardown of the system","[init_c
     int devNum = -1;
     for(unsigned int i = 0; i < preInit.second.size(); i++) {
         cout << preInit.second.at(i).second->name << endl;
-        if(strstr(preInit.second.at(i).second->name,"Scarlett") != nullptr) {
+        if(strstr(preInit.second.at(i).second->name,"Line In (Scarlett 2i2 USB)") != nullptr) {
             devNum = i;
+            break;
         }
     }
 
