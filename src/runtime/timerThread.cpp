@@ -24,6 +24,9 @@ void timerWorker(const shared_ptr<globalState> &state) {
     //unpack large amounts of the global state to reduce de-referencing
     shared_ptr<atomic<bool>> stillRunning = state->running;
 
+    //bring in callback data to give access to ring buffers
+    shared_ptr<passToCallback> callback = state->callbackData;
+
     //get pointer to echo state network
     shared_ptr<ESN> echo = state->echo;
 
@@ -33,8 +36,7 @@ void timerWorker(const shared_ptr<globalState> &state) {
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
     while(*stillRunning) {
-
-        silenceTimer(&(state->ringTimer)); //use this function to wait on a condition
+        silenceTimer(&(callback->ringTimer)); //use this function to wait on a condition
         //TODO: Improve Timer!!!
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
@@ -77,8 +79,8 @@ void timerWorker(const shared_ptr<globalState> &state) {
         //callbacks still running when stream stopped (if that can indeed happen)
         //this should be safer than flushing the buffer entirely
         //due to the undetermined behaviour of the callbacks
-        ring_buffer_size_t elementsMissed = PaUtil_GetRingBufferReadAvailable(&(state->ringTimer));
-        PaUtil_AdvanceRingBufferReadIndex(&(state->ringTimer),elementsMissed);
+        ring_buffer_size_t elementsMissed = PaUtil_GetRingBufferReadAvailable(&(callback->ringTimer));
+        PaUtil_AdvanceRingBufferReadIndex(&(callback->ringTimer),elementsMissed);
 
         streamMutex->lock();
         err = Pa_StartStream(state->stream); //restart the stream again

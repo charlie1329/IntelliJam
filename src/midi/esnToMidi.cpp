@@ -56,7 +56,7 @@ string naiveMidi(VectorXd prediction) {
  */
 unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
 
-    unsigned int quarterNote = 30;
+    unsigned int quarterNote = 15;
 
     unsigned long err; //error variable for problems in midi
 
@@ -92,7 +92,7 @@ unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
         int noteOff = ((i * 2) + 2) * 3;
 
         auto currentNote = static_cast<unsigned char>(prediction(i, 0) + NOTE_OFFSET);
-        DWORD event = 0x00400090;
+        DWORD event = 0x007F0090;
         event |= (currentNote << 8);
 
         events[noteOn] = 0;

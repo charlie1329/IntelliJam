@@ -20,7 +20,6 @@
 int audioCallback(const void *input, void *output, unsigned long frameCount,
                   const PaStreamCallbackTimeInfo *timeInfo, PaStreamCallbackFlags statusFlags,
                   void *userData) {
-
     auto *info = (passToCallback*)userData; //cast from void pointer
     auto *in = (float*)input;
     (void) timeInfo; //tip from port audio examples, stops IDE from moaning at me

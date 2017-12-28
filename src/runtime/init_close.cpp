@@ -90,10 +90,8 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
     shared_ptr<boost::condition_variable_any> cond(std::make_shared<boost::condition_variable_any>());
 
     //combine into global state
-    shared_ptr<globalState> global(std::make_shared<globalState>(ringUpdate,ringDataUpdate,
-                                                            ringTimer,ringDataTimer,callbackData,
-                                                            echo,stream,running,esnMutex,
-                                                            streamMutex,cond,outHandle,event));
+    shared_ptr<globalState> global(std::make_shared<globalState>(callbackData,echo,stream,running,esnMutex,
+                                                                 streamMutex,cond,outHandle,event));
 
     //return global state with no errors found
     return make_pair(paNoError,global);
@@ -114,8 +112,8 @@ PaError destroySystem(shared_ptr<globalState> state) {
     state->streamMutex->unlock();
 
     //now deallocate the ring buffer (everything else dealt with by shared_ptr and port audio
-    PaUtil_FreeMemory(state->ringDataUpdate);
-    PaUtil_FreeMemory(state->ringDataTimer);
+    PaUtil_FreeMemory(state->callbackData->ringDataUpdate);
+    PaUtil_FreeMemory(state->callbackData->ringDataTimer);
 
     //now terminate port audio
     /*if(err != paNoError) { //return the earliest error found

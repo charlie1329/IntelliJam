@@ -7,6 +7,7 @@
 
 #include "../../include/runtime/timers.h"
 #include <cmath>
+#include <iostream>
 
 /**
  * implemented from timers.h
