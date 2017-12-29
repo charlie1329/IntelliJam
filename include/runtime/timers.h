@@ -10,11 +10,11 @@
 
 #include "../port_audio/pa_ringbuffer.h"
 
-#define SAMPLES_TILL_STOP 22050 //half a second
-#define SILENCE_THRESHOLD 0.01
-#define NOISE_THRESHOLD 0.1
-#define ANOMALY_MAX 1000 //~1/44 of a second
-#define START_THRESHOLD 10000
+#define SAMPLES_TILL_STOP 9000
+#define SILENCE_THRESHOLD 0.0003
+#define NOISE_THRESHOLD 0.01
+#define ANOMALY_MAX 50 //~1/44 of a second
+#define START_THRESHOLD 1000
 
 /**
  * a timer based around the silence of the input channel

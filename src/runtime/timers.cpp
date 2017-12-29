@@ -28,6 +28,7 @@ void silenceTimer(PaUtilRingBuffer *ring) {
         auto *read = new float[elementsToRead];
         ring_buffer_size_t inArr = PaUtil_ReadRingBuffer(ring,read,elementsToRead);
 
+
         for (int i = 0; i < inArr; i++) {
             if(playingStarted) { //try to detect when the user has stopped playing
 
@@ -44,8 +45,9 @@ void silenceTimer(PaUtilRingBuffer *ring) {
                     }
                 }
 
-                if(sampleCount > SAMPLES_TILL_STOP) {
+                if(sampleCount >= SAMPLES_TILL_STOP) {
                     keepLooping = false;
+                    std::cout << "TRIGGERED" << std::endl;
                     break; //leave the for loop, deallocate the array, and then leave while loop
                 }
 
@@ -54,10 +56,11 @@ void silenceTimer(PaUtilRingBuffer *ring) {
                     if(++sampleCount > START_THRESHOLD) {
                         sampleCount = 0;
                         playingStarted = true;
+                        std::cout << "Playing started" << std::endl;
                     }
 
                 } else { //if back to silence
-                    sampleCount = 0;
+                    //sampleCount = 0;
                 }
             }
         }
