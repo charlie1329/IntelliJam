@@ -136,6 +136,19 @@ TRAINING/fast:
 .PHONY : TRAINING/fast
 
 #=============================================================================
+# Target rules for targets named TRAINING_TEST
+
+# Build rule for target.
+TRAINING_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_TEST
+.PHONY : TRAINING_TEST
+
+# fast build rule for target.
+TRAINING_TEST/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/build
+.PHONY : TRAINING_TEST/fast
+
+#=============================================================================
 # Target rules for targets named RUNTIME_UNIT
 
 # Build rule for target.
@@ -201,19 +214,6 @@ MIDI_WIN/fast:
 .PHONY : MIDI_WIN/fast
 
 #=============================================================================
-# Target rules for targets named RUNTIME
-
-# Build rule for target.
-RUNTIME: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME
-.PHONY : RUNTIME
-
-# fast build rule for target.
-RUNTIME/fast:
-	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
-.PHONY : RUNTIME/fast
-
-#=============================================================================
 # Target rules for targets named PORT_FUZZ_TEST
 
 # Build rule for target.
@@ -225,6 +225,19 @@ PORT_FUZZ_TEST: cmake_check_build_system
 PORT_FUZZ_TEST/fast:
 	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/build
 .PHONY : PORT_FUZZ_TEST/fast
+
+#=============================================================================
+# Target rules for targets named RUNTIME
+
+# Build rule for target.
+RUNTIME: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME
+.PHONY : RUNTIME
+
+# fast build rule for target.
+RUNTIME/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
+.PHONY : RUNTIME/fast
 
 include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
@@ -293,6 +306,7 @@ src/esn/esn.obj: src/esn/esn.cpp.obj
 # target to build an object file
 src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
@@ -306,6 +320,7 @@ src/esn/esn.i: src/esn/esn.cpp.i
 # target to preprocess a source file
 src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
@@ -319,6 +334,7 @@ src/esn/esn.s: src/esn/esn.cpp.s
 # target to generate assembly for a file
 src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
@@ -559,6 +575,36 @@ src/runtime/updateThread.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
+src/training/fileToEcho.obj: src/training/fileToEcho.cpp.obj
+
+.PHONY : src/training/fileToEcho.obj
+
+# target to build an object file
+src/training/fileToEcho.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.obj
+.PHONY : src/training/fileToEcho.cpp.obj
+
+src/training/fileToEcho.i: src/training/fileToEcho.cpp.i
+
+.PHONY : src/training/fileToEcho.i
+
+# target to preprocess a source file
+src/training/fileToEcho.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.i
+.PHONY : src/training/fileToEcho.cpp.i
+
+src/training/fileToEcho.s: src/training/fileToEcho.cpp.s
+
+.PHONY : src/training/fileToEcho.s
+
+# target to generate assembly for a file
+src/training/fileToEcho.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.s
+.PHONY : src/training/fileToEcho.cpp.s
+
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
 .PHONY : test/esn/esn_correctness.obj
@@ -748,6 +794,33 @@ test/runtime/runtimeUnitTests.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.s
 .PHONY : test/runtime/runtimeUnitTests.cpp.s
 
+test/training/trainingUnit.obj: test/training/trainingUnit.cpp.obj
+
+.PHONY : test/training/trainingUnit.obj
+
+# target to build an object file
+test/training/trainingUnit.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj
+.PHONY : test/training/trainingUnit.cpp.obj
+
+test/training/trainingUnit.i: test/training/trainingUnit.cpp.i
+
+.PHONY : test/training/trainingUnit.i
+
+# target to preprocess a source file
+test/training/trainingUnit.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.i
+.PHONY : test/training/trainingUnit.cpp.i
+
+test/training/trainingUnit.s: test/training/trainingUnit.cpp.s
+
+.PHONY : test/training/trainingUnit.s
+
+# target to generate assembly for a file
+test/training/trainingUnit.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.s
+.PHONY : test/training/trainingUnit.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -756,13 +829,14 @@ help:
 	@echo ... depend
 	@echo ... MIDI_TWINKLE
 	@echo ... TRAINING
+	@echo ... TRAINING_TEST
 	@echo ... RUNTIME_UNIT
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
 	@echo ... MIDI_WIN
-	@echo ... RUNTIME
 	@echo ... PORT_FUZZ_TEST
+	@echo ... RUNTIME
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... include/port_audio/pa_ringbuffer.obj
@@ -798,6 +872,9 @@ help:
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s
+	@echo ... src/training/fileToEcho.obj
+	@echo ... src/training/fileToEcho.i
+	@echo ... src/training/fileToEcho.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s
@@ -819,6 +896,9 @@ help:
 	@echo ... test/runtime/runtimeUnitTests.obj
 	@echo ... test/runtime/runtimeUnitTests.i
 	@echo ... test/runtime/runtimeUnitTests.s
+	@echo ... test/training/trainingUnit.obj
+	@echo ... test/training/trainingUnit.i
+	@echo ... test/training/trainingUnit.s
 .PHONY : help
 
 

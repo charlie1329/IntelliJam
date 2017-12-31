@@ -243,6 +243,14 @@ VectorXd ESN::predict() {
     return resOutWeights * reservoir;
 }
 
+/**
+ * resets the reservoir to its initial state, which here
+ * is all the initial reservoir value
+ */
+void ESN::resetReservoir() {
+    reservoir = MatrixXd::Constant(resResWeights.cols(),1, INITIAL_RESERVOIR_VALUE);
+}
+
 
 //Get Functions
 

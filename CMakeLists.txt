@@ -21,10 +21,35 @@ if(Boost_FOUND)
 endif()
 
 #executable for esn training
-set(TRAINING_FILES include/esn/esn.h
-                    src/esn/esn.cpp)
+set(TRAINING_FILES include/libsndfile/sndfile.h
+                   include/esn/esn.h
+                   src/esn/esn.cpp
+                   include/training/fileToEcho.h
+                   src/training/fileToEcho.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
+target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
+#link up the boost libraries
+if(Boost_FOUND)
+    target_link_libraries(TRAINING ${Boost_LIBRARIES})
+endif()
+
+
+#executable for the unit tests for functionality involved with training
+set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
+                        include/esn/esn.h
+                        src/esn/esn.cpp
+                        include/training/fileToEcho.h
+                        src/training/fileToEcho.cpp
+                        test/training/trainingUnit.cpp)
+
+add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
+target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
+#link up the boost libraries
+if(Boost_FOUND)
+    target_link_libraries(TRAINING_TEST ${Boost_LIBRARIES})
+endif()
+
 
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
@@ -68,7 +93,7 @@ set(MIDI_WIN_FILES include/midi/midi.h
 add_executable(MIDI_WIN ${MIDI_WIN_FILES})
 target_link_libraries(MIDI_WIN winmm.lib)
 
-#executable
+#executable for whole system
 set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   include/port_audio/pa_win_util.c
                   include/esn/esn.h

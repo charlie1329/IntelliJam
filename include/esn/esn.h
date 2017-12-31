@@ -130,6 +130,12 @@ public:
      */
     VectorXd getReservoir();
 
+    /**
+     * reset all reservoir neurons to initial state
+     * useful when reading in training set
+     */
+    void resetReservoir();
+
     //I want this matrix public so it can be adjusted through training
     MatrixXd resOutWeights;
 
