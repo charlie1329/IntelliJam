@@ -26,7 +26,8 @@ set(TRAINING_FILES include/libsndfile/sndfile.h
                    src/esn/esn.cpp
                    include/training/fileToEcho.h
                    src/training/fileToEcho.cpp
-                   include/training/trainNetwork.h src/training/trainNetwork.cpp)
+                   include/training/trainNetwork.h
+                   src/training/trainNetwork.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
