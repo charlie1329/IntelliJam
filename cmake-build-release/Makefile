@@ -605,6 +605,33 @@ src/training/fileToEcho.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.s
 .PHONY : src/training/fileToEcho.cpp.s
 
+src/training/trainNetwork.obj: src/training/trainNetwork.cpp.obj
+
+.PHONY : src/training/trainNetwork.obj
+
+# target to build an object file
+src/training/trainNetwork.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj
+.PHONY : src/training/trainNetwork.cpp.obj
+
+src/training/trainNetwork.i: src/training/trainNetwork.cpp.i
+
+.PHONY : src/training/trainNetwork.i
+
+# target to preprocess a source file
+src/training/trainNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.i
+.PHONY : src/training/trainNetwork.cpp.i
+
+src/training/trainNetwork.s: src/training/trainNetwork.cpp.s
+
+.PHONY : src/training/trainNetwork.s
+
+# target to generate assembly for a file
+src/training/trainNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.s
+.PHONY : src/training/trainNetwork.cpp.s
+
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
 .PHONY : test/esn/esn_correctness.obj
@@ -875,6 +902,9 @@ help:
 	@echo ... src/training/fileToEcho.obj
 	@echo ... src/training/fileToEcho.i
 	@echo ... src/training/fileToEcho.s
+	@echo ... src/training/trainNetwork.obj
+	@echo ... src/training/trainNetwork.i
+	@echo ... src/training/trainNetwork.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s

@@ -75,7 +75,7 @@ public:
         double(*oAct)(double), double(*cost)(VectorXd,VectorXd));
 
     /**
-     * constructor for situatuon where network weights already found (i.e. run-time)
+     * constructor for situation where network weights already found (i.e. run-time)
      * the difference is that here, the network weights are read in
      * @param inRes file path to input-reservoir weights
      * @param resRes file path to reservoir-reservoir weights
