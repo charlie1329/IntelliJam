@@ -575,6 +575,36 @@ src/runtime/updateThread.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
+src/training/checkpoint.obj: src/training/checkpoint.cpp.obj
+
+.PHONY : src/training/checkpoint.obj
+
+# target to build an object file
+src/training/checkpoint.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.obj
+.PHONY : src/training/checkpoint.cpp.obj
+
+src/training/checkpoint.i: src/training/checkpoint.cpp.i
+
+.PHONY : src/training/checkpoint.i
+
+# target to preprocess a source file
+src/training/checkpoint.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.i
+.PHONY : src/training/checkpoint.cpp.i
+
+src/training/checkpoint.s: src/training/checkpoint.cpp.s
+
+.PHONY : src/training/checkpoint.s
+
+# target to generate assembly for a file
+src/training/checkpoint.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.s
+.PHONY : src/training/checkpoint.cpp.s
+
 src/training/fileToEcho.obj: src/training/fileToEcho.cpp.obj
 
 .PHONY : src/training/fileToEcho.obj
@@ -604,6 +634,33 @@ src/training/fileToEcho.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.s
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.s
 .PHONY : src/training/fileToEcho.cpp.s
+
+src/training/runTraining.obj: src/training/runTraining.cpp.obj
+
+.PHONY : src/training/runTraining.obj
+
+# target to build an object file
+src/training/runTraining.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj
+.PHONY : src/training/runTraining.cpp.obj
+
+src/training/runTraining.i: src/training/runTraining.cpp.i
+
+.PHONY : src/training/runTraining.i
+
+# target to preprocess a source file
+src/training/runTraining.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.i
+.PHONY : src/training/runTraining.cpp.i
+
+src/training/runTraining.s: src/training/runTraining.cpp.s
+
+.PHONY : src/training/runTraining.s
+
+# target to generate assembly for a file
+src/training/runTraining.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.s
+.PHONY : src/training/runTraining.cpp.s
 
 src/training/trainNetwork.obj: src/training/trainNetwork.cpp.obj
 
@@ -899,9 +956,15 @@ help:
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s
+	@echo ... src/training/checkpoint.obj
+	@echo ... src/training/checkpoint.i
+	@echo ... src/training/checkpoint.s
 	@echo ... src/training/fileToEcho.obj
 	@echo ... src/training/fileToEcho.i
 	@echo ... src/training/fileToEcho.s
+	@echo ... src/training/runTraining.obj
+	@echo ... src/training/runTraining.i
+	@echo ... src/training/runTraining.s
 	@echo ... src/training/trainNetwork.obj
 	@echo ... src/training/trainNetwork.i
 	@echo ... src/training/trainNetwork.s

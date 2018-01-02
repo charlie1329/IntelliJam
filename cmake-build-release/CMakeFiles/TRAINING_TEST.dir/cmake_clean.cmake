@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj"
   "CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.obj"
   "CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj"
+  "CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.obj"
   "TRAINING_TEST.pdb"
   "TRAINING_TEST.exe"
   "TRAINING_TEST.exe.manifest"

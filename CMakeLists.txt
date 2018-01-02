@@ -27,7 +27,11 @@ set(TRAINING_FILES include/libsndfile/sndfile.h
                    include/training/fileToEcho.h
                    src/training/fileToEcho.cpp
                    include/training/trainNetwork.h
-                   src/training/trainNetwork.cpp)
+                   src/training/trainNetwork.cpp
+                   include/training/hyperParameters.h
+                   include/training/checkpoint.h
+                   src/training/checkpoint.cpp
+                   src/training/runTraining.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -43,7 +47,10 @@ set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
                         src/esn/esn.cpp
                         include/training/fileToEcho.h
                         src/training/fileToEcho.cpp
-                        test/training/trainingUnit.cpp)
+                        test/training/trainingUnit.cpp
+                        include/training/hyperParameters.h
+                        include/training/checkpoint.h
+                        src/training/checkpoint.cpp)
 
 add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
 target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)

@@ -555,7 +555,15 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/test/catch.hpp">
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/checkpoint.h">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/fileToEcho.h">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/hyperParameters.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 		</Unit>
@@ -600,9 +608,16 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/updateThread.cpp">
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/checkpoint.cpp">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/fileToEcho.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/runTraining.cpp">
+			<Option target="TRAINING"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/trainNetwork.cpp">
 			<Option target="TRAINING"/>

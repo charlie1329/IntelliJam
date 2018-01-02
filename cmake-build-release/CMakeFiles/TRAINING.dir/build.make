@@ -131,11 +131,63 @@ CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj.provides: CMakeFiles/T
 CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj.provides.build: CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj
 
 
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj: CMakeFiles/TRAINING.dir/flags.make
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj: CMakeFiles/TRAINING.dir/includes_CXX.rsp
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj: ../src/training/checkpoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING.dir\src\training\checkpoint.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp
+
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp > CMakeFiles\TRAINING.dir\src\training\checkpoint.cpp.i
+
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp -o CMakeFiles\TRAINING.dir\src\training\checkpoint.cpp.s
+
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.requires:
+
+.PHONY : CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.requires
+
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.provides: CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.provides
+
+CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.provides.build: CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj
+
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj: CMakeFiles/TRAINING.dir/flags.make
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj: CMakeFiles/TRAINING.dir/includes_CXX.rsp
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj: ../src/training/runTraining.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING.dir\src\training\runTraining.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\runTraining.cpp
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\runTraining.cpp > CMakeFiles\TRAINING.dir\src\training\runTraining.cpp.i
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\runTraining.cpp -o CMakeFiles\TRAINING.dir\src\training\runTraining.cpp.s
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.requires:
+
+.PHONY : CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.requires
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.provides: CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.provides
+
+CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.provides.build: CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj
+
+
 # Object files for target TRAINING
 TRAINING_OBJECTS = \
 "CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj" \
 "CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj" \
-"CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj"
+"CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj" \
+"CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj" \
+"CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj"
 
 # External object files for target TRAINING
 TRAINING_EXTERNAL_OBJECTS =
@@ -143,6 +195,8 @@ TRAINING_EXTERNAL_OBJECTS =
 TRAINING.exe: CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj
 TRAINING.exe: CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj
 TRAINING.exe: CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj
+TRAINING.exe: CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj
+TRAINING.exe: CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj
 TRAINING.exe: CMakeFiles/TRAINING.dir/build.make
 TRAINING.exe: ../libs/libsndfile-1.lib
 TRAINING.exe: C:/Program\ Files/boost/lib/libboost_system-mgw63-mt-1_66.a
@@ -153,7 +207,7 @@ TRAINING.exe: C:/Program\ Files/boost/lib/libboost_atomic-mgw63-mt-1_66.a
 TRAINING.exe: CMakeFiles/TRAINING.dir/linklibs.rsp
 TRAINING.exe: CMakeFiles/TRAINING.dir/objects1.rsp
 TRAINING.exe: CMakeFiles/TRAINING.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TRAINING.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TRAINING.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TRAINING.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -164,6 +218,8 @@ CMakeFiles/TRAINING.dir/build: TRAINING.exe
 CMakeFiles/TRAINING.dir/requires: CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj.requires
 CMakeFiles/TRAINING.dir/requires: CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj.requires
 CMakeFiles/TRAINING.dir/requires: CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj.requires
+CMakeFiles/TRAINING.dir/requires: CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj.requires
+CMakeFiles/TRAINING.dir/requires: CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj.requires
 
 .PHONY : CMakeFiles/TRAINING.dir/requires
 
