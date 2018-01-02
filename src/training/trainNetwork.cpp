@@ -87,8 +87,8 @@ void kfoldWithRepeats(unsigned int repeats, unsigned int folds, string trainingF
     //produce the string prior to locking
     string toWrite = "v: " + to_string(v) + " r: " + to_string(r) + " a: " + to_string(a)
                      + " N: " + to_string(N) + " k: " + to_string(k)
-                     + ".\n Total average " + to_string(folds) + "-fold error after "
-                     + to_string(repeats) + " repeats is: " + to_string(totalError) + ".\n";
+                     + " \n Total average " + to_string(folds) + "-fold error after "
+                     + to_string(repeats) + " repeats is: " + to_string(totalError) + " \n";
 
     //lock and then write to file
     lock->lock();

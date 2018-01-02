@@ -22,22 +22,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/objects1.rsp" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/objects1.rsp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/objects1.rsp" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/objects1.rsp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" afterPath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" />
+      <change beforePath="$PROJECT_DIR$/src/training/checkpoint.cpp" afterPath="$PROJECT_DIR$/src/training/checkpoint.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/training/trainNetwork.cpp" afterPath="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -64,7 +50,7 @@
       <file leaf-file-name="checkpoint.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
+            <state relative-caret-position="238">
               <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#191#208#0" expanded="true" />
@@ -73,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkpoint.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
+      <file leaf-file-name="fileToEcho.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/training/fileToEcho.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="-1168">
+              <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
               <folding>
                 <element signature="e#92#138#0" expanded="true" />
               </folding>
@@ -85,37 +71,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="runTraining.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkpoint.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <folding>
+                <element signature="e#92#138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runTraining.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/training/runTraining.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2091">
               <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
               <folding>
                 <element signature="e#84#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileToEcho.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/training/fileToEcho.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" column="113" lean-forward="false" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
-              <folding>
-                <element signature="e#258#283#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileToEcho.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/training/fileToEcho.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
-              <folding>
-                <element signature="e#92#138#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,8 +122,8 @@
       <file leaf-file-name="trainNetwork.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="328">
+              <caret line="90" column="88" lean-forward="false" selection-start-line="90" selection-start-column="88" selection-end-line="90" selection-end-column="88" />
               <folding>
                 <element signature="e#85#103#0" expanded="true" />
               </folding>
@@ -204,12 +178,12 @@
         <option value="$PROJECT_DIR$/test/training/trainingUnit.cpp" />
         <option value="$PROJECT_DIR$/include/esn/esn.h" />
         <option value="$PROJECT_DIR$/include/training/trainNetwork.h" />
-        <option value="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
         <option value="$PROJECT_DIR$/include/training/checkpoint.h" />
-        <option value="$PROJECT_DIR$/src/training/checkpoint.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/training/hyperParameters.h" />
         <option value="$PROJECT_DIR$/src/training/runTraining.cpp" />
+        <option value="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
+        <option value="$PROJECT_DIR$/src/training/checkpoint.cpp" />
       </list>
     </option>
   </component>
@@ -262,6 +236,12 @@
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -365,12 +345,12 @@
       <workItem from="1514456538180" duration="11810000" />
       <workItem from="1514560654239" duration="5921000" />
       <workItem from="1514720711857" duration="19893000" />
-      <workItem from="1514886902837" duration="4805000" />
+      <workItem from="1514886902837" duration="6652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153288000" />
+    <option name="totallyTimeSpent" value="155135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -385,7 +365,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4734446" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4732143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34390652" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
@@ -693,6 +673,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#106#156#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,51 +689,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#191#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#92#138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/training/trainingUnit.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#263#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/training/fileToEcho.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
-          <folding>
-            <element signature="e#92#138#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,13 +707,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp">
+    <entry file="file://$PROJECT_DIR$/include/training/hyperParameters.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#85#103#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="177">
+          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,11 +725,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/training/hyperParameters.h">
+    <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="328">
+          <caret line="90" column="88" lean-forward="false" selection-start-line="90" selection-start-column="88" selection-end-line="90" selection-end-column="88" />
+          <folding>
+            <element signature="e#85#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/training/trainingUnit.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="e#263#302#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -798,6 +751,36 @@
           <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
           <folding>
             <element signature="e#84#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/training/fileToEcho.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1168">
+          <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
+          <folding>
+            <element signature="e#92#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding>
+            <element signature="e#92#138#0" expanded="true" />
           </folding>
         </state>
       </provider>
