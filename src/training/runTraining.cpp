@@ -57,8 +57,17 @@ vector<vector<double>> generateCombos() {
                             double NVal = RES_SIZE_LOW + (N * RES_SIZE_STEP);
                             double kVal = RES_JUMP_LOW + (k * RES_JUMP_STEP);
                             double epochVal = EPOCH_LOW + (epoch * EPOCH_STEP);
+
                             //push back the current combination
-                            combos.emplace_back({vVal, rVal, aVal, NVal, kVal, epochVal});
+                            vector<double> currentCombo;
+                            currentCombo.push_back(vVal);
+                            currentCombo.push_back(rVal);
+                            currentCombo.push_back(aVal);
+                            currentCombo.push_back(NVal);
+                            currentCombo.push_back(kVal);
+                            currentCombo.push_back(epochVal);
+
+                            combos.push_back(currentCombo);
                         }
                     }
                 }

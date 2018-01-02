@@ -86,7 +86,7 @@ void kfoldWithRepeats(unsigned int repeats, unsigned int folds, string trainingF
 
     //produce the string prior to locking
     string toWrite = "v: " + to_string(v) + " r: " + to_string(r) + " a: " + to_string(a)
-                     + " N: " + to_string(N) + " k: " + to_string(k)
+                     + " N: " + to_string(N) + " k: " + to_string(k) + " epochs: " + to_string(epochs)
                      + " \n Total average " + to_string(folds) + "-fold error after "
                      + to_string(repeats) + " repeats is: " + to_string(totalError) + " \n";
 

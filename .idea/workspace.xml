@@ -22,8 +22,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/objects.a" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/objects.a" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/objects.a" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME.exe" afterPath="$PROJECT_DIR$/cmake-build-release/RUNTIME.exe" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_UNIT.exe" afterPath="$PROJECT_DIR$/cmake-build-release/RUNTIME_UNIT.exe" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_TEST.exe" afterPath="$PROJECT_DIR$/cmake-build-release/TRAINING_TEST.exe" />
       <change beforePath="$PROJECT_DIR$/src/training/checkpoint.cpp" afterPath="$PROJECT_DIR$/src/training/checkpoint.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/training/runTraining.cpp" afterPath="$PROJECT_DIR$/src/training/runTraining.cpp" />
       <change beforePath="$PROJECT_DIR$/src/training/trainNetwork.cpp" afterPath="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
+      <change beforePath="$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp" afterPath="$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp" />
+      <change beforePath="$PROJECT_DIR$/test/training/trainingUnit.cpp" afterPath="$PROJECT_DIR$/test/training/trainingUnit.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -37,96 +55,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="runtimeUnitTests.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="82">
+              <caret line="30" column="79" lean-forward="false" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+              <folding>
+                <element signature="e#163#202#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runSystem.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkpoint.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#191#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileToEcho.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/training/fileToEcho.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1168">
-              <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
-              <folding>
-                <element signature="e#92#138#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkpoint.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-              <folding>
-                <element signature="e#92#138#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runTraining.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/training/runTraining.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
-              <folding>
-                <element signature="e#84#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainingUnit.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/training/trainingUnit.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-              <folding>
-                <element signature="e#263#302#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainNetwork.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/training/trainNetwork.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-              <folding>
-                <element signature="e#315#338#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainNetwork.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="90" column="88" lean-forward="false" selection-start-line="90" selection-start-column="88" selection-end-line="90" selection-end-column="88" />
-              <folding>
-                <element signature="e#85#103#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -160,14 +106,12 @@
         <option value="$PROJECT_DIR$/include/runtime/timerThread.h" />
         <option value="$PROJECT_DIR$/include/runtime/port_processing.h" />
         <option value="$PROJECT_DIR$/test/port_audio/pa_fuzz.c" />
-        <option value="$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/init_close.h" />
         <option value="$PROJECT_DIR$/include/runtime/globalState.h" />
         <option value="$PROJECT_DIR$/src/runtime/init_close.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
         <option value="$PROJECT_DIR$/src/midi/esnToMidi.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/runSystem.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/timers.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/timers.h" />
         <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
@@ -175,15 +119,17 @@
         <option value="$PROJECT_DIR$/include/training/fileToEcho.h" />
         <option value="$PROJECT_DIR$/test/training/testFile.csv" />
         <option value="$PROJECT_DIR$/src/training/fileToEcho.cpp" />
-        <option value="$PROJECT_DIR$/test/training/trainingUnit.cpp" />
         <option value="$PROJECT_DIR$/include/esn/esn.h" />
         <option value="$PROJECT_DIR$/include/training/trainNetwork.h" />
         <option value="$PROJECT_DIR$/include/training/checkpoint.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/training/hyperParameters.h" />
-        <option value="$PROJECT_DIR$/src/training/runTraining.cpp" />
         <option value="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
+        <option value="$PROJECT_DIR$/src/training/runTraining.cpp" />
+        <option value="$PROJECT_DIR$/test/training/trainingUnit.cpp" />
         <option value="$PROJECT_DIR$/src/training/checkpoint.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/runSystem.cpp" />
+        <option value="$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp" />
       </list>
     </option>
   </component>
@@ -229,19 +175,13 @@
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="FYP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -277,7 +217,7 @@
     <configuration name="ESN_SPEED_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_SPEED_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
       <envs />
     </configuration>
-    <configuration name="FYP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="FYP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="RUNTIME_UNIT">
       <envs />
     </configuration>
     <configuration name="MIDI_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
@@ -345,12 +285,12 @@
       <workItem from="1514456538180" duration="11810000" />
       <workItem from="1514560654239" duration="5921000" />
       <workItem from="1514720711857" duration="19893000" />
-      <workItem from="1514886902837" duration="6652000" />
+      <workItem from="1514886902837" duration="11669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155135000" />
+    <option name="totallyTimeSpent" value="160152000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,23 +305,23 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4732143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34390652" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -603,20 +543,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="49" column="58" lean-forward="false" selection-start-line="49" selection-start-column="58" selection-end-line="49" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-491">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#96#137#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,6 +553,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -689,20 +619,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/training/fileToEcho.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="39" column="113" lean-forward="false" selection-start-line="39" selection-start-column="113" selection-end-line="39" selection-end-column="113" />
           <folding>
-            <element signature="e#258#283#0" expanded="true" />
+            <element signature="e#258#283#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,47 +642,27 @@
         <state relative-caret-position="781">
           <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
-            <element signature="e#315#338#0" expanded="true" />
+            <element signature="e#315#338#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="90" column="88" lean-forward="false" selection-start-line="90" selection-start-column="88" selection-end-line="90" selection-end-column="88" />
+        <state relative-caret-position="315">
+          <caret line="89" column="85" lean-forward="false" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
           <folding>
-            <element signature="e#85#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/training/trainingUnit.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#263#302#0" expanded="true" />
+            <element signature="e#85#103#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/training/runTraining.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="31" lean-forward="false" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#84#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#191#208#0" expanded="true" />
+            <element signature="e#84#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,17 +672,63 @@
         <state relative-caret-position="-1168">
           <caret line="82" column="74" lean-forward="false" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
           <folding>
-            <element signature="e#92#138#0" expanded="true" />
+            <element signature="e#92#138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/training/trainingUnit.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="103" column="27" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
+          <folding>
+            <element signature="e#350#389#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/training/checkpoint.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="-829">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
           <folding>
-            <element signature="e#92#138#0" expanded="true" />
+            <element signature="e#92#138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#208#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/runSystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/runtime/runtimeUnitTests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="30" column="79" lean-forward="false" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+          <folding>
+            <element signature="e#163#202#0" expanded="true" />
           </folding>
         </state>
       </provider>

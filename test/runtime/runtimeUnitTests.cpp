@@ -54,6 +54,7 @@ TEST_CASE("Tests the device searching and setup/teardown of the system","[init_c
     pair<PaError, shared_ptr<globalState>> global = initSystem(44100,preInit.second.at(
             static_cast<unsigned int>(devNum)),outHandle,event);
 
+    cout << Pa_GetErrorText(global.first) << endl;
     REQUIRE(global.first == paNoError);
     cout << "Completed Initialisation" << endl;
 

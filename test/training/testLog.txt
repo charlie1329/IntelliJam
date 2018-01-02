@@ -1,0 +1,6 @@
+v: 0.05 r: 0.06 a: 0.07 N: 200 k: 30 epochs: 50
+some stuff here
+v: 0.06 r: 0.07 a: 0.08 N: 250 k: 45 epochs: 60
+some stuff here
+v: 0.07 r: 0.08 a: 0.09 N: 300 k: 50 epochs: 70
+some stuff here

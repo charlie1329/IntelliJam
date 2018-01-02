@@ -5,8 +5,6 @@
 
 #include "../../include/training/checkpoint.h"
 #include <fstream>
-#include <iostream>
-#include <string>
 
 /**
  * function implemented from checkpoint.h
@@ -29,17 +27,19 @@ vector<pair<vector<double>,bool>> findCompleted(vector<vector<double>> hyperComb
     while(getline(log,currentLine)) {
 
         if((lineNo % 2) == 0) {
-            vector<double> currentCombo;
 
+            vector<double> currentCombo;
             int delimNo = 0;
             unsigned int currentPos;
-            while((currentPos = currentLine.find(' '))) {
+            while((currentPos = currentLine.find(' ')) != string::npos) {
                 if((delimNo % 2) != 0) {
                     currentCombo.push_back(stod(currentLine.substr(0,currentPos)));
                 }
                 currentLine.erase(0,currentPos + 1); //erase that part of the string and keep going
                 delimNo++;
             }
+
+            currentCombo.push_back(stod(currentLine.substr(0,currentPos))); //account for the last value in the string
 
             inFile.push_back(currentCombo);
         }
@@ -50,7 +50,6 @@ vector<pair<vector<double>,bool>> findCompleted(vector<vector<double>> hyperComb
     log.close();
 
     vector<pair<vector<double>,bool>> taggedCombos;
-
     //now go about checking things
     for (auto &hyperCombo : hyperCombos) {
         bool isFound = false;
