@@ -17,9 +17,9 @@ import sys
 def showSpectrogram(input_path, segment_size, overlap, low_cut_off, threshold, low_threshold, output_file):
 	rate, data = wav.read(input_path)
 
-	data = data.T # convert to format I'm comfortable with
+	#data = data.T # convert to format I'm comfortable with
 	data = data.astype(float)
-	data = (data[0] + data[1]) / 2.0 #average the data into mono
+	#data = (data[0] + data[1]) / 2.0 #average the data into mono
 
 	f, t, Zxx = sig.stft(data,fs=rate,window='hann',nperseg=segment_size,noverlap=overlap)
 
@@ -75,9 +75,35 @@ def showSpectrogram(input_path, segment_size, overlap, low_cut_off, threshold, l
 	wav.write(output_file,rate,dataBack) # reconstruction works fine
 
 
+# function loops through all files in my solo directory
+# and filters all of them
+def filterAllFiles(startPoint):
+	filePrefix = 'D:/solos/solo'
+	fileSuffix = '.wav'
+
+	outputPrefix = 'D:/filtered/solo'
+
+	segment_size = 8192
+	overlap = 7680
+	low_cut_off = 200
+	threshold = 0.3
+	low_threshold = 0.1
+
+	solosPlusOne = 1434
+
+
+	for solo in range(startPoint,solosPlusOne) :
+		inFile = filePrefix + str(solo) + fileSuffix
+		outFile = outputPrefix + str(solo) + fileSuffix
+		showSpectrogram(inFile,segment_size,overlap,low_cut_off,threshold,low_threshold,outFile)
+		print('Completed Solo Number: ' + str(solo))
+
+
+
 if __name__ == '__main__':
 	
-	if len(sys.argv) != 8:
+	filterAllFiles(1)
+	'''if len(sys.argv) != 8:
 		print('Incorrect number of input arguments')
 	else:
 		input_path = sys.argv[1]
@@ -87,4 +113,4 @@ if __name__ == '__main__':
 		threshold = float(sys.argv[5])
 		low_threshold = float(sys.argv[6])
 		output_file = sys.argv[7]
-		showSpectrogram(input_path,segment_size,overlap,low_cut_off,threshold,low_threshold,output_file)
+		showSpectrogram(input_path,segment_size,overlap,low_cut_off,threshold,low_threshold,output_file)'''

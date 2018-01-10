@@ -24,12 +24,23 @@ TEST_CASE("Tests the device searching and setup/teardown of the system","[init_c
 
     REQUIRE(preInit.first == paNoError);
     cout << "Completed Search" << endl;
-
+    cout << Pa_GetDeviceInfo(Pa_GetDefaultInputDevice())->name << endl;
     int devNum = -1;
     for(unsigned int i = 0; i < preInit.second.size(); i++) {
         cout << preInit.second.at(i).second->name << endl;
         if(strstr(preInit.second.at(i).second->name,"Line In (Scarlett 2i2 USB)") != nullptr) {
             devNum = i;
+
+            cout << "name " << preInit.second.at(i).second->name << endl;
+            cout << "maxInputChannels " << preInit.second.at(i).second->maxInputChannels << endl;
+            cout << "defaultSampleRate " << preInit.second.at(i).second->defaultSampleRate << endl;
+            cout << "defaultHighInputLatency " << preInit.second.at(i).second->defaultHighInputLatency << endl;
+            cout << "defaultHighOutputLatency " << preInit.second.at(i).second->defaultHighOutputLatency << endl;
+            cout << "defaultLowInputLatency " << preInit.second.at(i).second->defaultLowInputLatency << endl;
+            cout << "defaultLowOutputLatency " << preInit.second.at(i).second->defaultLowOutputLatency << endl;
+            cout << "hostApi " << preInit.second.at(i).second->hostApi << endl;
+            cout << "maxOutputChannels " << preInit.second.at(i).second->maxOutputChannels << endl;
+
             break;
         }
     }

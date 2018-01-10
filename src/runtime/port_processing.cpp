@@ -86,6 +86,7 @@ PaError openStreamOnDevice(pair<unsigned int, const PaDeviceInfo*> device, int s
     inParams.sampleFormat = paFloat32; //this internally gets cast to a double when input to ESN
     inParams.suggestedLatency = device.second->defaultLowInputLatency;
 
+
     PaError err = Pa_IsFormatSupported(&inParams,nullptr,sampleRate);
     if(err != paFormatIsSupported) {
         std::cout << Pa_GetErrorText(err) << std::endl;
