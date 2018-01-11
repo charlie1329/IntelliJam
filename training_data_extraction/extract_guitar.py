@@ -3,6 +3,7 @@ import scipy.io.wavfile as wav
 import matplotlib.pyplot as plt 
 import scipy.signal as sig 
 import sys
+import os
 
 #Author: Charlie Street
 
@@ -77,11 +78,14 @@ def showSpectrogram(input_path, segment_size, overlap, low_cut_off, threshold, l
 
 # function loops through all files in my solo directory
 # and filters all of them
-def filterAllFiles(startPoint):
-	filePrefix = 'D:/solos/solo'
+def filterAllFiles():
+
+	print('Starting filtering process')
+
+	filePrefix = '/mnt/d/segmented/segment'
 	fileSuffix = '.wav'
 
-	outputPrefix = 'D:/filtered/solo'
+	outputPrefix = '/mnt/d/filtered/filteredSolo'
 
 	segment_size = 8192
 	overlap = 7680
@@ -89,20 +93,30 @@ def filterAllFiles(startPoint):
 	threshold = 0.3
 	low_threshold = 0.1
 
-	solosPlusOne = 1434
+	solosPlusOne = len(os.listdir('/mnt/d/segmented')) + 1
+	startPoint = len(os.listdir('/mnt/d/filtered')) + 1
 
+	print('Starting at solo: ' + str(startPoint) + ', and ending at solo (exclusive): ' + str(solosPlusOne))
 
 	for solo in range(startPoint,solosPlusOne) :
-		inFile = filePrefix + str(solo) + fileSuffix
-		outFile = outputPrefix + str(solo) + fileSuffix
-		showSpectrogram(inFile,segment_size,overlap,low_cut_off,threshold,low_threshold,outFile)
-		print('Completed Solo Number: ' + str(solo))
+		
+		childpid = os.fork() # fork for sake of memory usage
 
+		if childpid == 0: # child process
+			inFile = filePrefix + str(solo) + fileSuffix
+			outFile = outputPrefix + str(solo) + fileSuffix
+			showSpectrogram(inFile,segment_size,overlap,low_cut_off,threshold,low_threshold,outFile)
+			os._exit(0)
+		else:
+			os.waitpid(childpid,0)
+			print('Completed Solo Number: ' + str(solo))
+
+	print('Finished filtering process')
 
 
 if __name__ == '__main__':
 	
-	filterAllFiles(1)
+	filterAllFiles()
 	'''if len(sys.argv) != 8:
 		print('Incorrect number of input arguments')
 	else:
