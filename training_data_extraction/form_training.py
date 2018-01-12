@@ -7,6 +7,8 @@ import math
 import numpy as np 
 import scipy.io.wavfile as wav
 import scipy.signal as sig
+import os
+from multiprocessing import Process
 
 
 # function generates arrays representing lookup tables
@@ -177,6 +179,45 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 	return inputSample, list(reversed(endNotes)) # reverse the list so it lies in chronological order
 
 
+# function takes a file and splits it through extended periods of silence
+# for now I am choosing a max silence threshold of 0.5 seconds
+def segmentWavFile(path, startCount, outPrefix, outSuffix):
+	segments, rate = removeSilence(path, 0.5)
+	
+	count = startCount
+	
+	for item in segments:
+		filename = outPrefix + str(count) + outSuffix
+		wav.write(filename,rate,item)
+		print('Written file: ' + filename)
+		count += 1
+
+
+def segmentAllFiles():
+
+	print('Started segmentation process')
+
+	prefix = 'D:/filtered'
+	filesNoPrefix = os.listdir(prefix)
+
+	outDir = 'D:/silenced'
+	outPrefix = 'D:/silenced/noSilenceSolo'
+	outSuffix = '.wav'
+
+	index = 1
+	solo = 1
+
+	for item in filesNoPrefix:
+		p = Process(target=segmentWavFile,args=(prefix+'/'+item,index,outPrefix,outSuffix))
+		p.start()
+		p.join()
+
+		print('Completed solo number: ' + str(solo))
+		solo += 1
+		index = len(os.listdir(outDir)) + 1
+
+	print('Finished segmentation process')
+
 if __name__ == '__main__':
 
 	'''segs, fs = removeSilence('test/silence_test6.wav',0.5)
@@ -187,11 +228,13 @@ if __name__ == '__main__':
 
 	print(len(segs))'''
 
-	rate, wavFile = wav.read('../../../Dropbox/audio_extraction/permanatingHystPoint3LowPoint1.wav')
+	'''rate, wavFile = wav.read('../../../Dropbox/audio_extraction/permanatingHystPoint3LowPoint1.wav')
 
 	print('Started Function')
 	inputSample, notes = getInOut(wavFile,rate,int(8192),int(7680),0.07,8)
 
 	wav.write('test/permSplit.wav',rate,inputSample)
 
-	print(notes)
+	print(notes)'''
+
+	segmentAllFiles()
