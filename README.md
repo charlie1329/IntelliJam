@@ -29,6 +29,7 @@ This list may be incomplete, but some of the libraries I have used are:
 * PortAudio (Real-time audio library)
 * Catch (Unit testing library)
 * Boost (Threading among other things)
+* Qt (Graphical User Interface)
 
 PortAudio
 ---------
