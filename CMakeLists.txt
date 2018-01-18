@@ -14,11 +14,23 @@ set(BOOST_INCLUDEDIR "C:/Program Files/boost/include/boost_1_66")
 set(BOOST_LIBRARYDIR "C:/Program Files/boost/lib")
 find_package(Boost 1.66.0 REQUIRED COMPONENTS system thread chrono)
 
-
 # if boost found, include it
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS})
 endif()
+
+#get qt set up correctly
+find_package(Qt5Core REQUIRED)
+find_package(Qt5Gui REQUIRED)
+find_package(Qt5Widgets REQUIRED)
+find_package(Qt5Svg REQUIRED)
+if(Qt5Widgets_FOUND)
+    include_directories(${Qt5Widgets_INCLUDE_DIRS})
+    include_directories(${Qt5Core_INCLUDE_DIRS})
+    include_directories(${Qt5Gui_INCLUDE_DIRS})
+    include_directories(${Qt5Svg_INCLUDE_DIRS})
+endif()
+
 
 #executable for esn training
 set(TRAINING_FILES include/libsndfile/sndfile.h
@@ -131,6 +143,30 @@ target_link_libraries(RUNTIME winmm.lib)
 if(Boost_FOUND)
     target_link_libraries(RUNTIME ${Boost_LIBRARIES})
 endif()
+
+set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
+                        include/interface/devicebar.h
+                        include/interface/mainwindow.h
+                        include/interface/nametile.h
+                        include/interface/nowplayingbar.h
+                        include/interface/piano.h
+                        include/interface/squarebutton.h
+                        include/interface/vmeter.h
+                        src/interface/controlbar.cpp
+                        src/interface/devicebar.cpp
+                        src/interface/main.cpp
+                        src/interface/mainwindow.cpp
+                        src/interface/nametile.cpp
+                        src/interface/nowplayingbar.cpp
+                        src/interface/piano.cpp
+                        src/interface/squarebutton.cpp
+                        src/interface/vmeter.cpp)
+
+add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
+if(Qt5Widgets_FOUND)
+    target_link_libraries(RUNTIME_W_GUI Qt5::Widgets Qt5::Core Qt5::Svg Qt5::Gui)
+endif()
+
 
 set(RUNTIME_UNIT_FILES include/test/catch.hpp
                        include/runtime/init_close.h

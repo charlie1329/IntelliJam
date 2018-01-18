@@ -1,4 +1,4 @@
 ToolSet: w64 5.0@C:\Program Files (x86)\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1\mingw32
 Options: 
 
-Options:
+Options:-DCMAKE_PREFIX_PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake

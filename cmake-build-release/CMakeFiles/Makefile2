@@ -102,7 +102,7 @@ clean: CMakeFiles/MIDI_TWINKLE.dir/clean
 CMakeFiles/TRAINING.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=38,39,40,41,42,43 "Built target TRAINING"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=48,49,50,51,52,53 "Built target TRAINING"
 .PHONY : CMakeFiles/TRAINING.dir/all
 
 # Include target in all.
@@ -139,7 +139,7 @@ clean: CMakeFiles/TRAINING.dir/clean
 CMakeFiles/TRAINING_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=44,45,46,47,48 "Built target TRAINING_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=54,55,56,57,58 "Built target TRAINING_TEST"
 .PHONY : CMakeFiles/TRAINING_TEST.dir/all
 
 # Include target in all.
@@ -166,43 +166,6 @@ CMakeFiles/TRAINING_TEST.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/TRAINING_TEST.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/RUNTIME_UNIT.dir
-
-# All Build rule for target.
-CMakeFiles/RUNTIME_UNIT.dir/all:
-	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/depend
-	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=31,32,33,34,35,36,37 "Built target RUNTIME_UNIT"
-.PHONY : CMakeFiles/RUNTIME_UNIT.dir/all
-
-# Include target in all.
-all: CMakeFiles/RUNTIME_UNIT.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/RUNTIME_UNIT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 7
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_UNIT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
-.PHONY : CMakeFiles/RUNTIME_UNIT.dir/rule
-
-# Convenience name for target.
-RUNTIME_UNIT: CMakeFiles/RUNTIME_UNIT.dir/rule
-
-.PHONY : RUNTIME_UNIT
-
-# clean rule for target.
-CMakeFiles/RUNTIME_UNIT.dir/clean:
-	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/clean
-.PHONY : CMakeFiles/RUNTIME_UNIT.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/RUNTIME_UNIT.dir/clean
 
 .PHONY : clean
 
@@ -318,6 +281,43 @@ clean: CMakeFiles/MIDI_TEST.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/RUNTIME_W_GUI.dir
+
+# All Build rule for target.
+CMakeFiles/RUNTIME_W_GUI.dir/all:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/depend
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47 "Built target RUNTIME_W_GUI"
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/all
+
+# Include target in all.
+all: CMakeFiles/RUNTIME_W_GUI.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RUNTIME_W_GUI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 10
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_W_GUI.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/rule
+
+# Convenience name for target.
+RUNTIME_W_GUI: CMakeFiles/RUNTIME_W_GUI.dir/rule
+
+.PHONY : RUNTIME_W_GUI
+
+# clean rule for target.
+CMakeFiles/RUNTIME_W_GUI.dir/clean:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/clean
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RUNTIME_W_GUI.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/MIDI_WIN.dir
 
 # All Build rule for target.
@@ -425,6 +425,43 @@ CMakeFiles/RUNTIME.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/RUNTIME.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RUNTIME_UNIT.dir
+
+# All Build rule for target.
+CMakeFiles/RUNTIME_UNIT.dir/all:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/depend
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=31,32,33,34,35,36,37 "Built target RUNTIME_UNIT"
+.PHONY : CMakeFiles/RUNTIME_UNIT.dir/all
+
+# Include target in all.
+all: CMakeFiles/RUNTIME_UNIT.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RUNTIME_UNIT.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 7
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_UNIT.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+.PHONY : CMakeFiles/RUNTIME_UNIT.dir/rule
+
+# Convenience name for target.
+RUNTIME_UNIT: CMakeFiles/RUNTIME_UNIT.dir/rule
+
+.PHONY : RUNTIME_UNIT
+
+# clean rule for target.
+CMakeFiles/RUNTIME_UNIT.dir/clean:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/clean
+.PHONY : CMakeFiles/RUNTIME_UNIT.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/RUNTIME_UNIT.dir/clean
 
 .PHONY : clean
 

@@ -179,6 +179,53 @@ def getInOut(data, fs, segmentSize, overlap, minNoteLength, numNotes):
 	return inputSample, list(reversed(endNotes)) # reverse the list so it lies in chronological order
 
 
+# function takes one file and converts it into the training data format
+def createTrainingItem(inPath, outPath, configPath):
+	fs, wavFile = wav.read(inPath)
+
+	numNotes = 8
+	segment_size = 8192
+	overlap = 7680
+	inputSample, notes = getInOut(wavFile,fs,int(segment_size),int(overlap),0.07,numNotes)
+	if (len(notes) == numNotes):
+		wav.write(outPath,fs, inputSample) # write the wav file out 
+
+		# now write to the csv file
+		file = open(configPath,'a')
+		newTrainingItem = outPath
+		for item in notes:
+			newTrainingItem += ',' + str(item)
+
+		newTrainingItem += '\n'
+		file.write(newTrainingItem)
+		file.close()
+
+# function generates all training data and the associated config file
+def getAllTrainingData():
+	
+	print('Started Training Data Formation')
+
+	inputPrefix = 'D:/silenced'
+	inputFiles = os.listdir(inputPrefix)
+
+	configPath = 'D:/trainingData.csv'
+
+	outputPrefix = 'D:/training/sample'
+	outputSuffix = '.wav'
+	fileCount = 1
+
+	for item in inputFiles:
+		inPath = inputPrefix + '/' + item
+		outPath = outputPrefix + str(fileCount) + outputSuffix
+		p = Process(target=createTrainingItem,args=(inPath,outPath,configPath))
+		p.start()
+		p.join()
+
+		print('Completed Solo Number: ' + str(fileCount))
+		fileCount += 1
+
+	print('Finished Training Data Formation')
+
 # function takes a file and splits it through extended periods of silence
 # for now I am choosing a max silence threshold of 0.5 seconds
 def segmentWavFile(path, startCount, outPrefix, outSuffix):
@@ -192,7 +239,7 @@ def segmentWavFile(path, startCount, outPrefix, outSuffix):
 		print('Written file: ' + filename)
 		count += 1
 
-
+# runs silence segmentation on all training items
 def segmentAllFiles():
 
 	print('Started segmentation process')
@@ -237,4 +284,5 @@ if __name__ == '__main__':
 
 	print(notes)'''
 
-	segmentAllFiles()
+	#segmentAllFiles()
+	getAllTrainingData()

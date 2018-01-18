@@ -1,0 +1,1 @@
+C:/Qt/5.10.0/mingw53_32/lib/libQt5Svg.a C:/Qt/5.10.0/mingw53_32/lib/libQt5Widgets.a C:/Qt/5.10.0/mingw53_32/lib/libQt5Gui.a C:/Qt/5.10.0/mingw53_32/lib/libQt5Core.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

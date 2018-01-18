@@ -1,0 +1,113 @@
+/**
+ * implements member functions from
+ * nowplayingbar.h
+ * Author: Charlie Street
+ */
+
+#include "../../include/interface/nowplayingbar.h"
+#include <iostream>
+/**
+ * constructor calls super constructor
+ * and initialises field
+ * @param parent the parent widget
+ */
+NowPlayingBar::NowPlayingBar(QWidget *parent): QWidget(parent), currentTrack(""), currentIndex(-1) {}
+
+/**
+ * function changes the name of the track being displayed
+ * @param newTrack the new track to be displayed
+ */
+void NowPlayingBar::switchTrack(QString newTrack) {
+    currentTrack = newTrack;
+    if(newTrack.count() == 0) {
+        currentIndex = -1;
+    } else {
+        currentIndex = 0;
+    }
+}
+
+/**
+ * overwrites function from super class
+ * @param event the (unused) event
+ */
+void NowPlayingBar::paintEvent(QPaintEvent *event) {
+    Q_UNUSED(event);
+
+    paintBar();
+}
+
+/**
+ * function paints the now playing bar on the screen
+ */
+void NowPlayingBar::paintBar() {
+
+    //non-moving string
+    QString now = "Now Playing: ";
+
+    //dimensions of rectangles
+    double outerHeight = height()/1.5;
+    double innerHeight = height()/2.0;
+    double innerWidth = width() * 0.9875;
+
+
+    QPainter painter(this); //set the painter object
+
+    //start with blank pen for outer/inner rectangles
+    QPen blankPen;
+    blankPen.setStyle(Qt::NoPen);
+    painter.setPen(blankPen);
+
+    painter.setBrush(QColor(OUTSIDE_COLOUR)); //colour for outer rectangle
+    painter.drawRect(0,(height() - outerHeight)/2,width(),outerHeight);
+
+    painter.setBrush(QColor(INSIDE_COLOUR));
+    painter.drawRect((width()-innerWidth)/2,
+                     (height() - outerHeight)/2 + (outerHeight-innerHeight)/2,
+                     innerWidth,innerHeight);
+
+
+    //once rectangles drawn, add text on top
+    painter.setPen(QColor(Qt::black));
+
+    //dynamically adjust the font size
+
+    QFont font("Courier");
+    font.setItalic(true);
+    font.setPointSize(12);
+    font.setStyleHint(QFont::SansSerif);
+
+    QString total = now + currentTrack;
+
+    //find width of text
+    QFontMetrics fm(font);
+    int textWidth = fm.width(total);
+    int textHeight = fm.height();
+
+    if(textWidth > 0.9 * innerWidth) {
+       int maxChars = (0.9*innerWidth - fm.width(now))/fm.width(" "); //how many characters can I write?
+
+       //generate string to display
+       int start = currentIndex;
+       int endPoint = currentIndex + maxChars;
+       if(endPoint >= currentTrack.count()) {
+            QString sub1 = currentTrack.mid(start,currentTrack.count()-1);
+            std::cout << endPoint << ", " << currentTrack.count() << std::endl;
+            if(endPoint - currentTrack.count()-1 <= 2){
+                total = now + sub1 + "  ";
+            } else {
+                QString sub2 = currentTrack.mid(0,endPoint-currentTrack.count()-3);
+                total = now + sub1 + "  " + sub2;
+            }
+       } else {
+           QString sub = currentTrack.mid(start,endPoint-1);
+           total = now + sub;
+       }
+
+       //TODO: Update currentIndex in event
+    }
+
+    painter.setFont(font); //set the font
+
+    painter.translate((width()-innerWidth)/2+textWidth/1.9,height()/2+textHeight/4);
+    painter.drawText(-textWidth/2,0,total);
+}

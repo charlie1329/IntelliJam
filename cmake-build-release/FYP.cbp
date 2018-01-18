@@ -5,7 +5,7 @@
 		<Option title="FYP"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\Qt\;CMake Files\..\..\..\..\Qt\5.10.0\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Svg\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -25,6 +25,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -48,6 +55,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -71,6 +85,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -94,6 +115,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -117,6 +145,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -140,6 +175,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -155,52 +197,6 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="RUNTIME_UNIT">
-				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files/boost_1_66_0"/>
-					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="RUNTIME_UNIT/fast">
-				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files/boost_1_66_0"/>
-					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="ESN_SPEED_TEST">
 				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_SPEED_TEST.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -209,6 +205,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -232,6 +235,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -255,6 +265,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -278,6 +295,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -301,6 +325,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -324,6 +355,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -339,6 +377,86 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_W_GUI">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_SVG_LIB"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_W_GUI"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_W_GUI/fast">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_SVG_LIB"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_W_GUI/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="MIDI_WIN">
 				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -347,6 +465,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -370,6 +495,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -393,6 +525,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -416,6 +555,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -439,6 +585,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -462,6 +615,13 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
 					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
@@ -477,21 +637,71 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="RUNTIME_UNIT">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="RUNTIME_UNIT/fast">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
@@ -504,6 +714,30 @@
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/devicebar.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/nowplayingbar.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/piano.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/squarebutton.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h">
+			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/libsndfile/sndfile.h">
 			<Option target="TRAINING"/>
@@ -520,28 +754,28 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.c">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.h">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_win_util.c">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/globalState.h">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/port_processing.h">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h">
 			<Option target="RUNTIME"/>
@@ -573,10 +807,37 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/controlbar.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/devicebar.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/main.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/mainwindow.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/nametile.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/nowplayingbar.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/piano.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/squarebutton.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/interface/vmeter.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp">
 			<Option target="MIDI_WIN"/>
@@ -589,12 +850,12 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
-			<Option target="RUNTIME_UNIT"/>
 			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/runSystem.cpp">
 			<Option target="RUNTIME"/>
@@ -648,6 +909,99 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Svg\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Svg\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Svg/Qt5Svg_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Svg\"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/../../../../Qt/5.10.0/mingw53_32/lib/cmake/Qt5Svg/Qt5Svg_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.10.0\mingw53_32\lib\cmake\Qt5Svg\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

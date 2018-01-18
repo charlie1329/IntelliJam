@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" C:\Users\charl\CLionProjects\FYP
+"C:\Program Files\JetBrains\CLion 2017.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake -G "CodeBlocks - MinGW Makefiles" C:\Users\charl\CLionProjects\FYP
 CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
   New Boost version may have incorrect or missing dependencies and imported
   targets

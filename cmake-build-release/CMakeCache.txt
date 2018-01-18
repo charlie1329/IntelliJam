@@ -44,12 +44,6 @@ Boost_LIBRARY_DIR_DEBUG:PATH=C:/Program Files/boost/lib
 //Boost library directory RELEASE
 Boost_LIBRARY_DIR_RELEASE:PATH=C:/Program Files/boost/lib
 
-//Boost ref library (debug)
-Boost_REF_LIBRARY_DEBUG:FILEPATH=Boost_REF_LIBRARY_DEBUG-NOTFOUND
-
-//Boost ref library (release)
-Boost_REF_LIBRARY_RELEASE:FILEPATH=Boost_REF_LIBRARY_RELEASE-NOTFOUND
-
 //Boost system library (debug)
 Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=C:/Program Files/boost/lib/libboost_system-mgw63-mt-d-1_66.a
 
@@ -190,6 +184,9 @@ CMAKE_OBJCOPY:FILEPATH=C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-r
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/objdump.exe
 
+//No help, variable specified on the command line.
+CMAKE_PREFIX_PATH:UNINITIALIZED=C:/Qt/5.10.0/mingw53_32/lib/cmake
+
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=FYP
 
@@ -271,6 +268,18 @@ FYP_BINARY_DIR:STATIC=C:/Users/charl/CLionProjects/FYP/cmake-build-release
 //Value Computed by CMake
 FYP_SOURCE_DIR:STATIC=C:/Users/charl/CLionProjects/FYP
 
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Svg.
+Qt5Svg_DIR:PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake/Qt5Svg
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=C:/Qt/5.10.0/mingw53_32/lib/cmake/Qt5Widgets
+
 
 ########################
 # INTERNAL cache entries
@@ -296,10 +305,6 @@ Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
 Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_REF_LIBRARY_DEBUG
-Boost_REF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: Boost_REF_LIBRARY_RELEASE
-Boost_REF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
 Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
@@ -477,7 +482,7 @@ _BOOST_LIBRARYDIR_LAST:INTERNAL=C:/Program Files/boost/lib
 //Last used BOOST_ROOT value.
 _BOOST_ROOT_LAST:INTERNAL=C:/Program Files/boost_1_66_0
 //Components requested for this build tree.
-_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;ref;system;thread
+_Boost_COMPONENTS_SEARCHED:INTERNAL=atomic;chrono;date_time;system;thread
 //Last used Boost_INCLUDE_DIR value.
 _Boost_INCLUDE_DIR_LAST:INTERNAL=C:/Program Files/boost_1_66_0
 //Last used Boost_LIBRARY_DIR_DEBUG value.

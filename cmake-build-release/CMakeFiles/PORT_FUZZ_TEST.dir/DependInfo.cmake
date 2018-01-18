@@ -11,6 +11,13 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Program Files/boost_1_66_0"
+  "C:/Qt/5.10.0/mingw53_32/include"
+  "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"
+  "C:/Qt/5.10.0/mingw53_32/include/QtGui"
+  "C:/Qt/5.10.0/mingw53_32/include/QtCore"
+  "C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"
+  "C:/Qt/5.10.0/mingw53_32/include/QtANGLE"
+  "C:/Qt/5.10.0/mingw53_32/include/QtSvg"
   "../include"
   )
 
