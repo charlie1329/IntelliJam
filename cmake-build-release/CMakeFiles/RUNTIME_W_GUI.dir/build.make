@@ -281,6 +281,281 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj.provides: CMakeFiles/R
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj
 
 
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../src/bridge/bridge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\bridge\bridge.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\bridge\bridge.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\bridge\bridge.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\bridge\bridge.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\bridge\bridge.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\bridge\bridge.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_C.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj: ../include/port_audio/pa_ringbuffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_ringbuffer.c.obj   -c C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_ringbuffer.c
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_ringbuffer.c > CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_ringbuffer.c.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_ringbuffer.c -o CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_ringbuffer.c.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_C.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj: ../include/port_audio/pa_win_util.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_win_util.c.obj   -c C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_win_util.c
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_win_util.c > CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_win_util.c.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\charl\CLionProjects\FYP\include\port_audio\pa_win_util.c -o CMakeFiles\RUNTIME_W_GUI.dir\include\port_audio\pa_win_util.c.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../src/esn/esn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\esn\esn.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\esn\esn.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\esn\esn.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\esn\esn.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\esn\esn.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\esn\esn.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj: ../src/midi/midi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\midi\midi.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\midi\midi.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\midi\midi.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\midi\midi.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\midi\midi.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\midi\midi.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj: ../src/runtime/port_processing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\port_processing.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\runtime\port_processing.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\runtime\port_processing.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\port_processing.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\runtime\port_processing.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\port_processing.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../src/runtime/init_close.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\init_close.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\runtime\init_close.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\runtime\init_close.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\init_close.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\runtime\init_close.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\init_close.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj: ../src/runtime/updateThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\updateThread.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\runtime\updateThread.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\runtime\updateThread.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\updateThread.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\runtime\updateThread.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\updateThread.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../src/runtime/timerThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timerThread.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\runtime\timerThread.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\runtime\timerThread.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timerThread.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\runtime\timerThread.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timerThread.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj: ../src/midi/esnToMidi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\midi\esnToMidi.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\midi\esnToMidi.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\midi\esnToMidi.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\midi\esnToMidi.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\midi\esnToMidi.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\midi\esnToMidi.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj
+
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../src/runtime/timers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timers.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\runtime\timers.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\runtime\timers.cpp > CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timers.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\runtime\timers.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\src\runtime\timers.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
+
+
 # Object files for target RUNTIME_W_GUI
 RUNTIME_W_GUI_OBJECTS = \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj" \
@@ -291,7 +566,18 @@ RUNTIME_W_GUI_OBJECTS = \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj" \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj" \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj" \
-"CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj"
+"CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj"
 
 # External object files for target RUNTIME_W_GUI
 RUNTIME_W_GUI_EXTERNAL_OBJECTS =
@@ -305,15 +591,32 @@ RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/build.make
 RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Svg.a
+RUNTIME_W_GUI.exe: ../libs/portaudio_x86.lib
+RUNTIME_W_GUI.exe: C:/Program\ Files/boost/lib/libboost_system-mgw63-mt-1_66.a
+RUNTIME_W_GUI.exe: C:/Program\ Files/boost/lib/libboost_thread-mgw63-mt-1_66.a
+RUNTIME_W_GUI.exe: C:/Program\ Files/boost/lib/libboost_chrono-mgw63-mt-1_66.a
+RUNTIME_W_GUI.exe: C:/Program\ Files/boost/lib/libboost_date_time-mgw63-mt-1_66.a
+RUNTIME_W_GUI.exe: C:/Program\ Files/boost/lib/libboost_atomic-mgw63-mt-1_66.a
 RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Widgets.a
 RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Gui.a
 RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Core.a
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/linklibs.rsp
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/objects1.rsp
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable RUNTIME_W_GUI.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable RUNTIME_W_GUI.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RUNTIME_W_GUI.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -330,6 +633,17 @@ CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/interfac
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj.requires
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj.requires
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.requires
 
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/requires
 

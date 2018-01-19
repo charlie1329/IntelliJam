@@ -102,7 +102,7 @@ clean: CMakeFiles/MIDI_TWINKLE.dir/clean
 CMakeFiles/TRAINING.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=48,49,50,51,52,53 "Built target TRAINING"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=59,60,61,62,63,64 "Built target TRAINING"
 .PHONY : CMakeFiles/TRAINING.dir/all
 
 # Include target in all.
@@ -139,7 +139,7 @@ clean: CMakeFiles/TRAINING.dir/clean
 CMakeFiles/TRAINING_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=54,55,56,57,58 "Built target TRAINING_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=65,66,67,68,69 "Built target TRAINING_TEST"
 .PHONY : CMakeFiles/TRAINING_TEST.dir/all
 
 # Include target in all.
@@ -287,7 +287,7 @@ clean: CMakeFiles/MIDI_TEST.dir/clean
 CMakeFiles/RUNTIME_W_GUI.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47 "Built target RUNTIME_W_GUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58 "Built target RUNTIME_W_GUI"
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/all
 
 # Include target in all.
@@ -297,7 +297,7 @@ all: CMakeFiles/RUNTIME_W_GUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RUNTIME_W_GUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 21
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_W_GUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/rule

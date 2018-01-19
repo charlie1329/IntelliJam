@@ -11,21 +11,24 @@
 #define FYP_TIMERTHREAD_H
 
 #include "globalState.h"
+#include "../bridge/bridge.h"
 
 /**
  * the function to be run within the thread
  * for the timing functionality of the system
  * @param state the global state of the system
+ * @param bridge allows requests for gui updates to be made
  */
-void timerWorker(const shared_ptr<globalState> &state);
+void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge);
 
 /**
  * function deals with the output of MIDI in the system
  * @param prediction the ESN prediction/output
  * @param outHandle the output handle for the MIDI stream
  * @param event the event handler for the midi stream
+ * @param bridge the bridge to the interface
  * @return any error codes returned from working with the MIDI stream
  */
-int handleMIDI(VectorXd prediction,shared_ptr<HMIDISTRM> outHandle,shared_ptr<HANDLE> event);
+int handleMIDI(VectorXd prediction,shared_ptr<HMIDISTRM> outHandle,shared_ptr<HANDLE> event, Bridge *bridge);
 
 #endif //FYP_TIMERTHREAD_H

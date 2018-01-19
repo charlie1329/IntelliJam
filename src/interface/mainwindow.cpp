@@ -10,8 +10,9 @@
  * basically brings everything together
  * to form the overall GUI
  * @param parent the parent widget
+ * @param bridge the bridge to the backend
  */
-MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
+MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(parent), bridge(newBridge){
 
     //set size and title of window
     resize(640,380);
@@ -68,4 +69,15 @@ MainWindow::~MainWindow() {
     delete userBox;
     delete aiBox;
     delete vbox;
+}
+
+/**
+ * overwrites the function from QWidget
+ * @param event the event occurring
+ */
+void MainWindow::closeEvent(QCloseEvent *event) {
+
+    bridge->closeApp(); //close up all the back end
+
+    QWidget::closeEvent(event);
 }

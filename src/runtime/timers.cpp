@@ -14,8 +14,9 @@
  * this is the first attempt at a timer
  * this should be improved once the system is running
  * @param ring the ring buffer to be read from
+ * @param bridge the bridge to the gui
  */
-void silenceTimer(PaUtilRingBuffer *ring) {
+void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge) {
     bool playingStarted = false;
     bool keepLooping = true;
     int anomalies = 0;
@@ -30,9 +31,12 @@ void silenceTimer(PaUtilRingBuffer *ring) {
 
 
         for (int i = 0; i < inArr; i++) {
+            double absVal = fabs(read[i]);
+            if(bridge != nullptr) bridge->volumeUpdate(absVal); //TODO: CHECK THIS DOESN'T DAMAGE SPEED
+
             if(playingStarted) { //try to detect when the user has stopped playing
 
-                if(fabs(read[i]) < SILENCE_THRESHOLD) { //if we have a value close to silence
+                if(absVal < SILENCE_THRESHOLD) { //if we have a value close to silence
                     sampleCount++;
                     if(anomalies) anomalies = 0;
                 } else { //if its slightly louder, it may just be an anomaly...
@@ -52,7 +56,7 @@ void silenceTimer(PaUtilRingBuffer *ring) {
                 }
 
             } else { //detect when the user has started playing
-                if(fabs(read[i]) > NOISE_THRESHOLD) {
+                if(absVal > NOISE_THRESHOLD) {
                     if(++sampleCount > START_THRESHOLD) {
                         sampleCount = 0;
                         playingStarted = true;

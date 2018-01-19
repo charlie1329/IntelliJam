@@ -3,9 +3,9 @@
  *  Author: Charlie Street
  */
 
-#include "../../include/runtime/init_close.h"
 #include "../../include/runtime/timerThread.h"
 #include "../../include/runtime/updateThread.h"
+#include "../../include/runtime/init_close.h"
 #include <cstring>
 #include <iostream>
 
@@ -90,7 +90,7 @@ PaError runSystem() {
     }
 
     boost::thread updateThread(updateWorker, boost::cref(global.second));
-    boost::thread timerThread(timerWorker, boost::cref(global.second));
+    boost::thread timerThread(timerWorker, boost::cref(global.second), nullptr);
 
     //Step 8: Join the threads
     updateThread.join();

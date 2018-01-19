@@ -15,8 +15,9 @@
  * through the occasion of output from
  * the echo state network being required
  * @param state the global state of the system
+ * @param bridge the bridge to the interface
  */
-void timerWorker(const shared_ptr<globalState> &state) {
+void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
 
 
     PaError err; //some level of error checking at the portAudio level is needed
@@ -36,7 +37,7 @@ void timerWorker(const shared_ptr<globalState> &state) {
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
     while(*stillRunning) {
-        silenceTimer(&(callback->ringTimer)); //use this function to wait on a condition
+        silenceTimer(&(callback->ringTimer),bridge); //use this function to wait on a condition
         //TODO: Improve Timer!!!
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
@@ -48,6 +49,9 @@ void timerWorker(const shared_ptr<globalState> &state) {
             cond->notify_all(); //make sure update thread doesn't block
             break;
         }
+
+        //switch players in interface
+        if(bridge != nullptr) bridge->switchPlayer();
 
         //get output from echo state network
         esnMutex->lock();
@@ -64,7 +68,7 @@ void timerWorker(const shared_ptr<globalState> &state) {
         output(6,0) = 48;
         output(7,0) = 48;
 
-        int midiErr = handleMIDI(output, state->outHandle, state->event);
+        int midiErr = handleMIDI(output, state->outHandle, state->event, bridge);
         //TODO: Improve prediction to MIDI function!
 
         if(midiErr != 0) {
@@ -93,6 +97,9 @@ void timerWorker(const shared_ptr<globalState> &state) {
             cond->notify_all(); //ensure the updateThread isn't left behind
             break;
         }
+
+        //switch player back
+        if(bridge != nullptr) bridge->switchPlayer();
     }
 }
 
@@ -102,9 +109,10 @@ void timerWorker(const shared_ptr<globalState> &state) {
  * @param prediction the prediction/output from the ESN
  * @param outHandle the output handle for the midi stream
  * @param event the event handle for the midi stream
+ * @param bridge the bridge to the interface
  * @return any error codes
  */
-int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event) {
+int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event, Bridge *bridge) {
 
     MIDIHDR hdr{};
     unsigned long err;
@@ -139,6 +147,7 @@ int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<
         return 1;
     }
 
+    if(bridge != nullptr) bridge->pianoUpdate(midiEvents); //update the piano in the gui
     //wait/sleep while MIDI is being played
     WaitForSingleObject(*event,INFINITE);
 

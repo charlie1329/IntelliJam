@@ -258,6 +258,7 @@ include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 # target to build an object file
 include/port_audio/pa_ringbuffer.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.obj
 .PHONY : include/port_audio/pa_ringbuffer.c.obj
@@ -268,6 +269,7 @@ include/port_audio/pa_ringbuffer.i: include/port_audio/pa_ringbuffer.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_ringbuffer.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.i
 .PHONY : include/port_audio/pa_ringbuffer.c.i
@@ -278,6 +280,7 @@ include/port_audio/pa_ringbuffer.s: include/port_audio/pa_ringbuffer.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_ringbuffer.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.s
 .PHONY : include/port_audio/pa_ringbuffer.c.s
@@ -288,6 +291,7 @@ include/port_audio/pa_win_util.obj: include/port_audio/pa_win_util.c.obj
 
 # target to build an object file
 include/port_audio/pa_win_util.c.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.obj
 .PHONY : include/port_audio/pa_win_util.c.obj
@@ -298,6 +302,7 @@ include/port_audio/pa_win_util.i: include/port_audio/pa_win_util.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_win_util.c.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.i
 .PHONY : include/port_audio/pa_win_util.c.i
@@ -308,9 +313,37 @@ include/port_audio/pa_win_util.s: include/port_audio/pa_win_util.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_win_util.c.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.s
 .PHONY : include/port_audio/pa_win_util.c.s
+
+src/bridge/bridge.obj: src/bridge/bridge.cpp.obj
+
+.PHONY : src/bridge/bridge.obj
+
+# target to build an object file
+src/bridge/bridge.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj
+.PHONY : src/bridge/bridge.cpp.obj
+
+src/bridge/bridge.i: src/bridge/bridge.cpp.i
+
+.PHONY : src/bridge/bridge.i
+
+# target to preprocess a source file
+src/bridge/bridge.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.i
+.PHONY : src/bridge/bridge.cpp.i
+
+src/bridge/bridge.s: src/bridge/bridge.cpp.s
+
+.PHONY : src/bridge/bridge.s
+
+# target to generate assembly for a file
+src/bridge/bridge.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.s
+.PHONY : src/bridge/bridge.cpp.s
 
 src/esn/esn.obj: src/esn/esn.cpp.obj
 
@@ -322,6 +355,7 @@ src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj
 .PHONY : src/esn/esn.cpp.obj
@@ -336,6 +370,7 @@ src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.i
 .PHONY : src/esn/esn.cpp.i
@@ -350,6 +385,7 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
@@ -603,6 +639,7 @@ src/midi/esnToMidi.obj: src/midi/esnToMidi.cpp.obj
 
 # target to build an object file
 src/midi/esnToMidi.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj
 .PHONY : src/midi/esnToMidi.cpp.obj
@@ -613,6 +650,7 @@ src/midi/esnToMidi.i: src/midi/esnToMidi.cpp.i
 
 # target to preprocess a source file
 src/midi/esnToMidi.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.i
 .PHONY : src/midi/esnToMidi.cpp.i
@@ -623,6 +661,7 @@ src/midi/esnToMidi.s: src/midi/esnToMidi.cpp.s
 
 # target to generate assembly for a file
 src/midi/esnToMidi.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.s
 .PHONY : src/midi/esnToMidi.cpp.s
@@ -635,6 +674,7 @@ src/midi/midi.obj: src/midi/midi.cpp.obj
 src/midi/midi.cpp.obj:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.obj
 .PHONY : src/midi/midi.cpp.obj
@@ -647,6 +687,7 @@ src/midi/midi.i: src/midi/midi.cpp.i
 src/midi/midi.cpp.i:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.i
 .PHONY : src/midi/midi.cpp.i
@@ -659,6 +700,7 @@ src/midi/midi.s: src/midi/midi.cpp.s
 src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
@@ -669,6 +711,7 @@ src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
 
 # target to build an object file
 src/runtime/init_close.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.obj
 .PHONY : src/runtime/init_close.cpp.obj
@@ -679,6 +722,7 @@ src/runtime/init_close.i: src/runtime/init_close.cpp.i
 
 # target to preprocess a source file
 src/runtime/init_close.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.i
 .PHONY : src/runtime/init_close.cpp.i
@@ -689,6 +733,7 @@ src/runtime/init_close.s: src/runtime/init_close.cpp.s
 
 # target to generate assembly for a file
 src/runtime/init_close.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.s
 .PHONY : src/runtime/init_close.cpp.s
@@ -699,6 +744,7 @@ src/runtime/port_processing.obj: src/runtime/port_processing.cpp.obj
 
 # target to build an object file
 src/runtime/port_processing.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.obj
 .PHONY : src/runtime/port_processing.cpp.obj
@@ -709,6 +755,7 @@ src/runtime/port_processing.i: src/runtime/port_processing.cpp.i
 
 # target to preprocess a source file
 src/runtime/port_processing.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.i
 .PHONY : src/runtime/port_processing.cpp.i
@@ -719,6 +766,7 @@ src/runtime/port_processing.s: src/runtime/port_processing.cpp.s
 
 # target to generate assembly for a file
 src/runtime/port_processing.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
@@ -756,6 +804,7 @@ src/runtime/timerThread.obj: src/runtime/timerThread.cpp.obj
 
 # target to build an object file
 src/runtime/timerThread.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj
 .PHONY : src/runtime/timerThread.cpp.obj
 
@@ -765,6 +814,7 @@ src/runtime/timerThread.i: src/runtime/timerThread.cpp.i
 
 # target to preprocess a source file
 src/runtime/timerThread.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.i
 .PHONY : src/runtime/timerThread.cpp.i
 
@@ -774,6 +824,7 @@ src/runtime/timerThread.s: src/runtime/timerThread.cpp.s
 
 # target to generate assembly for a file
 src/runtime/timerThread.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.s
 .PHONY : src/runtime/timerThread.cpp.s
 
@@ -783,6 +834,7 @@ src/runtime/timers.obj: src/runtime/timers.cpp.obj
 
 # target to build an object file
 src/runtime/timers.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj
 .PHONY : src/runtime/timers.cpp.obj
 
@@ -792,6 +844,7 @@ src/runtime/timers.i: src/runtime/timers.cpp.i
 
 # target to preprocess a source file
 src/runtime/timers.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.i
 .PHONY : src/runtime/timers.cpp.i
 
@@ -801,6 +854,7 @@ src/runtime/timers.s: src/runtime/timers.cpp.s
 
 # target to generate assembly for a file
 src/runtime/timers.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.s
 .PHONY : src/runtime/timers.cpp.s
 
@@ -810,6 +864,7 @@ src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
 
 # target to build an object file
 src/runtime/updateThread.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj
 .PHONY : src/runtime/updateThread.cpp.obj
 
@@ -819,6 +874,7 @@ src/runtime/updateThread.i: src/runtime/updateThread.cpp.i
 
 # target to preprocess a source file
 src/runtime/updateThread.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.i
 .PHONY : src/runtime/updateThread.cpp.i
 
@@ -828,6 +884,7 @@ src/runtime/updateThread.s: src/runtime/updateThread.cpp.s
 
 # target to generate assembly for a file
 src/runtime/updateThread.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
@@ -1186,6 +1243,9 @@ help:
 	@echo ... include/port_audio/pa_win_util.obj
 	@echo ... include/port_audio/pa_win_util.i
 	@echo ... include/port_audio/pa_win_util.s
+	@echo ... src/bridge/bridge.obj
+	@echo ... src/bridge/bridge.i
+	@echo ... src/bridge/bridge.s
 	@echo ... src/esn/esn.obj
 	@echo ... src/esn/esn.i
 	@echo ... src/esn/esn.s

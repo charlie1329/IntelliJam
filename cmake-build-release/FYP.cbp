@@ -708,11 +708,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h">
+			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/esn/esn.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h">
@@ -744,46 +749,57 @@
 			<Option target="TRAINING_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/midi/esnToMidi.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/midi/midi.h">
 			<Option target="MIDI_TWINKLE"/>
 			<Option target="MIDI_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.c">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_win_util.c">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/globalState.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/port_processing.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/timers.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/test/catch.hpp">
@@ -804,11 +820,15 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/trainNetwork.h">
 			<Option target="TRAINING"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/bridge/bridge.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="ESN_SPEED_TEST"/>
 			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
@@ -840,20 +860,24 @@
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp">
 			<Option target="MIDI_TWINKLE"/>
 			<Option target="MIDI_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
@@ -861,12 +885,15 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/timerThread.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/timers.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/updateThread.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/checkpoint.cpp">

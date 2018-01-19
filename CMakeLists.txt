@@ -75,7 +75,7 @@ endif()
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_correctness.cpp)
+                    test/esn/esn_correctness.cpp include/bridge/bridge.h)
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
@@ -160,12 +160,41 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         src/interface/nowplayingbar.cpp
                         src/interface/piano.cpp
                         src/interface/squarebutton.cpp
-                        src/interface/vmeter.cpp)
+                        src/interface/vmeter.cpp
+                        include/bridge/bridge.h
+                        src/bridge/bridge.cpp
+                        include/port_audio/pa_ringbuffer.c
+                        include/port_audio/pa_win_util.c
+                        include/esn/esn.h
+                        src/esn/esn.cpp
+                        include/midi/midi.h
+                        src/midi/midi.cpp
+                        include/runtime/port_processing.h
+                        src/runtime/port_processing.cpp
+                        include/runtime/init_close.h
+                        src/runtime/init_close.cpp
+                        include/runtime/globalState.h
+                        include/runtime/updateThread.h
+                        src/runtime/updateThread.cpp
+                        include/runtime/timerThread.h
+                        src/runtime/timerThread.cpp
+                        include/midi/esnToMidi.h
+                        src/midi/esnToMidi.cpp
+                        include/runtime/timers.h
+                        src/runtime/timers.cpp)
 
 add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
 if(Qt5Widgets_FOUND)
     target_link_libraries(RUNTIME_W_GUI Qt5::Widgets Qt5::Core Qt5::Svg Qt5::Gui)
 endif()
+target_link_libraries(RUNTIME_W_GUI ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+target_link_libraries(RUNTIME_W_GUI winmm.lib)
+#link up the boost libraries
+if(Boost_FOUND)
+    target_link_libraries(RUNTIME_W_GUI ${Boost_LIBRARIES})
+endif()
+
+
 
 
 set(RUNTIME_UNIT_FILES include/test/catch.hpp
