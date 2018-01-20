@@ -12,6 +12,9 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "."
+  "../"
+  "RUNTIME_UNIT_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"
@@ -23,6 +26,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT_autogen/mocs_compilation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/RUNTIME_UNIT_autogen/mocs_compilation.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.obj"
@@ -32,6 +36,9 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "."
+  "../"
+  "RUNTIME_UNIT_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"

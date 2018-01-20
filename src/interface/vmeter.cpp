@@ -5,13 +5,15 @@
  */
 
 #include "../../include/interface/vmeter.h"
-#include <math.h>
+#include <cmath>
 
 /**
  * constructor calls super constructor and initialises peak value
  * @param parent messing with inheritance
  */
-VMeter::VMeter(QWidget *parent) : QWidget(parent), currentValue(0.4) {}
+VMeter::VMeter(QWidget *parent) : QWidget(parent), currentValue(0.0) {
+    connect(this,SIGNAL(valueChanged(double)),this,SLOT(updateValue(double))); //set up event handling
+}
 
 /**
  * overwrites paint event function to paint meter
@@ -24,11 +26,20 @@ void VMeter::paintEvent(QPaintEvent *event) {
 }
 
 /**
- * function sets new peak value for volume meter
- * @param newValue
+ * function emits new event for new peak value for volume meter
+ * @param newValue the new volume meter value
  */
 void VMeter::setNewValue(double newValue) {
-    currentValue = fabs(newValue); //I just want the magnitude, not the sign
+    emit valueChanged(fabs(newValue)); //I just want the magnitude, not the sign
+}
+
+/**
+ * updates the volume meter with a new value
+ * @param newValue
+ */
+void VMeter::updateValue(double newValue) {
+    currentValue = newValue;
+    update();
 }
 
 /**
@@ -60,7 +71,7 @@ void VMeter::paintVMeter() {
         if(i == NUM_GREEN + NUM_YELLOW) painter.setBrush(QColor(RED));
         if(i >= opaqueRectangles) painter.setOpacity(TRANSPARENCY); //if we've surpassed the current peak value
 
-        painter.drawRect(i*(barWidth*1.5),barHeight/2.0,barWidth,barHeight);
+        painter.drawRect((int)(i*(barWidth*1.5)),(int)(barHeight/2.0),(int)(barWidth),(int)(barHeight));
     }
 
 }

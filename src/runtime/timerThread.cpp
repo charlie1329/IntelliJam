@@ -37,7 +37,14 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
     while(*stillRunning) {
-        silenceTimer(&(callback->ringTimer),bridge); //use this function to wait on a condition
+        silenceTimer(&(callback->ringTimer),bridge,stillRunning); //use this function to wait on a condition
+
+        //in case stopped during timer execution
+        if(!(*stillRunning)) {
+            cond->notify_all();
+            break;
+        }
+
         //TODO: Improve Timer!!!
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
@@ -117,11 +124,18 @@ int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<
     MIDIHDR hdr{};
     unsigned long err;
 
-    unsigned long *midiEvents = naiveMidiWin(prediction,outHandle.get()); //form our new output
+    //to be passed to piano update
+    int ppqn;
+    int tempo;
+
+    unsigned long *midiEvents = naiveMidiWin(prediction,outHandle.get(),&ppqn,&tempo); //form our new output
+
+    //get size of event array
+    int arrSize = (prediction.rows() * 2 + 1) * 3;
 
     //fill header struct
     hdr.lpData = reinterpret_cast<LPSTR>(midiEvents);
-    hdr.dwBufferLength = hdr.dwBytesRecorded = sizeof(unsigned long) * ((prediction.rows() * 2 + 1) * 3);
+    hdr.dwBufferLength = hdr.dwBytesRecorded = sizeof(unsigned long) * arrSize;
     hdr.dwFlags = 0;
 
     //queue up header into midi event queue
@@ -147,7 +161,7 @@ int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<
         return 1;
     }
 
-    if(bridge != nullptr) bridge->pianoUpdate(midiEvents); //update the piano in the gui
+    if(bridge != nullptr) bridge->pianoUpdate(midiEvents,arrSize,ppqn,tempo); //update the piano in the gui
     //wait/sleep while MIDI is being played
     WaitForSingleObject(*event,INFINITE);
 

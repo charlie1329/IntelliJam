@@ -21,8 +21,9 @@
  * a timer based around the silence of the input channel
  * @param ring the ring buffer to be read from
  * @param bridge the bridge to the GUI
+ * @param running is the system still active?
  */
-void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge);
+void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge, shared_ptr<atomic<bool>> running);
 
 
 #endif //FYP_TIMERS_H

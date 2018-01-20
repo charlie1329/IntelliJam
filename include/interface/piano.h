@@ -16,6 +16,7 @@
  * as a piano on the screen
  */
 class Piano : public QWidget {
+    Q_OBJECT //I'm declaring signals and slots etc.
 private:
     int currentlyPlayedNote;
     std::vector<int> whiteNotes;
@@ -23,7 +24,13 @@ private:
     void paintPiano();
 
 protected:
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
+
+signals:
+    void noteChanged(int newNote);
+
+public slots:
+    void updatePiano(int newNote);
 
 public:
 
@@ -31,7 +38,7 @@ public:
      * constructor will set up the widget
      * @param parent dealing with inheritance
      */
-    Piano(QWidget *parent = 0);
+    explicit Piano(QWidget *parent = nullptr);
 
     /**
      * function will set a particular note on the keyboard to 'played'

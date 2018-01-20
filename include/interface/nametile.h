@@ -13,28 +13,33 @@
 #include <QString>
 
 #define ACTIVE_COLOUR "#535c50"
-#define INACTIVE_COLOUR "#333333"
-#define USER_COLOUR "#08c207"
-#define AI_COLOUR "#c60404"
 #define HIGHLIGHT_COLOUR "#ffffff"
 
-#define HUMAN "C:/Users/charl/CLionProjects/FYP/images/002-human.png"
-#define ROBOT "C:/Users/charl/CLionProjects/FYP/images/001-robot.png"
+#define HUMAN "images/human.png"
+#define ROBOT "images/robot.png"
 
-#define WIDTH_DIVISION 1.0
-#define FONT "Newyork"
-
+/**
+ * class represents a soloist tile on the interface
+ * can be used for either a human user or an ai
+ */
 class NameTile: public QWidget {
+
+    Q_OBJECT
+
 private:
     bool active; //used to determine if name tile should appear active
     bool isAI; //effects colour of text
     void drawTile();
 
+signals:
+    void activeChanged();
+
 protected:
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 
 public:
-    NameTile(QWidget *parent = 0, bool initActive = false, bool isAI = false);
-    void switchActive();
+    explicit NameTile(QWidget *parent = nullptr, bool initActive = false, bool isAI = false);
+    void switchActive();//switches the active state of the tile
+    bool getActive(); //get the current state of the tile
 };
 #endif // NAMETILE_H

@@ -7,6 +7,9 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 
 set(CMAKE_CXX_STANDARD 11)
 
+#removes command line window, may need to switch off for non GUI-oriented targets
+set(CMAKE_CXX_FLAGS "-mwindows")
+
 # get boost setup properly
 #set(Boost_DEBUG ON)
 set(BOOST_ROOT "C:/Program Files/boost_1_66_0")
@@ -20,6 +23,9 @@ if(Boost_FOUND)
 endif()
 
 #get qt set up correctly
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ";" ${QT5_PACKAGE_DIR})
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)

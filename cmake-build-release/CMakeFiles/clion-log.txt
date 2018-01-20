@@ -5,7 +5,7 @@ CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3
 Call Stack (most recent call first):
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:15 (find_package)
+  CMakeLists.txt:17 (find_package)
 
 
 CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
@@ -14,7 +14,7 @@ CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3
 Call Stack (most recent call first):
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:15 (find_package)
+  CMakeLists.txt:17 (find_package)
 
 
 CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
@@ -23,7 +23,7 @@ CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3
 Call Stack (most recent call first):
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:15 (find_package)
+  CMakeLists.txt:17 (find_package)
 
 
 CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
@@ -32,7 +32,7 @@ CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3
 Call Stack (most recent call first):
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:15 (find_package)
+  CMakeLists.txt:17 (find_package)
 
 
 CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:786 (message):
@@ -41,7 +41,7 @@ CMake Warning at C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3
 Call Stack (most recent call first):
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:892 (_Boost_COMPONENT_DEPENDENCIES)
   C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/FindBoost.cmake:1523 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:15 (find_package)
+  CMakeLists.txt:17 (find_package)
 
 
 -- Boost version: 1.66.0

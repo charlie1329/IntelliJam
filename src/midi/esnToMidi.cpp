@@ -52,18 +52,20 @@ string naiveMidi(VectorXd prediction) {
  * assumes output stream already opened
  * @param prediction the esn prediction
  * @param out the output handle for the midi device
+ * @param ppqn pulses per quarter note (to be stored here)
+ * @param tempo the tempo in microseconds per quarter note
  * @return an array of midi events, where 3 longs represent one event
  */
-unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
+unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out, int *ppqn, int *tempo) {
 
-    unsigned int quarterNote = 15;
+    unsigned int quarterNote = 96;
 
     unsigned long err; //error variable for problems in midi
 
     //set division value of midi track (PPQN)
     MIDIPROPTIMEDIV prop1{};
     prop1.cbStruct = sizeof(MIDIPROPTIMEDIV);
-    prop1.dwTimeDiv = 4;
+    prop1.dwTimeDiv = 96;
     err = midiStreamProperty(*out, (LPBYTE)&prop1, MIDIPROP_SET|MIDIPROP_TIMEDIV);
     if(err) {
         return nullptr;
@@ -72,11 +74,14 @@ unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out) {
     //set the tempo
     MIDIPROPTEMPO prop2{};
     prop2.cbStruct = sizeof(MIDIPROPTIMEDIV);
-    prop2.dwTempo = 50000;
+    prop2.dwTempo = 500000;
     err = midiStreamProperty(*out, (LPBYTE)&prop2, MIDIPROP_SET|MIDIPROP_TEMPO);
     if(err) {
         return nullptr;
     }
+
+    *ppqn = 96;
+    *tempo = 500000;
 
     //number of messages = 1 program change message + however many notes predicted
     auto *events = new unsigned long[((prediction.rows() * 2) + 1) * 3];

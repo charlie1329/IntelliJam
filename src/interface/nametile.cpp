@@ -4,9 +4,6 @@
  */
 
 #include "../../include/interface/nametile.h"
-#include <QString>
-#include <QFontMetrics>
-#include <iostream>
 #include <QPixmap>
 
 /**
@@ -16,7 +13,12 @@
  * @param ai is the tile representing the AI?
  */
 NameTile::NameTile(QWidget *parent, bool initActive, bool ai):
-    QWidget(parent),active(initActive),isAI(ai) {}
+    QWidget(parent),active(initActive),isAI(ai) {
+
+    //set it up to repaint whenever the active status of the object is changed
+    connect(this,SIGNAL(activeChanged()),this,SLOT(update()));
+
+}
 
 /**
  * overwrites superclass function to paint the new widget
@@ -33,6 +35,15 @@ void NameTile::paintEvent(QPaintEvent *event) {
  */
 void NameTile::switchActive() {
     active = !active;
+    emit activeChanged();
+}
+
+/**
+ * function tests whether tile is active or not
+ * @return
+ */
+bool NameTile::getActive() {
+    return active;
 }
 
 /**
@@ -67,47 +78,13 @@ void NameTile::drawTile() {
         painter.setOpacity(0.5);
     }
 
-    painter.drawRect(0,0,w,h);
+    painter.drawRect(0,0,(int)w,(int)h);
 
-    /*
-    //different text colours depending on whether AI or user
-    if(isAI) {
-        painter.setPen(QColor(AI_COLOUR));
-    } else {
-        painter.setPen(QColor(USER_COLOUR));
-    }
-
-    //set the font
-    QFont font(FONT);
-    font.setBold(true);
-    font.setPointSize(12);
-    font.setStyleHint(QFont::SansSerif);
-
-    //find width of text
-    QFontMetrics fm(font);
-    int textWidth = fm.width(name);
-
-    //dynamically sized font
-    int fontSize = 12;
-    while(textWidth < width()/1.5) {
-        font.setPointSize(fontSize);
-        QFontMetrics fmTmp(font);
-        textWidth = fmTmp.width(name);
-        fontSize += 2;
-    }
-
-    painter.setFont(font);
-
-    //centre text in box
-    //painter.translate(QPoint(w/2,h/2));
-    //painter.drawText(-textWidth/2,0,name);
-    */
-
-
+    //display soloist picture
     QString whichPic = HUMAN;
     if(isAI) whichPic = ROBOT;
 
     QPixmap picture(whichPic);
-    painter.drawPixmap(0.1*width(),0.1*height(),width() * 0.8, height() * 0.8,picture);
+    painter.drawPixmap((int)(0.1*width()),(int)(0.1*height()),(int)(width() * 0.8), (int)(height() * 0.8),picture);
 
 }

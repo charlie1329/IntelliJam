@@ -9,8 +9,12 @@
 #include <QPixmap>
 #include <QIcon>
 
+/**
+ * constructor sets up and organises the widget
+ * @param parent the parent widget
+ */
 ControlBar::ControlBar(QWidget *parent) : QWidget(parent), nowPlaying("") {
-    setStyleSheet("background-image: url(\"C:/Users/charl/CLionProjects/FYP/images/dark-back.png\");");
+    setStyleSheet("background-image: url(\"images/dark-back.png\");");
 
 
     layout = new QHBoxLayout(this);
@@ -26,8 +30,6 @@ ControlBar::ControlBar(QWidget *parent) : QWidget(parent), nowPlaying("") {
     layout->addWidget(stopButton,0,Qt::AlignRight);
 
     setLayout(layout);
-
-
 }
 
 /**
@@ -41,3 +43,26 @@ ControlBar::~ControlBar() {
     delete stopButton;
 }
 
+/**
+ * simple get member function
+ * @return the file button object
+ */
+QPushButton *ControlBar::getFileButton() {
+    return fileBrowser;
+}
+
+/**
+ * simple get member function
+ * @return the play button object
+ */
+QPushButton *ControlBar::getPlayButton() {
+    return playButton;
+}
+
+/**
+ * simple get member function
+ * @return the stop button object
+ */
+QPushButton *ControlBar::getStopButton() {
+    return stopButton;
+}

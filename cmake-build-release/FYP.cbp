@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TWINKLE_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -54,6 +57,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TWINKLE_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -84,6 +90,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -114,6 +123,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -144,6 +156,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -174,6 +189,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -204,6 +222,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_SPEED_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -234,6 +255,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_SPEED_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -264,6 +288,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_CORE_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -294,6 +321,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_CORE_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -324,6 +354,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -354,6 +387,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -399,6 +435,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_NO_DEBUG"/>
 					<Add option="-DQT_SVG_LIB"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -434,6 +473,9 @@
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_NO_DEBUG"/>
 					<Add option="-DQT_SVG_LIB"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -464,6 +506,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -494,6 +539,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -524,6 +572,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/PORT_FUZZ_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -554,6 +605,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/PORT_FUZZ_TEST_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -584,6 +638,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -614,6 +671,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -644,6 +704,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -674,6 +737,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT_autogen/include"/>
 					<Add directory="C:/Program Files/boost_1_66_0"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
 					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
@@ -707,7 +773,150 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="MIDI_TWINKLE_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MIDI_TWINKLE_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TRAINING_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 TRAINING_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TRAINING_TEST_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 TRAINING_TEST_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ESN_SPEED_TEST_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 ESN_SPEED_TEST_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ESN_CORE_TEST_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 ESN_CORE_TEST_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MIDI_TEST_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MIDI_TEST_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_W_GUI_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_W_GUI_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MIDI_WIN_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MIDI_WIN_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PORT_FUZZ_TEST_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 PORT_FUZZ_TEST_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUNTIME_UNIT_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 RUNTIME_UNIT_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_CORE_TEST_autogen/mocs_compilation.cpp">
+			<Option target="ESN_CORE_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/ESN_SPEED_TEST_autogen/mocs_compilation.cpp">
+			<Option target="ESN_SPEED_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TEST_autogen/mocs_compilation.cpp">
+			<Option target="MIDI_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_TWINKLE_autogen/mocs_compilation.cpp">
+			<Option target="MIDI_TWINKLE"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN_autogen/mocs_compilation.cpp">
+			<Option target="MIDI_WIN"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp">
+			<Option target="PORT_FUZZ_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_UNIT_autogen/mocs_compilation.cpp">
+			<Option target="RUNTIME_UNIT"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/mocs_compilation.cpp">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_autogen/mocs_compilation.cpp">
+			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_TEST_autogen/mocs_compilation.cpp">
+			<Option target="TRAINING_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/TRAINING_autogen/mocs_compilation.cpp">
+			<Option target="TRAINING"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h">
 			<Option target="ESN_CORE_TEST"/>
 			<Option target="RUNTIME_W_GUI"/>

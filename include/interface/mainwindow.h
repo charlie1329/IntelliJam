@@ -23,6 +23,7 @@
  * class represents the main window of the GUI
  */
 class MainWindow : public QWidget {
+    Q_OBJECT
 private:
     shared_ptr<Bridge> bridge;
     Piano *piano;
@@ -34,11 +35,21 @@ private:
     QVBoxLayout *vbox;
     QHBoxLayout *userBox;
     QHBoxLayout *aiBox;
+
+
+private slots:
+    //slot functions for each of the buttons
+    void playPressed();
+    void stopPressed();
+
 protected:
-    void closeEvent(QCloseEvent *event);
+    //let me execute some clean up on the closing of the system
+    void closeEvent(QCloseEvent *event) override;
+
 public:
-    MainWindow(QWidget *parent = 0, shared_ptr<Bridge> newBridge = nullptr);
-    ~MainWindow();
+    //constructor/destructor
+    explicit MainWindow(QWidget *parent = nullptr, shared_ptr<Bridge> newBridge = nullptr);
+    ~MainWindow() override;
 
 };
 

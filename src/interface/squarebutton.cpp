@@ -43,6 +43,6 @@ void SquareButton::paintEvent(QPaintEvent *event) {
  */
 void SquareButton::paintButton() {
     setIcon(*icon);
-    setIconSize(QSize(1.5*height(),1.5*height()));
-    resize(QSize(1.5*height(),1.5*height()));
+    setIconSize(QSize((int)(1.5*height()),(int)(1.5*height())));
+    resize(QSize((int)(1.5*height()),(int)(1.5*height())));
 }

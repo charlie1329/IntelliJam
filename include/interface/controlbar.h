@@ -18,10 +18,14 @@
 
 #include <string>
 
-#define PLAY_PATH "C:/Users/charl/CLionProjects/FYP/images/003-play-button.png"
-#define STOP_PATH "C:/Users/charl/CLionProjects/FYP/images/002-stop.png"
-#define FILE_PATH "C:/Users/charl/CLionProjects/FYP/images/001-folders.png"
+#define PLAY_PATH "images/play-button.png"
+#define STOP_PATH "images/stop.png"
+#define FILE_PATH "images/folders.png"
 
+/**
+ * class represents the control bar of the system
+ * with buttons and a now playing bar
+ */
 class ControlBar: public QWidget {
 
 private:
@@ -37,8 +41,15 @@ private:
     std::string nowPlaying; //anticipate needing later on
 
 public:
-    ControlBar(QWidget *parent = 0);
-    ~ControlBar();
+
+    //constructor and destructor
+    explicit ControlBar(QWidget *parent = nullptr);
+    ~ControlBar() override;
+
+    //simple getters
+    QPushButton *getFileButton();
+    QPushButton *getPlayButton();
+    QPushButton *getStopButton();
 
 };
 

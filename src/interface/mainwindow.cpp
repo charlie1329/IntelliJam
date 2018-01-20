@@ -3,6 +3,9 @@
   * Author: Charlie Street
   */
 
+#include <utility>
+#include <QMessageBox>
+
 #include "../../include/interface/mainwindow.h"
 
 /**
@@ -12,14 +15,14 @@
  * @param parent the parent widget
  * @param bridge the bridge to the backend
  */
-MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(parent), bridge(newBridge){
+MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(parent), bridge(std::move(newBridge)){
 
     //set size and title of window
     resize(640,380);
     setWindowTitle("IntelliJam");
 
     //set background colour of window
-    QPixmap bkgnd("C:/Users/charl/CLionProjects/FYP/images/slate-back.png");
+    QPixmap bkgnd("images/slate-back.png");
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
@@ -35,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(
     userTile = new NameTile(this,true,false);
     aiTile = new NameTile(this,false,true);
 
-    devBar = new DeviceBar(this);
+    devBar = new DeviceBar(this,bridge);
 
     controlBar = new ControlBar(this);
 
@@ -51,6 +54,15 @@ MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(
     vbox->addLayout(aiBox,35);
     vbox->addWidget(controlBar,10);
     setLayout(vbox);
+
+    //allows me to mess with the painted GUI components
+    bridge->setTiles(userTile,aiTile);
+    bridge->setVMeter(vmeter);
+    bridge->setPiano(piano);
+
+    //add connections to the buttons
+    connect(controlBar->getPlayButton(),SIGNAL(released()),this, SLOT(playPressed()));
+    connect(controlBar->getStopButton(),SIGNAL(released()),this, SLOT(stopPressed()));
 
     //TODO: Make logo!: this->setWindowIcon();
 
@@ -78,6 +90,57 @@ MainWindow::~MainWindow() {
 void MainWindow::closeEvent(QCloseEvent *event) {
 
     bridge->closeApp(); //close up all the back end
+    //no need for error checking here, as we're going to shut down the system anyway
 
     QWidget::closeEvent(event);
+}
+
+/**
+ * function deals with what to do when the play button is pressed
+ * in the interface
+ */
+void MainWindow::playPressed() {
+
+    if(!userTile->getActive()) bridge->switchPlayer(); //make sure on user player
+
+    controlBar->getPlayButton()->setEnabled(false); //deactivate play button
+
+    string deviceToUse = devBar->getSelectedDevice(); //which input device to use
+
+    bridge->startApp(deviceToUse); //try to stop the process off
+
+    //do some error checking
+    if(bridge->getErr() != noError) {
+        QMessageBox messageBox;
+        messageBox.critical(nullptr, "Error Starting System", "An error occurred during the system start-up.\n "
+                "Please try again, or restart the system.");
+        messageBox.setFixedSize(500, 200);
+        messageBox.show();
+
+        controlBar->getPlayButton()->setEnabled(true); //allow the button to be used again as there was an error
+    }
+}
+
+/**
+ * function deals with functionality when stop button is pressed
+ * in the interface
+ */
+void MainWindow::stopPressed() {
+
+    controlBar->getStopButton()->setEnabled(false); //don't allow multiple presses in time taken to stop application
+
+    bridge->stopApp(); //stop the back-end and wait to finish
+
+    //do some error checking
+    if(bridge->getErr() != noError) {
+        QMessageBox messageBox;
+        messageBox.critical(nullptr, "Error Starting System", "An error occurred during the system start-up.\n"
+                "The behaviour from the system may no longer be as expected.");
+        messageBox.setFixedSize(500,200);
+        messageBox.show();
+    }
+
+    //reactivate usage of both the buttons
+    controlBar->getStopButton()->setEnabled(true);
+    controlBar->getPlayButton()->setEnabled(true);
 }

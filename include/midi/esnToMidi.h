@@ -39,9 +39,11 @@ string naiveMidi(VectorXd prediction);
  * using mcisendstring()
  * @param prediction the echo state network prediction
  * @param out the output handle for the midi device
+ * @param ppqn pulses per quarter note
+ * @param tempo the tempo in microseconds per quarter note
  * @return an array of midi events, 3 longs represent 1 event
  */
-unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out);
+unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out, int *ppqn, int *tempo);
 
 
 /**

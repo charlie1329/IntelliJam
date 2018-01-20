@@ -15,14 +15,15 @@
  * this should be improved once the system is running
  * @param ring the ring buffer to be read from
  * @param bridge the bridge to the gui
+ * @param state the global state of the system
  */
-void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge) {
+void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge, shared_ptr<atomic<bool>> running) {
     bool playingStarted = false;
     bool keepLooping = true;
     int anomalies = 0;
     int sampleCount = 0;
 
-    while(keepLooping) {
+    while(keepLooping && *running) {
 
         ring_buffer_size_t elementsToRead = PaUtil_GetRingBufferReadAvailable(ring);
         if(elementsToRead == 0) continue; // if nothing to read then don't bother allocating

@@ -5,7 +5,7 @@
  */
 
 #include "../../include/interface/nowplayingbar.h"
-#include <iostream>
+
 /**
  * constructor calls super constructor
  * and initialises field
@@ -58,12 +58,12 @@ void NowPlayingBar::paintBar() {
     painter.setPen(blankPen);
 
     painter.setBrush(QColor(OUTSIDE_COLOUR)); //colour for outer rectangle
-    painter.drawRect(0,(height() - outerHeight)/2,width(),outerHeight);
+    painter.drawRect(0,(int)((height() - outerHeight)/2),width(),(int)outerHeight);
 
     painter.setBrush(QColor(INSIDE_COLOUR));
-    painter.drawRect((width()-innerWidth)/2,
-                     (height() - outerHeight)/2 + (outerHeight-innerHeight)/2,
-                     innerWidth,innerHeight);
+    painter.drawRect((int)((width()-innerWidth)/2),
+                     (int)((height() - outerHeight)/2 + (outerHeight-innerHeight)/2),
+                     (int)innerWidth,(int)innerHeight);
 
 
     //once rectangles drawn, add text on top
@@ -84,14 +84,14 @@ void NowPlayingBar::paintBar() {
     int textHeight = fm.height();
 
     if(textWidth > 0.9 * innerWidth) {
-       int maxChars = (0.9*innerWidth - fm.width(now))/fm.width(" "); //how many characters can I write?
+       int maxChars = (int)((0.9*innerWidth - fm.width(now))/fm.width(" ")); //how many characters can I write?
 
        //generate string to display
        int start = currentIndex;
        int endPoint = currentIndex + maxChars;
        if(endPoint >= currentTrack.count()) {
             QString sub1 = currentTrack.mid(start,currentTrack.count()-1);
-            std::cout << endPoint << ", " << currentTrack.count() << std::endl;
+
             if(endPoint - currentTrack.count()-1 <= 2){
                 total = now + sub1 + "  ";
             } else {

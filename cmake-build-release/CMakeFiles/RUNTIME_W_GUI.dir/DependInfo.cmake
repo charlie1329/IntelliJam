@@ -21,6 +21,9 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "."
+  "../"
+  "RUNTIME_W_GUI_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"
@@ -32,6 +35,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/mocs_compilation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/bridge/bridge.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/interface/controlbar.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj"
@@ -64,6 +68,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "."
+  "../"
+  "RUNTIME_W_GUI_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"

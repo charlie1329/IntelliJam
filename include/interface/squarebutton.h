@@ -1,5 +1,6 @@
 /**
   * file represents class which inherits from push button to have some desirable behaviour
+  * Author: Charlie Street
   */
 
 #ifndef SQUAREBUTTON_H
@@ -22,11 +23,11 @@ private:
     void paintButton();
 
 protected:
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 
 public:
     SquareButton(QWidget *parent, QString iconPath);
-    ~SquareButton();
+    ~SquareButton() override;
 };
 
 

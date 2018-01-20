@@ -27,6 +27,7 @@
  * class represents a volume meter widget
  */
 class VMeter: public QWidget {
+    Q_OBJECT //becuase I'm defining my own signals/slots etc.
 private:
     double currentValue;
 
@@ -36,11 +37,18 @@ private:
      */
     void paintVMeter();
 
+signals:
+    void valueChanged(double newValue);
+
+
 protected:
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
+
+public slots:
+    void updateValue(double newValue);
 
 public:
-    VMeter(QWidget *parent = 0);
+    explicit VMeter(QWidget *parent = nullptr);
     void setNewValue(double newValue);
 
 };

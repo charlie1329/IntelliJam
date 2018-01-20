@@ -32,6 +32,9 @@ Piano::Piano(QWidget *parent) : QWidget(parent), currentlyPlayedNote(-1) {
         blackNotes.push_back(i*12 + 10);
 
     }
+
+    connect(this,SIGNAL(noteChanged(int)),this,SLOT(updatePiano(int)));
+
 }
 
 /**
@@ -74,14 +77,13 @@ void Piano::paintPiano() {
         }
     }
 
-    //int h = height();
     double w = width(); //width mainly used for judging size of keyboard
     double relativeW = 820.0;
 
     //the following values have been calculated by hand
     double whiteNoteBigger = (24.0/relativeW) * w;
     double whiteNoteSmaller = (23.0/relativeW) * w;
-    double whiteNoteHeight = (14.0/78.75) * ((double) w);
+    double whiteNoteHeight = (14.0/78.75) * w;
 
     double startY = (height() - whiteNoteHeight)/2.0;
 
@@ -89,8 +91,6 @@ void Piano::paintPiano() {
     double blackNoteHeight= (9.0/14.0) * whiteNoteHeight;
 
     QPainter painter(this);
-    //QPen pen;
-    //pen.setStyle(Qt::NoPen);
     painter.setPen(QColor(BLACK)); //black
 
     //draw white keys
@@ -102,10 +102,10 @@ void Piano::paintPiano() {
         if(currentOn == i && isWhite) painter.setBrush(QColor(NOTE_ON)); //if this note being played
 
         if(i % 7 == 0 || i % 7 == 3 || i % 7 == 4) {
-            painter.drawRect(topX,startY,whiteNoteBigger,whiteNoteHeight);
+            painter.drawRect((int)topX, (int)startY, (int)whiteNoteBigger, (int)whiteNoteHeight);
             topX += whiteNoteBigger;
         } else {
-            painter.drawRect(topX,startY,whiteNoteSmaller,whiteNoteHeight);
+            painter.drawRect((int)topX, (int)startY, (int)whiteNoteSmaller, (int)whiteNoteHeight);
             topX += whiteNoteSmaller;
         }
 
@@ -124,13 +124,13 @@ void Piano::paintPiano() {
         }
 
         if(i % 5 == 3) {
-            painter.drawRect(topX + ((27.0/relativeW) * w), startY, blackNoteWidth, blackNoteHeight);
+            painter.drawRect((int)(topX + ((27.0/relativeW) * w)), (int)startY, (int)blackNoteWidth, (int)blackNoteHeight);
             topX += (41.0/relativeW) * w;
         } else if (i % 5 == 4) {
-            painter.drawRect(topX + ((14.0/relativeW) * w), startY, blackNoteWidth, blackNoteHeight);
+            painter.drawRect((int)(topX + ((14.0/relativeW) * w)), (int)startY, (int)blackNoteWidth, (int)blackNoteHeight);
             topX += (42.0/relativeW) * w;
         } else {
-            painter.drawRect(topX + ((13.0/relativeW) * w), startY, blackNoteWidth, blackNoteHeight);
+            painter.drawRect((int)(topX + ((13.0/relativeW) * w)), (int)startY, (int)blackNoteWidth, (int)blackNoteHeight);
             topX += (27.0/relativeW) * w;
         }
 
@@ -147,12 +147,22 @@ void Piano::paintPiano() {
  * @param note the note to be set
  */
 void Piano::setNoteOn(unsigned int note) {
-    currentlyPlayedNote = note - START_NOTE;
+    emit noteChanged(note - START_NOTE);
 }
 
 /**
  * function sets currentNote to 'off'
  */
 void Piano::setNoteOff() {
-    currentlyPlayedNote = -1;
+    emit noteChanged(-1);
+}
+
+/**
+ * function updates the currently played note
+ * and calls for the piano to be updated
+ * @param newNote the new note to be played (or turned off)
+ */
+void Piano::updatePiano(int newNote) {
+    currentlyPlayedNote = newNote;
+    update(); //update the gui
 }

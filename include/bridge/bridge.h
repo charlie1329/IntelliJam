@@ -8,9 +8,13 @@
 #ifndef FYP_BRIDGE_H
 #define FYP_BRIDGE_H
 
-#define SAMPLES_PER_SECOND 100
+#define SAMPLES_PER_SECOND 30
 
 #include "../runtime/init_close.h"
+#include "../midi/esnToMidi.h"
+#include "../interface/nametile.h"
+#include "../interface/vmeter.h"
+#include "../interface/piano.h"
 
 /**
  * enum for any errors that may be generated
@@ -35,6 +39,12 @@ private:
     IntelliJamErr err; //global error codes
     int sampleCounter; //used for updating volume meter
 
+    //GUI components
+    NameTile *userTile;
+    NameTile *aiTile;
+    VMeter *vmeter;
+    Piano *piano;
+
 public:
 
     //functions which deal with system state
@@ -46,7 +56,12 @@ public:
     //functions to adjust certain GUI components
     void switchPlayer();
     void volumeUpdate(double newVolume);
-    void pianoUpdate(unsigned long *midiEvents);
+    void pianoUpdate(unsigned long *midiEvents, int arrSize, int ppqn, int tempo);
+
+    //setters
+    void setTiles(NameTile *newUserTile, NameTile *newAiTile);
+    void setVMeter(VMeter *newVMeter);
+    void setPiano(Piano *piano);
 
     //auxillary functions
     IntelliJamErr getErr();

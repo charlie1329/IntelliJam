@@ -11778,10 +11778,6 @@ C:/Qt/5.10.0/mingw53_32/include/QtCore/qversiontagging.h
 QtCore/qglobal.h
 -
 
-C:/Qt/5.10.0/mingw53_32/include/QtGui/QFontMetrics
-qfontmetrics.h
-C:/Qt/5.10.0/mingw53_32/include/QtGui/qfontmetrics.h
-
 C:/Qt/5.10.0/mingw53_32/include/QtGui/QIcon
 qicon.h
 C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h
@@ -12196,6 +12192,10 @@ C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel
 qlabel.h
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h
 
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox
+qmessagebox.h
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h
+
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton
 qpushbutton.h
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h
@@ -12292,6 +12292,12 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -12342,6 +12348,12 @@ QtWidgets/qsizepolicy.h
 QtCore/qrect.h
 -
 limits.h
+-
+
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qmessagebox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qdialog.h
 -
 
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h
@@ -12477,6 +12489,48 @@ QtGui/qkeysequence.h
 -
 QtGui/qevent.h
 -
+
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_mainwindow.cpp
+../../../include/interface/mainwindow.h
+C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nametile.cpp
+../../../include/interface/nametile.h
+C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp
+../../../include/interface/piano.h
+C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_vmeter.cpp
+../../../include/interface/vmeter.h
+C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/mocs_compilation.cpp
+WULQGKC2PH/moc_mainwindow.cpp
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_mainwindow.cpp
+WULQGKC2PH/moc_nametile.cpp
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nametile.cpp
+WULQGKC2PH/moc_piano.cpp
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp
+WULQGKC2PH/moc_vmeter.cpp
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_vmeter.cpp
 
 C:/Users/charl/CLionProjects/FYP/include/Eigen/Cholesky
 Core
@@ -13523,6 +13577,14 @@ C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
 ../runtime/init_close.h
 C:/Users/charl/CLionProjects/FYP/include/runtime/init_close.h
+../midi/esnToMidi.h
+C:/Users/charl/CLionProjects/FYP/include/midi/esnToMidi.h
+../interface/nametile.h
+C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
+../interface/vmeter.h
+C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h
+../interface/piano.h
+C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
 
 C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
 ../Eigen/Dense
@@ -13553,6 +13615,10 @@ QVBoxLayout
 -
 QLabel
 -
+memory
+-
+../bridge/bridge.h
+C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
 
 C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
 piano.h
@@ -13703,6 +13769,10 @@ C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
 C:/Users/charl/CLionProjects/FYP/include/runtime/updateThread.h
 ../../include/runtime/timerThread.h
 C:/Users/charl/CLionProjects/FYP/include/runtime/timerThread.h
+iostream
+-
+set
+-
 
 C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp
 utility
@@ -13741,28 +13811,26 @@ QApplication
 -
 QSplashScreen
 -
+QMessageBox
+-
 
 C:/Users/charl/CLionProjects/FYP/src/interface/mainwindow.cpp
+utility
+-
+QMessageBox
+-
 ../../include/interface/mainwindow.h
 C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
 
 C:/Users/charl/CLionProjects/FYP/src/interface/nametile.cpp
 ../../include/interface/nametile.h
 C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
-QString
--
-QFontMetrics
--
-iostream
--
 QPixmap
 -
 
 C:/Users/charl/CLionProjects/FYP/src/interface/nowplayingbar.cpp
 ../../include/interface/nowplayingbar.h
 C:/Users/charl/CLionProjects/FYP/include/interface/nowplayingbar.h
-iostream
--
 
 C:/Users/charl/CLionProjects/FYP/src/interface/piano.cpp
 ../../include/interface/piano.h
@@ -13775,7 +13843,7 @@ C:/Users/charl/CLionProjects/FYP/include/interface/squarebutton.h
 C:/Users/charl/CLionProjects/FYP/src/interface/vmeter.cpp
 ../../include/interface/vmeter.h
 C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h
-math.h
+cmath
 -
 
 C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp

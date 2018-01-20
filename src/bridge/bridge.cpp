@@ -7,11 +7,19 @@
 #include "../../include/runtime/updateThread.h"
 #include "../../include/runtime/timerThread.h"
 
+#include <iostream>
+#include <set>
+
 /**
  * constructor does basic setup of system
  * as this object is created upon startup
  */
 Bridge::Bridge() {
+
+    userTile = nullptr; //needs to be set at a later time
+    aiTile = nullptr;
+    vmeter = nullptr;
+    piano = nullptr;
 
     currentSystemState = nullptr; //not used until a call to openApp()
     timerThread = nullptr;
@@ -105,8 +113,6 @@ void Bridge::closeApp() {
  */
 void Bridge::startApp(string deviceName) {
 
-    //TODO: Set back to human tile in GUI!
-
     err = noError; //reset error
 
     int deviceNum = -1;
@@ -156,7 +162,10 @@ void Bridge::startApp(string deviceName) {
 void Bridge::switchPlayer() {
 
     volumeUpdate(0.0); //reset volume meter when switching player
-    //TODO: FILL IN
+
+    //switch the tiles active state
+    if(userTile != nullptr) userTile->switchActive();
+    if(aiTile != nullptr) aiTile->switchActive();
 }
 
 /**
@@ -168,16 +177,40 @@ void Bridge::volumeUpdate(double newVolume) {
         sampleCounter++;
     } else {
         sampleCounter = 0;
-        //TODO: do UPDATE HERE
+        if(vmeter != nullptr) vmeter->setNewValue(newVolume);
     }
 }
 
 /**
  * function is used to send periodic events to
  * have the keyboard repainted with the right note selected
+ * @param events the midi events being played
+ * @param arrSize the size of the events array
+ * @param ppqn the timebase (pulses per quarter note)
+ * @param tempo the midi tempo
  */
-void Bridge::pianoUpdate(unsigned long *events) {
-    //TODO: Fill in!
+void Bridge::pianoUpdate(unsigned long *events, int arrSize, int ppqn, int tempo) {
+
+    //loop round in 3s and mimic the midi events
+    for(int i = 3; i < arrSize; i+=3) {
+
+        //carry out any sleep if necessary
+        unsigned long millisecondsToSleep = ((events[i]/ppqn)*tempo) / 1000;
+        if(millisecondsToSleep != 0) {
+            boost::this_thread::sleep_for(boost::chrono::milliseconds(millisecondsToSleep));
+        }
+
+        //examine the midi event, and find the appropriate note to set on the keyboard
+        unsigned long event = events[i+2];
+        bool noteOn = (event & 0xFF) == 0x90;
+        if(noteOn) {
+            auto note = (unsigned int)((event & 0xFF00) >> 8); //note is the second byte of the event
+            piano->setNoteOn(note-NOTE_OFFSET);
+        } else {
+            piano->setNoteOff();
+        }
+
+    }
 }
 
 /**
@@ -203,5 +236,35 @@ vector<string> Bridge::getDevices() {
        deviceNames.emplace_back(device.second->name);
     }
 
+    //remove all the duplicates
+    set<string> noDups(deviceNames.begin(), deviceNames.end());
+    deviceNames.assign(noDups.begin(), noDups.end());
+
     return deviceNames;
+}
+
+/**
+ * function is a simple setter
+ * @param newUserTile the user tile
+ * @param newAiTile the ai tile
+ */
+void Bridge::setTiles(NameTile *newUserTile, NameTile *newAiTile) {
+    userTile = newUserTile;
+    aiTile = newAiTile;
+}
+
+/**
+ * function is a simple setter
+ * @param newVMeter the new vmeter to set
+ */
+void Bridge::setVMeter(VMeter *newVMeter) {
+    vmeter = newVMeter;
+}
+
+/**
+ * function is a simple setter
+ * @param newPiano the new piano to set
+ */
+void Bridge::setPiano(Piano *newPiano) {
+    piano = newPiano;
 }

@@ -12,10 +12,9 @@
 
 #define OUTSIDE_COLOUR "#c8c8c8"
 #define INSIDE_COLOUR "#98aed1"
-#define TEXT_COLOUR "#000000"
 
 /**
- * class represents a widget which displays a now displaying bar
+ * class represents a widget which displays a now playing bar
  */
 class NowPlayingBar : public QWidget {
 private:
@@ -24,10 +23,10 @@ private:
     void paintBar();
 
 protected:
-    void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 
 public:
-    NowPlayingBar(QWidget *parent = 0);
+    NowPlayingBar(QWidget *parent = nullptr);
     void switchTrack(QString newTrack);
 };
 

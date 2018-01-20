@@ -556,6 +556,31 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides: CMakeFiles/RUN
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
 
 
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/flags.make
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: CMakeFiles/RUNTIME_W_GUI.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME_W_GUI.dir\RUNTIME_W_GUI_autogen\mocs_compilation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\cmake-build-release\RUNTIME_W_GUI_autogen\mocs_compilation.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\cmake-build-release\RUNTIME_W_GUI_autogen\mocs_compilation.cpp > CMakeFiles\RUNTIME_W_GUI.dir\RUNTIME_W_GUI_autogen\mocs_compilation.cpp.i
+
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\cmake-build-release\RUNTIME_W_GUI_autogen\mocs_compilation.cpp -o CMakeFiles\RUNTIME_W_GUI.dir\RUNTIME_W_GUI_autogen\mocs_compilation.cpp.s
+
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.requires
+
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.provides: CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.provides
+
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.provides.build: CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
+
+
 # Object files for target RUNTIME_W_GUI
 RUNTIME_W_GUI_OBJECTS = \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj" \
@@ -577,7 +602,8 @@ RUNTIME_W_GUI_OBJECTS = \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj" \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj" \
 "CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj" \
-"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj"
+"CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj" \
+"CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target RUNTIME_W_GUI
 RUNTIME_W_GUI_EXTERNAL_OBJECTS =
@@ -602,6 +628,7 @@ RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
+RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/build.make
 RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Svg.a
 RUNTIME_W_GUI.exe: ../libs/portaudio_x86.lib
@@ -616,7 +643,7 @@ RUNTIME_W_GUI.exe: C:/Qt/5.10.0/mingw53_32/lib/libQt5Core.a
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/linklibs.rsp
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/objects1.rsp
 RUNTIME_W_GUI.exe: CMakeFiles/RUNTIME_W_GUI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable RUNTIME_W_GUI.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable RUNTIME_W_GUI.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RUNTIME_W_GUI.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -644,6 +671,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj.requires
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj.requires
 CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj.requires
+CMakeFiles/RUNTIME_W_GUI.dir/requires: CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj.requires
 
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/requires
 
