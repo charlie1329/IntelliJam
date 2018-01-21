@@ -13,7 +13,7 @@
  * constructor sets up and organises the widget
  * @param parent the parent widget
  */
-ControlBar::ControlBar(QWidget *parent) : QWidget(parent), nowPlaying("") {
+ControlBar::ControlBar(QWidget *parent) : QWidget(parent) {
     setStyleSheet("background-image: url(\"images/dark-back.png\");");
 
 
@@ -65,4 +65,12 @@ QPushButton *ControlBar::getPlayButton() {
  */
 QPushButton *ControlBar::getStopButton() {
     return stopButton;
+}
+
+/**
+ * simple get member function
+ * @return the now playing bar object
+ */
+NowPlayingBar *ControlBar::getPlayBar() {
+    return playing;
 }

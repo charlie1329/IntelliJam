@@ -11056,6 +11056,10 @@ C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
 qstring.h
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qstring.h
 
+C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
+qtimer.h
+C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
+
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h
 QtCore/qvariant.h
 -
@@ -11106,6 +11110,12 @@ QtCore/qatomic_bootstrap.h
 QtCore/qatomic_cxx11.h
 -
 QtCore/qatomic_msvc.h
+-
+
+C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
+QtCore/qglobal.h
+-
+QtCore/qnamespace.h
 -
 
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
@@ -11220,6 +11230,16 @@ map
 utility
 -
 
+C:/Qt/5.10.0/mingw53_32/include/QtCore/qdir.h
+QtCore/qstring.h
+-
+QtCore/qfileinfo.h
+-
+QtCore/qstringlist.h
+-
+QtCore/qshareddata.h
+-
+
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qeventloop.h
 QtCore/qobject.h
 -
@@ -11236,6 +11256,16 @@ C:/Qt/5.10.0/mingw53_32/include/QtCore/qfiledevice.h
 QtCore/qiodevice.h
 -
 QtCore/qstring.h
+-
+
+C:/Qt/5.10.0/mingw53_32/include/QtCore/qfileinfo.h
+QtCore/qfile.h
+-
+QtCore/qlist.h
+-
+QtCore/qshareddata.h
+-
+QtCore/qmetatype.h
 -
 
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qflags.h
@@ -11672,6 +11702,16 @@ QtCore/qlocale.h
 QtCore/qscopedpointer.h
 -
 stdio.h
+-
+
+C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
+QtCore/qglobal.h
+-
+QtCore/qbasictimer.h
+-
+QtCore/qobject.h
+-
+chrono
 -
 
 C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
@@ -12188,6 +12228,10 @@ C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QComboBox
 qcombobox.h
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcombobox.h
 
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QFileDialog
+qfiledialog.h
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qfiledialog.h
+
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel
 qlabel.h
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h
@@ -12296,6 +12340,18 @@ C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qwidget.h
+-
+
+C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qfiledialog.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qdir.h
+-
+QtCore/qstring.h
+-
+QtCore/qurl.h
+-
+QtWidgets/qdialog.h
 -
 
 C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h
@@ -12506,6 +12562,14 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nowplayingbar.cpp
+../../../include/interface/nowplayingbar.h
+C:/Users/charl/CLionProjects/FYP/include/interface/nowplayingbar.h
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp
 ../../../include/interface/piano.h
 C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
@@ -12527,6 +12591,8 @@ WULQGKC2PH/moc_mainwindow.cpp
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_mainwindow.cpp
 WULQGKC2PH/moc_nametile.cpp
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nametile.cpp
+WULQGKC2PH/moc_nowplayingbar.cpp
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nowplayingbar.cpp
 WULQGKC2PH/moc_piano.cpp
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp
 WULQGKC2PH/moc_vmeter.cpp
@@ -13639,6 +13705,8 @@ QWidget
 -
 QVBoxLayout
 -
+QString
+-
 
 C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
 string
@@ -13656,6 +13724,8 @@ QWidget
 QString
 -
 QPainter
+-
+QTimer
 -
 
 C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
@@ -13819,6 +13889,10 @@ utility
 -
 QMessageBox
 -
+QFileDialog
+-
+iostream
+-
 ../../include/interface/mainwindow.h
 C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
 
@@ -13829,6 +13903,8 @@ QPixmap
 -
 
 C:/Users/charl/CLionProjects/FYP/src/interface/nowplayingbar.cpp
+utility
+-
 ../../include/interface/nowplayingbar.h
 C:/Users/charl/CLionProjects/FYP/include/interface/nowplayingbar.h
 

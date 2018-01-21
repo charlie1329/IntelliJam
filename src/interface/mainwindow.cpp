@@ -5,6 +5,8 @@
 
 #include <utility>
 #include <QMessageBox>
+#include <QFileDialog>
+#include <iostream>
 
 #include "../../include/interface/mainwindow.h"
 
@@ -63,6 +65,10 @@ MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(
     //add connections to the buttons
     connect(controlBar->getPlayButton(),SIGNAL(released()),this, SLOT(playPressed()));
     connect(controlBar->getStopButton(),SIGNAL(released()),this, SLOT(stopPressed()));
+    connect(controlBar->getFileButton(),SIGNAL(released()),this, SLOT(filePressed()));
+
+    //add connection from file button to now playing bar
+    connect(this,SIGNAL(trackChanged(QString)),controlBar->getPlayBar(), SLOT(newTrackSlot(QString)));
 
     //TODO: Make logo!: this->setWindowIcon();
 
@@ -104,6 +110,7 @@ void MainWindow::playPressed() {
     if(!userTile->getActive()) bridge->switchPlayer(); //make sure on user player
 
     controlBar->getPlayButton()->setEnabled(false); //deactivate play button
+    controlBar->getFileButton()->setEnabled(false); //deactivate browse button too while we're at it
 
     string deviceToUse = devBar->getSelectedDevice(); //which input device to use
 
@@ -118,6 +125,7 @@ void MainWindow::playPressed() {
         messageBox.show();
 
         controlBar->getPlayButton()->setEnabled(true); //allow the button to be used again as there was an error
+        controlBar->getFileButton()->setEnabled(true);
     }
 }
 
@@ -140,7 +148,27 @@ void MainWindow::stopPressed() {
         messageBox.show();
     }
 
-    //reactivate usage of both the buttons
+    //reactivate usage of all buttons
     controlBar->getStopButton()->setEnabled(true);
     controlBar->getPlayButton()->setEnabled(true);
+    controlBar->getFileButton()->setEnabled(true);
+}
+
+/**
+ * function deals with what happens when the file browse button
+ * is pressed on the interface
+ */
+void MainWindow::filePressed() {
+
+    //deactivate the button while file being selected
+    controlBar->getFileButton()->setEnabled(false);
+
+    QString fileName = QFileDialog::getOpenFileName(this,
+    tr("Select Backing Track"), "/", tr("Wave Files (*.wav)"));
+
+    emit trackChanged(fileName);
+
+    //reactivate the button now we're done
+    controlBar->getFileButton()->setEnabled(true);
+
 }

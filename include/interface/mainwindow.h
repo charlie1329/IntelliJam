@@ -18,6 +18,7 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
+#include <QString>
 
 /**
  * class represents the main window of the GUI
@@ -41,6 +42,10 @@ private slots:
     //slot functions for each of the buttons
     void playPressed();
     void stopPressed();
+    void filePressed();
+
+signals:
+    void trackChanged(QString newTrack);
 
 protected:
     //let me execute some clean up on the closing of the system

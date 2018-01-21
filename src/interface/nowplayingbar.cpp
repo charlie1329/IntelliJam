@@ -4,6 +4,8 @@
  * Author: Charlie Street
  */
 
+#include <utility>
+
 #include "../../include/interface/nowplayingbar.h"
 
 /**
@@ -11,7 +13,13 @@
  * and initialises field
  * @param parent the parent widget
  */
-NowPlayingBar::NowPlayingBar(QWidget *parent): QWidget(parent), currentTrack(""), currentIndex(-1) {}
+NowPlayingBar::NowPlayingBar(QWidget *parent): QWidget(parent), currentTrack(""), currentIndex(-1) {
+
+    //set up timer nicely
+    scrollTimer = new QTimer(this);
+    connect(scrollTimer,SIGNAL(timeout()),this,SLOT(timerUpdateSlot()));
+    scrollTimer->start(200);
+}
 
 /**
  * function changes the name of the track being displayed
@@ -84,7 +92,7 @@ void NowPlayingBar::paintBar() {
     int textHeight = fm.height();
 
     if(textWidth > 0.9 * innerWidth) {
-       int maxChars = (int)((0.9*innerWidth - fm.width(now))/fm.width(" ")); //how many characters can I write?
+       int maxChars = (int)((0.9 * innerWidth-fm.width(now))/fm.width(" ")); //how many characters can I write?
 
        //generate string to display
        int start = currentIndex;
@@ -103,11 +111,51 @@ void NowPlayingBar::paintBar() {
            total = now + sub;
        }
 
-       //TODO: Update currentIndex in event
+       textWidth = fm.width(total);
     }
 
     painter.setFont(font); //set the font
 
-    painter.translate((width()-innerWidth)/2+textWidth/1.9,height()/2+textHeight/4);
-    painter.drawText(-textWidth/2,0,total);
+    painter.translate((width()-innerWidth)/2+5,height()/2+textHeight/4);
+    painter.drawText(0,0,total);
+}
+
+/**
+ * slot for when a new track is selected from a file browser
+ * @param newTrack the new track to be displayed
+ */
+void NowPlayingBar::newTrackSlot(QString newTrack) {
+    switchTrack(std::move(newTrack));
+    update();
+}
+
+/**
+ * slot for when timer expires for rolling text
+ */
+void NowPlayingBar::timerUpdateSlot() {
+
+    if(currentIndex == -1) return; //account for empty case
+
+    if(currentIndex == currentTrack.count()) {
+        currentIndex = 0;
+    } else {
+        currentIndex++;
+    }
+
+    update();
+}
+
+/**
+ * simple get member function
+ * @return the current track
+ */
+QString NowPlayingBar::getCurrentTrack() {
+    return currentTrack;
+}
+
+/**
+ * destructor deletes any heap allocated fields
+ */
+NowPlayingBar::~NowPlayingBar() {
+    delete scrollTimer;
 }

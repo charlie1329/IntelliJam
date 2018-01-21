@@ -38,8 +38,6 @@ private:
 
     QHBoxLayout *layout;
 
-    std::string nowPlaying; //anticipate needing later on
-
 public:
 
     //constructor and destructor
@@ -50,6 +48,7 @@ public:
     QPushButton *getFileButton();
     QPushButton *getPlayButton();
     QPushButton *getStopButton();
+    NowPlayingBar *getPlayBar();
 
 };
 

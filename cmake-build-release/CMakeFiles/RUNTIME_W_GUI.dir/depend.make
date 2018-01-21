@@ -1019,6 +1019,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/timers.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/wait.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qarraydata.h
@@ -1027,6 +1028,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_cxx11.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_msvc.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasicatomic.h
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearraylist.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qchar.h
@@ -1086,6 +1088,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qsystemdetection.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtcore-config.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtextstream.h
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurl.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurlquery.h
@@ -1154,6 +1157,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qwidget.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_mainwindow.cpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nametile.cpp
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nowplayingbar.cpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_vmeter.cpp
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: RUNTIME_W_GUI_autogen/mocs_compilation.cpp
@@ -2944,6 +2948,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../include/esn/esn.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../src/esn/esn.cpp
 
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qarraydata.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic.h
@@ -2951,6 +2956,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_cxx11.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_msvc.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasicatomic.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearraylist.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qchar.h
@@ -3009,6 +3015,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qsystemdetection.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtcore-config.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtextstream.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurl.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurlquery.h
@@ -5443,6 +5450,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Program\ Files/boost
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/timers.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/wait.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qarraydata.h
@@ -5451,6 +5459,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_cxx11.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_msvc.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasicatomic.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearraylist.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qchar.h
@@ -5512,6 +5521,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qsystemdetection.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtcore-config.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtextstream.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurl.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurlquery.h
@@ -6827,6 +6837,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Program\ Files
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/timers.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Program\ Files/boost_1_66_0/boost/winapi/wait.hpp
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qabstractitemmodel.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qarraydata.h
@@ -6835,6 +6846,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_cxx11.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_msvc.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasicatomic.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearraylist.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qchar.h
@@ -6846,8 +6858,10 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qcoreevent.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qdatastream.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qdebug.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qdir.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qfile.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qfiledevice.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qfileinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qflags.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qgenericatomic.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qglobal.h
@@ -6894,6 +6908,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qsystemdetection.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtcore-config.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtextstream.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurl.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurlquery.h
@@ -6934,6 +6949,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtGui/qwindowdefs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtGui/qwindowdefs_win.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QComboBox
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QFileDialog
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QLabel
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QMessageBox
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton
@@ -6946,6 +6962,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/ming
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qboxlayout.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcombobox.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdialog.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qfiledialog.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qframe.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qgridlayout.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qlabel.h
@@ -7305,6 +7322,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.obj: ../include/interfac
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.obj: ../src/interface/nametile.cpp
 
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qalgorithms.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qarraydata.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic.h
@@ -7312,6 +7330,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/m
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_cxx11.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qatomic_msvc.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasicatomic.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbasictimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearray.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qbytearraylist.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qchar.h
@@ -7370,6 +7389,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/m
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qsystemdetection.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtcore-config.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtextstream.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtimer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qtypeinfo.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurl.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/qurlquery.h
