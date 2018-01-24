@@ -99,20 +99,31 @@ ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeuro
 
     //initially set to all zeroes, and then add the sparse connections in
     resResWeights = MatrixXd::Zero(reservoirSize,reservoirSize);
-    //first cycle
+   /* //first cycle
     for(int i = 0; i < reservoirSize; i++) {
         resResWeights(i,(i+1)%reservoirSize) = resWeight;
     }
 
     //second cycle: these connections are bidirectional
-    //TODO: Check conditions on jump size to get something that actually manages to cycle properly!
     for(int i = 0; i < reservoirSize; i+= jumpSize) {
         resResWeights(i,(i+jumpSize)%reservoirSize) = biResWeight;
         resResWeights((i+jumpSize)%reservoirSize,i) = biResWeight;
+    } */
+
+    //Rewrite as described by Rodan & Tino to be fully accurate with the paper for CRJs
+
+    //the simple cycle reservoir part of the reservoir
+    for(int i = 0; i < reservoirSize - 1; i++) { //the 'lower' sub-diagonal
+        resResWeights(i+1,i) = resWeight;
+    }
+    resResWeights(0,reservoirSize-1) = resWeight; //the 'upper-right corner'
+
+    //the jumps for the CRJ
+    for(int i = 0; i <= reservoirSize-jumpSize; i += jumpSize) {
+        resResWeights(i,(i+jumpSize) % reservoirSize) = biResWeight;
+        resResWeights((i+jumpSize) % reservoirSize,i) = biResWeight;
     }
 
-
-    //TODO: Check Random Initialisation is some reasonable range
     resOutWeights = MatrixXd::Random(numOutputNeurons,reservoirSize);
 
 }
@@ -220,8 +231,6 @@ void ESN::saveNetwork(){
  * @param newInput the new input to be fed into the network
  */
 void ESN::updateReservoir(VectorXd newInput) {
-    //TODO: There is no way this is going to be efficient enough
-    //TODO: Carry out speed tests here, try doing it around 200 times a second and see what happens
     reservoir = tanh(((inResWeights * newInput) + (resResWeights * reservoir)).array());
 }
 
@@ -238,9 +247,15 @@ void ESN::updateReservoir(double newInput) {
  * @return the new set of outputs from the readout network
  */
 VectorXd ESN::predict() {
-    //TODO: Complete - EFFICIENCY CRITICAL
-    //TODO: Stop assuming linear output function
-    return resOutWeights * reservoir;
+
+    VectorXd rawOutputs =  resOutWeights * reservoir;
+    if(outputActivation != nullptr) {
+        for (int i = 0; i < rawOutputs.rows(); i++) {
+            rawOutputs(i,0) = outputActivation(rawOutputs(i,0));
+        }
+    }
+
+    return rawOutputs;
 }
 
 /**

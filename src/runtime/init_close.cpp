@@ -45,8 +45,9 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
     //NOTE: PortAudio initialised in preInitSearch()
 
     //initialise ESN
-    //TODO REPLACE ONCE NETWORK OPTIMISED
-    shared_ptr<ESN> echo(make_shared<ESN>(0.1,0.5,0.3,200,10,1,8,nullptr,nullptr));
+    //shared_ptr<ESN> echo(make_shared<ESN>(0.1,0.5,0.3,200,10,1,8,nullptr,nullptr));
+    //cost function not required at runtime
+    shared_ptr<ESN> echo(make_shared<ESN>(INPUT_RES_FILE,RES_RES_FILE,RES_OUT_FILE,roundValInBound,nullptr));
 
     //allocate/initialise ring buffer
     PaUtilRingBuffer ringUpdate{};

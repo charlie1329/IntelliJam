@@ -7,6 +7,8 @@
 #include "../../include/training/hyperParameters.h"
 #include "../../include/training/trainNetwork.h"
 
+#include <iostream>
+
 //prototype for combination generation
 vector<vector<double>> generateCombos();
 
@@ -17,12 +19,17 @@ int optimiseNetwork();
 void optimiseWorker(vector<pair<vector<double>,bool>> combos, const string &trainingFile,
                     const string &logFile, const shared_ptr<boost::mutex> &lock);
 
+//prototype for single run of training algorithm
+//with ridge regression
+int singleTrainingRunRidge();
+
 /**
  * function starts the optimisation procedure
  * @return an exit code
  */
 int main() {
-    return optimiseNetwork();
+    //return optimiseNetwork();
+    return singleTrainingRunRidge();
 }
 
 /**
@@ -131,4 +138,30 @@ int optimiseNetwork() {
     workerFour.join();
 
     return 0; //everything fine
+}
+
+/**
+ * function carries out a single training run of the ESN
+ * and then stores the weights for future use
+ * @return an exit code (probably just 0)
+ */
+int singleTrainingRunRidge() {
+
+    //constructor values taken from Rodan & Tino's paper
+    //output and cost function not needed (currently) during training
+    shared_ptr<ESN> echo = std::make_shared<ESN>(1.0,0.9,0.4,200,13,1,8,nullptr,nullptr);
+    std::cout << "Initialised Echo State Network" << std::endl;
+
+    //read in the training set
+    shared_ptr<training_set_t> trainingSet = formTrainingSet(echo,"D:/trainingData.csv",10);
+    std::cout << "Finished reading in training set" << std::endl;
+
+    //train the network
+    //no epochs currently Needed
+    trainNetwork(echo,*trainingSet,0);
+
+    //now just write out the weight matrices for future use
+    echo->saveNetwork();
+
+    return 0;
 }

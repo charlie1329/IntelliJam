@@ -26,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj"
   "CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj"
   "CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj"
+  "CMakeFiles/TRAINING.dir/src/esn/esn_outputs.cpp.obj"
   "CMakeFiles/TRAINING.dir/TRAINING_autogen/mocs_compilation.cpp.obj"
   "TRAINING.pdb"
   "TRAINING.exe"

@@ -331,10 +331,35 @@ CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj.provides: CMakeFiles/RUNTIM
 CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj.provides.build: CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj
 
 
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj: CMakeFiles/RUNTIME.dir/flags.make
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj: CMakeFiles/RUNTIME.dir/includes_CXX.rsp
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj: ../src/esn/esn_outputs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME.dir\src\esn\esn_outputs.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\esn\esn_outputs.cpp
+
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\esn\esn_outputs.cpp > CMakeFiles\RUNTIME.dir\src\esn\esn_outputs.cpp.i
+
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\esn\esn_outputs.cpp -o CMakeFiles\RUNTIME.dir\src\esn\esn_outputs.cpp.s
+
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.requires:
+
+.PHONY : CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.requires
+
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.provides: CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.provides.build
+.PHONY : CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.provides
+
+CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.provides.build: CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj
+
+
 CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj: CMakeFiles/RUNTIME.dir/flags.make
 CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj: CMakeFiles/RUNTIME.dir/includes_CXX.rsp
 CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj: RUNTIME_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\RUNTIME.dir\RUNTIME_autogen\mocs_compilation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\cmake-build-release\RUNTIME_autogen\mocs_compilation.cpp
 
 CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.i: cmake_force
@@ -369,6 +394,7 @@ RUNTIME_OBJECTS = \
 "CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj" \
 "CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj" \
 "CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj" \
+"CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj" \
 "CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target RUNTIME
@@ -385,6 +411,7 @@ RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj
+RUNTIME.exe: CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/build.make
 RUNTIME.exe: ../libs/portaudio_x86.lib
@@ -396,7 +423,7 @@ RUNTIME.exe: C:/Program\ Files/boost/lib/libboost_atomic-mgw63-mt-1_66.a
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/linklibs.rsp
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/objects1.rsp
 RUNTIME.exe: CMakeFiles/RUNTIME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable RUNTIME.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable RUNTIME.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RUNTIME.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -415,6 +442,7 @@ CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/src/runtime/timerThread.
 CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj.requires
 CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj.requires
 CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/src/runtime/runSystem.cpp.obj.requires
+CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj.requires
 CMakeFiles/RUNTIME.dir/requires: CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj.requires
 
 .PHONY : CMakeFiles/RUNTIME.dir/requires

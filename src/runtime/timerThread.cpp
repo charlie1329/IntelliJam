@@ -65,7 +65,7 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
         VectorXd output = echo->predict();
         esnMutex->unlock();
 
-        //TODO: REMOVE THE LICK!!!!!
+        /*//I had the lick here didn't I
         output(0,0) = 48;
         output(1,0) = 50;
         output(2,0) = 51;
@@ -73,7 +73,7 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
         output(4,0) = 50;
         output(5,0) = 46;
         output(6,0) = 48;
-        output(7,0) = 48;
+        output(7,0) = 48;*/
 
         int midiErr = handleMIDI(output, state->outHandle, state->event, bridge);
         //TODO: Improve prediction to MIDI function!

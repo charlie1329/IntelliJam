@@ -125,6 +125,7 @@ void trainingReaderWorker(ESN echo, vector<pair<string,VectorXd>> files,
 
     for (auto currentFile : files) {
         VectorXd currentReservoir = wavToEcho(echo, currentFile.first, sampleJump);
+        cout << "Finished reading in: " << currentFile.first << endl;
 
         //push into the training set
         lock->lock();

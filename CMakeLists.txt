@@ -49,7 +49,9 @@ set(TRAINING_FILES include/libsndfile/sndfile.h
                    include/training/hyperParameters.h
                    include/training/checkpoint.h
                    src/training/checkpoint.cpp
-                   src/training/runTraining.cpp)
+                   src/training/runTraining.cpp
+                   include/esn/esn_outputs.h
+                   src/esn/esn_outputs.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -68,7 +70,9 @@ set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
                         test/training/trainingUnit.cpp
                         include/training/hyperParameters.h
                         include/training/checkpoint.h
-                        src/training/checkpoint.cpp)
+                        src/training/checkpoint.cpp
+                        include/esn/esn_outputs.h
+                        src/esn/esn_outputs.cpp)
 
 add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
 target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -81,14 +85,19 @@ endif()
 #executable for testing esn functionality
 set(ESN_TEST_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_correctness.cpp include/bridge/bridge.h)
+                    test/esn/esn_correctness.cpp
+                    include/bridge/bridge.h
+                    include/esn/esn_outputs.h
+                    src/esn/esn_outputs.cpp)
 
 add_executable(ESN_CORE_TEST ${ESN_TEST_FILES})
 
 #executable for speed testing
 set(ESN_SPEED_FILES include/esn/esn.h
                     src/esn/esn.cpp
-                    test/esn/esn_speed.cpp)
+                    test/esn/esn_speed.cpp
+                    include/esn/esn_outputs.h
+                    src/esn/esn_outputs.cpp)
 
 add_executable(ESN_SPEED_TEST ${ESN_SPEED_FILES})
 
@@ -140,7 +149,9 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   src/midi/esnToMidi.cpp
                   include/runtime/timers.h
                   src/runtime/timers.cpp
-                  src/runtime/runSystem.cpp)
+                  src/runtime/runSystem.cpp
+                  include/esn/esn_outputs.h
+                  src/esn/esn_outputs.cpp)
 
 add_executable(RUNTIME ${RUNTIME_FILES})
 target_link_libraries(RUNTIME ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
@@ -187,7 +198,9 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         include/midi/esnToMidi.h
                         src/midi/esnToMidi.cpp
                         include/runtime/timers.h
-                        src/runtime/timers.cpp)
+                        src/runtime/timers.cpp
+                        include/esn/esn_outputs.h
+                        src/esn/esn_outputs.cpp)
 
 add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
 if(Qt5Widgets_FOUND)
@@ -212,7 +225,9 @@ set(RUNTIME_UNIT_FILES include/test/catch.hpp
                        test/runtime/runtimeUnitTests.cpp
                        src/runtime/init_close.cpp
                        src/esn/esn.cpp
-                       src/runtime/port_processing.cpp)
+                       src/runtime/port_processing.cpp
+                       include/esn/esn_outputs.h
+                       src/esn/esn_outputs.cpp)
 add_executable(RUNTIME_UNIT ${RUNTIME_UNIT_FILES})
 target_link_libraries(RUNTIME_UNIT ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
 target_link_libraries(RUNTIME_UNIT winmm.lib)

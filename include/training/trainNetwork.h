@@ -22,7 +22,7 @@
 void trainNetwork(shared_ptr<ESN> echo, training_set_t trainingSet, unsigned int epochs);
 
 /**
- * calculates the total error on a particular validation set
+ * calculates the total average error on a particular validation set
  * @param echo the echo state network
  * @param validationSet the test samples
  * @return the total average error on the validation set

@@ -7,9 +7,77 @@
 #include <random>
 #include <chrono>
 #include <fstream>
+#include <iostream>
+
 
 #include "../../include/training/trainNetwork.h"
 #include "../../include/runtime/init_close.h"
+
+/**
+ * carry out ridge regression to find the reservoir-output weights
+ * @param echo the echo state network
+ * @param trainingSet the training set
+ * @param epochs the number of training epochs (not used here)
+ */
+void trainNetwork(shared_ptr<ESN> echo, training_set_t trainingSet, unsigned int epochs) {
+
+    //epochs isn't needed for ridge regression
+    (void)epochs; //stop those pesky CLion warnings
+
+    int reservoirSize = echo->getResRes().cols();
+
+    //regularisation setup
+    double lambda = 0.1; //TODO: Properly Set
+
+    MatrixXd regMat = lambda * MatrixXd::Identity(reservoirSize,reservoirSize);
+
+    //TODO: Test this copying functionality
+    //set up matrices X (input samples as rows) and t (ground truth vectors as rows)
+    MatrixXd X = MatrixXd::Zero(trainingSet.size(),reservoirSize);
+    MatrixXd t = MatrixXd::Zero(trainingSet.size(),echo->resOutWeights.rows());
+
+    std::cout << "Starting copying of training set" << std::endl;
+
+    //for each training sample
+    for(int row = 0; row < trainingSet.size(); row++) {
+        training_sample_t currentSample = trainingSet.at(static_cast<unsigned int>(row));
+
+        //copying into X
+        for(int col = 0; col < reservoirSize; col++) {
+            X(row,col) = currentSample.first(col,0);
+        }
+
+        //copying into t
+        for(int col = 0; col < currentSample.second.rows(); col++) {
+            t(row,col) = currentSample.second(col,0);
+        }
+    }
+
+    std::cout << "Copied training set into X and t" << std::endl;
+
+    //actually learn the weights
+    MatrixXd beforeInv = (X.transpose() * X + regMat);
+    MatrixXd beforeTranspose = beforeInv.inverse() * X.transpose() * t;
+
+    echo->resOutWeights = beforeTranspose.transpose();
+
+    std::cout << "Finished Ridge Regression" << std::endl;
+
+
+}
+
+/**
+ * implemented from trainNetwork.h
+ * calcualtes total average error on a particular validation set
+ * @param echo the echo state network
+ * @param validationSet the test samples
+ * @return the total average error on the validation set
+ */
+double getError(shared_ptr<ESN> echo, training_set_t validationSet) {
+
+    //TODO: Actually fill in!!!!
+    return 0.0;
+}
 
 /**
  * implemented from trainNetwork.h

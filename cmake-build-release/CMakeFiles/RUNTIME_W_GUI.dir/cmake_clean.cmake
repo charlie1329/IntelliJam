@@ -41,6 +41,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj"
   "CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj"
   "CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj"
+  "CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj"
   "CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj"
   "RUNTIME_W_GUI.pdb"
   "RUNTIME_W_GUI.exe"

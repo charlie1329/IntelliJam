@@ -929,6 +929,15 @@
 			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+			<Option target="ESN_SPEED_TEST"/>
+			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
+			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h">
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
@@ -1033,6 +1042,15 @@
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+			<Option target="ESN_SPEED_TEST"/>
+			<Option target="ESN_CORE_TEST"/>
+			<Option target="RUNTIME_W_GUI"/>
+			<Option target="RUNTIME"/>
+			<Option target="RUNTIME_UNIT"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/esn/esn_outputs.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="ESN_SPEED_TEST"/>
