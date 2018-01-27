@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.obj"
   "CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.obj"
   "CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj"

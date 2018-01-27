@@ -131,6 +131,12 @@ public:
     VectorXd getReservoir();
 
     /**
+     * allows the esn reservoir to be set to a new value
+     * @param newRes the new reservoir state
+     */
+    void setReservoir(VectorXd newRes);
+
+    /**
      * reset all reservoir neurons to initial state
      * useful when reading in training set
      */

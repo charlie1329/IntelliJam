@@ -1,0 +1,1 @@
+Total average training set error = 1303.14

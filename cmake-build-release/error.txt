@@ -1,0 +1,1 @@
+Total Average Training Set Error is: 1274.35

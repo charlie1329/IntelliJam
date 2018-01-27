@@ -97,6 +97,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/PORT_FUZZ_TEST_autogen.dir/AutogenInfo.cmake"
   "CMakeFiles/RUNTIME_autogen.dir/AutogenInfo.cmake"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenInfo.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -113,6 +114,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PORT_FUZZ_TEST.dir/DependInfo.cmake"
   "CMakeFiles/RUNTIME.dir/DependInfo.cmake"
   "CMakeFiles/RUNTIME_UNIT.dir/DependInfo.cmake"
+  "CMakeFiles/TRAINING_ERROR.dir/DependInfo.cmake"
   "CMakeFiles/MIDI_TWINKLE_autogen.dir/DependInfo.cmake"
   "CMakeFiles/TRAINING_autogen.dir/DependInfo.cmake"
   "CMakeFiles/TRAINING_TEST_autogen.dir/DependInfo.cmake"
@@ -124,4 +126,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PORT_FUZZ_TEST_autogen.dir/DependInfo.cmake"
   "CMakeFiles/RUNTIME_autogen.dir/DependInfo.cmake"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/DependInfo.cmake"
   )

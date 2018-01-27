@@ -1375,6 +1375,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/devicebar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
@@ -2720,6 +2721,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
  C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
  C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h
@@ -2947,6 +2949,9 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
  C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
+ C:/Users/charl/CLionProjects/FYP/src/esn/esn_outputs.cpp
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj
  C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
  C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
@@ -4428,6 +4433,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/devicebar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
  C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
@@ -5812,6 +5818,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/devicebar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
@@ -7194,6 +7201,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/controlbar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/devicebar.h
  C:/Users/charl/CLionProjects/FYP/include/interface/mainwindow.h
@@ -9208,6 +9216,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.h
  C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_util.h
  C:/Users/charl/CLionProjects/FYP/include/port_audio/portaudio.h
@@ -10551,6 +10560,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
  C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
  C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h
@@ -11895,6 +11905,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
  C:/Users/charl/CLionProjects/FYP/include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h
  C:/Users/charl/CLionProjects/FYP/include/esn/esn.h
+ C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
  C:/Users/charl/CLionProjects/FYP/include/interface/nametile.h
  C:/Users/charl/CLionProjects/FYP/include/interface/piano.h
  C:/Users/charl/CLionProjects/FYP/include/interface/vmeter.h

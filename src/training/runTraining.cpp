@@ -6,8 +6,11 @@
 #include "../../include/training/checkpoint.h"
 #include "../../include/training/hyperParameters.h"
 #include "../../include/training/trainNetwork.h"
+#include "../../include/esn/esn_outputs.h"
+#include "../../include/esn/esn_costs.h"
 
 #include <iostream>
+#include <fstream>
 
 //prototype for combination generation
 vector<vector<double>> generateCombos();
@@ -149,7 +152,7 @@ int singleTrainingRunRidge() {
 
     //constructor values taken from Rodan & Tino's paper
     //output and cost function not needed (currently) during training
-    shared_ptr<ESN> echo = std::make_shared<ESN>(1.0,0.9,0.4,200,13,1,8,nullptr,nullptr);
+    shared_ptr<ESN> echo = std::make_shared<ESN>(1.0,0.9,0.4,200,13,1,8,roundValInBound,lse);
     std::cout << "Initialised Echo State Network" << std::endl;
 
     //read in the training set
@@ -157,11 +160,17 @@ int singleTrainingRunRidge() {
     std::cout << "Finished reading in training set" << std::endl;
 
     //train the network
-    //no epochs currently Needed
+    //no epochs currently needed as only ridge regression
     trainNetwork(echo,*trainingSet,0);
 
     //now just write out the weight matrices for future use
     echo->saveNetwork();
+
+    double error = getError(echo,*trainingSet);
+    ofstream myFile;
+    myFile.open("with_bias_error.txt");
+    myFile << "Total average training set error = " << error << "\n";
+    myFile.close();
 
     return 0;
 }

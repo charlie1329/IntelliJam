@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj"
   "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj"
   "CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj"

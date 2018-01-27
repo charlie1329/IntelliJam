@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj"
   "CMakeFiles/ESN_CORE_TEST.dir/test/esn/esn_correctness.cpp.obj"
   "CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn_outputs.cpp.obj"

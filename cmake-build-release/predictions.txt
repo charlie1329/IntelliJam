@@ -1,0 +1,73 @@
+Prediction: 0
+24
+24
+24
+24
+24
+24
+24
+24
+Ground Truth: 0
+47
+53
+55
+47
+46
+47
+46
+47
+Prediction: 1
+24
+24
+24
+24
+24
+24
+24
+24
+Ground Truth: 1
+56
+47
+51
+53
+56
+56
+58
+56
+Prediction: 2
+24
+24
+24
+24
+24
+24
+24
+24
+Ground Truth: 2
+55
+47
+46
+47
+47
+48
+55
+47
+Prediction: 3
+24
+24
+24
+24
+24
+24
+24
+24
+Ground Truth: 3
+79
+72
+79
+60
+60
+60
+48
+49
+Finished checking samples

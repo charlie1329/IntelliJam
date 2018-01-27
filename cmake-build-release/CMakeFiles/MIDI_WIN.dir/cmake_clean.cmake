@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.obj"
   "CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.obj"
   "CMakeFiles/MIDI_WIN.dir/test/midi/midiWinTest.cpp.obj"

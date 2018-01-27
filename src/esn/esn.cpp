@@ -293,3 +293,11 @@ MatrixXd ESN::getResRes() {
 VectorXd ESN::getReservoir() {
     return reservoir;
 }
+
+/**
+ * implemented from esn.h
+ * @param newRes the new reservoir
+ */
+void ESN::setReservoir(VectorXd newRes) {
+    reservoir = newRes;
+}

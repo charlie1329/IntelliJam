@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 set(CMAKE_CXX_STANDARD 11)
 
 #removes command line window, may need to switch off for non GUI-oriented targets
-set(CMAKE_CXX_FLAGS "-mwindows")
+#set(CMAKE_CXX_FLAGS "-mwindows")
 
 # get boost setup properly
 #set(Boost_DEBUG ON)
@@ -51,7 +51,7 @@ set(TRAINING_FILES include/libsndfile/sndfile.h
                    src/training/checkpoint.cpp
                    src/training/runTraining.cpp
                    include/esn/esn_outputs.h
-                   src/esn/esn_outputs.cpp)
+                   src/esn/esn_outputs.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -72,7 +72,9 @@ set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
                         include/training/checkpoint.h
                         src/training/checkpoint.cpp
                         include/esn/esn_outputs.h
-                        src/esn/esn_outputs.cpp)
+                        src/esn/esn_outputs.cpp
+                        include/training/trainNetwork.h
+                        src/training/trainNetwork.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
 
 add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
 target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -241,7 +243,30 @@ add_executable(PORT_FUZZ_TEST ${PORT_FUZZ_TEST_FILES})
 target_link_libraries(PORT_FUZZ_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
 
 
+set(TRAINING_ERROR_FILES  include/libsndfile/sndfile.h
+        include/esn/esn.h
+        src/esn/esn.cpp
+        include/training/fileToEcho.h
+        src/training/fileToEcho.cpp
+        include/training/trainNetwork.h
+        src/training/trainNetwork.cpp
+        include/training/hyperParameters.h
+        include/training/checkpoint.h
+        src/training/checkpoint.cpp
+        include/esn/esn_outputs.h
+        src/esn/esn_outputs.cpp
+        test/training/calculateError.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
+
+add_executable(TRAINING_ERROR ${TRAINING_ERROR_FILES})
+target_link_libraries(TRAINING_ERROR ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
+target_link_libraries(TRAINING_ERROR winmm.lib)
+#link up the boost libraries
+if(Boost_FOUND)
+    target_link_libraries(TRAINING_ERROR ${Boost_LIBRARIES})
+endif()
+
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
+
 
 
 #test for boost

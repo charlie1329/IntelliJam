@@ -1374,6 +1374,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/interface/controlbar.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/interface/devicebar.h
 CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj: ../include/interface/mainwindow.h
@@ -2719,6 +2720,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/Eigen/src/plu
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/interface/nametile.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/interface/piano.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj: ../include/interface/vmeter.h
@@ -2946,6 +2948,9 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../include/Eigen/src/plugins/M
 CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../include/esn/esn.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj: ../src/esn/esn.cpp
+
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj: ../include/esn/esn_outputs.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj: ../src/esn/esn_outputs.cpp
 
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QString
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj: C:/Qt/5.10.0/mingw53_32/include/QtCore/QTimer
@@ -4427,6 +4432,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/Eigen/s
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/interface/devicebar.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/interface/nametile.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj: ../include/interface/piano.h
@@ -5811,6 +5817,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/Eigen/src/pl
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/interface/controlbar.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/interface/devicebar.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj: ../include/interface/mainwindow.h
@@ -7193,6 +7200,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/Eigen/
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/interface/controlbar.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/interface/devicebar.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj: ../include/interface/mainwindow.h
@@ -9207,6 +9215,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/Eigen/sr
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/port_audio/pa_ringbuffer.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/port_audio/pa_util.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj: ../include/port_audio/portaudio.h
@@ -10550,6 +10559,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/Eigen/s
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/interface/nametile.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/interface/piano.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj: ../include/interface/vmeter.h
@@ -11894,6 +11904,7 @@ CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/Eigen/src/pl
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/bridge/bridge.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/esn/esn.h
+CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/esn/esn_outputs.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/interface/nametile.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/interface/piano.h
 CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj: ../include/interface/vmeter.h

@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/RUNTIME_UNIT.dir/includes_C.rsp
 
-CXX_FLAGS = -mwindows -O3 -DNDEBUG -msse -msse2 -msse3 -openmp -O3   -std=gnu++11
+CXX_FLAGS = -O3 -DNDEBUG -msse -msse2 -msse3 -openmp -O3   -std=gnu++11
 
 CXX_DEFINES = 
 

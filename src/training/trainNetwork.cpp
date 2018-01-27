@@ -27,14 +27,14 @@ void trainNetwork(shared_ptr<ESN> echo, training_set_t trainingSet, unsigned int
     int reservoirSize = echo->getResRes().cols();
 
     //regularisation setup
-    double lambda = 0.1; //TODO: Properly Set
+    double lambda = 0.005; //TODO: Properly Set
 
     MatrixXd regMat = lambda * MatrixXd::Identity(reservoirSize,reservoirSize);
 
-    //TODO: Test this copying functionality
     //set up matrices X (input samples as rows) and t (ground truth vectors as rows)
     MatrixXd X = MatrixXd::Zero(trainingSet.size(),reservoirSize);
     MatrixXd t = MatrixXd::Zero(trainingSet.size(),echo->resOutWeights.rows());
+
 
     std::cout << "Starting copying of training set" << std::endl;
 
@@ -75,8 +75,25 @@ void trainNetwork(shared_ptr<ESN> echo, training_set_t trainingSet, unsigned int
  */
 double getError(shared_ptr<ESN> echo, training_set_t validationSet) {
 
-    //TODO: Actually fill in!!!!
-    return 0.0;
+    if(echo->costFunction == nullptr) return -1.0; //in the case of no cost function set
+
+    double error = 0.0;
+
+    //loop through the validation set and calculate the error
+    for(unsigned int i = 0; i < validationSet.size(); i++) {
+
+        //set the reservoir and predict the output
+        echo->setReservoir(validationSet.at(i).first);
+        VectorXd prediction = echo->predict();
+
+        VectorXd groundTruth = validationSet.at(i).second;
+
+        //add the error for this sample
+        error += echo->costFunction(groundTruth,prediction);
+    }
+
+    return error/validationSet.size(); //get the average error rather than the absolute total
+
 }
 
 /**

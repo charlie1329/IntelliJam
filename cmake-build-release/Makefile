@@ -253,6 +253,19 @@ RUNTIME_UNIT/fast:
 .PHONY : RUNTIME_UNIT/fast
 
 #=============================================================================
+# Target rules for targets named TRAINING_ERROR
+
+# Build rule for target.
+TRAINING_ERROR: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_ERROR
+.PHONY : TRAINING_ERROR
+
+# fast build rule for target.
+TRAINING_ERROR/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/build
+.PHONY : TRAINING_ERROR/fast
+
+#=============================================================================
 # Target rules for targets named MIDI_TWINKLE_autogen
 
 # Build rule for target.
@@ -394,6 +407,19 @@ RUNTIME_UNIT_autogen: cmake_check_build_system
 RUNTIME_UNIT_autogen/fast:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT_autogen.dir\build.make CMakeFiles/RUNTIME_UNIT_autogen.dir/build
 .PHONY : RUNTIME_UNIT_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TRAINING_ERROR_autogen
+
+# Build rule for target.
+TRAINING_ERROR_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_ERROR_autogen
+.PHONY : TRAINING_ERROR_autogen
+
+# fast build rule for target.
+TRAINING_ERROR_autogen/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR_autogen.dir\build.make CMakeFiles/TRAINING_ERROR_autogen.dir/build
+.PHONY : TRAINING_ERROR_autogen/fast
 
 ESN_CORE_TEST_autogen/mocs_compilation.obj: ESN_CORE_TEST_autogen/mocs_compilation.cpp.obj
 
@@ -638,6 +664,33 @@ RUNTIME_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.s
 .PHONY : RUNTIME_autogen/mocs_compilation.cpp.s
 
+TRAINING_ERROR_autogen/mocs_compilation.obj: TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.obj
+
+# target to build an object file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+
+TRAINING_ERROR_autogen/mocs_compilation.i: TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+
+TRAINING_ERROR_autogen/mocs_compilation.s: TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+
 TRAINING_TEST_autogen/mocs_compilation.obj: TRAINING_TEST_autogen/mocs_compilation.cpp.obj
 
 .PHONY : TRAINING_TEST_autogen/mocs_compilation.obj
@@ -798,6 +851,7 @@ src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj
 .PHONY : src/esn/esn.cpp.obj
 
 src/esn/esn.i: src/esn/esn.cpp.i
@@ -813,6 +867,7 @@ src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.i
 .PHONY : src/esn/esn.cpp.i
 
 src/esn/esn.s: src/esn/esn.cpp.s
@@ -828,7 +883,41 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
+
+src/esn/esn_costs.obj: src/esn/esn_costs.cpp.obj
+
+.PHONY : src/esn/esn_costs.obj
+
+# target to build an object file
+src/esn/esn_costs.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn_costs.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj
+.PHONY : src/esn/esn_costs.cpp.obj
+
+src/esn/esn_costs.i: src/esn/esn_costs.cpp.i
+
+.PHONY : src/esn/esn_costs.i
+
+# target to preprocess a source file
+src/esn/esn_costs.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn_costs.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.i
+.PHONY : src/esn/esn_costs.cpp.i
+
+src/esn/esn_costs.s: src/esn/esn_costs.cpp.s
+
+.PHONY : src/esn/esn_costs.s
+
+# target to generate assembly for a file
+src/esn/esn_costs.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/esn/esn_costs.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.s
+.PHONY : src/esn/esn_costs.cpp.s
 
 src/esn/esn_outputs.obj: src/esn/esn_outputs.cpp.obj
 
@@ -843,6 +932,7 @@ src/esn/esn_outputs.cpp.obj:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj
 .PHONY : src/esn/esn_outputs.cpp.obj
 
 src/esn/esn_outputs.i: src/esn/esn_outputs.cpp.i
@@ -858,6 +948,7 @@ src/esn/esn_outputs.cpp.i:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.i
 .PHONY : src/esn/esn_outputs.cpp.i
 
 src/esn/esn_outputs.s: src/esn/esn_outputs.cpp.s
@@ -873,6 +964,7 @@ src/esn/esn_outputs.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.s
 .PHONY : src/esn/esn_outputs.cpp.s
 
 src/interface/controlbar.obj: src/interface/controlbar.cpp.obj
@@ -1381,6 +1473,7 @@ src/training/checkpoint.obj: src/training/checkpoint.cpp.obj
 src/training/checkpoint.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj
 .PHONY : src/training/checkpoint.cpp.obj
 
 src/training/checkpoint.i: src/training/checkpoint.cpp.i
@@ -1391,6 +1484,7 @@ src/training/checkpoint.i: src/training/checkpoint.cpp.i
 src/training/checkpoint.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.i
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.i
 .PHONY : src/training/checkpoint.cpp.i
 
 src/training/checkpoint.s: src/training/checkpoint.cpp.s
@@ -1401,6 +1495,7 @@ src/training/checkpoint.s: src/training/checkpoint.cpp.s
 src/training/checkpoint.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.s
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.s
 .PHONY : src/training/checkpoint.cpp.s
 
 src/training/fileToEcho.obj: src/training/fileToEcho.cpp.obj
@@ -1411,6 +1506,7 @@ src/training/fileToEcho.obj: src/training/fileToEcho.cpp.obj
 src/training/fileToEcho.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj
 .PHONY : src/training/fileToEcho.cpp.obj
 
 src/training/fileToEcho.i: src/training/fileToEcho.cpp.i
@@ -1421,6 +1517,7 @@ src/training/fileToEcho.i: src/training/fileToEcho.cpp.i
 src/training/fileToEcho.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.i
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.i
 .PHONY : src/training/fileToEcho.cpp.i
 
 src/training/fileToEcho.s: src/training/fileToEcho.cpp.s
@@ -1431,6 +1528,7 @@ src/training/fileToEcho.s: src/training/fileToEcho.cpp.s
 src/training/fileToEcho.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.s
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.s
 .PHONY : src/training/fileToEcho.cpp.s
 
 src/training/runTraining.obj: src/training/runTraining.cpp.obj
@@ -1467,6 +1565,8 @@ src/training/trainNetwork.obj: src/training/trainNetwork.cpp.obj
 # target to build an object file
 src/training/trainNetwork.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj
 .PHONY : src/training/trainNetwork.cpp.obj
 
 src/training/trainNetwork.i: src/training/trainNetwork.cpp.i
@@ -1476,6 +1576,8 @@ src/training/trainNetwork.i: src/training/trainNetwork.cpp.i
 # target to preprocess a source file
 src/training/trainNetwork.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.i
 .PHONY : src/training/trainNetwork.cpp.i
 
 src/training/trainNetwork.s: src/training/trainNetwork.cpp.s
@@ -1485,6 +1587,8 @@ src/training/trainNetwork.s: src/training/trainNetwork.cpp.s
 # target to generate assembly for a file
 src/training/trainNetwork.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.s
 .PHONY : src/training/trainNetwork.cpp.s
 
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
@@ -1676,6 +1780,33 @@ test/runtime/runtimeUnitTests.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.s
 .PHONY : test/runtime/runtimeUnitTests.cpp.s
 
+test/training/calculateError.obj: test/training/calculateError.cpp.obj
+
+.PHONY : test/training/calculateError.obj
+
+# target to build an object file
+test/training/calculateError.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj
+.PHONY : test/training/calculateError.cpp.obj
+
+test/training/calculateError.i: test/training/calculateError.cpp.i
+
+.PHONY : test/training/calculateError.i
+
+# target to preprocess a source file
+test/training/calculateError.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.i
+.PHONY : test/training/calculateError.cpp.i
+
+test/training/calculateError.s: test/training/calculateError.cpp.s
+
+.PHONY : test/training/calculateError.s
+
+# target to generate assembly for a file
+test/training/calculateError.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.s
+.PHONY : test/training/calculateError.cpp.s
+
 test/training/trainingUnit.obj: test/training/trainingUnit.cpp.obj
 
 .PHONY : test/training/trainingUnit.obj
@@ -1721,6 +1852,7 @@ help:
 	@echo ... PORT_FUZZ_TEST
 	@echo ... RUNTIME
 	@echo ... RUNTIME_UNIT
+	@echo ... TRAINING_ERROR
 	@echo ... edit_cache
 	@echo ... MIDI_TWINKLE_autogen
 	@echo ... TRAINING_autogen
@@ -1733,6 +1865,7 @@ help:
 	@echo ... PORT_FUZZ_TEST_autogen
 	@echo ... RUNTIME_autogen
 	@echo ... RUNTIME_UNIT_autogen
+	@echo ... TRAINING_ERROR_autogen
 	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.obj
 	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.i
 	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.s
@@ -1760,6 +1893,9 @@ help:
 	@echo ... RUNTIME_autogen/mocs_compilation.obj
 	@echo ... RUNTIME_autogen/mocs_compilation.i
 	@echo ... RUNTIME_autogen/mocs_compilation.s
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.obj
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.i
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.s
 	@echo ... TRAINING_TEST_autogen/mocs_compilation.obj
 	@echo ... TRAINING_TEST_autogen/mocs_compilation.i
 	@echo ... TRAINING_TEST_autogen/mocs_compilation.s
@@ -1778,6 +1914,9 @@ help:
 	@echo ... src/esn/esn.obj
 	@echo ... src/esn/esn.i
 	@echo ... src/esn/esn.s
+	@echo ... src/esn/esn_costs.obj
+	@echo ... src/esn/esn_costs.i
+	@echo ... src/esn/esn_costs.s
 	@echo ... src/esn/esn_outputs.obj
 	@echo ... src/esn/esn_outputs.i
 	@echo ... src/esn/esn_outputs.s
@@ -1865,6 +2004,9 @@ help:
 	@echo ... test/runtime/runtimeUnitTests.obj
 	@echo ... test/runtime/runtimeUnitTests.i
 	@echo ... test/runtime/runtimeUnitTests.s
+	@echo ... test/training/calculateError.obj
+	@echo ... test/training/calculateError.i
+	@echo ... test/training/calculateError.s
 	@echo ... test/training/trainingUnit.obj
 	@echo ... test/training/trainingUnit.i
 	@echo ... test/training/trainingUnit.s

@@ -12199,6 +12199,8 @@ C:/Users/charl/CLionProjects/FYP/src/esn/esn_outputs.cpp
 C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
 cmath
 -
+iostream
+-
 
 C:/Users/charl/CLionProjects/FYP/src/training/checkpoint.cpp
 ../../include/training/checkpoint.h
@@ -12227,7 +12229,11 @@ C:/Users/charl/CLionProjects/FYP/include/training/checkpoint.h
 C:/Users/charl/CLionProjects/FYP/include/training/hyperParameters.h
 ../../include/training/trainNetwork.h
 C:/Users/charl/CLionProjects/FYP/include/training/trainNetwork.h
+../../include/esn/esn_outputs.h
+C:/Users/charl/CLionProjects/FYP/include/esn/esn_outputs.h
 iostream
+-
+fstream
 -
 
 C:/Users/charl/CLionProjects/FYP/src/training/trainNetwork.cpp

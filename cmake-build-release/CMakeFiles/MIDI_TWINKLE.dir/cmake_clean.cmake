@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj"
   "CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.obj"
   "CMakeFiles/MIDI_TWINKLE.dir/MIDI_TWINKLE_autogen/mocs_compilation.cpp.obj"

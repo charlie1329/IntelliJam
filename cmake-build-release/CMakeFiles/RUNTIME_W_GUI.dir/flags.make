@@ -9,7 +9,7 @@ C_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_L
 
 C_INCLUDES = @CMakeFiles/RUNTIME_W_GUI.dir/includes_C.rsp
 
-CXX_FLAGS = -mwindows -O3 -DNDEBUG -msse -msse2 -msse3 -openmp -O3   -std=gnu++11
+CXX_FLAGS = -O3 -DNDEBUG -msse -msse2 -msse3 -openmp -O3   -std=gnu++11
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB
 

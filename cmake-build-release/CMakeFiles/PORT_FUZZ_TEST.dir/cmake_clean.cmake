@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_UNIT_autogen"
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
+  "TRAINING_ERROR_autogen"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/PORT_FUZZ_TEST.dir/test/port_audio/pa_fuzz.c.obj"
   "CMakeFiles/PORT_FUZZ_TEST.dir/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj"
   "PORT_FUZZ_TEST.pdb"
