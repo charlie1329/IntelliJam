@@ -15,9 +15,9 @@ using namespace std;
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer
 #define SAMPLE_JUMP 10
 
-#define INPUT_RES_FILE "trained_weights/inputReservoirWeightsRidge.csv"
-#define RES_RES_FILE "trained_weights/reservoirReservoirWeightsRidge.csv"
-#define RES_OUT_FILE "trained_weights/reservoirOutputWeightsRidge.csv"
+#define INPUT_RES_FILE "trained_weights/inputReservoirWeightsAnnealing1.csv"
+#define RES_RES_FILE "trained_weights/reservoirReservoirWeightsAnnealing1.csv"
+#define RES_OUT_FILE "trained_weights/reservoirOutputWeightsAnnealing1.csv"
 
 
 /**

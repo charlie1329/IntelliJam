@@ -51,7 +51,11 @@ set(TRAINING_FILES include/libsndfile/sndfile.h
                    src/training/checkpoint.cpp
                    src/training/runTraining.cpp
                    include/esn/esn_outputs.h
-                   src/esn/esn_outputs.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
+                   src/esn/esn_outputs.cpp
+                   include/esn/esn_costs.h
+                   src/esn/esn_costs.cpp
+                   include/training/simulated_annealing.h
+                   src/training/simulated_annealing.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -74,7 +78,11 @@ set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
                         include/esn/esn_outputs.h
                         src/esn/esn_outputs.cpp
                         include/training/trainNetwork.h
-                        src/training/trainNetwork.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
+                        src/training/trainNetwork.cpp
+                        include/esn/esn_costs.h
+                        src/esn/esn_costs.cpp
+                        include/training/simulated_annealing.h
+                        src/training/simulated_annealing.cpp)
 
 add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
 target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -255,7 +263,11 @@ set(TRAINING_ERROR_FILES  include/libsndfile/sndfile.h
         src/training/checkpoint.cpp
         include/esn/esn_outputs.h
         src/esn/esn_outputs.cpp
-        test/training/calculateError.cpp include/esn/esn_costs.h src/esn/esn_costs.cpp)
+        test/training/calculateError.cpp
+        include/esn/esn_costs.h
+        src/esn/esn_costs.cpp
+        include/training/simulated_annealing.h
+        src/training/simulated_annealing.cpp)
 
 add_executable(TRAINING_ERROR ${TRAINING_ERROR_FILES})
 target_link_libraries(TRAINING_ERROR ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)

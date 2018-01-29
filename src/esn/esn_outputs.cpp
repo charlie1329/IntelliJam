@@ -15,8 +15,8 @@
  */
 double roundValInBound(double value) {
     double rounded =  round(value);
-    std::cout << "Output value: " << rounded << std::endl;
-    if(rounded < 24) return 24;
-    if(rounded > 79) return 79;
+    //std::cout << "Output value: " << rounded << std::endl;
+    //if(rounded < 24) return 24;
+    //if(rounded > 79) return 79;
     return rounded;
 }

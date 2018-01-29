@@ -15,6 +15,7 @@
 #include "../../include/training/checkpoint.h"
 #include "../../include/training/trainNetwork.h"
 #include "../../include/esn/esn_costs.h"
+#include "../../include/training/simulated_annealing.h"
 
 //TODO: Test rest of functionality!!!
 
@@ -260,60 +261,60 @@ TEST_CASE("Tests functionality of intervalCost","[intervalCost]") {
     VectorXd gt(1);
     VectorXd pred(1);
 
-    gt(0,0) = 15;
-    pred(0,0) = 0;
+    gt(0,0) = 39;
+    pred(0,0) = 24;
     CHECK(intervalCost(gt,pred) == Approx(6));
 
-    gt(0,0) = 3;
-    pred(0,0) = 0;
+    gt(0,0) = 27;
+    pred(0,0) = 24;
     CHECK(intervalCost(gt,pred) == Approx(5));
 
-    gt(0,0) = 3;
-    pred(0,0) = 12;
+    gt(0,0) = 27;
+    pred(0,0) = 36;
     CHECK(intervalCost(gt,pred) == Approx(3));
 
-    gt(0,0) = 3;
-    pred(0,0) = 24;
+    gt(0,0) = 27;
+    pred(0,0) = 48;
     CHECK(intervalCost(gt,pred) == Approx(4));
 
-    gt(0,0) = 3;
-    pred(0,0) = 36;
+    gt(0,0) = 27;
+    pred(0,0) = 60;
     CHECK(intervalCost(gt,pred) == Approx(5));
-
-    gt(0,0) = 0;
-    pred(0,0) = 3;
-    CHECK(intervalCost(gt,pred) == Approx(5));
-
-    gt(0,0) = 0;
-    pred(0,0) = 15;
-    CHECK(intervalCost(gt,pred) == Approx(6));
-
-    gt(0,0) = 12;
-    pred(0,0) = 3;
-    CHECK(intervalCost(gt,pred) == Approx(3));
 
     gt(0,0) = 24;
-    pred(0,0) = 3;
+    pred(0,0) = 27;
+    CHECK(intervalCost(gt,pred) == Approx(5));
+
+    gt(0,0) = 24;
+    pred(0,0) = 39;
+    CHECK(intervalCost(gt,pred) == Approx(6));
+
+    gt(0,0) = 36;
+    pred(0,0) = 27;
+    CHECK(intervalCost(gt,pred) == Approx(3));
+
+    gt(0,0) = 48;
+    pred(0,0) = 27;
     CHECK(intervalCost(gt,pred) == Approx(4));
 
     gt(0,0) = 37;
     pred(0,0) = 25;
     CHECK(intervalCost(gt,pred) == Approx(1));
 
-    gt(0,0) = 1;
-    pred(0,0) = 3;
+    gt(0,0) = 25;
+    pred(0,0) = 27;
     CHECK(intervalCost(gt,pred) == Approx(7));
 
-    gt(0,0) = 1;
-    pred(0,0) = 15;
-    CHECK(intervalCost(gt,pred) == Approx(8));
-
-    gt(0,0) = 13;
-    pred(0,0) = 3;
-    CHECK(intervalCost(gt,pred) == Approx(8));
-
     gt(0,0) = 25;
-    pred(0,0) = 3;
+    pred(0,0) = 39;
+    CHECK(intervalCost(gt,pred) == Approx(8));
+
+    gt(0,0) = 37;
+    pred(0,0) = 27;
+    CHECK(intervalCost(gt,pred) == Approx(8));
+
+    gt(0,0) = 49;
+    pred(0,0) = 27;
     CHECK(intervalCost(gt,pred) == Approx(9));
 
     gt(0,0) = 25;
@@ -323,5 +324,35 @@ TEST_CASE("Tests functionality of intervalCost","[intervalCost]") {
     gt(0,0) = 73;
     pred(0,0) = 42;
     CHECK(intervalCost(gt,pred) == Approx(3));
+
+}
+
+/**
+ * test case examines certain functions of the simulated annealing part of the code base
+ */
+TEST_CASE("Tests simulated annealing functions","[simulatedAnnealing]") {
+
+    //test temperature schedule function
+    CHECK(temperatureSchedule(100001) == Approx(0.0));
+    CHECK(temperatureSchedule(0) == Approx(1.0));
+    CHECK(temperatureSchedule(1) == Approx(0.9999));
+    CHECK(temperatureSchedule(10) == Approx(0.99900044988));
+
+
+    //test neighbourhood generation function
+    std::default_random_engine generator;
+    std::normal_distribution<double> distribution(0.0,SIGMA);
+
+    MatrixXd initMat = MatrixXd::Random(8,200);
+
+    //MatrixXd newMat = generateNeighbour(initMat,generator,distribution,0);
+
+    //CHECK(initMat.isApprox(newMat)); //T was 0 so shouldn't have any affect
+
+    MatrixXd newMat2 = generateNeighbour(initMat,generator,distribution,0.5);
+    CHECK(!initMat.isApprox(newMat2)); //should actually be changed this time
+
+    MatrixXd newMat3 = generateNeighbour(initMat,generator,distribution,0.5);
+    CHECK(!newMat3.isApprox(newMat2));
 
 }

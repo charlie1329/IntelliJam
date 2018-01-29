@@ -1558,6 +1558,39 @@ src/training/runTraining.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.s
 .PHONY : src/training/runTraining.cpp.s
 
+src/training/simulated_annealing.obj: src/training/simulated_annealing.cpp.obj
+
+.PHONY : src/training/simulated_annealing.obj
+
+# target to build an object file
+src/training/simulated_annealing.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj
+.PHONY : src/training/simulated_annealing.cpp.obj
+
+src/training/simulated_annealing.i: src/training/simulated_annealing.cpp.i
+
+.PHONY : src/training/simulated_annealing.i
+
+# target to preprocess a source file
+src/training/simulated_annealing.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.i
+.PHONY : src/training/simulated_annealing.cpp.i
+
+src/training/simulated_annealing.s: src/training/simulated_annealing.cpp.s
+
+.PHONY : src/training/simulated_annealing.s
+
+# target to generate assembly for a file
+src/training/simulated_annealing.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.s
+.PHONY : src/training/simulated_annealing.cpp.s
+
 src/training/trainNetwork.obj: src/training/trainNetwork.cpp.obj
 
 .PHONY : src/training/trainNetwork.obj
@@ -1980,6 +2013,9 @@ help:
 	@echo ... src/training/runTraining.obj
 	@echo ... src/training/runTraining.i
 	@echo ... src/training/runTraining.s
+	@echo ... src/training/simulated_annealing.obj
+	@echo ... src/training/simulated_annealing.i
+	@echo ... src/training/simulated_annealing.s
 	@echo ... src/training/trainNetwork.obj
 	@echo ... src/training/trainNetwork.i
 	@echo ... src/training/trainNetwork.s

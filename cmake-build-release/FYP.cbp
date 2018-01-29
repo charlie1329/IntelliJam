@@ -1125,6 +1125,11 @@
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/simulated_annealing.h">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+			<Option target="TRAINING_ERROR"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/trainNetwork.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
@@ -1234,6 +1239,11 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/runTraining.cpp">
 			<Option target="TRAINING"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/simulated_annealing.cpp">
+			<Option target="TRAINING"/>
+			<Option target="TRAINING_TEST"/>
+			<Option target="TRAINING_ERROR"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/trainNetwork.cpp">
 			<Option target="TRAINING"/>

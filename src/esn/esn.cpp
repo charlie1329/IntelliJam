@@ -10,6 +10,7 @@
 #include <fstream>
 #include <iomanip>
 #include <limits>
+#include <chrono>
 #include "../../include/esn/esn.h"
 
 //either random or zero initial values
@@ -88,6 +89,7 @@ ESN::ESN(double v, double r, double a, int N, int k, int inNeurons, int outNeuro
     inResWeights = MatrixXd::Constant(reservoirSize,numInputNeurons,inResWeight);
     //set +/- signs on these values with an average pseudo-random number generator
     default_random_engine gen;
+    gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count()); //use a timestamp as seed
     bernoulli_distribution dis(0.5); //make a 'heads or tails' choice from bernoulli distribution with p = 0.5
 
     //efficiency isn't really an issue here, this is a one off operation on the start of a training cycle.
@@ -299,5 +301,5 @@ VectorXd ESN::getReservoir() {
  * @param newRes the new reservoir
  */
 void ESN::setReservoir(VectorXd newRes) {
-    reservoir = newRes;
+    reservoir = std::move(newRes);
 }

@@ -8,6 +8,7 @@
 #include "../../include/training/trainNetwork.h"
 #include "../../include/esn/esn_outputs.h"
 #include "../../include/esn/esn_costs.h"
+#include "../../include/training/simulated_annealing.h"
 
 #include <iostream>
 #include <fstream>
@@ -26,13 +27,17 @@ void optimiseWorker(vector<pair<vector<double>,bool>> combos, const string &trai
 //with ridge regression
 int singleTrainingRunRidge();
 
+//prototype for simulated annealing training function
+int runSimAnneal();
+
 /**
- * function starts the optimisation procedure
+ * function starts the training procedure
  * @return an exit code
  */
 int main() {
     //return optimiseNetwork();
-    return singleTrainingRunRidge();
+    //return singleTrainingRunRidge();
+    return runSimAnneal();
 }
 
 /**
@@ -170,6 +175,32 @@ int singleTrainingRunRidge() {
     ofstream myFile;
     myFile.open("with_bias_error.txt");
     myFile << "Total average training set error = " << error << "\n";
+    myFile.close();
+
+    return 0;
+}
+
+/**
+ * runs simulated annealing to learn network weights
+ * @return an exit code
+ */
+int runSimAnneal() {
+
+    //constructor values taken from Rodan & Tino's paper
+    //using tailor made output function and cost function
+    shared_ptr<ESN> echo = std::make_shared<ESN>(1.0,0.9,0.4,200,13,1,8,roundValInBound,intervalCost);
+    std::cout << "Initialised Echo State Network" << std::endl;
+
+    //read in the training set
+    shared_ptr<training_set_t> trainingSet = formTrainingSet(echo,"../test/training/testTraining.csv",10);
+    std::cout << "Finished reading in training set" << std::endl;
+
+    double minError = simulatedAnnealing(temperatureSchedule,generateNeighbour,echo,*trainingSet);
+    std::cout << "Finished Simulated Annealing" << std::endl;
+
+    ofstream myFile;
+    myFile.open("simulated_annealing_error.txt");
+    myFile << "Total average training set error = " << minError << "\n";
     myFile.close();
 
     return 0;

@@ -30,6 +30,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.obj"
   "CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.obj"
   "CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.obj"
+  "CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.obj"
   "CMakeFiles/TRAINING_TEST.dir/TRAINING_TEST_autogen/mocs_compilation.cpp.obj"
   "TRAINING_TEST.pdb"
   "TRAINING_TEST.exe"
