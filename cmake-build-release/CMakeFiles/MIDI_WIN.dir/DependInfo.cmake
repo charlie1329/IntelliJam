@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN_autogen/mocs_compilation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN.dir/MIDI_WIN_autogen/mocs_compilation.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/test/midi/midiWinTest.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN.dir/test/midi/midiWinTest.cpp.obj"
@@ -15,7 +14,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
-  "MIDI_WIN_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"

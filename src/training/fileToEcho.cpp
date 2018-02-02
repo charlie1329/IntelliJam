@@ -26,7 +26,7 @@ void trainingReaderWorker(ESN echo, vector<pair<string,VectorXd>> files,
  */
 VectorXd wavToEcho(ESN echo, const string &filePath, unsigned int sampleJump) {
 
-    echo.resetReservoir(); //reset the reservoir to its intitial state
+    echo.resetReservoir(); //reset the reservoir to its initial state
 
     //read in from wav file
     auto *file_info = new SF_INFO;
@@ -42,7 +42,7 @@ VectorXd wavToEcho(ESN echo, const string &filePath, unsigned int sampleJump) {
 
     //loop through and feed into echo state network
     for(sf_count_t i = 0; i < framesRead; i++) {
-        if(i % sampleJump == 0) echo.updateReservoir(allSamples[i]);
+        if((i % sampleJump) == 0) echo.updateReservoir(allSamples[i]);
     }
 
     //close file

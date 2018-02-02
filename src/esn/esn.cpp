@@ -168,8 +168,8 @@ MatrixXd ESN::readWeightMatrix(string matrixPath) {
 
     MatrixXd newMat = MatrixXd::Random(temp.size(),temp.at(0).size());
 
-    for (int i = 0; i < temp.size(); i++) {
-        for (int j = 0; j < temp.at(0).size(); j++) {
+    for (unsigned int i = 0; i < temp.size(); i++) {
+        for (unsigned int j = 0; j < temp.at(0).size(); j++) {
             newMat(i,j) = temp.at(i).at(j);
         }
     }

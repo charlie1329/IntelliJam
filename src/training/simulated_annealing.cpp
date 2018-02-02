@@ -64,6 +64,7 @@ double simulatedAnnealing(double (*schedule)(unsigned int),MatrixXd(*neighbour)(
 
     MatrixXd currentSolution = generateRandomMatrix((unsigned int)echo->resOutWeights.rows(),
                                                     (unsigned int)echo->resOutWeights.cols(), 100);
+
     echo->resOutWeights = currentSolution;
     double currentError = getError(echo,trainingSet);
 

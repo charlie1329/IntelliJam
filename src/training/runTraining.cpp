@@ -192,16 +192,21 @@ int runSimAnneal() {
     std::cout << "Initialised Echo State Network" << std::endl;
 
     //read in the training set
-    shared_ptr<training_set_t> trainingSet = formTrainingSet(echo,"../test/training/testTraining.csv",10);
-    std::cout << "Finished reading in training set" << std::endl;
+    shared_ptr<training_set_t> trainingSet = formTrainingSet(echo,"D:/trainingData.csv",10);
+    std::cout << "Finished reading in training set of size: " << trainingSet->size() <<  std::endl;
 
-    double minError = simulatedAnnealing(temperatureSchedule,generateNeighbour,echo,*trainingSet);
+    ofstream myFile;
+    myFile.open("training_size_test.txt");
+    myFile << "Training Set Size = " << trainingSet->size() << "\n";
+    myFile.close();
+
+    /*double minError = simulatedAnnealing(temperatureSchedule,generateNeighbour,echo,*trainingSet);
     std::cout << "Finished Simulated Annealing" << std::endl;
 
     ofstream myFile;
     myFile.open("simulated_annealing_error.txt");
     myFile << "Total average training set error = " << minError << "\n";
-    myFile.close();
+    myFile.close();*/
 
     return 0;
 }

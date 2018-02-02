@@ -11,16 +11,5 @@ C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/PORT_FUZZ_TEST.d
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir
+C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM.dir
 C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/edit_cache.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_TWINKLE_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/ESN_SPEED_TEST_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/ESN_CORE_TEST_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_TEST_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/MIDI_WIN_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/PORT_FUZZ_TEST_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_UNIT_autogen.dir
-C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir

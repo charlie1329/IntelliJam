@@ -191,7 +191,17 @@ TEST_CASE("Tests formTrainingSet works correctly","[formTrainingSet]") {
 
     //now check each new reservoir does show some difference to the initial one or nothing useful is done
     for (auto &i : *trainingSet) {
+        CHECK(i.first.rows() == 200);
         CHECK(!initialReservoir.isApprox(i.first));
+    }
+
+    //also check each reservoir is different to each other
+    for(int i = 0; i < trainingSet->size(); i++) {
+        for(int j = 0; j < trainingSet->size(); j++) {
+            if(i != j) {
+                CHECK(!(trainingSet->at(i)).first.isApprox((trainingSet->at(j)).first));
+            }
+        }
     }
 
     //now find the correct order of the vectors in the training set and check they are all correct.
@@ -341,7 +351,7 @@ TEST_CASE("Tests simulated annealing functions","[simulatedAnnealing]") {
 
     //test neighbourhood generation function
     std::default_random_engine generator;
-    std::normal_distribution<double> distribution(0.0,SIGMA);
+    std::uniform_real_distribution<double> distribution(-SIGMA,SIGMA);
 
     MatrixXd initMat = MatrixXd::Random(8,200);
 
@@ -349,10 +359,10 @@ TEST_CASE("Tests simulated annealing functions","[simulatedAnnealing]") {
 
     //CHECK(initMat.isApprox(newMat)); //T was 0 so shouldn't have any affect
 
-    MatrixXd newMat2 = generateNeighbour(initMat,generator,distribution,0.5);
+    MatrixXd newMat2 = generateNeighbour(initMat,generator,distribution);
     CHECK(!initMat.isApprox(newMat2)); //should actually be changed this time
 
-    MatrixXd newMat3 = generateNeighbour(initMat,generator,distribution,0.5);
+    MatrixXd newMat3 = generateNeighbour(initMat,generator,distribution);
     CHECK(!newMat3.isApprox(newMat2));
 
 }

@@ -24,7 +24,7 @@ endif()
 
 #get qt set up correctly
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_AUTOMOC ON)
+#set(CMAKE_AUTOMOC ON)
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ";" ${QT5_PACKAGE_DIR})
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
@@ -279,7 +279,12 @@ endif()
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
 
-
+# executable for use of the LSTM
+set(LSTM_FILES include/lstm/lstm.h
+               src/lstm/lstm.cpp
+               include/lstm/auxillary_functions.h
+               src/lstm/auxillary_functions.cpp)
+add_executable(LSTM ${LSTM_FILES})
 
 #test for boost
 #set (TEST_FILES test/boost_test.cpp)
