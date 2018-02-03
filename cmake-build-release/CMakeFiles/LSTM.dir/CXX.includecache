@@ -1063,12 +1063,22 @@ chrono
 -
 memory
 -
+string
+-
 
 C:/Users/charl/CLionProjects/FYP/src/lstm/auxillary_functions.cpp
 ../../include/lstm/auxillary_functions.h
 C:/Users/charl/CLionProjects/FYP/include/lstm/auxillary_functions.h
 
 C:/Users/charl/CLionProjects/FYP/src/lstm/lstm.cpp
+utility
+-
+vector
+-
+fstream
+-
+iomanip
+-
 ../../include/lstm/lstm.h
 C:/Users/charl/CLionProjects/FYP/include/lstm/lstm.h
 ../../include/lstm/auxillary_functions.h
