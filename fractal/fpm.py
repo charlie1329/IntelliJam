@@ -11,6 +11,118 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plot # can do some graphs optimising no. of codebook vectors
 
+#****DATA SET READING/CONVERSION CODE****
+
+# function takes in the path to a training file
+# and reads it into an list of lists (of varying length)
+# this list of lists is returned
+def readInSequences(trainingFile):
+
+	sequences = []
+
+	# open up the csv file for processing
+	with open(trainingFile,'r') as trainFile:
+		csvTrain = csv.reader(trainFile)
+
+		currentSequence = []
+
+		for row in csvTrain:
+			if (row[0][0] == '*'): # if start of new sample
+				if (currentSequence != []):
+					sequences.append(currentSequence)
+					currentSequence = []
+			else: # if continuing a sample
+				currentSequence.append(int(row[0]))
+
+
+		# append the final sequence as it won't get caught in my training file format
+		sequences.append(currentSequence)
+
+	return sequences
+
+# function generates a list of vectors
+# each vector is a corner on the D dimensional hypercube
+# where D = ceil(log |A|)
+def generateCorners(magA):
+	D = math.ceil(math.log(magA,2))
+
+	corners = []
+
+	# generate the vectors in the same way
+	# as you would bitstrings
+	for i in range(magA):
+		newCorner = np.zeros(D)
+		currentVal = i
+		for j in range(D):
+			if (currentVal >= pow(2,D-1-j)):
+				newCorner[j] = 1
+				currentVal -= pow(2,D-1-j)
+		corners.append(newCorner)
+
+	return corners
+
+# function applies contractive map i
+# on point x on the D-dimensional hypercube
+# t_i is a corner on this hypercube
+# and k is the contraction coefficient
+def applyMap(t_i,k,x):
+	return (k * x) + ((1.0 - k) * t_i)
+
+# function converts a sequence into 
+# a chaos (game/block) representation
+# returned is a point on 
+# the D-dimensional hypercube,
+# representing the sequence
+def toChaosRep(t,k,S):
+	
+	# initial x value is in the centre of the hypercube
+	D = math.ceil(math.log(t[0].shape[0],2))
+	x = np.zeros(D)
+	x.fill(0.5)
+
+	# iterate through the sequence, applying the maps
+	for item in S:
+		x = applyMap(t[item],k,x)
+
+	return x
+
+# function will take a set of sequences of 
+# varying length and will take all L sized blocks
+# out of it, and return this as a list of blocks
+def getAllLBlocks(sequences, L):
+	blocks = []
+
+	for sequence in sequences:
+		if (len(sequence) >= L):
+			for i in range(len(sequence) - L + 1):
+				blocks.append(sequence[i:i+L])
+
+	return blocks
+
+# function takes a training file 
+# and converts it onto a D-dimensional hypercube
+# returned are the corners
+# L is the block size (maximum memory depth)
+# k is the contraction coefficient
+# mag A is the size of the input alphabet
+def getDataSet(sequences, L, k, magA):
+	
+	t = generateCorners(magA)
+	blocks = getAllLBlocks(sequences,L)
+
+	CBR = []
+
+	# for each allowed block, convert in to chaos representation
+	for LBlock in blocks:
+		CBR.append(toChaosRep(t, k, LBlock))
+
+	# return t too for prediction usage
+	# return blocks for N formation
+	return CBR, t, blocks
+
+
+#****VECTOR QUANTISATION CODE****
+
 # finds the euclidean distance between two
 # vectors (numpy arrays) x and y
 def euclideanDistance(x, y):
@@ -120,6 +232,7 @@ def optimiseNumberOfCodebooks(X,maxM,D,maxIterations, errorMargin, tau, writeCSV
 				avgQError += error
 			
 			avgQError /= float(repeats) # get the average quantisation error over repeated runs
+			print('Average Quantisation Error: ' + str(avgQError))
 
 			resultWriter.writerow([str(M), str(avgQError)])
 
@@ -157,6 +270,102 @@ def plotCodebookGraph(resultsFile):
 	# display the plot
 	plt.show()
 
+#****PROBABILITY DISTRIBUTION FORMING CODE****
+
+# Assuming we already have the codebook vectors,
+# we now go about forming the distribution matrix
+def formDistributionMatrix(blocks, B, magA, t, k):
+
+	# initialise all matrix elements to zero
+	N = np.zeros((len(B),magA)) 
+
+	for block in blocks:
+		x = toChaosRep(t,k,block)
+		i = findClosestCodebook(x,B)
+		a = block[len(block)-1]
+		N[i,a] += 1
+
+	return N
+
+
+#****PREDICTION TESTING CODE****
+def predictNext(s,B,N,t,k):
+
+	# bring sequence to chaos representation
+	x = toChaosRep(s,t,k)
+
+	# now find the closest codebook vector
+	i = findClosestCodebook(x,B)
+
+	# no need to normalise the probabilities
+	# just take the maximum value
+	# to get the prediction
+	return np.argmax(N[i,:])
+
+#****INTEGRATION CODE****
+
+# function trains a single FPM
+# from training file trainingFile
+# with maximum memory depth L
+# with contraction coefficient k
+# alphabet size magA
+# number of codebook vectors M
+# learning rate temperature tau
+# maximum number of iterations maxIterations
+# quantisation error margin errorMargin
+def trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin):
+
+	# read in the training set
+	sequences = readInSequences(trainingFile)
+
+	# form every other part of the training set
+	CBR, t, blocks = getDataSet(sequences,L,k,magA)
+
+	# carry out vector quantisation
+	D = math.ceil(math.log(magA,2))
+	B, error = vectorQuantisation(CBR,M,D,maxIterations,errorMargin,tau)
+	print('Quantisation Error: ' + str(error))
+
+	# now form the distribution matrix
+	N = formDistributionMatrix(blocks,B,magA,t,k)
+
+	# return everything necessary to predict in the future
+	return B,N,t,k
+
+# function optimises vector quantiser by number of codebooks
+# and then plots the results
+# parameters same as trainFPM except:
+# maxM is the range of codebook vector numbers to try
+# repeats is the number of repeats in the optimisation to try
+def optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, errorMargin, repeats):
+
+	# read in the training set
+	sequences = readInSequences(trainingFile)
+
+	# form every other part of the training set
+	CBR, t, blocks = getDataSet(sequences,L,k,magA)
+
+	# optimise the vector quantiser
+	resultsFile = 'codebookOptimisation.csv'
+	D = math.ceil(math.log(magA,2))
+	optimiseNumberOfCodebooks(CBR,maxM,D,maxIterations, errorMargin, tau, resultsFile, repeats)
+
+	# now plot the results as a graph
+	# we are looking for the 'knee' in this graph
+	plotCodebookGraph(resultsFile)
+
+	# once we know the best number of codebook vectors,
+	# then we can train the best model possible
+
+#****MAIN FUNCTION****
+
 # the main function to be executed
 if __name__ == '__main__':
 	print('FILL ME IN')
+	corners = generateCorners(13)
+	for i in range(13):
+		print(corners[i])
+
+	test = [np.random.rand(10)]
+	print(test)
+	print(getAllLBlocks(test,2))
