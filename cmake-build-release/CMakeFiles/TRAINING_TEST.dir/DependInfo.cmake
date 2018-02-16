@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn_costs.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn_outputs.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/checkpoint.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/fileToEcho.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/simulated_annealing.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/trainNetwork.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/test/training/trainingUnit.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_old/checkpoint.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training_old/checkpoint.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_old/fileToEcho.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training_old/fileToEcho.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_old/simulated_annealing.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training_old/simulated_annealing.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_old/trainNetwork.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/training_old/trainNetwork.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/test/training_old/trainingUnit.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/test/training_old/trainingUnit.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -356,7 +356,3 @@ VectorXd LSTMNet::predict(VectorXd x_t) {
 
     return output;
 }
-
-int main() {
-    return 0;
-}

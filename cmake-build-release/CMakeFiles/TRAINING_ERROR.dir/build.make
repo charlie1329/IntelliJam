@@ -81,79 +81,79 @@ CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj.provides: CMakeFiles/TRAINING_
 CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj
 
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj: ../src/training/fileToEcho.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training\fileToEcho.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\fileToEcho.cpp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj: ../src/training_old/fileToEcho.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\fileToEcho.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_old\fileToEcho.cpp
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\fileToEcho.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training\fileToEcho.cpp.i
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_old\fileToEcho.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training_old\fileToEcho.cpp.i
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\fileToEcho.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training\fileToEcho.cpp.s
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_old\fileToEcho.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\fileToEcho.cpp.s
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.requires:
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.requires:
 
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.requires
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.requires
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.provides.build
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.provides
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.provides
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj
-
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj: ../src/training/trainNetwork.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training\trainNetwork.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\trainNetwork.cpp
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\trainNetwork.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training\trainNetwork.cpp.i
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\trainNetwork.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training\trainNetwork.cpp.s
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.requires:
-
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.requires
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.provides.build
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.provides
-
-CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj
 
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj: ../src/training/checkpoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training\checkpoint.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj: ../src/training_old/trainNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\trainNetwork.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_old\trainNetwork.cpp
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training\checkpoint.cpp.i
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_old\trainNetwork.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training_old\trainNetwork.cpp.i
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\checkpoint.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training\checkpoint.cpp.s
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_old\trainNetwork.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\trainNetwork.cpp.s
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.requires:
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.requires:
 
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.requires
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.requires
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.provides.build
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.provides
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.provides
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj
+
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj: ../src/training_old/checkpoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\checkpoint.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_old\checkpoint.cpp
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_old\checkpoint.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training_old\checkpoint.cpp.i
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_old\checkpoint.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\checkpoint.cpp.s
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.requires:
+
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.requires
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.provides
+
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj
 
 
 CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
@@ -181,29 +181,29 @@ CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj.provides: CMakeFiles/T
 CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj
 
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj: ../test/training/calculateError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\test\training\calculateError.cpp.obj -c C:\Users\charl\CLionProjects\FYP\test\training\calculateError.cpp
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj: ../test/training_old/calculateError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\test\training_old\calculateError.cpp.obj -c C:\Users\charl\CLionProjects\FYP\test\training_old\calculateError.cpp
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\test\training\calculateError.cpp > CMakeFiles\TRAINING_ERROR.dir\test\training\calculateError.cpp.i
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\test\training_old\calculateError.cpp > CMakeFiles\TRAINING_ERROR.dir\test\training_old\calculateError.cpp.i
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\test\training\calculateError.cpp -o CMakeFiles\TRAINING_ERROR.dir\test\training\calculateError.cpp.s
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\test\training_old\calculateError.cpp -o CMakeFiles\TRAINING_ERROR.dir\test\training_old\calculateError.cpp.s
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.requires:
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.requires:
 
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.requires
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.requires
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.provides.build
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.provides
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.provides
 
-CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj
+CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj
 
 
 CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
@@ -231,53 +231,53 @@ CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj.provides: CMakeFiles/TRA
 CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj
 
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj: ../src/training/simulated_annealing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training\simulated_annealing.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\simulated_annealing.cpp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/flags.make
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj: CMakeFiles/TRAINING_ERROR.dir/includes_CXX.rsp
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj: ../src/training_old/simulated_annealing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\simulated_annealing.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_old\simulated_annealing.cpp
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\simulated_annealing.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training\simulated_annealing.cpp.i
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_old\simulated_annealing.cpp > CMakeFiles\TRAINING_ERROR.dir\src\training_old\simulated_annealing.cpp.i
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\simulated_annealing.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training\simulated_annealing.cpp.s
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_old\simulated_annealing.cpp -o CMakeFiles\TRAINING_ERROR.dir\src\training_old\simulated_annealing.cpp.s
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.requires:
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.requires:
 
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.requires
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.requires
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.provides.build
-.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.provides
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.provides: CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.provides.build
+.PHONY : CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.provides
 
-CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj
+CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.provides.build: CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj
 
 
 # Object files for target TRAINING_ERROR
 TRAINING_ERROR_OBJECTS = \
 "CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj" \
-"CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj" \
-"CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj" \
-"CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj" \
+"CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj" \
+"CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj" \
+"CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj" \
 "CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj" \
-"CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj" \
+"CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj" \
 "CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj" \
-"CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj"
+"CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj"
 
 # External object files for target TRAINING_ERROR
 TRAINING_ERROR_EXTERNAL_OBJECTS =
 
 TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj
-TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj
-TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj
-TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj
+TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj
+TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj
+TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj
 TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj
-TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj
+TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj
 TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj
-TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj
+TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj
 TRAINING_ERROR.exe: CMakeFiles/TRAINING_ERROR.dir/build.make
 TRAINING_ERROR.exe: ../libs/libsndfile-1.lib
 TRAINING_ERROR.exe: C:/Program\ Files/boost/lib/libboost_system-mgw63-mt-1_66.a
@@ -297,13 +297,13 @@ CMakeFiles/TRAINING_ERROR.dir/build: TRAINING_ERROR.exe
 .PHONY : CMakeFiles/TRAINING_ERROR.dir/build
 
 CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj.requires
-CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj.requires
-CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj.requires
-CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj.requires
+CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj.requires
+CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj.requires
+CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj.requires
 CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj.requires
-CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj.requires
+CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj.requires
 CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_costs.cpp.obj.requires
-CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj.requires
+CMakeFiles/TRAINING_ERROR.dir/requires: CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj.requires
 
 .PHONY : CMakeFiles/TRAINING_ERROR.dir/requires
 

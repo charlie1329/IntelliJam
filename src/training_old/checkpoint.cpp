@@ -3,7 +3,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/checkpoint.h"
+#include "../../include/training_old/checkpoint.h"
 #include <fstream>
 
 /**

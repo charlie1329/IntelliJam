@@ -103,4 +103,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/RUNTIME_UNIT.dir/DependInfo.cmake"
   "CMakeFiles/TRAINING_ERROR.dir/DependInfo.cmake"
   "CMakeFiles/LSTM.dir/DependInfo.cmake"
+  "CMakeFiles/LSTM_TEST.dir/DependInfo.cmake"
   )

@@ -879,6 +879,70 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="LSTM_TEST">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/LSTM_TEST.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 LSTM_TEST"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LSTM_TEST/fast">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/LSTM_TEST.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 LSTM_TEST/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/bridge/bridge.h">
 			<Option target="ESN_CORE_TEST"/>
@@ -939,9 +1003,11 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/lstm/auxillary_functions.h">
 			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/lstm/lstm.h">
 			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/midi/esnToMidi.h">
 			<Option target="RUNTIME_W_GUI"/>
@@ -1000,27 +1066,35 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/test/catch.hpp">
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/checkpoint.h">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/errorCalculation.h">
+			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/readTraining.h">
+			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training_old/checkpoint.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/fileToEcho.h">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training_old/fileToEcho.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/hyperParameters.h">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training_old/hyperParameters.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/simulated_annealing.h">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training_old/simulated_annealing.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training/trainNetwork.h">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/training_old/trainNetwork.h">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
@@ -1082,9 +1156,11 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/lstm/auxillary_functions.cpp">
 			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/lstm/lstm.cpp">
 			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp">
 			<Option target="RUNTIME_W_GUI"/>
@@ -1123,25 +1199,33 @@
 			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/checkpoint.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/errorCalculation.cpp">
+			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/readTraining.cpp">
+			<Option target="LSTM"/>
+			<Option target="LSTM_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training_old/checkpoint.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/fileToEcho.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training_old/fileToEcho.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/runTraining.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training_old/runTraining.cpp">
 			<Option target="TRAINING"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/simulated_annealing.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training_old/simulated_annealing.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training/trainNetwork.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/training_old/trainNetwork.cpp">
 			<Option target="TRAINING"/>
 			<Option target="TRAINING_TEST"/>
 			<Option target="TRAINING_ERROR"/>
@@ -1167,10 +1251,13 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/runtime/runtimeUnitTests.cpp">
 			<Option target="RUNTIME_UNIT"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/training/calculateError.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/training/trainingUnit.cpp">
+			<Option target="LSTM_TEST"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/training_old/calculateError.cpp">
 			<Option target="TRAINING_ERROR"/>
 		</Unit>
-		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/training/trainingUnit.cpp">
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/training_old/trainingUnit.cpp">
 			<Option target="TRAINING_TEST"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/CMakeLists.txt">

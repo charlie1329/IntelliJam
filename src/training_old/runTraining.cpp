@@ -3,12 +3,12 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/checkpoint.h"
-#include "../../include/training/hyperParameters.h"
-#include "../../include/training/trainNetwork.h"
+#include "../../include/training_old/checkpoint.h"
+#include "../../include/training_old/hyperParameters.h"
+#include "../../include/training_old/trainNetwork.h"
 #include "../../include/esn/esn_outputs.h"
 #include "../../include/esn/esn_costs.h"
-#include "../../include/training/simulated_annealing.h"
+#include "../../include/training_old/simulated_annealing.h"
 
 #include <iostream>
 #include <fstream>

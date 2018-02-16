@@ -65,7 +65,7 @@ CMAKE_BINARY_DIR = C:\Users\charl\CLionProjects\FYP\cmake-build-release
 CMakeFiles/MIDI_TWINKLE.dir/all:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/depend
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=15,16,17 "Built target MIDI_TWINKLE"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=22,23,24 "Built target MIDI_TWINKLE"
 .PHONY : CMakeFiles/MIDI_TWINKLE.dir/all
 
 # Include target in all.
@@ -102,7 +102,7 @@ clean: CMakeFiles/MIDI_TWINKLE.dir/clean
 CMakeFiles/TRAINING.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75 "Built target TRAINING"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=74,75,76,77,78,79,80,81,82 "Built target TRAINING"
 .PHONY : CMakeFiles/TRAINING.dir/all
 
 # Include target in all.
@@ -139,7 +139,7 @@ clean: CMakeFiles/TRAINING.dir/clean
 CMakeFiles/TRAINING_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=85,86,87,88,89,90,91,92,93 "Built target TRAINING_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=92,93,94,95,96,97,98,99,100 "Built target TRAINING_TEST"
 .PHONY : CMakeFiles/TRAINING_TEST.dir/all
 
 # Include target in all.
@@ -176,7 +176,7 @@ clean: CMakeFiles/TRAINING_TEST.dir/clean
 CMakeFiles/ESN_SPEED_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=5,6,7,8 "Built target ESN_SPEED_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=4,5,6,7 "Built target ESN_SPEED_TEST"
 .PHONY : CMakeFiles/ESN_SPEED_TEST.dir/all
 
 # Include target in all.
@@ -213,7 +213,7 @@ clean: CMakeFiles/ESN_SPEED_TEST.dir/clean
 CMakeFiles/ESN_CORE_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=1,2,3,4 "Built target ESN_CORE_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=1,2,3 "Built target ESN_CORE_TEST"
 .PHONY : CMakeFiles/ESN_CORE_TEST.dir/all
 
 # Include target in all.
@@ -223,7 +223,7 @@ all: CMakeFiles/ESN_CORE_TEST.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ESN_CORE_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ESN_CORE_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/ESN_CORE_TEST.dir/rule
@@ -250,7 +250,7 @@ clean: CMakeFiles/ESN_CORE_TEST.dir/clean
 CMakeFiles/MIDI_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=12,13,14 "Built target MIDI_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=19,20,21 "Built target MIDI_TEST"
 .PHONY : CMakeFiles/MIDI_TEST.dir/all
 
 # Include target in all.
@@ -287,7 +287,7 @@ clean: CMakeFiles/MIDI_TEST.dir/clean
 CMakeFiles/RUNTIME_W_GUI.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target RUNTIME_W_GUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target RUNTIME_W_GUI"
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/all
 
 # Include target in all.
@@ -324,7 +324,7 @@ clean: CMakeFiles/RUNTIME_W_GUI.dir/clean
 CMakeFiles/MIDI_WIN.dir/all:
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/depend
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=18,19,20,21 "Built target MIDI_WIN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=25,26,27,28 "Built target MIDI_WIN"
 .PHONY : CMakeFiles/MIDI_WIN.dir/all
 
 # Include target in all.
@@ -361,7 +361,7 @@ clean: CMakeFiles/MIDI_WIN.dir/clean
 CMakeFiles/PORT_FUZZ_TEST.dir/all:
 	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=22,23 "Built target PORT_FUZZ_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=29,30 "Built target PORT_FUZZ_TEST"
 .PHONY : CMakeFiles/PORT_FUZZ_TEST.dir/all
 
 # Include target in all.
@@ -398,7 +398,7 @@ clean: CMakeFiles/PORT_FUZZ_TEST.dir/clean
 CMakeFiles/RUNTIME.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36 "Built target RUNTIME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target RUNTIME"
 .PHONY : CMakeFiles/RUNTIME.dir/all
 
 # Include target in all.
@@ -435,7 +435,7 @@ clean: CMakeFiles/RUNTIME.dir/clean
 CMakeFiles/RUNTIME_UNIT.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=37,38,39,40,41,42,43,44 "Built target RUNTIME_UNIT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=44,45,46,47,48,49,50,51 "Built target RUNTIME_UNIT"
 .PHONY : CMakeFiles/RUNTIME_UNIT.dir/all
 
 # Include target in all.
@@ -472,7 +472,7 @@ clean: CMakeFiles/RUNTIME_UNIT.dir/clean
 CMakeFiles/TRAINING_ERROR.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84 "Built target TRAINING_ERROR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91 "Built target TRAINING_ERROR"
 .PHONY : CMakeFiles/TRAINING_ERROR.dir/all
 
 # Include target in all.
@@ -509,7 +509,7 @@ clean: CMakeFiles/TRAINING_ERROR.dir/clean
 CMakeFiles/LSTM.dir/all:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/depend
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=9,10,11 "Built target LSTM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=8,9,10,11,12 "Built target LSTM"
 .PHONY : CMakeFiles/LSTM.dir/all
 
 # Include target in all.
@@ -519,7 +519,7 @@ all: CMakeFiles/LSTM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LSTM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LSTM.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/LSTM.dir/rule
@@ -536,6 +536,43 @@ CMakeFiles/LSTM.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/LSTM.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LSTM_TEST.dir
+
+# All Build rule for target.
+CMakeFiles/LSTM_TEST.dir/all:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/depend
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=13,14,15,16,17,18 "Built target LSTM_TEST"
+.PHONY : CMakeFiles/LSTM_TEST.dir/all
+
+# Include target in all.
+all: CMakeFiles/LSTM_TEST.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LSTM_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 6
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LSTM_TEST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+.PHONY : CMakeFiles/LSTM_TEST.dir/rule
+
+# Convenience name for target.
+LSTM_TEST: CMakeFiles/LSTM_TEST.dir/rule
+
+.PHONY : LSTM_TEST
+
+# clean rule for target.
+CMakeFiles/LSTM_TEST.dir/clean:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/clean
+.PHONY : CMakeFiles/LSTM_TEST.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/LSTM_TEST.dir/clean
 
 .PHONY : clean
 

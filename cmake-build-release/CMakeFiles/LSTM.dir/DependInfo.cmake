@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/charl/CLionProjects/FYP/src/lstm/auxillary_functions.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/lstm/lstm.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training/errorCalculation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training/readTraining.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -3,7 +3,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/fileToEcho.h"
+#include "../../include/training_old/fileToEcho.h"
 #include "../../include/libsndfile/sndfile.h"
 #include <fstream>
 #include <iostream>

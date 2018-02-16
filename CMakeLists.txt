@@ -42,20 +42,20 @@ endif()
 set(TRAINING_FILES include/libsndfile/sndfile.h
                    include/esn/esn.h
                    src/esn/esn.cpp
-                   include/training/fileToEcho.h
-                   src/training/fileToEcho.cpp
-                   include/training/trainNetwork.h
-                   src/training/trainNetwork.cpp
-                   include/training/hyperParameters.h
-                   include/training/checkpoint.h
-                   src/training/checkpoint.cpp
-                   src/training/runTraining.cpp
+                   include/training_old/fileToEcho.h
+                   src/training_old/fileToEcho.cpp
+                   include/training_old/trainNetwork.h
+                   src/training_old/trainNetwork.cpp
+                   include/training_old/hyperParameters.h
+                   include/training_old/checkpoint.h
+                   src/training_old/checkpoint.cpp
+                   src/training_old/runTraining.cpp
                    include/esn/esn_outputs.h
                    src/esn/esn_outputs.cpp
                    include/esn/esn_costs.h
                    src/esn/esn_costs.cpp
-                   include/training/simulated_annealing.h
-                   src/training/simulated_annealing.cpp)
+                   include/training_old/simulated_annealing.h
+                   src/training_old/simulated_annealing.cpp)
 
 add_executable(TRAINING ${TRAINING_FILES})
 target_link_libraries(TRAINING ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -69,20 +69,20 @@ endif()
 set(TRAINING_TEST_FILES include/libsndfile/sndfile.h
                         include/esn/esn.h
                         src/esn/esn.cpp
-                        include/training/fileToEcho.h
-                        src/training/fileToEcho.cpp
-                        test/training/trainingUnit.cpp
-                        include/training/hyperParameters.h
-                        include/training/checkpoint.h
-                        src/training/checkpoint.cpp
+                        include/training_old/fileToEcho.h
+                        src/training_old/fileToEcho.cpp
+                        test/training_old/trainingUnit.cpp
+                        include/training_old/hyperParameters.h
+                        include/training_old/checkpoint.h
+                        src/training_old/checkpoint.cpp
                         include/esn/esn_outputs.h
                         src/esn/esn_outputs.cpp
-                        include/training/trainNetwork.h
-                        src/training/trainNetwork.cpp
+                        include/training_old/trainNetwork.h
+                        src/training_old/trainNetwork.cpp
                         include/esn/esn_costs.h
                         src/esn/esn_costs.cpp
-                        include/training/simulated_annealing.h
-                        src/training/simulated_annealing.cpp)
+                        include/training_old/simulated_annealing.h
+                        src/training_old/simulated_annealing.cpp)
 
 add_executable(TRAINING_TEST ${TRAINING_TEST_FILES})
 target_link_libraries(TRAINING_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -254,20 +254,20 @@ target_link_libraries(PORT_FUZZ_TEST ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_
 set(TRAINING_ERROR_FILES  include/libsndfile/sndfile.h
         include/esn/esn.h
         src/esn/esn.cpp
-        include/training/fileToEcho.h
-        src/training/fileToEcho.cpp
-        include/training/trainNetwork.h
-        src/training/trainNetwork.cpp
-        include/training/hyperParameters.h
-        include/training/checkpoint.h
-        src/training/checkpoint.cpp
+        include/training_old/fileToEcho.h
+        src/training_old/fileToEcho.cpp
+        include/training_old/trainNetwork.h
+        src/training_old/trainNetwork.cpp
+        include/training_old/hyperParameters.h
+        include/training_old/checkpoint.h
+        src/training_old/checkpoint.cpp
         include/esn/esn_outputs.h
         src/esn/esn_outputs.cpp
-        test/training/calculateError.cpp
+        test/training_old/calculateError.cpp
         include/esn/esn_costs.h
         src/esn/esn_costs.cpp
-        include/training/simulated_annealing.h
-        src/training/simulated_annealing.cpp)
+        include/training_old/simulated_annealing.h
+        src/training_old/simulated_annealing.cpp)
 
 add_executable(TRAINING_ERROR ${TRAINING_ERROR_FILES})
 target_link_libraries(TRAINING_ERROR ${CMAKE_CURRENT_SOURCE_DIR}/libs/libsndfile-1.lib)
@@ -279,12 +279,28 @@ endif()
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include) #including header files
 
-# executable for use of the LSTM
+# executable for use of the LSTM Training
 set(LSTM_FILES include/lstm/lstm.h
                src/lstm/lstm.cpp
                include/lstm/auxillary_functions.h
-               src/lstm/auxillary_functions.cpp)
+               src/lstm/auxillary_functions.cpp
+               include/training/readTraining.h
+               src/training/readTraining.cpp
+               include/training/errorCalculation.h
+               src/training/errorCalculation.cpp)
 add_executable(LSTM ${LSTM_FILES})
+
+# executable for LSTM training tests
+set(LSTM_TEST_FILES include/lstm/lstm.h
+                    src/lstm/lstm.cpp
+                    include/lstm/auxillary_functions.h
+                    src/lstm/auxillary_functions.cpp
+                    include/training/readTraining.h
+                    src/training/readTraining.cpp
+                    test/training/trainingUnit.cpp
+                    include/training/errorCalculation.h
+                    src/training/errorCalculation.cpp)
+add_executable(LSTM_TEST ${LSTM_TEST_FILES})
 
 #test for boost
 #set (TEST_FILES test/boost_test.cpp)

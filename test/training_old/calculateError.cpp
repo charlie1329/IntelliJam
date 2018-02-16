@@ -5,8 +5,8 @@
 
 #include "../../include/esn/esn_outputs.h"
 #include "../../include/esn/esn.h"
-#include "../../include/training/fileToEcho.h"
-#include "../../include/training/trainNetwork.h"
+#include "../../include/training_old/fileToEcho.h"
+#include "../../include/training_old/trainNetwork.h"
 #include "../../include/esn/esn_costs.h"
 
 #include <iostream>

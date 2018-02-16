@@ -3,7 +3,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/simulated_annealing.h"
+#include "../../include/training_old/simulated_annealing.h"
 #include <iostream>
 #include <cmath>
 #include <chrono>

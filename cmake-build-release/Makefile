@@ -278,6 +278,19 @@ LSTM/fast:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/build
 .PHONY : LSTM/fast
 
+#=============================================================================
+# Target rules for targets named LSTM_TEST
+
+# Build rule for target.
+LSTM_TEST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 LSTM_TEST
+.PHONY : LSTM_TEST
+
+# fast build rule for target.
+LSTM_TEST/fast:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/build
+.PHONY : LSTM_TEST/fast
+
 include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 .PHONY : include/port_audio/pa_ringbuffer.obj
@@ -750,6 +763,7 @@ src/lstm/auxillary_functions.obj: src/lstm/auxillary_functions.cpp.obj
 # target to build an object file
 src/lstm/auxillary_functions.cpp.obj:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj
 .PHONY : src/lstm/auxillary_functions.cpp.obj
 
 src/lstm/auxillary_functions.i: src/lstm/auxillary_functions.cpp.i
@@ -759,6 +773,7 @@ src/lstm/auxillary_functions.i: src/lstm/auxillary_functions.cpp.i
 # target to preprocess a source file
 src/lstm/auxillary_functions.cpp.i:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.i
 .PHONY : src/lstm/auxillary_functions.cpp.i
 
 src/lstm/auxillary_functions.s: src/lstm/auxillary_functions.cpp.s
@@ -768,6 +783,7 @@ src/lstm/auxillary_functions.s: src/lstm/auxillary_functions.cpp.s
 # target to generate assembly for a file
 src/lstm/auxillary_functions.cpp.s:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.s
 .PHONY : src/lstm/auxillary_functions.cpp.s
 
 src/lstm/lstm.obj: src/lstm/lstm.cpp.obj
@@ -777,6 +793,7 @@ src/lstm/lstm.obj: src/lstm/lstm.cpp.obj
 # target to build an object file
 src/lstm/lstm.cpp.obj:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj
 .PHONY : src/lstm/lstm.cpp.obj
 
 src/lstm/lstm.i: src/lstm/lstm.cpp.i
@@ -786,6 +803,7 @@ src/lstm/lstm.i: src/lstm/lstm.cpp.i
 # target to preprocess a source file
 src/lstm/lstm.cpp.i:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.i
 .PHONY : src/lstm/lstm.cpp.i
 
 src/lstm/lstm.s: src/lstm/lstm.cpp.s
@@ -795,6 +813,7 @@ src/lstm/lstm.s: src/lstm/lstm.cpp.s
 # target to generate assembly for a file
 src/lstm/lstm.cpp.s:
 	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.s
 .PHONY : src/lstm/lstm.cpp.s
 
 src/midi/esnToMidi.obj: src/midi/esnToMidi.cpp.obj
@@ -1052,164 +1071,224 @@ src/runtime/updateThread.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
-src/training/checkpoint.obj: src/training/checkpoint.cpp.obj
+src/training/errorCalculation.obj: src/training/errorCalculation.cpp.obj
 
-.PHONY : src/training/checkpoint.obj
-
-# target to build an object file
-src/training/checkpoint.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.obj
-.PHONY : src/training/checkpoint.cpp.obj
-
-src/training/checkpoint.i: src/training/checkpoint.cpp.i
-
-.PHONY : src/training/checkpoint.i
-
-# target to preprocess a source file
-src/training/checkpoint.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.i
-.PHONY : src/training/checkpoint.cpp.i
-
-src/training/checkpoint.s: src/training/checkpoint.cpp.s
-
-.PHONY : src/training/checkpoint.s
-
-# target to generate assembly for a file
-src/training/checkpoint.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/checkpoint.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/checkpoint.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/checkpoint.cpp.s
-.PHONY : src/training/checkpoint.cpp.s
-
-src/training/fileToEcho.obj: src/training/fileToEcho.cpp.obj
-
-.PHONY : src/training/fileToEcho.obj
+.PHONY : src/training/errorCalculation.obj
 
 # target to build an object file
-src/training/fileToEcho.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.obj
-.PHONY : src/training/fileToEcho.cpp.obj
+src/training/errorCalculation.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj
+.PHONY : src/training/errorCalculation.cpp.obj
 
-src/training/fileToEcho.i: src/training/fileToEcho.cpp.i
+src/training/errorCalculation.i: src/training/errorCalculation.cpp.i
 
-.PHONY : src/training/fileToEcho.i
+.PHONY : src/training/errorCalculation.i
 
 # target to preprocess a source file
-src/training/fileToEcho.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.i
-.PHONY : src/training/fileToEcho.cpp.i
+src/training/errorCalculation.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.i
+.PHONY : src/training/errorCalculation.cpp.i
 
-src/training/fileToEcho.s: src/training/fileToEcho.cpp.s
+src/training/errorCalculation.s: src/training/errorCalculation.cpp.s
 
-.PHONY : src/training/fileToEcho.s
+.PHONY : src/training/errorCalculation.s
 
 # target to generate assembly for a file
-src/training/fileToEcho.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/fileToEcho.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/fileToEcho.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/fileToEcho.cpp.s
-.PHONY : src/training/fileToEcho.cpp.s
+src/training/errorCalculation.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.s
+.PHONY : src/training/errorCalculation.cpp.s
 
-src/training/runTraining.obj: src/training/runTraining.cpp.obj
+src/training/readTraining.obj: src/training/readTraining.cpp.obj
 
-.PHONY : src/training/runTraining.obj
+.PHONY : src/training/readTraining.obj
 
 # target to build an object file
-src/training/runTraining.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.obj
-.PHONY : src/training/runTraining.cpp.obj
+src/training/readTraining.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj
+.PHONY : src/training/readTraining.cpp.obj
 
-src/training/runTraining.i: src/training/runTraining.cpp.i
+src/training/readTraining.i: src/training/readTraining.cpp.i
 
-.PHONY : src/training/runTraining.i
+.PHONY : src/training/readTraining.i
 
 # target to preprocess a source file
-src/training/runTraining.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.i
-.PHONY : src/training/runTraining.cpp.i
+src/training/readTraining.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.i
+.PHONY : src/training/readTraining.cpp.i
 
-src/training/runTraining.s: src/training/runTraining.cpp.s
+src/training/readTraining.s: src/training/readTraining.cpp.s
 
-.PHONY : src/training/runTraining.s
+.PHONY : src/training/readTraining.s
 
 # target to generate assembly for a file
-src/training/runTraining.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/runTraining.cpp.s
-.PHONY : src/training/runTraining.cpp.s
+src/training/readTraining.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.s
+.PHONY : src/training/readTraining.cpp.s
 
-src/training/simulated_annealing.obj: src/training/simulated_annealing.cpp.obj
+src/training_old/checkpoint.obj: src/training_old/checkpoint.cpp.obj
 
-.PHONY : src/training/simulated_annealing.obj
+.PHONY : src/training_old/checkpoint.obj
 
 # target to build an object file
-src/training/simulated_annealing.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.obj
-.PHONY : src/training/simulated_annealing.cpp.obj
+src/training_old/checkpoint.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/checkpoint.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/checkpoint.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.obj
+.PHONY : src/training_old/checkpoint.cpp.obj
 
-src/training/simulated_annealing.i: src/training/simulated_annealing.cpp.i
+src/training_old/checkpoint.i: src/training_old/checkpoint.cpp.i
 
-.PHONY : src/training/simulated_annealing.i
+.PHONY : src/training_old/checkpoint.i
 
 # target to preprocess a source file
-src/training/simulated_annealing.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.i
-.PHONY : src/training/simulated_annealing.cpp.i
+src/training_old/checkpoint.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/checkpoint.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/checkpoint.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.i
+.PHONY : src/training_old/checkpoint.cpp.i
 
-src/training/simulated_annealing.s: src/training/simulated_annealing.cpp.s
+src/training_old/checkpoint.s: src/training_old/checkpoint.cpp.s
 
-.PHONY : src/training/simulated_annealing.s
+.PHONY : src/training_old/checkpoint.s
 
 # target to generate assembly for a file
-src/training/simulated_annealing.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/simulated_annealing.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/simulated_annealing.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/simulated_annealing.cpp.s
-.PHONY : src/training/simulated_annealing.cpp.s
+src/training_old/checkpoint.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/checkpoint.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/checkpoint.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/checkpoint.cpp.s
+.PHONY : src/training_old/checkpoint.cpp.s
 
-src/training/trainNetwork.obj: src/training/trainNetwork.cpp.obj
+src/training_old/fileToEcho.obj: src/training_old/fileToEcho.cpp.obj
 
-.PHONY : src/training/trainNetwork.obj
+.PHONY : src/training_old/fileToEcho.obj
 
 # target to build an object file
-src/training/trainNetwork.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.obj
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.obj
-.PHONY : src/training/trainNetwork.cpp.obj
+src/training_old/fileToEcho.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/fileToEcho.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/fileToEcho.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.obj
+.PHONY : src/training_old/fileToEcho.cpp.obj
 
-src/training/trainNetwork.i: src/training/trainNetwork.cpp.i
+src/training_old/fileToEcho.i: src/training_old/fileToEcho.cpp.i
 
-.PHONY : src/training/trainNetwork.i
+.PHONY : src/training_old/fileToEcho.i
 
 # target to preprocess a source file
-src/training/trainNetwork.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.i
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.i
-.PHONY : src/training/trainNetwork.cpp.i
+src/training_old/fileToEcho.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/fileToEcho.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/fileToEcho.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.i
+.PHONY : src/training_old/fileToEcho.cpp.i
 
-src/training/trainNetwork.s: src/training/trainNetwork.cpp.s
+src/training_old/fileToEcho.s: src/training_old/fileToEcho.cpp.s
 
-.PHONY : src/training/trainNetwork.s
+.PHONY : src/training_old/fileToEcho.s
 
 # target to generate assembly for a file
-src/training/trainNetwork.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training/trainNetwork.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training/trainNetwork.cpp.s
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training/trainNetwork.cpp.s
-.PHONY : src/training/trainNetwork.cpp.s
+src/training_old/fileToEcho.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/fileToEcho.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/fileToEcho.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/fileToEcho.cpp.s
+.PHONY : src/training_old/fileToEcho.cpp.s
+
+src/training_old/runTraining.obj: src/training_old/runTraining.cpp.obj
+
+.PHONY : src/training_old/runTraining.obj
+
+# target to build an object file
+src/training_old/runTraining.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/runTraining.cpp.obj
+.PHONY : src/training_old/runTraining.cpp.obj
+
+src/training_old/runTraining.i: src/training_old/runTraining.cpp.i
+
+.PHONY : src/training_old/runTraining.i
+
+# target to preprocess a source file
+src/training_old/runTraining.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/runTraining.cpp.i
+.PHONY : src/training_old/runTraining.cpp.i
+
+src/training_old/runTraining.s: src/training_old/runTraining.cpp.s
+
+.PHONY : src/training_old/runTraining.s
+
+# target to generate assembly for a file
+src/training_old/runTraining.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/runTraining.cpp.s
+.PHONY : src/training_old/runTraining.cpp.s
+
+src/training_old/simulated_annealing.obj: src/training_old/simulated_annealing.cpp.obj
+
+.PHONY : src/training_old/simulated_annealing.obj
+
+# target to build an object file
+src/training_old/simulated_annealing.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/simulated_annealing.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/simulated_annealing.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.obj
+.PHONY : src/training_old/simulated_annealing.cpp.obj
+
+src/training_old/simulated_annealing.i: src/training_old/simulated_annealing.cpp.i
+
+.PHONY : src/training_old/simulated_annealing.i
+
+# target to preprocess a source file
+src/training_old/simulated_annealing.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/simulated_annealing.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/simulated_annealing.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.i
+.PHONY : src/training_old/simulated_annealing.cpp.i
+
+src/training_old/simulated_annealing.s: src/training_old/simulated_annealing.cpp.s
+
+.PHONY : src/training_old/simulated_annealing.s
+
+# target to generate assembly for a file
+src/training_old/simulated_annealing.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/simulated_annealing.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/simulated_annealing.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/simulated_annealing.cpp.s
+.PHONY : src/training_old/simulated_annealing.cpp.s
+
+src/training_old/trainNetwork.obj: src/training_old/trainNetwork.cpp.obj
+
+.PHONY : src/training_old/trainNetwork.obj
+
+# target to build an object file
+src/training_old/trainNetwork.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/trainNetwork.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/trainNetwork.cpp.obj
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.obj
+.PHONY : src/training_old/trainNetwork.cpp.obj
+
+src/training_old/trainNetwork.i: src/training_old/trainNetwork.cpp.i
+
+.PHONY : src/training_old/trainNetwork.i
+
+# target to preprocess a source file
+src/training_old/trainNetwork.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/trainNetwork.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/trainNetwork.cpp.i
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.i
+.PHONY : src/training_old/trainNetwork.cpp.i
+
+src/training_old/trainNetwork.s: src/training_old/trainNetwork.cpp.s
+
+.PHONY : src/training_old/trainNetwork.s
+
+# target to generate assembly for a file
+src/training_old/trainNetwork.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/src/training_old/trainNetwork.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/training_old/trainNetwork.cpp.s
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/training_old/trainNetwork.cpp.s
+.PHONY : src/training_old/trainNetwork.cpp.s
 
 test/esn/esn_correctness.obj: test/esn/esn_correctness.cpp.obj
 
@@ -1400,40 +1479,13 @@ test/runtime/runtimeUnitTests.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.s
 .PHONY : test/runtime/runtimeUnitTests.cpp.s
 
-test/training/calculateError.obj: test/training/calculateError.cpp.obj
-
-.PHONY : test/training/calculateError.obj
-
-# target to build an object file
-test/training/calculateError.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.obj
-.PHONY : test/training/calculateError.cpp.obj
-
-test/training/calculateError.i: test/training/calculateError.cpp.i
-
-.PHONY : test/training/calculateError.i
-
-# target to preprocess a source file
-test/training/calculateError.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.i
-.PHONY : test/training/calculateError.cpp.i
-
-test/training/calculateError.s: test/training/calculateError.cpp.s
-
-.PHONY : test/training/calculateError.s
-
-# target to generate assembly for a file
-test/training/calculateError.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training/calculateError.cpp.s
-.PHONY : test/training/calculateError.cpp.s
-
 test/training/trainingUnit.obj: test/training/trainingUnit.cpp.obj
 
 .PHONY : test/training/trainingUnit.obj
 
 # target to build an object file
 test/training/trainingUnit.cpp.obj:
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj
 .PHONY : test/training/trainingUnit.cpp.obj
 
 test/training/trainingUnit.i: test/training/trainingUnit.cpp.i
@@ -1442,7 +1494,7 @@ test/training/trainingUnit.i: test/training/trainingUnit.cpp.i
 
 # target to preprocess a source file
 test/training/trainingUnit.cpp.i:
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.i
 .PHONY : test/training/trainingUnit.cpp.i
 
 test/training/trainingUnit.s: test/training/trainingUnit.cpp.s
@@ -1451,8 +1503,62 @@ test/training/trainingUnit.s: test/training/trainingUnit.cpp.s
 
 # target to generate assembly for a file
 test/training/trainingUnit.cpp.s:
-	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training/trainingUnit.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.s
 .PHONY : test/training/trainingUnit.cpp.s
+
+test/training_old/calculateError.obj: test/training_old/calculateError.cpp.obj
+
+.PHONY : test/training_old/calculateError.obj
+
+# target to build an object file
+test/training_old/calculateError.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.obj
+.PHONY : test/training_old/calculateError.cpp.obj
+
+test/training_old/calculateError.i: test/training_old/calculateError.cpp.i
+
+.PHONY : test/training_old/calculateError.i
+
+# target to preprocess a source file
+test/training_old/calculateError.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.i
+.PHONY : test/training_old/calculateError.cpp.i
+
+test/training_old/calculateError.s: test/training_old/calculateError.cpp.s
+
+.PHONY : test/training_old/calculateError.s
+
+# target to generate assembly for a file
+test/training_old/calculateError.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/test/training_old/calculateError.cpp.s
+.PHONY : test/training_old/calculateError.cpp.s
+
+test/training_old/trainingUnit.obj: test/training_old/trainingUnit.cpp.obj
+
+.PHONY : test/training_old/trainingUnit.obj
+
+# target to build an object file
+test/training_old/trainingUnit.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training_old/trainingUnit.cpp.obj
+.PHONY : test/training_old/trainingUnit.cpp.obj
+
+test/training_old/trainingUnit.i: test/training_old/trainingUnit.cpp.i
+
+.PHONY : test/training_old/trainingUnit.i
+
+# target to preprocess a source file
+test/training_old/trainingUnit.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training_old/trainingUnit.cpp.i
+.PHONY : test/training_old/trainingUnit.cpp.i
+
+test/training_old/trainingUnit.s: test/training_old/trainingUnit.cpp.s
+
+.PHONY : test/training_old/trainingUnit.s
+
+# target to generate assembly for a file
+test/training_old/trainingUnit.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/test/training_old/trainingUnit.cpp.s
+.PHONY : test/training_old/trainingUnit.cpp.s
 
 # Help Target
 help:
@@ -1475,6 +1581,7 @@ help:
 	@echo ... TRAINING_ERROR
 	@echo ... LSTM
 	@echo ... edit_cache
+	@echo ... LSTM_TEST
 	@echo ... include/port_audio/pa_ringbuffer.obj
 	@echo ... include/port_audio/pa_ringbuffer.i
 	@echo ... include/port_audio/pa_ringbuffer.s
@@ -1550,21 +1657,27 @@ help:
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s
-	@echo ... src/training/checkpoint.obj
-	@echo ... src/training/checkpoint.i
-	@echo ... src/training/checkpoint.s
-	@echo ... src/training/fileToEcho.obj
-	@echo ... src/training/fileToEcho.i
-	@echo ... src/training/fileToEcho.s
-	@echo ... src/training/runTraining.obj
-	@echo ... src/training/runTraining.i
-	@echo ... src/training/runTraining.s
-	@echo ... src/training/simulated_annealing.obj
-	@echo ... src/training/simulated_annealing.i
-	@echo ... src/training/simulated_annealing.s
-	@echo ... src/training/trainNetwork.obj
-	@echo ... src/training/trainNetwork.i
-	@echo ... src/training/trainNetwork.s
+	@echo ... src/training/errorCalculation.obj
+	@echo ... src/training/errorCalculation.i
+	@echo ... src/training/errorCalculation.s
+	@echo ... src/training/readTraining.obj
+	@echo ... src/training/readTraining.i
+	@echo ... src/training/readTraining.s
+	@echo ... src/training_old/checkpoint.obj
+	@echo ... src/training_old/checkpoint.i
+	@echo ... src/training_old/checkpoint.s
+	@echo ... src/training_old/fileToEcho.obj
+	@echo ... src/training_old/fileToEcho.i
+	@echo ... src/training_old/fileToEcho.s
+	@echo ... src/training_old/runTraining.obj
+	@echo ... src/training_old/runTraining.i
+	@echo ... src/training_old/runTraining.s
+	@echo ... src/training_old/simulated_annealing.obj
+	@echo ... src/training_old/simulated_annealing.i
+	@echo ... src/training_old/simulated_annealing.s
+	@echo ... src/training_old/trainNetwork.obj
+	@echo ... src/training_old/trainNetwork.i
+	@echo ... src/training_old/trainNetwork.s
 	@echo ... test/esn/esn_correctness.obj
 	@echo ... test/esn/esn_correctness.i
 	@echo ... test/esn/esn_correctness.s
@@ -1586,12 +1699,15 @@ help:
 	@echo ... test/runtime/runtimeUnitTests.obj
 	@echo ... test/runtime/runtimeUnitTests.i
 	@echo ... test/runtime/runtimeUnitTests.s
-	@echo ... test/training/calculateError.obj
-	@echo ... test/training/calculateError.i
-	@echo ... test/training/calculateError.s
 	@echo ... test/training/trainingUnit.obj
 	@echo ... test/training/trainingUnit.i
 	@echo ... test/training/trainingUnit.s
+	@echo ... test/training_old/calculateError.obj
+	@echo ... test/training_old/calculateError.i
+	@echo ... test/training_old/calculateError.s
+	@echo ... test/training_old/trainingUnit.obj
+	@echo ... test/training_old/trainingUnit.i
+	@echo ... test/training_old/trainingUnit.s
 .PHONY : help
 
 

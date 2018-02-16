@@ -106,21 +106,75 @@ CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj.provides: CMakeFiles/LS
 CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj.provides.build: CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj
 
 
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj: CMakeFiles/LSTM.dir/flags.make
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj: CMakeFiles/LSTM.dir/includes_CXX.rsp
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj: ../src/training/readTraining.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM.dir\src\training\readTraining.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp
+
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM.dir/src/training/readTraining.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp > CMakeFiles\LSTM.dir\src\training\readTraining.cpp.i
+
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM.dir/src/training/readTraining.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp -o CMakeFiles\LSTM.dir\src\training\readTraining.cpp.s
+
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.requires
+
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.provides: CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.provides
+
+CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.provides.build: CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj
+
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj: CMakeFiles/LSTM.dir/flags.make
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj: CMakeFiles/LSTM.dir/includes_CXX.rsp
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj: ../src/training/errorCalculation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM.dir\src\training\errorCalculation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp > CMakeFiles\LSTM.dir\src\training\errorCalculation.cpp.i
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp -o CMakeFiles\LSTM.dir\src\training\errorCalculation.cpp.s
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.requires
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.provides: CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.provides
+
+CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.provides.build: CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj
+
+
 # Object files for target LSTM
 LSTM_OBJECTS = \
 "CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj" \
-"CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj"
+"CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj" \
+"CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj" \
+"CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj"
 
 # External object files for target LSTM
 LSTM_EXTERNAL_OBJECTS =
 
 LSTM.exe: CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj
 LSTM.exe: CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj
+LSTM.exe: CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj
+LSTM.exe: CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj
 LSTM.exe: CMakeFiles/LSTM.dir/build.make
 LSTM.exe: CMakeFiles/LSTM.dir/linklibs.rsp
 LSTM.exe: CMakeFiles/LSTM.dir/objects1.rsp
 LSTM.exe: CMakeFiles/LSTM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LSTM.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable LSTM.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LSTM.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +184,8 @@ CMakeFiles/LSTM.dir/build: LSTM.exe
 
 CMakeFiles/LSTM.dir/requires: CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj.requires
 CMakeFiles/LSTM.dir/requires: CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj.requires
+CMakeFiles/LSTM.dir/requires: CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj.requires
+CMakeFiles/LSTM.dir/requires: CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj.requires
 
 .PHONY : CMakeFiles/LSTM.dir/requires
 

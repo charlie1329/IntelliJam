@@ -10,7 +10,7 @@
 #include <iostream>
 
 
-#include "../../include/training/trainNetwork.h"
+#include "../../include/training_old/trainNetwork.h"
 #include "../../include/runtime/init_close.h"
 
 /**

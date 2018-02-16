@@ -34,19 +34,28 @@ def centOffset(freq1,freq2):
 def findClosestNote(freq,freqList,noteList):
 
 	if (freq <= freqList[0]): #if note smaller than our range
-		return noteList[0]
+		doubled = freq
+		while doubled <= freqList[0]: # keep increasing octaves
+			doubled *= 2
+			print('Doubled: ' + str(doubled))
+		freq = doubled
+
 	elif (freq >= freqList[len(freqList)-1]): # if note larger than our range
-		return noteList[len(noteList)-1]
-	else:
-		for i in range(0,len(freqList)-1): # only want up to the penultimate item
-			if (freq >= freqList[i] and freq < freqList[i+1]):
-				# calculate offsets
-				leftOffset = abs(centOffset(freq,freqList[i]))
-				rightOffset = abs(centOffset(freq,freqList[i+1]))
-				if (leftOffset <= rightOffset):
-					return noteList[i]
-				else:
-					return noteList[i+1]
+		halved = freq
+		while halved >= freqList[len(freqList)-1]: # keep decreasing octaves
+			halved /= float(2)
+			print('Halved: ' + str(halved))
+		freq = halved
+	
+	for i in range(0,len(freqList)-1): # only want up to the penultimate item
+		if (freq >= freqList[i] and freq < freqList[i+1]):
+			# calculate offsets
+			leftOffset = abs(centOffset(freq,freqList[i]))
+			rightOffset = abs(centOffset(freq,freqList[i+1]))
+			if (leftOffset <= rightOffset):
+				return noteList[i]
+			else:
+				return noteList[i+1]
 
 # function takes a single wav file
 # and processes it into a list of pairs
@@ -141,7 +150,7 @@ def generateTrainingData():
 	inputFiles = os.listdir(inputPrefix)
 
 	# where all the training data will be ultimately stored
-	trainingPath = 'D:/trainingPairs.csv'
+	trainingPath = 'D:/trainingPairsSoftBound.csv'
 
 	fileCount = 1
 
