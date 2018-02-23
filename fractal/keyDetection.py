@@ -70,7 +70,7 @@ valToKey = {
 # and only within one octave
 def transpose(sequence, src_key, dst_key):
 	dstVal = keyToVal[dst_key]
-	src_val = keyToVal[src_key]
+	srcVal = keyToVal[src_key]
 	if((dstVal > 12 and srcVal <= 12) or (dstVal <= 12 and srcVal > 12)):
 		raise NotImplementedError('Transposing between major and minor keys not currently supported!')
 	toShift = keyToVal[dst_key] - keyToVal[src_key]
@@ -79,7 +79,7 @@ def transpose(sequence, src_key, dst_key):
 		if(item == 0):
 			transposed.append(0) # can't transpose silence
 		else:
-			newSequence.append(((item + toShift - 1) % 12) + 1)
+			transposed.append(((item + toShift - 1) % 12) + 1)
 
 	return transposed
 
@@ -173,7 +173,7 @@ def detectKey(sequence, segmentLength, modulationPenalty):
 			for k in range(len(bestSums[i-1])): 
 				newSum = pitchKeyVectors[i][j] + bestSums[i-1][k][0]
 				
-				if (j != k) # add penalty for changing key
+				if (j != k): # add penalty for changing key
 					newSum -= modulationPenalty
 
 				if (newSum > bestJ):
@@ -198,7 +198,6 @@ def detectKey(sequence, segmentLength, modulationPenalty):
 		bestPath.append(bestSums[i][bestPath[index]][1])
 		index += 1
 
-	# assume I have a vector called best path
 	# segmentsAndKeys is a list of triples (startPoint,endPoint+1,key)
 	segmentsAndKeys = []
 	currentStartPoint = 0
@@ -208,3 +207,37 @@ def detectKey(sequence, segmentLength, modulationPenalty):
 		currentStartPoint = currentEndPoint
 
 	return segmentsAndKeys
+
+
+# function runs a series of unit tests on the code
+def runTests():
+
+	# test the tranposing function
+	GPhrase = [11, 3, 6, 10, 6, 3, 11, 0]
+	CPhrase = transpose(GPhrase,'G','C')
+	print('Expected: [4, 8, 11, 3, 11, 8, 4, 0], Got: ' + str(CPhrase))
+	GPhraseBack = transpose(CPhrase,'C','G')
+	print('Expected: [11, 3, 6, 10, 6, 3, 11, 0], Got: ' + str(GPhraseBack))
+
+	# test the get pitch ket value function
+	segment = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0]
+	keyVals = []
+	for i in range(1,25):
+		keyVals.append(getPitchKeyValue(segment,i))
+	print('Expected: [8.0, 9.0, 8.0, 14.0, 8.0, 9.0, 10.0, 9.0, 12.0, 5.5, 12.5, 10.5, 10.5, 7.5, 9.5, 11.5, 10.5, 9.0, 6.0, 13.0, 12.0, 5.5, 11.0, 9.5],\n Got: ' + str(keyVals))
+	print('Expected Key: C, Got: ' + valToKey[max(range(len(keyVals)), key=lambda x: keyVals[x]) + 1])
+
+	# test the main functionality
+	modulationPenalty = 6 # start off like this, 6 is one value used within the paper
+	segmentLength = 2.0 # 2 seconds approximately what was used within the paper
+	sequence = [(4,0.5),(8,0.5),(11,0.5),(3,0.5),(11,0.5),(11,0.5),(11,0.5),(8,0.5),(5,0.5),(10,0.5),(8,1),(4,0.5),(3,0.5),(8,0.5),(11,0.5)]
+	keySequence = detectKey(sequence,segmentLength,modulationPenalty)
+	seqAsNotes = []
+	for item in keySequence:
+		seqAsNotes.append(valToKey[item])
+
+	print('Expected: [C, C, E, C], Got: ' + str(seqAsNotes))
+
+
+if __name__ == '__main__':
+	runTests()
