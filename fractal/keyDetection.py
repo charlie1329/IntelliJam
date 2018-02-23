@@ -157,7 +157,46 @@ def detectKey(sequence, segmentLength, modulationPenalty):
 		pitchKeyVectors.append(pitchKeyVals) # now we have the values for the nth segment
 
 	# then take a dynamic programming approach to find the best solution
-	
+	bestSums = []
+	firstStep = []
+	for item in pitchKeyVectors[0]: # no previous steps, so set previous key to -1
+		firstStep.append((item,-1))
+
+	bestSums.append(firstStep) # add the first vector initially 
+
+	for i in range(1, len(pitchKeyVectors)): # go through from start to finish
+		
+		bestSumi = []
+		for j in range(len(pitchKeyVectors[i])): # now find the best path to j from the previous segment
+			bestJ = -1
+			bestJIndex = -1
+			for k in range(len(bestSums[i-1])): 
+				newSum = pitchKeyVectors[i][j] + bestSums[i-1][k][0]
+				
+				if (j != k) # add penalty for changing key
+					newSum -= modulationPenalty
+
+				if (newSum > bestJ):
+					bestJ = newSum
+					bestJIndex = k
+
+			bestSumi.append((bestJ,bestJIndex))
+		bestSums.append(bestSumi)
+
+	# now back track and retrieve the best path of keys
+	bestPath = []
+	maxLast = -1
+	maxLastIndex = -1
+	for i in range(len(bestSums[len(bestSums)-1])): # go through the last part of bestSums and find the starting point (max at the end)
+		if(bestSums[len(bestSums-1)][i][0] > maxLast):
+			maxLast = bestSums[len(bestSums-1)][i][0]
+			maxLastIndex = i
+
+	bestPath.append(maxLastIndex)
+	index = 0
+	for i in range(len(bestSums)-1, 0, -1):
+		bestPath.append(bestSums[i][bestPath[index]][1])
+		index += 1
 
 	# assume I have a vector called best path
 	# segmentsAndKeys is a list of triples (startPoint,endPoint+1,key)
