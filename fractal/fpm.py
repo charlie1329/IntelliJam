@@ -266,11 +266,14 @@ def plotCodebookGraph(resultsFile):
 	print(M)
 	print(Q)
 
+	M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+	Q = [213080, 179598, 168882, 160651, 153770, 147767, 143494, 138826, 135706, 132393, 129170, 126627, 124356, 122072, 120155, 118312, 116711, 115011]
+
 	# set up the plot axes and data to be shown
 	plt.title('A graph of Quantisation Error against the number of Codebook Vectors, M')
 	plt.xlabel('Number of Codebook Vectors, M')	
 	plt.ylabel('Quantisation Error')
-	plt.axis([0,30,45000,130000]) # TODO: Set Properly once results actually known!
+	plt.axis([0,20,100000,220000])
 	plt.plot(M,Q,'bo')
 
 	# display the plot
@@ -322,7 +325,8 @@ def predictNext(s,B,N,t,k):
 	shiftedGate = np.roll(intervalGate[1:],lastNotePlayed-1)
 	shiftedGate = np.insert(shiftedGate,0,0.5) # add back in the silence element, always at 0'''
 
-	shiftedGate = np.asarray([0.5,1,0,1,1,0,1,0,1,0,1,1,0]) # C Lydian
+	#shiftedGate = np.asarray([0.5,1,0,1,1,0,1,0,1,0,1,1,0]) # C Lydian
+	shiftedGate = np.asarray([0.5,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1])
 
 	# do some random sampling to generate the notes
 	N = np.square(N)
@@ -547,42 +551,44 @@ if __name__ == '__main__':
 	k = 0.5 # this value is probably safe as this
 	magA = 57 # fixed size of alphabet, 12 notes plus silence/79-24
 	maxM = 200 # i want at least 13^2 = 169 to be tried so why not go to 200?
-	tau = 4 # ADJUSTABLE
+	tau = 8 # ADJUSTABLE
 	maxIterations = 1000 # ADJUSTABLE
 	errorMargin = 0.001 # ADJUSTABLE
 	repeats = 3 # ADJUSTABLE (base on time taken to run)
-	#M = 8
+	M = 5
 
 
-	optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, errorMargin, repeats)
-	#plotCodebookGraph('codebookOptimisation.csv')
+	#optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, errorMargin, repeats)
+	#plotCodebookGraph('codebookOptimisationMoreOctaves.csv')
 
-	#B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
+	'''B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
 
-	#np.savetxt('B.txt',B,fmt='%f')
-	#np.savetxt('N.txt',N,fmt='%f')
-	#np.savetxt('t.txt',t,fmt='%f')
-
+	np.savetxt('BMultiple.txt',B,fmt='%f')
+	np.savetxt('NMultiple.txt',N,fmt='%f')
+	np.savetxt('tMultiple.txt',t,fmt='%f')
+'''
 
 	#Run the machine!
-	'''
-	B = np.loadtxt('B.txt')
-	N = np.loadtxt('N.txt')
-	t = np.loadtxt('t.txt')
+	
+	B = np.loadtxt('BMultiple.txt')
+	N = np.loadtxt('NMultiple.txt')
+	t = np.loadtxt('tMultiple.txt')
 	k = 0.5
 
 	# plot one row of N
-	yAxes = np.square(N[0,:])
+	'''yAxes = np.square(N[0,:])
 	xAxes = np.asarray([0,1,2,3,4,5,6,7,8,9,10,11,12])
 	plt.bar(xAxes,yAxes,align='center',alpha=0.5)
 	plt.xticks(xAxes,xAxes)
 	plt.xlabel('Note Choice')
 	plt.ylabel('Observations')
-	plt.title('A Single Distribution from the N matrix')
+	plt.title('A Single Distribution from the N matrix')'''
 	#plt.show()
 
 
-	newSequence = [11,1,4,6,8,11,1,8]
+	newSequence = [46,48,51,53,55,53,51,53,48,51]
+	for i in range(len(newSequence)):
+		newSequence[i] -= 23
 	numNotes = len(newSequence)
 	for i in range(20):
 		a = predictNext(newSequence,B,N,t,k)
@@ -590,8 +596,6 @@ if __name__ == '__main__':
 
 	print('First ' + str(numNotes) + ' notes human, last 20 AI')
 	print(newSequence)
-
-	'''
 	
 
 
