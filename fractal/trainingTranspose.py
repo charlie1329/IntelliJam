@@ -9,6 +9,7 @@ import numpy as np
 TRAINING_IN = 'D:/trainingPairsOneOctave.csv'
 TRAINING_OUT = 'D:/trainingPairsOneOctaveAllC.csv'
 SINGLE_KEY = 'C'
+MIN_SAMPLE_LENGTH = 21 # coincide with fractal prediction machine stuff
 
 # function reads in from csv file, and 
 # stores all samples in a list of lists
@@ -42,7 +43,6 @@ def transposeSamples(samples,segmentLength,modulationPenalty):
 
 			# get the key information
 			keys = key.detectKey(sample,segmentLength,modulationPenalty)
-			print(keys)
 			for item in keys:
 				segment = sample[item[0]:item[1]]
 
@@ -54,21 +54,21 @@ def transposeSamples(samples,segmentLength,modulationPenalty):
 
 				transposed = key.transpose(segmentJustNotes,item[2],SINGLE_KEY) # transpose into C Major
 
-				for i in range(len(transposed)):
-					outFile.write(str(transposed[i]) + ',' + str(segmentJustDurations[i]) + ',\n')
+				for j in range(len(transposed)):
+					outFile.write(str(transposed[j]) + ',' + str(segmentJustDurations[j]) + ',\n')
 
 			print('Finished Transposing Sample: ' + str(i))
 			i += 1
 
 def transposeEntireTrainingFile(segmentLength,modulationPenalty):
 	print('Starting to transpose')
-	samples = readInSamples(TRAINING_IN)
+	samples = readInSamples(TRAINING_IN,MIN_SAMPLE_LENGTH)
 	transposeSamples(samples,segmentLength,modulationPenalty)
 
 # carries unit tests out on all functionality in this file
 def runTests():
 	print('Running trainingTransposeTests')
-	samples = readInSamples(TRAINING_IN,21)
+	samples = readInSamples(TRAINING_IN,MIN_SAMPLE_LENGTH)
 	print('Number of Samples: ' + str(len(samples)))
 	print('First sample: ' + str(samples[0]) + ', length of first sample: ' + str(len(samples[0])))
 	transposeSamples([samples[0]],2.0,2)
