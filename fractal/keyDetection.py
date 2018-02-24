@@ -130,7 +130,8 @@ def splitIntoSegments(sequence, segmentLength):
 			currentSegment.append(note)
 			segmentTime += duration
 	# add on the last segment for completion's sake
-	segments.append(currentSegment)
+	if(currentSegment != []):
+		segments.append(currentSegment)
 	return segments
 
 # function takes segments of notes, and 
@@ -305,6 +306,17 @@ def runTests():
 	print('Expected: [(0,4,C)]')
 	print('Got: ' + str(segmentsAndKeys))
 
+	segmentsAndKeys = detectKey([(4,0.5),(8,0.5),(11,0.5),(3,0.5),(10,0.5),(3,0.5),(4,0.5),(8,0.5),(3,0.5),(4,1.5)],2.0,2)
+	print('Expected: [C,C,C]')
+	print('Got: ' + str(segmentsAndKeys))
+
+	segmentsAndKeys = detectKey([(4,2.5)],2.0,6)
+	print('Expected: [C]')
+	print('Got: ' + str(segmentsAndKeys))
+
+	segmentsAndKeys = detectKey([(6,0.2),(8,0.2),(11,0.2),(1,0.2),(3,0.2),(1,0.2),(11,0.2),(8,0.2),(11,0.2),(1,0.2)],2.0,2)
+	print('Expected: [G]')
+	print('Got: ' + str(segmentsAndKeys))
 	# now want to test it on an example from the paper...
 
 
