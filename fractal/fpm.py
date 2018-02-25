@@ -266,14 +266,14 @@ def plotCodebookGraph(resultsFile):
 	print(M)
 	print(Q)
 
-	M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-	Q = [213080, 179598, 168882, 160651, 153770, 147767, 143494, 138826, 135706, 132393, 129170, 126627, 124356, 122072, 120155, 118312, 116711, 115011]
+	M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+	Q = [126643, 101960, 89934, 82143, 76362, 71937, 68741, 66323, 64617, 62866, 61105, 59597, 57783, 56316, 55098, 53956, 53082, 51996, 51199, 50351, 49484, 48695, 47919, 47071, 46308]
 
 	# set up the plot axes and data to be shown
 	plt.title('A graph of Quantisation Error against the number of Codebook Vectors, M')
 	plt.xlabel('Number of Codebook Vectors, M')	
 	plt.ylabel('Quantisation Error')
-	plt.axis([0,20,100000,220000])
+	plt.axis([0,30,40000,150000])
 	plt.plot(M,Q,'bo')
 
 	# display the plot
@@ -298,7 +298,8 @@ def formDistributionMatrix(blocks, B, magA, t, k):
 
 
 #****PREDICTION TESTING CODE****
-def predictNext(s,B,N,t,k):
+# T deals with the tilted distribution idea
+def predictNext(s,B,N,t,k,T):
 
 	# bring sequence to chaos representation
 	x = toChaosRep(t,k,s)
@@ -311,26 +312,9 @@ def predictNext(s,B,N,t,k):
 	# to get the prediction
 	#return np.argmax(N[i,:])
 
-	'''
-	# use basis of intervals to try and influence decision
-	intervalGate = np.asarray([0.5, 0.5, 3/11, 5/11, 7/11, 8/11, 10/11, 1/11, 1, 6/11, 9/11, 4/11, 2/11])
-
-	goBack = 1
-	lastNotePlayed = s[len(s) - goBack] # get last note played (not including 0)
-	while lastNotePlayed == 0:
-		goBack += 1
-		lastNotePlayed = s[len(s) - goBack]
-
-	#roll interval array around to match last note played
-	shiftedGate = np.roll(intervalGate[1:],lastNotePlayed-1)
-	shiftedGate = np.insert(shiftedGate,0,0.5) # add back in the silence element, always at 0'''
-
-	#shiftedGate = np.asarray([0.5,1,0,1,1,0,1,0,1,0,1,1,0]) # C Lydian
-	shiftedGate = np.asarray([0.5,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1,0,1,1,0,1,0,1,1,0,1,0,1])
-
 	# do some random sampling to generate the notes
-	N = np.square(N)
-	distribution = np.round(N[i,:] * shiftedGate) # apply gate for intervals
+	N = np.power(N,(1.0/(float)T))
+	distribution = np.round(N[i,:]) # apply gate for intervals
 	totalSamples = np.sum(distribution)
 	randomNo = random.randint(1,totalSamples)
 	total = 0
@@ -385,7 +369,7 @@ def optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, err
 	print('Got Data Set, length of data set: ' + str(len(CBR)))
 
 	# optimise the vector quantiser
-	resultsFile = 'codebookOptimisationMoreOctaves.csv'
+	resultsFile = 'graphs_and_results/codebookOptimisationAllC.csv'
 	D = math.ceil(math.log(magA,2))
 	optimiseNumberOfCodebooks(CBR,maxM,D,maxIterations, errorMargin, tau, resultsFile, repeats)
 
@@ -410,7 +394,7 @@ def unitTests():
 	print('\n\nTesting getAllLBlocks')
 	test = [np.random.rand(10)]
 	print(len(getAllLBlocks(test,2)))
-	print('EXPECTED: 9')
+	print('EXPECTED: 8')
 
 	print('\n\nTesting applyMap')
 	t_i = np.asarray([0.0,1.0,0.0,1.0])
@@ -546,44 +530,34 @@ def unitTests():
 if __name__ == '__main__':
 	
 	# setting up parameters
-	trainingFile = 'D:/trainingPairsSoftBound.csv'
+	trainingFile = '../trainingData/trainingPairsOneOctaveAllC.csv'
 	L = 20 # ADJUSTABLE
 	k = 0.5 # this value is probably safe as this
-	magA = 57 # fixed size of alphabet, 12 notes plus silence/79-24
+	magA = 13 # fixed size of alphabet, 12 notes plus silence/79-24
 	maxM = 200 # i want at least 13^2 = 169 to be tried so why not go to 200?
 	tau = 8 # ADJUSTABLE
 	maxIterations = 1000 # ADJUSTABLE
 	errorMargin = 0.001 # ADJUSTABLE
-	repeats = 3 # ADJUSTABLE (base on time taken to run)
-	M = 5
-
+	repeats = 3 # ADJUSTABLE (based on time taken to run)
+	M = 6 # Set for one octave, all C
 
 	#optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, errorMargin, repeats)
-	#plotCodebookGraph('codebookOptimisationMoreOctaves.csv')
 
-	'''B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
+	#plotCodebookGraph('graphs_and_results/codebookOptimisationAllC.csv')
 
-	np.savetxt('BMultiple.txt',B,fmt='%f')
-	np.savetxt('NMultiple.txt',N,fmt='%f')
-	np.savetxt('tMultiple.txt',t,fmt='%f')
-'''
+	B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
+
+	np.savetxt('matrices/B_allC.txt',B,fmt='%f')
+	np.savetxt('matrices/N_allC.txt',N,fmt='%f')
+	np.savetxt('matrices/t_allC.txt',t,fmt='%f')
+	
 
 	#Run the machine!
-	
-	B = np.loadtxt('BMultiple.txt')
-	N = np.loadtxt('NMultiple.txt')
-	t = np.loadtxt('tMultiple.txt')
+	'''
+	B = np.loadtxt('matrices/B_allC.txt')
+	N = np.loadtxt('matrices/N_allC.txt')
+	t = np.loadtxt('matrices/t_allC.txt')
 	k = 0.5
-
-	# plot one row of N
-	'''yAxes = np.square(N[0,:])
-	xAxes = np.asarray([0,1,2,3,4,5,6,7,8,9,10,11,12])
-	plt.bar(xAxes,yAxes,align='center',alpha=0.5)
-	plt.xticks(xAxes,xAxes)
-	plt.xlabel('Note Choice')
-	plt.ylabel('Observations')
-	plt.title('A Single Distribution from the N matrix')'''
-	#plt.show()
 
 
 	newSequence = [46,48,51,53,55,53,51,53,48,51]
@@ -591,12 +565,12 @@ if __name__ == '__main__':
 		newSequence[i] -= 23
 	numNotes = len(newSequence)
 	for i in range(20):
-		a = predictNext(newSequence,B,N,t,k)
+		a = predictNext(newSequence,B,N,t,k,1)
 		newSequence.append(a)
 
 	print('First ' + str(numNotes) + ' notes human, last 20 AI')
 	print(newSequence)
-	
+	'''
 
 
 
