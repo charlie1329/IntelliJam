@@ -11,6 +11,7 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt # can do some graphs optimising no. of codebook vectors
 from mpl_toolkits.mplot3d import Axes3D
+import keyDetection as key
 
 #****DATA SET READING/CONVERSION CODE****
 
@@ -313,8 +314,8 @@ def predictNext(s,B,N,t,k,T):
 	#return np.argmax(N[i,:])
 
 	# do some random sampling to generate the notes
-	N = np.power(N,(1.0/(float)T))
-	distribution = np.round(N[i,:]) # apply gate for intervals
+	N = np.power(N,(1.0/float(T))) # tilt the distribution
+	distribution = np.round(N[i,:]) 
 	totalSamples = np.sum(distribution)
 	randomNo = random.randint(1,totalSamples)
 	total = 0
@@ -524,6 +525,45 @@ def unitTests():
 
 
 
+# function runs a load of tests with the tilted distributions
+# and checks the results
+def runTiltTests(N, B, t, k):
+
+	print('Starting Tilt Tests')
+	tiltValues = [10, 5, 2, 1, 0.5, 0.25]
+	sequences = [[11,1,4,6,8,6,4,1,4],[4,8,10,11,10,11,1,11,1,3,3,4,3,1],[1,3,4,6,4,6,8,6,8,9,9,11,9,8],[4,8,3,4,3,1,3,4,6,3],[11,1,4,6,8,11,1,8]]
+	
+	sequencesWithDuration = [] # add in the durations
+	for sequence in sequences:
+		newSeq = []
+		for item in sequence:
+			newSeq.append((item,0.1))
+		sequencesWithDuration.append(newSeq)
+
+	sequences = sequencesWithDuration
+
+	# now go about generating phrases
+	i = 1
+	with open('graphs_and_results/tiltTests.txt','w') as resultFile:
+		for sequence in sequences:
+			resultFile.write('Sequence: ' + str(i) + '\n')
+			segmentsAndKeys = key.detectKey(sequence,10.0,2.0) # should only be one segment here
+			noDuration = []
+			for pair in sequence:
+				noDuration.append(pair[0])
+			transposed = key.transpose(noDuration,segmentsAndKeys[0][2],'C')
+
+			for T in tiltValues:
+				newSeq = transposed
+				startPoint = len(newSeq)
+				for _ in range(20):
+					a = predictNext(newSeq,B,N,t,k,T)
+					newSeq.append(a)
+				newSeq = key.transpose(newSeq,'C',segmentsAndKeys[0][2]) # put it back into key
+				resultFile.write('Tilt Value = ' + str(T) + ', predicted phrase = ' + str(newSeq[startPoint:len(newSeq)]) + '\n')
+			i += 1
+	print('Finished Tilt Tests')
+
 #****MAIN FUNCTION****
 
 # the main function to be executed
@@ -545,21 +585,21 @@ if __name__ == '__main__':
 
 	#plotCodebookGraph('graphs_and_results/codebookOptimisationAllC.csv')
 
-	B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
+	'''B,N,t,k = trainFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin)
 
 	np.savetxt('matrices/B_allC.txt',B,fmt='%f')
 	np.savetxt('matrices/N_allC.txt',N,fmt='%f')
-	np.savetxt('matrices/t_allC.txt',t,fmt='%f')
+	np.savetxt('matrices/t_allC.txt',t,fmt='%f')'''
 	
 
 	#Run the machine!
-	'''
+	
 	B = np.loadtxt('matrices/B_allC.txt')
 	N = np.loadtxt('matrices/N_allC.txt')
 	t = np.loadtxt('matrices/t_allC.txt')
 	k = 0.5
 
-
+	'''
 	newSequence = [46,48,51,53,55,53,51,53,48,51]
 	for i in range(len(newSequence)):
 		newSequence[i] -= 23
@@ -567,11 +607,12 @@ if __name__ == '__main__':
 	for i in range(20):
 		a = predictNext(newSequence,B,N,t,k,1)
 		newSequence.append(a)
-
+	
 	print('First ' + str(numNotes) + ' notes human, last 20 AI')
 	print(newSequence)
 	'''
 
+	runTiltTests(N,B,t,k)
 
 
 
