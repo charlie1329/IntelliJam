@@ -530,7 +530,7 @@ def unitTests():
 def runTiltTests(N, B, t, k):
 
 	print('Starting Tilt Tests')
-	tiltValues = [10, 5, 2, 1, 0.5, 0.25]
+	tiltValues = [0.3,0.35,0.4,0.45]#[10, 5, 2, 1, 0.5, 0.25]
 	sequences = [[11,1,4,6,8,6,4,1,4],[4,8,10,11,10,11,1,11,1,3,3,4,3,1],[1,3,4,6,4,6,8,6,8,9,9,11,9,8],[4,8,3,4,3,1,3,4,6,3],[11,1,4,6,8,11,1,8]]
 	
 	sequencesWithDuration = [] # add in the durations
@@ -544,7 +544,7 @@ def runTiltTests(N, B, t, k):
 
 	# now go about generating phrases
 	i = 1
-	with open('graphs_and_results/tiltTests.txt','w') as resultFile:
+	with open('graphs_and_results/tiltTestsSmallerInterval.txt','w') as resultFile:
 		for sequence in sequences:
 			resultFile.write('Sequence: ' + str(i) + '\n')
 			segmentsAndKeys = key.detectKey(sequence,10.0,2.0) # should only be one segment here
