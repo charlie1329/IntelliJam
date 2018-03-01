@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt # can do some graphs optimising no. of codebook vectors
 from mpl_toolkits.mplot3d import Axes3D
 import keyDetection as key
+import matplotlib
 
 #****DATA SET READING/CONVERSION CODE****
 
@@ -271,7 +272,7 @@ def plotCodebookGraph(resultsFile):
 	Q = [126643, 101960, 89934, 82143, 76362, 71937, 68741, 66323, 64617, 62866, 61105, 59597, 57783, 56316, 55098, 53956, 53082, 51996, 51199, 50351, 49484, 48695, 47919, 47071, 46308]
 
 	# set up the plot axes and data to be shown
-	plt.title('A graph of Quantisation Error against the number of Codebook Vectors, M')
+	plt.title('Quantisation Error against the number of Codebook Vectors, M')
 	plt.xlabel('Number of Codebook Vectors, M')	
 	plt.ylabel('Quantisation Error')
 	plt.axis([0,30,40000,150000])
@@ -611,8 +612,9 @@ if __name__ == '__main__':
 	print('First ' + str(numNotes) + ' notes human, last 20 AI')
 	print(newSequence)
 	'''
-
-	runTiltTests(N,B,t,k)
+	matplotlib.rcParams.update({'font.size': 14})
+	plotCodebookGraph('graphs_and_results/codebookOptimisationAllC.csv')
+	#runTiltTests(N,B,t,k)
 
 
 
