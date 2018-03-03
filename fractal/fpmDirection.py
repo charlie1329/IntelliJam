@@ -7,6 +7,7 @@ import numpy as np
 import csv
 import fpm
 import math
+import random
 import keyDetection as key
 
 # function is similar to readInSequences
@@ -90,7 +91,6 @@ def optimiseDirFPMCodebooks(trainingFile,L,k,magA,maxM,tau,maxIterations,errorMa
 # version of prediction for direction
 # no tilted distributions!
 def predictNextDir(s,B,N,t,k):
-
 	# bring sequence to chaos representation
 	x = fpm.toChaosRep(t,k,s)
 
@@ -117,7 +117,7 @@ def unitTests():
 # combines the note predictor and direction predictor
 # sequence has the durations with it
 # outputLen is the length of the output sequence
-def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence, outputLen):
+def combinedPredict(NNote, BNote, tNote, kNote, TNote, NDir, BDir, tDir, kDir, sequence, outputLen):
 	absSequence = []
 	noteSequence = []
 	dirSequence = []
@@ -133,7 +133,7 @@ def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence
 			noteSequence.append(((sequence[i][0] % 12) + 1,sequence[i][1]))
 
 
-		if(previous != -1 and previous == sequence[i][0]):
+		if(previous != -1 and previous != sequence[i][0]):
 			if(sequence[i][0] > previous):
 				dirSequence.append(1)
 			else:
@@ -141,8 +141,9 @@ def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence
 
 			previous = sequence[i][0]
 
-		if(previous != -1):
+		if(previous == -1):
 			previous = noteSequence[i][0]
+
 
 	# now do the key detection and stuff
 	segmentsAndKeys = key.detectKey(noteSequence,2.0,2.0) # split into groupings of two seconds
@@ -154,18 +155,22 @@ def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence
 
 	for segment in segmentsAndKeys:
 		transposed.extend(key.transpose(noDuration[segment[0]:segment[1]], segment[2], 'C'))
+	
+	print(absSequence)
+	print(noteSequence)
+	print(dirSequence)
+	print(transposed)
 
 	endKey = segmentsAndKeys[len(segmentsAndKeys)-1][2] # get the key to transpose back to
 
 	# now generate the note sequence
 	startPointNote = len(transposed)
 	for _ in range(outputLen):
-		transposed.append(fpm.predictNext(transposed,BNote,NNote,tNote,kNote))
+		transposed.append(fpm.predictNext(transposed,BNote,NNote,tNote,kNote,TNote))
 
 	transposed = key.transpose(transposed,'C',endKey) # transpose back to original key
-
 	predictedSequence = transposed[startPointNote:len(transposed)]
-
+	print(predictedSequence)
 	# now generate the direction sequence to generate the end sequence
 	startPointOut = len(absSequence) # where to start 
 	previousNote = absSequence[startPointOut-1] 
@@ -176,8 +181,8 @@ def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence
 			absSequence.append(0)
 		elif ((predictedSequence[i] - 1) % 12 == previousNote % 12): # same note
 			# try again
-			newNote = -1
-			secondDraw = predictNextDir(dirSequence[0:len(dirSequence-1)],BDir,NDir,tDir,kDir)
+			newNote = previousNote
+			secondDraw = predictNextDir(dirSequence[0:len(dirSequence)-1],BDir,NDir,tDir,kDir)
 			if(secondDraw == 1 and newDirection == 1):
 				newNote = previousNote + 12
 				if(newNote > 79):
@@ -185,7 +190,7 @@ def combinedPredict(NNote, BNote, tNote, kNote, NDir, BDir, tDir, kDir, sequence
 			elif(secondDraw == 0 and newDirection == 0):
 				newNote = previousNote - 12
 				if(newNote < 24):
-					newNote = previousNote
+					newNote = previousNote 
 			absSequence.append(newNote)
 			previousNote = newNote # set for next time round
 		else: #standard case
@@ -224,5 +229,30 @@ if __name__ == '__main__':
 	maxIterations = 1000
 	errorMargin = 0.001
 	repeats = 3
-	optimiseDirFPMCodebooks(trainingFile,L,k,magA,maxM,tau,maxIterations,errorMargin,repeats)
-	
+	M = 5
+	#optimiseDirFPMCodebooks(trainingFile,L,k,magA,maxM,tau,maxIterations,errorMargin,repeats)
+	#B, N, t, k = trainDirFPM(trainingFile, L, k, magA, M, tau, maxIterations, errorMargin) # 5 found to be the best
+
+	#np.savetxt('matrices/B_dir.txt',B,fmt='%f')
+	#np.savetxt('matrices/N_dir.txt',N,fmt='%f')
+	#np.savetxt('matrices/t_dir.txt',t,fmt='%f')
+
+	B_note = np.loadtxt('matrices/B_allC.txt')
+	N_note = np.loadtxt('matrices/N_allC.txt')
+	t_note = np.loadtxt('matrices/t_allC.txt')
+	k_note = k
+	T_note = 0.4
+
+	B_dir = np.loadtxt('matrices/B_dir.txt')
+	B_dir = np.reshape(B_dir,(5,1)) # careful here!
+	N_dir = np.loadtxt('matrices/N_dir.txt')
+	t_dir = np.loadtxt('matrices/t_dir.txt')
+	t_dir = np.reshape(t_dir,(2,1))
+	k_dir = k
+	outputLen = 20
+
+	sequence = [(46,0.1),(48,0.1),(51,0.1),(53,0.1),(55,0.1),(53,0.1),(51,0.1),(53,0.1),(48,0.1),(51,0.1)]
+
+	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, outputLen)
+	print(predictedSequence)
+

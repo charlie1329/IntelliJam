@@ -268,14 +268,14 @@ def plotCodebookGraph(resultsFile):
 	print(M)
 	print(Q)
 
-	M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
-	Q = [126643, 101960, 89934, 82143, 76362, 71937, 68741, 66323, 64617, 62866, 61105, 59597, 57783, 56316, 55098, 53956, 53082, 51996, 51199, 50351, 49484, 48695, 47919, 47071, 46308]
+	M = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+	Q = [48355,20625,15553,10295,8386,6534,5854,5141,4525,3907,3619,3309,2992,2760,2708,2568,2355,2143,2054,1943,1835,1715,1631,1553,1511,1473,1431,1387,1347,1302,1249,1210]
 
 	# set up the plot axes and data to be shown
 	plt.title('Quantisation Error against the number of Codebook Vectors, M')
 	plt.xlabel('Number of Codebook Vectors, M')	
 	plt.ylabel('Quantisation Error')
-	plt.axis([0,30,40000,150000])
+	plt.axis([0,35,0000,50000])
 	plt.plot(M,Q,'bo')
 
 	# display the plot
@@ -613,7 +613,7 @@ if __name__ == '__main__':
 	print(newSequence)
 	'''
 	matplotlib.rcParams.update({'font.size': 14})
-	plotCodebookGraph('graphs_and_results/codebookOptimisationAllC.csv')
+	plotCodebookGraph('graphs_and_results/codebookOptimisationDirection.csv')
 	#runTiltTests(N,B,t,k)
 
 
