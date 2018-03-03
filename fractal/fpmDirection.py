@@ -90,7 +90,7 @@ def optimiseDirFPMCodebooks(trainingFile,L,k,magA,maxM,tau,maxIterations,errorMa
 
 # version of prediction for direction
 # no tilted distributions!
-def predictNextDir(s,B,N,t,k):
+def predictNextDir(s,B,N,t,k,upInterval):
 	# bring sequence to chaos representation
 	x = fpm.toChaosRep(t,k,s)
 
@@ -99,7 +99,13 @@ def predictNextDir(s,B,N,t,k):
 
 	# do some random sampling to find the direction
 	distribution = N[i,:]
-	totalSamples = np.sum(distribution)
+	T = 3
+	if(upInterval > 6 and upInterval != 12):
+		distribution[1] *= math.exp(-(upInterval-6.0)/T)
+	elif(upInterval < 6 and upInterval != 0):
+		distribution[0] *= math.exp(-(6.0-upInterval)/T)
+
+	totalSamples = np.sum(np.round(distribution))
 	randomNo = random.randint(1,totalSamples)
 	total = 0
 	for i in range(distribution.shape[0]):
@@ -175,14 +181,15 @@ def combinedPredict(NNote, BNote, tNote, kNote, TNote, NDir, BDir, tDir, kDir, s
 	startPointOut = len(absSequence) # where to start 
 	previousNote = absSequence[startPointOut-1] 
 	for i in range(outputLen):
-		dirSequence.append(predictNextDir(dirSequence,BDir,NDir,tDir,kDir))
+		upInterval = (((predictedSequence[i] - 1) % 12) - (previousNote % 12)) % 12
+		dirSequence.append(predictNextDir(dirSequence,BDir,NDir,tDir,kDir,upInterval))
 		newDirection = dirSequence[len(dirSequence) - 1]
 		if(predictedSequence[i] == 0): # silence
 			absSequence.append(0)
 		elif ((predictedSequence[i] - 1) % 12 == previousNote % 12): # same note
 			# try again
 			newNote = previousNote
-			secondDraw = predictNextDir(dirSequence[0:len(dirSequence)-1],BDir,NDir,tDir,kDir)
+			secondDraw = predictNextDir(dirSequence[0:len(dirSequence)-1],BDir,NDir,tDir,kDir,upInterval)
 			if(secondDraw == 1 and newDirection == 1):
 				newNote = previousNote + 12
 				if(newNote > 79):
@@ -246,13 +253,14 @@ if __name__ == '__main__':
 	B_dir = np.loadtxt('matrices/B_dir.txt')
 	B_dir = np.reshape(B_dir,(5,1)) # careful here!
 	N_dir = np.loadtxt('matrices/N_dir.txt')
+	print(N_dir)
 	t_dir = np.loadtxt('matrices/t_dir.txt')
 	t_dir = np.reshape(t_dir,(2,1))
 	k_dir = k
 	outputLen = 20
 
-	sequence = [(46,0.1),(48,0.1),(51,0.1),(53,0.1),(55,0.1),(53,0.1),(51,0.1),(53,0.1),(48,0.1),(51,0.1)]
-
+	#sequence = [(46,0.1),(48,0.1),(51,0.1),(53,0.1),(55,0.1),(53,0.1),(51,0.1),(53,0.1),(48,0.1),(51,0.1)]
+	sequence = [(51,0.1),(53,0.1),(55,0.1),(55,0.1),(56,0.1),(55,0.1),(53,0.1),(58,0.1),(60,0.1),(55,0.1)]
 	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, outputLen)
 	print(predictedSequence)
 
