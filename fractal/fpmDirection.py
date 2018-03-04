@@ -96,16 +96,19 @@ def predictNextDir(s,B,N,t,k,upInterval):
 
 	# now find the closest codebook vector
 	i = fpm.findClosestCodebook(x,B)
-
+	#print(N)
+	#print('STOP')
 	# do some random sampling to find the direction
-	distribution = N[i,:]
-	T = 3
+	distribution = np.copy(N[i,:]) # need to copy to stop bad things happening
+	T = 1.9
 	if(upInterval > 6 and upInterval != 12):
 		distribution[1] *= math.exp(-(upInterval-6.0)/T)
 	elif(upInterval < 6 and upInterval != 0):
 		distribution[0] *= math.exp(-(6.0-upInterval)/T)
-
-	totalSamples = np.sum(np.round(distribution))
+	
+	distribution = np.round(distribution)
+	totalSamples = np.sum(distribution)
+	print(distribution)
 	randomNo = random.randint(1,totalSamples)
 	total = 0
 	for i in range(distribution.shape[0]):
