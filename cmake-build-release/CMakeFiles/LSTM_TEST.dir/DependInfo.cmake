@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/charl/CLionProjects/FYP/cmake-build-release/LSTM_TEST_autogen/mocs_compilation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/lstm/auxillary_functions.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/lstm/lstm.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/errorCalculation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/training/readTraining.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/test/training/trainingUnit.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_lstm/errorCalculation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/training_lstm/readTraining.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/test/training_lstm/trainingUnit.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,6 +17,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
+  "LSTM_TEST_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"

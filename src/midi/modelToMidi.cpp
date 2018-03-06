@@ -5,7 +5,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/midi/esnToMidi.h"
+#include "include/midi/modelToMidi.h"
 #include <ctime>
 #include <iostream>
 

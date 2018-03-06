@@ -11,7 +11,7 @@
 #define SAMPLES_PER_SECOND 30
 
 #include "../runtime/init_close.h"
-#include "../midi/esnToMidi.h"
+#include "include/midi/modelToMidi.h"
 #include "../interface/nametile.h"
 #include "../interface/vmeter.h"
 #include "../interface/piano.h"

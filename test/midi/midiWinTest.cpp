@@ -4,7 +4,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/midi/esnToMidi.h"
+#include "include/midi/modelToMidi.h"
 #include <chrono>
 #include <iostream>
 using namespace std;

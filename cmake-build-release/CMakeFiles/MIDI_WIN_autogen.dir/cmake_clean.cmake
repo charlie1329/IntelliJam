@@ -23,6 +23,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenOldSettings.cmake"
   "TRAINING_ERROR_autogen"
   "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake"
+  "LSTM_autogen"
+  "CMakeFiles/LSTM_autogen.dir/AutogenOldSettings.cmake"
+  "LSTM_TEST_autogen"
+  "CMakeFiles/LSTM_TEST_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/MIDI_WIN_autogen"
 )
 

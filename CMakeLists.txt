@@ -24,7 +24,7 @@ endif()
 
 #get qt set up correctly
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-#set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOMOC ON)
 set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} ";" ${QT5_PACKAGE_DIR})
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED)
@@ -132,8 +132,8 @@ target_link_libraries(MIDI_TWINKLE winmm.lib)
 #executable for windows midi api test
 set(MIDI_WIN_FILES include/midi/midi.h
                    src/midi/midi.cpp
-                   include/midi/esnToMidi.h
-                   src/midi/esnToMidi.cpp
+        include/midi/modelToMidi.h
+        src/midi/modelToMidi.cpp
                    test/midi/midiWinTest.cpp)
 
 add_executable(MIDI_WIN ${MIDI_WIN_FILES})
@@ -155,8 +155,8 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   src/runtime/updateThread.cpp
                   include/runtime/timerThread.h
                   src/runtime/timerThread.cpp
-                  include/midi/esnToMidi.h
-                  src/midi/esnToMidi.cpp
+        include/midi/modelToMidi.h
+        src/midi/modelToMidi.cpp
                   include/runtime/timers.h
                   src/runtime/timers.cpp
                   src/runtime/runSystem.cpp
@@ -205,8 +205,8 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         src/runtime/updateThread.cpp
                         include/runtime/timerThread.h
                         src/runtime/timerThread.cpp
-                        include/midi/esnToMidi.h
-                        src/midi/esnToMidi.cpp
+        include/midi/modelToMidi.h
+        src/midi/modelToMidi.cpp
                         include/runtime/timers.h
                         src/runtime/timers.cpp
                         include/esn/esn_outputs.h
@@ -284,10 +284,10 @@ set(LSTM_FILES include/lstm/lstm.h
                src/lstm/lstm.cpp
                include/lstm/auxillary_functions.h
                src/lstm/auxillary_functions.cpp
-               include/training/readTraining.h
-               src/training/readTraining.cpp
-               include/training/errorCalculation.h
-               src/training/errorCalculation.cpp)
+               include/training_lstm/readTraining.h
+               src/training_lstm/readTraining.cpp
+               include/training_lstm/errorCalculation.h
+               src/training_lstm/errorCalculation.cpp)
 add_executable(LSTM ${LSTM_FILES})
 
 # executable for LSTM training tests
@@ -295,11 +295,11 @@ set(LSTM_TEST_FILES include/lstm/lstm.h
                     src/lstm/lstm.cpp
                     include/lstm/auxillary_functions.h
                     src/lstm/auxillary_functions.cpp
-                    include/training/readTraining.h
-                    src/training/readTraining.cpp
-                    test/training/trainingUnit.cpp
-                    include/training/errorCalculation.h
-                    src/training/errorCalculation.cpp)
+                    include/training_lstm/readTraining.h
+                    src/training_lstm/readTraining.cpp
+                    test/training_lstm/trainingUnit.cpp
+                    include/training_lstm/errorCalculation.h
+                    src/training_lstm/errorCalculation.cpp)
 add_executable(LSTM_TEST ${LSTM_TEST_FILES})
 
 #test for boost

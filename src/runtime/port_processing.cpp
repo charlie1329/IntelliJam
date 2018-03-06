@@ -26,14 +26,9 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
     (void) statusFlags;
     (void) output;
 
-    int sampleJump = info->sampleJump; //save me de-referencing every time
     //loop through frames in input and copy when appropriate
     for(int i = 0; i < frameCount; i++) {
-        if(info->nextSample == 0) { //makes assumption input is effectively mono
-            PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to update ring buffer
-            info->nextSample = sampleJump;
-        }
-
+        PaUtil_WriteRingBuffer(&(info->ringUpdate),in,1); //write to update ring buffer
         //write to timer buffer as well as update buffer
         //update buffer currently being written to at a different sample rate
         PaUtil_WriteRingBuffer(&(info->ringTimer),in,1);
@@ -41,7 +36,6 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
         //TODO: CHECK THIS IS CORRECT, RELATED TO WHETHER STEREO OR MONO INPUT
         in += 2;
 
-        info->nextSample--; //in using an extra variable over modulo, I can keep it consistent across callbacks
     }
 
     return paContinue; //0

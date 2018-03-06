@@ -4,7 +4,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/readTraining.h"
+#include "../../include/training_lstm/readTraining.h"
 #include "../../include/lstm/auxillary_functions.h"
 
 /**

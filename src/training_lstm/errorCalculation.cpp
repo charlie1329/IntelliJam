@@ -4,7 +4,7 @@
  * Author: Charlie Street
  */
 
-#include "../../include/training/errorCalculation.h"
+#include "../../include/training_lstm/errorCalculation.h"
 
 /**
  * implemented from errorCalculation.h

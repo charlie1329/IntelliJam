@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "."
   "../"
+  "RUNTIME_W_GUI_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"
@@ -34,6 +35,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI_autogen/mocs_compilation.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/bridge/bridge.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/esn/esn_outputs.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj"
@@ -46,8 +48,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/charl/CLionProjects/FYP/src/interface/piano.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/interface/squarebutton.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/interface/vmeter.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj"
-  "C:/Users/charl/CLionProjects/FYP/src/midi/esnToMidi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/midi/modelToMidi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/timerThread.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj"
@@ -69,6 +71,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
   "../"
+  "RUNTIME_W_GUI_autogen/include"
   "C:/Program Files/boost_1_66_0"
   "C:/Qt/5.10.0/mingw53_32/include"
   "C:/Qt/5.10.0/mingw53_32/include/QtWidgets"

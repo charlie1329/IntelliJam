@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/AutogenInfo.cmake.in"
   "C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/JetBrains/CLion 2017.3/bin/cmake/share/cmake-3.9/Modules/CMakeCommonLanguageInclude.cmake"
@@ -85,6 +86,20 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/MIDI_TWINKLE_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/TRAINING_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/TRAINING_TEST_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/ESN_SPEED_TEST_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/ESN_CORE_TEST_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/MIDI_TEST_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/RUNTIME_W_GUI_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/MIDI_WIN_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/PORT_FUZZ_TEST_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/RUNTIME_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/RUNTIME_UNIT_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/LSTM_autogen.dir/AutogenInfo.cmake"
+  "CMakeFiles/LSTM_TEST_autogen.dir/AutogenInfo.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -104,4 +119,18 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TRAINING_ERROR.dir/DependInfo.cmake"
   "CMakeFiles/LSTM.dir/DependInfo.cmake"
   "CMakeFiles/LSTM_TEST.dir/DependInfo.cmake"
+  "CMakeFiles/MIDI_TWINKLE_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/TRAINING_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/TRAINING_TEST_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/ESN_SPEED_TEST_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/ESN_CORE_TEST_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/MIDI_TEST_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/RUNTIME_W_GUI_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/MIDI_WIN_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/PORT_FUZZ_TEST_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/RUNTIME_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/RUNTIME_UNIT_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/TRAINING_ERROR_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/LSTM_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/LSTM_TEST_autogen.dir/DependInfo.cmake"
   )

@@ -29,7 +29,7 @@ struct globalState {
 
     shared_ptr<atomic<bool>> running; //the current running state of the system
 
-    shared_ptr<boost::mutex> esnMutex; //for locking access to the echo state network
+    shared_ptr<boost::mutex> modelMutex; //for locking access to the prediction model
     shared_ptr<boost::mutex> streamMutex;
     shared_ptr<boost::condition_variable_any> cond;
 
@@ -39,10 +39,10 @@ struct globalState {
 
     //constructor for structure just copies everything in
     globalState(shared_ptr<passToCallback> cd, shared_ptr<ESN> e, PaStream *s,
-                shared_ptr<atomic<bool>> run, shared_ptr<boost::mutex> eMtx,
+                shared_ptr<atomic<bool>> run, shared_ptr<boost::mutex> mMtx,
                 shared_ptr<boost::mutex> sMtx, shared_ptr<boost::condition_variable_any> cv,
                 shared_ptr<HMIDISTRM> oh, shared_ptr<HANDLE> ev):
-            callbackData(cd), echo(e), stream(s), running(run), esnMutex(eMtx),
+            callbackData(cd), echo(e), stream(s), running(run), modelMutex(mMtx),
             streamMutex(sMtx), cond(cv), outHandle(oh), event(ev){}
 };
 

@@ -291,6 +291,566 @@ LSTM_TEST/fast:
 	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/build
 .PHONY : LSTM_TEST/fast
 
+#=============================================================================
+# Target rules for targets named MIDI_TWINKLE_autogen
+
+# Build rule for target.
+MIDI_TWINKLE_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_TWINKLE_autogen
+.PHONY : MIDI_TWINKLE_autogen
+
+# fast build rule for target.
+MIDI_TWINKLE_autogen/fast:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE_autogen.dir\build.make CMakeFiles/MIDI_TWINKLE_autogen.dir/build
+.PHONY : MIDI_TWINKLE_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TRAINING_autogen
+
+# Build rule for target.
+TRAINING_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_autogen
+.PHONY : TRAINING_autogen
+
+# fast build rule for target.
+TRAINING_autogen/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_autogen.dir\build.make CMakeFiles/TRAINING_autogen.dir/build
+.PHONY : TRAINING_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TRAINING_TEST_autogen
+
+# Build rule for target.
+TRAINING_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_TEST_autogen
+.PHONY : TRAINING_TEST_autogen
+
+# fast build rule for target.
+TRAINING_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST_autogen.dir\build.make CMakeFiles/TRAINING_TEST_autogen.dir/build
+.PHONY : TRAINING_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named ESN_SPEED_TEST_autogen
+
+# Build rule for target.
+ESN_SPEED_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ESN_SPEED_TEST_autogen
+.PHONY : ESN_SPEED_TEST_autogen
+
+# fast build rule for target.
+ESN_SPEED_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST_autogen.dir\build.make CMakeFiles/ESN_SPEED_TEST_autogen.dir/build
+.PHONY : ESN_SPEED_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named ESN_CORE_TEST_autogen
+
+# Build rule for target.
+ESN_CORE_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 ESN_CORE_TEST_autogen
+.PHONY : ESN_CORE_TEST_autogen
+
+# fast build rule for target.
+ESN_CORE_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\ESN_CORE_TEST_autogen.dir\build.make CMakeFiles/ESN_CORE_TEST_autogen.dir/build
+.PHONY : ESN_CORE_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named MIDI_TEST_autogen
+
+# Build rule for target.
+MIDI_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_TEST_autogen
+.PHONY : MIDI_TEST_autogen
+
+# fast build rule for target.
+MIDI_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\MIDI_TEST_autogen.dir\build.make CMakeFiles/MIDI_TEST_autogen.dir/build
+.PHONY : MIDI_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named RUNTIME_W_GUI_autogen
+
+# Build rule for target.
+RUNTIME_W_GUI_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_W_GUI_autogen
+.PHONY : RUNTIME_W_GUI_autogen
+
+# fast build rule for target.
+RUNTIME_W_GUI_autogen/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI_autogen.dir\build.make CMakeFiles/RUNTIME_W_GUI_autogen.dir/build
+.PHONY : RUNTIME_W_GUI_autogen/fast
+
+#=============================================================================
+# Target rules for targets named MIDI_WIN_autogen
+
+# Build rule for target.
+MIDI_WIN_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MIDI_WIN_autogen
+.PHONY : MIDI_WIN_autogen
+
+# fast build rule for target.
+MIDI_WIN_autogen/fast:
+	$(MAKE) -f CMakeFiles\MIDI_WIN_autogen.dir\build.make CMakeFiles/MIDI_WIN_autogen.dir/build
+.PHONY : MIDI_WIN_autogen/fast
+
+#=============================================================================
+# Target rules for targets named PORT_FUZZ_TEST_autogen
+
+# Build rule for target.
+PORT_FUZZ_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 PORT_FUZZ_TEST_autogen
+.PHONY : PORT_FUZZ_TEST_autogen
+
+# fast build rule for target.
+PORT_FUZZ_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST_autogen.dir\build.make CMakeFiles/PORT_FUZZ_TEST_autogen.dir/build
+.PHONY : PORT_FUZZ_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named RUNTIME_autogen
+
+# Build rule for target.
+RUNTIME_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_autogen
+.PHONY : RUNTIME_autogen
+
+# fast build rule for target.
+RUNTIME_autogen/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME_autogen.dir\build.make CMakeFiles/RUNTIME_autogen.dir/build
+.PHONY : RUNTIME_autogen/fast
+
+#=============================================================================
+# Target rules for targets named RUNTIME_UNIT_autogen
+
+# Build rule for target.
+RUNTIME_UNIT_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_UNIT_autogen
+.PHONY : RUNTIME_UNIT_autogen
+
+# fast build rule for target.
+RUNTIME_UNIT_autogen/fast:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT_autogen.dir\build.make CMakeFiles/RUNTIME_UNIT_autogen.dir/build
+.PHONY : RUNTIME_UNIT_autogen/fast
+
+#=============================================================================
+# Target rules for targets named TRAINING_ERROR_autogen
+
+# Build rule for target.
+TRAINING_ERROR_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TRAINING_ERROR_autogen
+.PHONY : TRAINING_ERROR_autogen
+
+# fast build rule for target.
+TRAINING_ERROR_autogen/fast:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR_autogen.dir\build.make CMakeFiles/TRAINING_ERROR_autogen.dir/build
+.PHONY : TRAINING_ERROR_autogen/fast
+
+#=============================================================================
+# Target rules for targets named LSTM_autogen
+
+# Build rule for target.
+LSTM_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 LSTM_autogen
+.PHONY : LSTM_autogen
+
+# fast build rule for target.
+LSTM_autogen/fast:
+	$(MAKE) -f CMakeFiles\LSTM_autogen.dir\build.make CMakeFiles/LSTM_autogen.dir/build
+.PHONY : LSTM_autogen/fast
+
+#=============================================================================
+# Target rules for targets named LSTM_TEST_autogen
+
+# Build rule for target.
+LSTM_TEST_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 LSTM_TEST_autogen
+.PHONY : LSTM_TEST_autogen
+
+# fast build rule for target.
+LSTM_TEST_autogen/fast:
+	$(MAKE) -f CMakeFiles\LSTM_TEST_autogen.dir\build.make CMakeFiles/LSTM_TEST_autogen.dir/build
+.PHONY : LSTM_TEST_autogen/fast
+
+ESN_CORE_TEST_autogen/mocs_compilation.obj: ESN_CORE_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+ESN_CORE_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/ESN_CORE_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.cpp.obj
+
+ESN_CORE_TEST_autogen/mocs_compilation.i: ESN_CORE_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ESN_CORE_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/ESN_CORE_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.cpp.i
+
+ESN_CORE_TEST_autogen/mocs_compilation.s: ESN_CORE_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ESN_CORE_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/ESN_CORE_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : ESN_CORE_TEST_autogen/mocs_compilation.cpp.s
+
+ESN_SPEED_TEST_autogen/mocs_compilation.obj: ESN_SPEED_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+ESN_SPEED_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/ESN_SPEED_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.cpp.obj
+
+ESN_SPEED_TEST_autogen/mocs_compilation.i: ESN_SPEED_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+ESN_SPEED_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/ESN_SPEED_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.cpp.i
+
+ESN_SPEED_TEST_autogen/mocs_compilation.s: ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s
+
+LSTM_TEST_autogen/mocs_compilation.obj: LSTM_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : LSTM_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+LSTM_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : LSTM_TEST_autogen/mocs_compilation.cpp.obj
+
+LSTM_TEST_autogen/mocs_compilation.i: LSTM_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : LSTM_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+LSTM_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : LSTM_TEST_autogen/mocs_compilation.cpp.i
+
+LSTM_TEST_autogen/mocs_compilation.s: LSTM_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : LSTM_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+LSTM_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : LSTM_TEST_autogen/mocs_compilation.cpp.s
+
+LSTM_autogen/mocs_compilation.obj: LSTM_autogen/mocs_compilation.cpp.obj
+
+.PHONY : LSTM_autogen/mocs_compilation.obj
+
+# target to build an object file
+LSTM_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/LSTM_autogen/mocs_compilation.cpp.obj
+.PHONY : LSTM_autogen/mocs_compilation.cpp.obj
+
+LSTM_autogen/mocs_compilation.i: LSTM_autogen/mocs_compilation.cpp.i
+
+.PHONY : LSTM_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+LSTM_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/LSTM_autogen/mocs_compilation.cpp.i
+.PHONY : LSTM_autogen/mocs_compilation.cpp.i
+
+LSTM_autogen/mocs_compilation.s: LSTM_autogen/mocs_compilation.cpp.s
+
+.PHONY : LSTM_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+LSTM_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/LSTM_autogen/mocs_compilation.cpp.s
+.PHONY : LSTM_autogen/mocs_compilation.cpp.s
+
+MIDI_TEST_autogen/mocs_compilation.obj: MIDI_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : MIDI_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+MIDI_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/MIDI_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : MIDI_TEST_autogen/mocs_compilation.cpp.obj
+
+MIDI_TEST_autogen/mocs_compilation.i: MIDI_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : MIDI_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+MIDI_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/MIDI_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : MIDI_TEST_autogen/mocs_compilation.cpp.i
+
+MIDI_TEST_autogen/mocs_compilation.s: MIDI_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : MIDI_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+MIDI_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/MIDI_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : MIDI_TEST_autogen/mocs_compilation.cpp.s
+
+MIDI_TWINKLE_autogen/mocs_compilation.obj: MIDI_TWINKLE_autogen/mocs_compilation.cpp.obj
+
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.obj
+
+# target to build an object file
+MIDI_TWINKLE_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/MIDI_TWINKLE_autogen/mocs_compilation.cpp.obj
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.cpp.obj
+
+MIDI_TWINKLE_autogen/mocs_compilation.i: MIDI_TWINKLE_autogen/mocs_compilation.cpp.i
+
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+MIDI_TWINKLE_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/MIDI_TWINKLE_autogen/mocs_compilation.cpp.i
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.cpp.i
+
+MIDI_TWINKLE_autogen/mocs_compilation.s: MIDI_TWINKLE_autogen/mocs_compilation.cpp.s
+
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+MIDI_TWINKLE_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/MIDI_TWINKLE_autogen/mocs_compilation.cpp.s
+.PHONY : MIDI_TWINKLE_autogen/mocs_compilation.cpp.s
+
+MIDI_WIN_autogen/mocs_compilation.obj: MIDI_WIN_autogen/mocs_compilation.cpp.obj
+
+.PHONY : MIDI_WIN_autogen/mocs_compilation.obj
+
+# target to build an object file
+MIDI_WIN_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/MIDI_WIN_autogen/mocs_compilation.cpp.obj
+.PHONY : MIDI_WIN_autogen/mocs_compilation.cpp.obj
+
+MIDI_WIN_autogen/mocs_compilation.i: MIDI_WIN_autogen/mocs_compilation.cpp.i
+
+.PHONY : MIDI_WIN_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+MIDI_WIN_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/MIDI_WIN_autogen/mocs_compilation.cpp.i
+.PHONY : MIDI_WIN_autogen/mocs_compilation.cpp.i
+
+MIDI_WIN_autogen/mocs_compilation.s: MIDI_WIN_autogen/mocs_compilation.cpp.s
+
+.PHONY : MIDI_WIN_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+MIDI_WIN_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/MIDI_WIN_autogen/mocs_compilation.cpp.s
+.PHONY : MIDI_WIN_autogen/mocs_compilation.cpp.s
+
+PORT_FUZZ_TEST_autogen/mocs_compilation.obj: PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj
+
+PORT_FUZZ_TEST_autogen/mocs_compilation.i: PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.i
+
+PORT_FUZZ_TEST_autogen/mocs_compilation.s: PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\PORT_FUZZ_TEST.dir\build.make CMakeFiles/PORT_FUZZ_TEST.dir/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.s
+
+RUNTIME_UNIT_autogen/mocs_compilation.obj: RUNTIME_UNIT_autogen/mocs_compilation.cpp.obj
+
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.obj
+
+# target to build an object file
+RUNTIME_UNIT_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/RUNTIME_UNIT_autogen/mocs_compilation.cpp.obj
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.cpp.obj
+
+RUNTIME_UNIT_autogen/mocs_compilation.i: RUNTIME_UNIT_autogen/mocs_compilation.cpp.i
+
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+RUNTIME_UNIT_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/RUNTIME_UNIT_autogen/mocs_compilation.cpp.i
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.cpp.i
+
+RUNTIME_UNIT_autogen/mocs_compilation.s: RUNTIME_UNIT_autogen/mocs_compilation.cpp.s
+
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+RUNTIME_UNIT_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/RUNTIME_UNIT_autogen/mocs_compilation.cpp.s
+.PHONY : RUNTIME_UNIT_autogen/mocs_compilation.cpp.s
+
+RUNTIME_W_GUI_autogen/mocs_compilation.obj: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
+
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.obj
+
+# target to build an object file
+RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
+
+RUNTIME_W_GUI_autogen/mocs_compilation.i: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
+
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
+
+RUNTIME_W_GUI_autogen/mocs_compilation.s: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
+
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
+.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
+
+RUNTIME_autogen/mocs_compilation.obj: RUNTIME_autogen/mocs_compilation.cpp.obj
+
+.PHONY : RUNTIME_autogen/mocs_compilation.obj
+
+# target to build an object file
+RUNTIME_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.obj
+.PHONY : RUNTIME_autogen/mocs_compilation.cpp.obj
+
+RUNTIME_autogen/mocs_compilation.i: RUNTIME_autogen/mocs_compilation.cpp.i
+
+.PHONY : RUNTIME_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+RUNTIME_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.i
+.PHONY : RUNTIME_autogen/mocs_compilation.cpp.i
+
+RUNTIME_autogen/mocs_compilation.s: RUNTIME_autogen/mocs_compilation.cpp.s
+
+.PHONY : RUNTIME_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+RUNTIME_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/RUNTIME_autogen/mocs_compilation.cpp.s
+.PHONY : RUNTIME_autogen/mocs_compilation.cpp.s
+
+TRAINING_ERROR_autogen/mocs_compilation.obj: TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.obj
+
+# target to build an object file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.obj
+
+TRAINING_ERROR_autogen/mocs_compilation.i: TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.i
+
+TRAINING_ERROR_autogen/mocs_compilation.s: TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TRAINING_ERROR_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+.PHONY : TRAINING_ERROR_autogen/mocs_compilation.cpp.s
+
+TRAINING_TEST_autogen/mocs_compilation.obj: TRAINING_TEST_autogen/mocs_compilation.cpp.obj
+
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.obj
+
+# target to build an object file
+TRAINING_TEST_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/TRAINING_TEST_autogen/mocs_compilation.cpp.obj
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.cpp.obj
+
+TRAINING_TEST_autogen/mocs_compilation.i: TRAINING_TEST_autogen/mocs_compilation.cpp.i
+
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TRAINING_TEST_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/TRAINING_TEST_autogen/mocs_compilation.cpp.i
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.cpp.i
+
+TRAINING_TEST_autogen/mocs_compilation.s: TRAINING_TEST_autogen/mocs_compilation.cpp.s
+
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TRAINING_TEST_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/TRAINING_TEST_autogen/mocs_compilation.cpp.s
+.PHONY : TRAINING_TEST_autogen/mocs_compilation.cpp.s
+
+TRAINING_autogen/mocs_compilation.obj: TRAINING_autogen/mocs_compilation.cpp.obj
+
+.PHONY : TRAINING_autogen/mocs_compilation.obj
+
+# target to build an object file
+TRAINING_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/TRAINING_autogen/mocs_compilation.cpp.obj
+.PHONY : TRAINING_autogen/mocs_compilation.cpp.obj
+
+TRAINING_autogen/mocs_compilation.i: TRAINING_autogen/mocs_compilation.cpp.i
+
+.PHONY : TRAINING_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+TRAINING_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/TRAINING_autogen/mocs_compilation.cpp.i
+.PHONY : TRAINING_autogen/mocs_compilation.cpp.i
+
+TRAINING_autogen/mocs_compilation.s: TRAINING_autogen/mocs_compilation.cpp.s
+
+.PHONY : TRAINING_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+TRAINING_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\TRAINING.dir\build.make CMakeFiles/TRAINING.dir/TRAINING_autogen/mocs_compilation.cpp.s
+.PHONY : TRAINING_autogen/mocs_compilation.cpp.s
+
 include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 .PHONY : include/port_audio/pa_ringbuffer.obj
@@ -816,39 +1376,6 @@ src/lstm/lstm.cpp.s:
 	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.s
 .PHONY : src/lstm/lstm.cpp.s
 
-src/midi/esnToMidi.obj: src/midi/esnToMidi.cpp.obj
-
-.PHONY : src/midi/esnToMidi.obj
-
-# target to build an object file
-src/midi/esnToMidi.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.obj
-	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.obj
-.PHONY : src/midi/esnToMidi.cpp.obj
-
-src/midi/esnToMidi.i: src/midi/esnToMidi.cpp.i
-
-.PHONY : src/midi/esnToMidi.i
-
-# target to preprocess a source file
-src/midi/esnToMidi.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.i
-	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.i
-.PHONY : src/midi/esnToMidi.cpp.i
-
-src/midi/esnToMidi.s: src/midi/esnToMidi.cpp.s
-
-.PHONY : src/midi/esnToMidi.s
-
-# target to generate assembly for a file
-src/midi/esnToMidi.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/esnToMidi.cpp.s
-	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/esnToMidi.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/esnToMidi.cpp.s
-.PHONY : src/midi/esnToMidi.cpp.s
-
 src/midi/midi.obj: src/midi/midi.cpp.obj
 
 .PHONY : src/midi/midi.obj
@@ -887,6 +1414,39 @@ src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
+
+src/midi/modelToMidi.obj: src/midi/modelToMidi.cpp.obj
+
+.PHONY : src/midi/modelToMidi.obj
+
+# target to build an object file
+src/midi/modelToMidi.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.obj
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.obj
+.PHONY : src/midi/modelToMidi.cpp.obj
+
+src/midi/modelToMidi.i: src/midi/modelToMidi.cpp.i
+
+.PHONY : src/midi/modelToMidi.i
+
+# target to preprocess a source file
+src/midi/modelToMidi.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.i
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.i
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.i
+.PHONY : src/midi/modelToMidi.cpp.i
+
+src/midi/modelToMidi.s: src/midi/modelToMidi.cpp.s
+
+.PHONY : src/midi/modelToMidi.s
+
+# target to generate assembly for a file
+src/midi/modelToMidi.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.s
+	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.s
+	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.s
+.PHONY : src/midi/modelToMidi.cpp.s
 
 src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
 
@@ -1071,65 +1631,65 @@ src/runtime/updateThread.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
-src/training/errorCalculation.obj: src/training/errorCalculation.cpp.obj
+src/training_lstm/errorCalculation.obj: src/training_lstm/errorCalculation.cpp.obj
 
-.PHONY : src/training/errorCalculation.obj
-
-# target to build an object file
-src/training/errorCalculation.cpp.obj:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.obj
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj
-.PHONY : src/training/errorCalculation.cpp.obj
-
-src/training/errorCalculation.i: src/training/errorCalculation.cpp.i
-
-.PHONY : src/training/errorCalculation.i
-
-# target to preprocess a source file
-src/training/errorCalculation.cpp.i:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.i
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.i
-.PHONY : src/training/errorCalculation.cpp.i
-
-src/training/errorCalculation.s: src/training/errorCalculation.cpp.s
-
-.PHONY : src/training/errorCalculation.s
-
-# target to generate assembly for a file
-src/training/errorCalculation.cpp.s:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/errorCalculation.cpp.s
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.s
-.PHONY : src/training/errorCalculation.cpp.s
-
-src/training/readTraining.obj: src/training/readTraining.cpp.obj
-
-.PHONY : src/training/readTraining.obj
+.PHONY : src/training_lstm/errorCalculation.obj
 
 # target to build an object file
-src/training/readTraining.cpp.obj:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.obj
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj
-.PHONY : src/training/readTraining.cpp.obj
+src/training_lstm/errorCalculation.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/errorCalculation.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj
+.PHONY : src/training_lstm/errorCalculation.cpp.obj
 
-src/training/readTraining.i: src/training/readTraining.cpp.i
+src/training_lstm/errorCalculation.i: src/training_lstm/errorCalculation.cpp.i
 
-.PHONY : src/training/readTraining.i
+.PHONY : src/training_lstm/errorCalculation.i
 
 # target to preprocess a source file
-src/training/readTraining.cpp.i:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.i
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.i
-.PHONY : src/training/readTraining.cpp.i
+src/training_lstm/errorCalculation.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/errorCalculation.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.i
+.PHONY : src/training_lstm/errorCalculation.cpp.i
 
-src/training/readTraining.s: src/training/readTraining.cpp.s
+src/training_lstm/errorCalculation.s: src/training_lstm/errorCalculation.cpp.s
 
-.PHONY : src/training/readTraining.s
+.PHONY : src/training_lstm/errorCalculation.s
 
 # target to generate assembly for a file
-src/training/readTraining.cpp.s:
-	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training/readTraining.cpp.s
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.s
-.PHONY : src/training/readTraining.cpp.s
+src/training_lstm/errorCalculation.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/errorCalculation.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.s
+.PHONY : src/training_lstm/errorCalculation.cpp.s
+
+src/training_lstm/readTraining.obj: src/training_lstm/readTraining.cpp.obj
+
+.PHONY : src/training_lstm/readTraining.obj
+
+# target to build an object file
+src/training_lstm/readTraining.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/readTraining.cpp.obj
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj
+.PHONY : src/training_lstm/readTraining.cpp.obj
+
+src/training_lstm/readTraining.i: src/training_lstm/readTraining.cpp.i
+
+.PHONY : src/training_lstm/readTraining.i
+
+# target to preprocess a source file
+src/training_lstm/readTraining.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/readTraining.cpp.i
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.i
+.PHONY : src/training_lstm/readTraining.cpp.i
+
+src/training_lstm/readTraining.s: src/training_lstm/readTraining.cpp.s
+
+.PHONY : src/training_lstm/readTraining.s
+
+# target to generate assembly for a file
+src/training_lstm/readTraining.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM.dir\build.make CMakeFiles/LSTM.dir/src/training_lstm/readTraining.cpp.s
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.s
+.PHONY : src/training_lstm/readTraining.cpp.s
 
 src/training_old/checkpoint.obj: src/training_old/checkpoint.cpp.obj
 
@@ -1479,32 +2039,32 @@ test/runtime/runtimeUnitTests.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/test/runtime/runtimeUnitTests.cpp.s
 .PHONY : test/runtime/runtimeUnitTests.cpp.s
 
-test/training/trainingUnit.obj: test/training/trainingUnit.cpp.obj
+test/training_lstm/trainingUnit.obj: test/training_lstm/trainingUnit.cpp.obj
 
-.PHONY : test/training/trainingUnit.obj
+.PHONY : test/training_lstm/trainingUnit.obj
 
 # target to build an object file
-test/training/trainingUnit.cpp.obj:
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj
-.PHONY : test/training/trainingUnit.cpp.obj
+test/training_lstm/trainingUnit.cpp.obj:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj
+.PHONY : test/training_lstm/trainingUnit.cpp.obj
 
-test/training/trainingUnit.i: test/training/trainingUnit.cpp.i
+test/training_lstm/trainingUnit.i: test/training_lstm/trainingUnit.cpp.i
 
-.PHONY : test/training/trainingUnit.i
+.PHONY : test/training_lstm/trainingUnit.i
 
 # target to preprocess a source file
-test/training/trainingUnit.cpp.i:
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.i
-.PHONY : test/training/trainingUnit.cpp.i
+test/training_lstm/trainingUnit.cpp.i:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.i
+.PHONY : test/training_lstm/trainingUnit.cpp.i
 
-test/training/trainingUnit.s: test/training/trainingUnit.cpp.s
+test/training_lstm/trainingUnit.s: test/training_lstm/trainingUnit.cpp.s
 
-.PHONY : test/training/trainingUnit.s
+.PHONY : test/training_lstm/trainingUnit.s
 
 # target to generate assembly for a file
-test/training/trainingUnit.cpp.s:
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.s
-.PHONY : test/training/trainingUnit.cpp.s
+test/training_lstm/trainingUnit.cpp.s:
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.s
+.PHONY : test/training_lstm/trainingUnit.cpp.s
 
 test/training_old/calculateError.obj: test/training_old/calculateError.cpp.obj
 
@@ -1582,6 +2142,62 @@ help:
 	@echo ... LSTM
 	@echo ... edit_cache
 	@echo ... LSTM_TEST
+	@echo ... MIDI_TWINKLE_autogen
+	@echo ... TRAINING_autogen
+	@echo ... TRAINING_TEST_autogen
+	@echo ... ESN_SPEED_TEST_autogen
+	@echo ... ESN_CORE_TEST_autogen
+	@echo ... MIDI_TEST_autogen
+	@echo ... RUNTIME_W_GUI_autogen
+	@echo ... MIDI_WIN_autogen
+	@echo ... PORT_FUZZ_TEST_autogen
+	@echo ... RUNTIME_autogen
+	@echo ... RUNTIME_UNIT_autogen
+	@echo ... TRAINING_ERROR_autogen
+	@echo ... LSTM_autogen
+	@echo ... LSTM_TEST_autogen
+	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.obj
+	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.i
+	@echo ... ESN_CORE_TEST_autogen/mocs_compilation.s
+	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.obj
+	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.i
+	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.s
+	@echo ... LSTM_TEST_autogen/mocs_compilation.obj
+	@echo ... LSTM_TEST_autogen/mocs_compilation.i
+	@echo ... LSTM_TEST_autogen/mocs_compilation.s
+	@echo ... LSTM_autogen/mocs_compilation.obj
+	@echo ... LSTM_autogen/mocs_compilation.i
+	@echo ... LSTM_autogen/mocs_compilation.s
+	@echo ... MIDI_TEST_autogen/mocs_compilation.obj
+	@echo ... MIDI_TEST_autogen/mocs_compilation.i
+	@echo ... MIDI_TEST_autogen/mocs_compilation.s
+	@echo ... MIDI_TWINKLE_autogen/mocs_compilation.obj
+	@echo ... MIDI_TWINKLE_autogen/mocs_compilation.i
+	@echo ... MIDI_TWINKLE_autogen/mocs_compilation.s
+	@echo ... MIDI_WIN_autogen/mocs_compilation.obj
+	@echo ... MIDI_WIN_autogen/mocs_compilation.i
+	@echo ... MIDI_WIN_autogen/mocs_compilation.s
+	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.obj
+	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.i
+	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.s
+	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.obj
+	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.i
+	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.s
+	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.obj
+	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.i
+	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.s
+	@echo ... RUNTIME_autogen/mocs_compilation.obj
+	@echo ... RUNTIME_autogen/mocs_compilation.i
+	@echo ... RUNTIME_autogen/mocs_compilation.s
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.obj
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.i
+	@echo ... TRAINING_ERROR_autogen/mocs_compilation.s
+	@echo ... TRAINING_TEST_autogen/mocs_compilation.obj
+	@echo ... TRAINING_TEST_autogen/mocs_compilation.i
+	@echo ... TRAINING_TEST_autogen/mocs_compilation.s
+	@echo ... TRAINING_autogen/mocs_compilation.obj
+	@echo ... TRAINING_autogen/mocs_compilation.i
+	@echo ... TRAINING_autogen/mocs_compilation.s
 	@echo ... include/port_audio/pa_ringbuffer.obj
 	@echo ... include/port_audio/pa_ringbuffer.i
 	@echo ... include/port_audio/pa_ringbuffer.s
@@ -1633,12 +2249,12 @@ help:
 	@echo ... src/lstm/lstm.obj
 	@echo ... src/lstm/lstm.i
 	@echo ... src/lstm/lstm.s
-	@echo ... src/midi/esnToMidi.obj
-	@echo ... src/midi/esnToMidi.i
-	@echo ... src/midi/esnToMidi.s
 	@echo ... src/midi/midi.obj
 	@echo ... src/midi/midi.i
 	@echo ... src/midi/midi.s
+	@echo ... src/midi/modelToMidi.obj
+	@echo ... src/midi/modelToMidi.i
+	@echo ... src/midi/modelToMidi.s
 	@echo ... src/runtime/init_close.obj
 	@echo ... src/runtime/init_close.i
 	@echo ... src/runtime/init_close.s
@@ -1657,12 +2273,12 @@ help:
 	@echo ... src/runtime/updateThread.obj
 	@echo ... src/runtime/updateThread.i
 	@echo ... src/runtime/updateThread.s
-	@echo ... src/training/errorCalculation.obj
-	@echo ... src/training/errorCalculation.i
-	@echo ... src/training/errorCalculation.s
-	@echo ... src/training/readTraining.obj
-	@echo ... src/training/readTraining.i
-	@echo ... src/training/readTraining.s
+	@echo ... src/training_lstm/errorCalculation.obj
+	@echo ... src/training_lstm/errorCalculation.i
+	@echo ... src/training_lstm/errorCalculation.s
+	@echo ... src/training_lstm/readTraining.obj
+	@echo ... src/training_lstm/readTraining.i
+	@echo ... src/training_lstm/readTraining.s
 	@echo ... src/training_old/checkpoint.obj
 	@echo ... src/training_old/checkpoint.i
 	@echo ... src/training_old/checkpoint.s
@@ -1699,9 +2315,9 @@ help:
 	@echo ... test/runtime/runtimeUnitTests.obj
 	@echo ... test/runtime/runtimeUnitTests.i
 	@echo ... test/runtime/runtimeUnitTests.s
-	@echo ... test/training/trainingUnit.obj
-	@echo ... test/training/trainingUnit.i
-	@echo ... test/training/trainingUnit.s
+	@echo ... test/training_lstm/trainingUnit.obj
+	@echo ... test/training_lstm/trainingUnit.i
+	@echo ... test/training_lstm/trainingUnit.s
 	@echo ... test/training_old/calculateError.obj
 	@echo ... test/training_old/calculateError.i
 	@echo ... test/training_old/calculateError.s

@@ -13,7 +13,7 @@ using namespace std;
 
 #define RING_ELEMENT sizeof(float)
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer
-#define SAMPLE_JUMP 10
+#define SAMPLE_JUMP 1
 
 #define INPUT_RES_FILE "trained_weights/inputReservoirWeightsAnnealing1.csv"
 #define RES_RES_FILE "trained_weights/reservoirReservoirWeightsAnnealing1.csv"

@@ -5,7 +5,7 @@
  */
 
 #include "../../include/runtime/globalState.h"
-#include "../../include/midi/esnToMidi.h"
+#include "include/midi/modelToMidi.h"
 #include "../../include/runtime/timerThread.h"
 #include "../../include/runtime/timers.h"
 
@@ -32,7 +32,7 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
     shared_ptr<ESN> echo = state->echo;
 
     //get all synchronisation constructs
-    shared_ptr<boost::mutex> esnMutex = state->esnMutex;
+    shared_ptr<boost::mutex> modelMutex = state->modelMutex;
     shared_ptr<boost::mutex> streamMutex = state->streamMutex;
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
@@ -61,9 +61,9 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
         if(bridge != nullptr) bridge->switchPlayer();
 
         //get output from echo state network
-        esnMutex->lock();
+        modelMutex->lock();
         VectorXd output = echo->predict();
-        esnMutex->unlock();
+        modelMutex->unlock();
 
         /*//I had the lick here didn't I
         output(0,0) = 48;

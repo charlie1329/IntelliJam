@@ -68,7 +68,7 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
 
     //create callback data
     shared_ptr<passToCallback> callbackData(std::make_shared<passToCallback>(ringUpdate,ringDataUpdate,
-                                                                        ringTimer,ringDataTimer,SAMPLE_JUMP));
+                                                                        ringTimer,ringDataTimer));
 
     //open up stream
     PaStream *stream = nullptr;
@@ -84,14 +84,14 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
     shared_ptr<atomic<bool>> running(std::make_shared<atomic<bool>>(true));
 
     //create mutexes for use throughout the system
-    shared_ptr<boost::mutex> esnMutex(std::make_shared<boost::mutex>());
+    shared_ptr<boost::mutex> modelMutex(std::make_shared<boost::mutex>());
     shared_ptr<boost::mutex> streamMutex(std::make_shared<boost::mutex>());
 
     //initialise the condition variable
     shared_ptr<boost::condition_variable_any> cond(std::make_shared<boost::condition_variable_any>());
 
     //combine into global state
-    shared_ptr<globalState> global(std::make_shared<globalState>(callbackData,echo,stream,running,esnMutex,
+    shared_ptr<globalState> global(std::make_shared<globalState>(callbackData,echo,stream,running,modelMutex,
                                                                  streamMutex,cond,outHandle,event));
 
     //return global state with no errors found

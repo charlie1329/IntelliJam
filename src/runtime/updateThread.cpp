@@ -20,7 +20,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
     shared_ptr<passToCallback> callback = state->callbackData;
 
     //get all the synchronisation stuff out of the global state for ease of access
-    shared_ptr<boost::mutex> esnMutex = state->esnMutex;
+    shared_ptr<boost::mutex> modelMutex = state->modelMutex;
     shared_ptr<boost::mutex> streamMutex = state->streamMutex;
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
@@ -58,9 +58,9 @@ void updateWorker(const shared_ptr<globalState> &state) {
         if(PaUtil_GetRingBufferReadAvailable(&(callback->ringUpdate)) > 0) {
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(callback->ringUpdate),&newInput,1); //read from echo state network
             if(read == 1) { //check read was actually successful
-                esnMutex->lock();
+                modelMutex->lock();
                 echo->updateReservoir((double)newInput); //update echo state network (now cast to double)
-                esnMutex->unlock();
+                modelMutex->unlock();
             }
         }
 

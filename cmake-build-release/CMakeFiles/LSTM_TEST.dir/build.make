@@ -106,102 +106,129 @@ CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj.provides: CMakeFil
 CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj
 
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj: ../src/training/readTraining.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\src\training\readTraining.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj: ../src/training_lstm/readTraining.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\src\training_lstm\readTraining.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_lstm\readTraining.cpp
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp > CMakeFiles\LSTM_TEST.dir\src\training\readTraining.cpp.i
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_lstm\readTraining.cpp > CMakeFiles\LSTM_TEST.dir\src\training_lstm\readTraining.cpp.i
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\readTraining.cpp -o CMakeFiles\LSTM_TEST.dir\src\training\readTraining.cpp.s
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_lstm\readTraining.cpp -o CMakeFiles\LSTM_TEST.dir\src\training_lstm\readTraining.cpp.s
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.requires:
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.requires:
 
-.PHONY : CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.requires
+.PHONY : CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.requires
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.provides.build
-.PHONY : CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.provides
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.provides
 
-CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj
-
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj: ../test/training/trainingUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\test\training\trainingUnit.cpp.obj -c C:\Users\charl\CLionProjects\FYP\test\training\trainingUnit.cpp
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\test\training\trainingUnit.cpp > CMakeFiles\LSTM_TEST.dir\test\training\trainingUnit.cpp.i
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\test\training\trainingUnit.cpp -o CMakeFiles\LSTM_TEST.dir\test\training\trainingUnit.cpp.s
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.requires:
-
-.PHONY : CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.requires
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.provides.build
-.PHONY : CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.provides
-
-CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj
 
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj: ../src/training/errorCalculation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\src\training\errorCalculation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj: ../test/training_lstm/trainingUnit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\test\training_lstm\trainingUnit.cpp.obj -c C:\Users\charl\CLionProjects\FYP\test\training_lstm\trainingUnit.cpp
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp > CMakeFiles\LSTM_TEST.dir\src\training\errorCalculation.cpp.i
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\test\training_lstm\trainingUnit.cpp > CMakeFiles\LSTM_TEST.dir\test\training_lstm\trainingUnit.cpp.i
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training\errorCalculation.cpp -o CMakeFiles\LSTM_TEST.dir\src\training\errorCalculation.cpp.s
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\test\training_lstm\trainingUnit.cpp -o CMakeFiles\LSTM_TEST.dir\test\training_lstm\trainingUnit.cpp.s
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.requires:
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.requires:
 
-.PHONY : CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.requires
+.PHONY : CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.requires
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.provides.build
-.PHONY : CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.provides
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.provides
 
-CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj
+CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj
+
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj: ../src/training_lstm/errorCalculation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\src\training_lstm\errorCalculation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\src\training_lstm\errorCalculation.cpp
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\src\training_lstm\errorCalculation.cpp > CMakeFiles\LSTM_TEST.dir\src\training_lstm\errorCalculation.cpp.i
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\src\training_lstm\errorCalculation.cpp -o CMakeFiles\LSTM_TEST.dir\src\training_lstm\errorCalculation.cpp.s
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.requires
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.provides
+
+CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj
+
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj: CMakeFiles/LSTM_TEST.dir/flags.make
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj: CMakeFiles/LSTM_TEST.dir/includes_CXX.rsp
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj: LSTM_TEST_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LSTM_TEST.dir\LSTM_TEST_autogen\mocs_compilation.cpp.obj -c C:\Users\charl\CLionProjects\FYP\cmake-build-release\LSTM_TEST_autogen\mocs_compilation.cpp
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\charl\CLionProjects\FYP\cmake-build-release\LSTM_TEST_autogen\mocs_compilation.cpp > CMakeFiles\LSTM_TEST.dir\LSTM_TEST_autogen\mocs_compilation.cpp.i
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\charl\CLionProjects\FYP\cmake-build-release\LSTM_TEST_autogen\mocs_compilation.cpp -o CMakeFiles\LSTM_TEST.dir\LSTM_TEST_autogen\mocs_compilation.cpp.s
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.requires
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.provides: CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LSTM_TEST.dir\build.make CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.provides.build
+.PHONY : CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.provides
+
+CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.provides.build: CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj
 
 
 # Object files for target LSTM_TEST
 LSTM_TEST_OBJECTS = \
 "CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj" \
 "CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj" \
-"CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj" \
-"CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj" \
-"CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj"
+"CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj" \
+"CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj" \
+"CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj" \
+"CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target LSTM_TEST
 LSTM_TEST_EXTERNAL_OBJECTS =
 
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj
-LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj
-LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj
-LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj
+LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj
+LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj
+LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj
+LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/build.make
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/linklibs.rsp
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/objects1.rsp
 LSTM_TEST.exe: CMakeFiles/LSTM_TEST.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable LSTM_TEST.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable LSTM_TEST.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LSTM_TEST.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -211,9 +238,10 @@ CMakeFiles/LSTM_TEST.dir/build: LSTM_TEST.exe
 
 CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj.requires
 CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj.requires
-CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/training/readTraining.cpp.obj.requires
-CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/test/training/trainingUnit.cpp.obj.requires
-CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/training/errorCalculation.cpp.obj.requires
+CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/training_lstm/readTraining.cpp.obj.requires
+CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/test/training_lstm/trainingUnit.cpp.obj.requires
+CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/src/training_lstm/errorCalculation.cpp.obj.requires
+CMakeFiles/LSTM_TEST.dir/requires: CMakeFiles/LSTM_TEST.dir/LSTM_TEST_autogen/mocs_compilation.cpp.obj.requires
 
 .PHONY : CMakeFiles/LSTM_TEST.dir/requires
 

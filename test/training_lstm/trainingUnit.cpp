@@ -7,9 +7,9 @@
 #define CATCH_CONFIG_MAIN
 
 #include "../../include/test/catch.hpp"
-#include "../../include/training/readTraining.h"
+#include "../../include/training_lstm/readTraining.h"
 
-#define TRAINING_FILE "../test/training/testTraining.csv"
+#define TRAINING_FILE "../test/training_lstm/testTraining.csv"
 
 /**
  * test case tests the functionality of reading in from a training data file
