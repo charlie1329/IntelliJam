@@ -1448,6 +1448,33 @@ src/midi/modelToMidi.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.s
 .PHONY : src/midi/modelToMidi.cpp.s
 
+src/model/keyDetect.obj: src/model/keyDetect.cpp.obj
+
+.PHONY : src/model/keyDetect.obj
+
+# target to build an object file
+src/model/keyDetect.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj
+.PHONY : src/model/keyDetect.cpp.obj
+
+src/model/keyDetect.i: src/model/keyDetect.cpp.i
+
+.PHONY : src/model/keyDetect.i
+
+# target to preprocess a source file
+src/model/keyDetect.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.i
+.PHONY : src/model/keyDetect.cpp.i
+
+src/model/keyDetect.s: src/model/keyDetect.cpp.s
+
+.PHONY : src/model/keyDetect.s
+
+# target to generate assembly for a file
+src/model/keyDetect.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.s
+.PHONY : src/model/keyDetect.cpp.s
+
 src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
 
 .PHONY : src/runtime/init_close.obj
@@ -2255,6 +2282,9 @@ help:
 	@echo ... src/midi/modelToMidi.obj
 	@echo ... src/midi/modelToMidi.i
 	@echo ... src/midi/modelToMidi.s
+	@echo ... src/model/keyDetect.obj
+	@echo ... src/model/keyDetect.i
+	@echo ... src/model/keyDetect.s
 	@echo ... src/runtime/init_close.obj
 	@echo ... src/runtime/init_close.i
 	@echo ... src/runtime/init_close.s

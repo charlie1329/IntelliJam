@@ -155,8 +155,8 @@ set(RUNTIME_FILES include/port_audio/pa_ringbuffer.c
                   src/runtime/updateThread.cpp
                   include/runtime/timerThread.h
                   src/runtime/timerThread.cpp
-        include/midi/modelToMidi.h
-        src/midi/modelToMidi.cpp
+                  include/midi/modelToMidi.h
+                  src/midi/modelToMidi.cpp
                   include/runtime/timers.h
                   src/runtime/timers.cpp
                   src/runtime/runSystem.cpp
@@ -205,12 +205,14 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         src/runtime/updateThread.cpp
                         include/runtime/timerThread.h
                         src/runtime/timerThread.cpp
-        include/midi/modelToMidi.h
-        src/midi/modelToMidi.cpp
+                        include/midi/modelToMidi.h
+                        src/midi/modelToMidi.cpp
                         include/runtime/timers.h
                         src/runtime/timers.cpp
                         include/esn/esn_outputs.h
-                        src/esn/esn_outputs.cpp)
+                        src/esn/esn_outputs.cpp
+                        include/model/keyDetect.h
+                        src/model/keyDetect.cpp)
 
 add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
 if(Qt5Widgets_FOUND)

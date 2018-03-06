@@ -250,7 +250,7 @@ clean: CMakeFiles/ESN_CORE_TEST.dir/clean
 CMakeFiles/MIDI_TEST.dir/all: CMakeFiles/MIDI_TEST_autogen.dir/all
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/depend
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=21,22,23,24 "Built target MIDI_TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=21,22,23 "Built target MIDI_TEST"
 .PHONY : CMakeFiles/MIDI_TEST.dir/all
 
 # Include target in all.
@@ -287,7 +287,7 @@ clean: CMakeFiles/MIDI_TEST.dir/clean
 CMakeFiles/RUNTIME_W_GUI.dir/all: CMakeFiles/RUNTIME_W_GUI_autogen.dir/all
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72 "Built target RUNTIME_W_GUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target RUNTIME_W_GUI"
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/all
 
 # Include target in all.
@@ -297,7 +297,7 @@ all: CMakeFiles/RUNTIME_W_GUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RUNTIME_W_GUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 19
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_W_GUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/RUNTIME_W_GUI.dir/rule
@@ -398,7 +398,7 @@ clean: CMakeFiles/PORT_FUZZ_TEST.dir/clean
 CMakeFiles/RUNTIME.dir/all: CMakeFiles/RUNTIME_autogen.dir/all
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47 "Built target RUNTIME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46 "Built target RUNTIME"
 .PHONY : CMakeFiles/RUNTIME.dir/all
 
 # Include target in all.
@@ -408,7 +408,7 @@ all: CMakeFiles/RUNTIME.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RUNTIME.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 11
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/RUNTIME.dir/rule
@@ -435,7 +435,7 @@ clean: CMakeFiles/RUNTIME.dir/clean
 CMakeFiles/RUNTIME_UNIT.dir/all: CMakeFiles/RUNTIME_UNIT_autogen.dir/all
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=48,49,50,51,52,53,54 "Built target RUNTIME_UNIT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=47,48,49,50,51,52,53 "Built target RUNTIME_UNIT"
 .PHONY : CMakeFiles/RUNTIME_UNIT.dir/all
 
 # Include target in all.
@@ -472,7 +472,7 @@ clean: CMakeFiles/RUNTIME_UNIT.dir/clean
 CMakeFiles/TRAINING_ERROR.dir/all: CMakeFiles/TRAINING_ERROR_autogen.dir/all
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=83,84,85,86,87,88,89 "Built target TRAINING_ERROR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=83,84,85,86,87,88,89,90 "Built target TRAINING_ERROR"
 .PHONY : CMakeFiles/TRAINING_ERROR.dir/all
 
 # Include target in all.
@@ -743,12 +743,12 @@ clean: CMakeFiles/ESN_CORE_TEST_autogen.dir/clean
 CMakeFiles/MIDI_TEST_autogen.dir/all:
 	$(MAKE) -f CMakeFiles\MIDI_TEST_autogen.dir\build.make CMakeFiles/MIDI_TEST_autogen.dir/depend
 	$(MAKE) -f CMakeFiles\MIDI_TEST_autogen.dir\build.make CMakeFiles/MIDI_TEST_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num= "Built target MIDI_TEST_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=24 "Built target MIDI_TEST_autogen"
 .PHONY : CMakeFiles/MIDI_TEST_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MIDI_TEST_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 1
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/MIDI_TEST_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/MIDI_TEST_autogen.dir/rule
@@ -775,12 +775,12 @@ clean: CMakeFiles/MIDI_TEST_autogen.dir/clean
 CMakeFiles/RUNTIME_W_GUI_autogen.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI_autogen.dir\build.make CMakeFiles/RUNTIME_W_GUI_autogen.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI_autogen.dir\build.make CMakeFiles/RUNTIME_W_GUI_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=73 "Built target RUNTIME_W_GUI_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num= "Built target RUNTIME_W_GUI_autogen"
 .PHONY : CMakeFiles/RUNTIME_W_GUI_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RUNTIME_W_GUI_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/RUNTIME_W_GUI_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/RUNTIME_W_GUI_autogen.dir/rule
@@ -903,7 +903,7 @@ clean: CMakeFiles/RUNTIME_autogen.dir/clean
 CMakeFiles/RUNTIME_UNIT_autogen.dir/all:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT_autogen.dir\build.make CMakeFiles/RUNTIME_UNIT_autogen.dir/depend
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT_autogen.dir\build.make CMakeFiles/RUNTIME_UNIT_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=55 "Built target RUNTIME_UNIT_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=54 "Built target RUNTIME_UNIT_autogen"
 .PHONY : CMakeFiles/RUNTIME_UNIT_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -935,12 +935,12 @@ clean: CMakeFiles/RUNTIME_UNIT_autogen.dir/clean
 CMakeFiles/TRAINING_ERROR_autogen.dir/all:
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR_autogen.dir\build.make CMakeFiles/TRAINING_ERROR_autogen.dir/depend
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR_autogen.dir\build.make CMakeFiles/TRAINING_ERROR_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num=90 "Built target TRAINING_ERROR_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles --progress-num= "Built target TRAINING_ERROR_autogen"
 .PHONY : CMakeFiles/TRAINING_ERROR_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TRAINING_ERROR_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TRAINING_ERROR_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\charl\CLionProjects\FYP\cmake-build-release\CMakeFiles 0
 .PHONY : CMakeFiles/TRAINING_ERROR_autogen.dir/rule

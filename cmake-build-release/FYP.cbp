@@ -1231,6 +1231,9 @@
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/model/keyDetect.h">
+			<Option target="RUNTIME_W_GUI"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.c">
 			<Option target="RUNTIME_W_GUI"/>
 			<Option target="RUNTIME"/>
@@ -1383,6 +1386,9 @@
 			<Option target="RUNTIME_W_GUI"/>
 			<Option target="MIDI_WIN"/>
 			<Option target="RUNTIME"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/model/keyDetect.cpp">
+			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
 			<Option target="RUNTIME_W_GUI"/>

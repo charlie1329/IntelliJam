@@ -50,6 +50,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/charl/CLionProjects/FYP/src/interface/vmeter.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/midi/midi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/midi/modelToMidi.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj"
+  "C:/Users/charl/CLionProjects/FYP/src/model/keyDetect.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/port_processing.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj"
   "C:/Users/charl/CLionProjects/FYP/src/runtime/timerThread.cpp" "C:/Users/charl/CLionProjects/FYP/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj"
