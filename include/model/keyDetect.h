@@ -14,11 +14,20 @@
 using namespace std;
 using namespace Eigen;
 
-#define KEYS  {"A","A#","B","C","C#","D","D#","E","F","F#","G","G#","Am","A#m","Bm","Cm","C#m","Dm","D#m","Em","Fm","F#m","Gm","G#m"}
+const string keys[] =  {"A","A#","B","C","C#","D","D#","E","F","F#","G","G#","Am","A#m","Bm","Cm","C#m","Dm","D#m","Em","Fm","F#m","Gm","G#m"};
 #define NUM_KEYS 12 // only considering major keys (drawback in the system)
 #define MODULATION_PENALTY 2.0
-#define MAJOR_PROFILE {5.0, 2.0, 3.5, 2.0, 4.5, 4.0, 2.0, 4.5, 2.0, 3.5, 1.5, 4.0}
-#define MINOR_PROFILE {5.0, 2.0, 3.5, 4.5, 2.0, 4.0, 2.0, 4.5, 3.5, 2.0, 2.5, 4.0}
+const double majorProfile[] = {5.0, 2.0, 3.5, 2.0, 4.5, 4.0, 2.0, 4.5, 2.0, 3.5, 1.5, 4.0};
+const double minorProfile[] = {5.0, 2.0, 3.5, 4.5, 2.0, 4.0, 2.0, 4.5, 3.5, 2.0, 2.5, 4.0};
+
+/**
+ * mod function which abides by the rules I want
+ * e.g. -3 % 12 = 9
+ * @param a an integer
+ * @param b an integer
+ * @return a % b
+ */
+int mod(int a, int b);
 
 /**
  * converts an integer value to a key
@@ -41,7 +50,7 @@ int keyToVal(string key);
  * @param dst_key the destination key as a string
  * @return the transposed sequence
  */
-vector<pair<int,double>> transpose(vector<pair<int,double>> sequence, string src_key, string dst_key);
+vector<pair<int,double>> transpose(vector<pair<int,double>> sequence, string srcKey, string dstKey);
 
 /**
  * for an input vector, the key value for a particular
@@ -58,14 +67,14 @@ double getPitchKeyValue(VectorXd notesPresent, int keyIndex);
  * @param segmentLength the maximum length of a segment
  * @return the segmented sequence
  */
-vector<vector<pair<int,double>>> splitIntoSegments(vector<pair<int,double>> sequence, double segmentLength);
+vector<vector<int>> splitIntoSegments(vector<pair<int,double>> sequence, double segmentLength);
 
 /**
  * gets the pitch key values for each key, for each segment
  * @param segments the segmented note sequence
  * @return a pitch key vector for each segment
  */
-vector<VectorXd> getPitchKeyValues(vector<vector<pair<int,double>>> segments);
+vector<VectorXd> getPitchKeyValues(vector<vector<int>> segments);
 
 /**
  * gets the best sums along the paths
@@ -74,14 +83,14 @@ vector<VectorXd> getPitchKeyValues(vector<vector<pair<int,double>>> segments);
  * @param modulationPenalty the penalty given for switching key
  * @return a vector of pairs listing the sum and the best index
  */
-vector<pair<double,int>> getBestSums(vector<VectorXd> pitchKeyVectors, double modulationPenalty);
+vector<vector<pair<double,int>>> getBestSums(vector<VectorXd> pitchKeyVectors, double modulationPenalty);
 
 /**
  * function backtracks in order to retrieve the best path
  * @param bestSums likely the return value from getBestSums
  * @return the string of keys for each segment
  */
-vector<string> getBestPath(vector<pair<double,int>> bestSums);
+vector<string> getBestPath(vector<vector<pair<double,int>>> bestSums);
 
 /**
  * function detects the key of a number of segments within sequence

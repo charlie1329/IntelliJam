@@ -212,7 +212,8 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         include/esn/esn_outputs.h
                         src/esn/esn_outputs.cpp
                         include/model/keyDetect.h
-                        src/model/keyDetect.cpp)
+                        src/model/keyDetect.cpp
+                        include/model/fpm.h src/model/fpm.cpp)
 
 add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
 if(Qt5Widgets_FOUND)

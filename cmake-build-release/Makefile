@@ -1448,6 +1448,33 @@ src/midi/modelToMidi.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.s
 .PHONY : src/midi/modelToMidi.cpp.s
 
+src/model/fpm.obj: src/model/fpm.cpp.obj
+
+.PHONY : src/model/fpm.obj
+
+# target to build an object file
+src/model/fpm.cpp.obj:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj
+.PHONY : src/model/fpm.cpp.obj
+
+src/model/fpm.i: src/model/fpm.cpp.i
+
+.PHONY : src/model/fpm.i
+
+# target to preprocess a source file
+src/model/fpm.cpp.i:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.i
+.PHONY : src/model/fpm.cpp.i
+
+src/model/fpm.s: src/model/fpm.cpp.s
+
+.PHONY : src/model/fpm.s
+
+# target to generate assembly for a file
+src/model/fpm.cpp.s:
+	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.s
+.PHONY : src/model/fpm.cpp.s
+
 src/model/keyDetect.obj: src/model/keyDetect.cpp.obj
 
 .PHONY : src/model/keyDetect.obj
@@ -2282,6 +2309,9 @@ help:
 	@echo ... src/midi/modelToMidi.obj
 	@echo ... src/midi/modelToMidi.i
 	@echo ... src/midi/modelToMidi.s
+	@echo ... src/model/fpm.obj
+	@echo ... src/model/fpm.i
+	@echo ... src/model/fpm.s
 	@echo ... src/model/keyDetect.obj
 	@echo ... src/model/keyDetect.i
 	@echo ... src/model/keyDetect.s
