@@ -8,6 +8,7 @@
 #include <limits>
 #include <random>
 #include <chrono>
+#include <fstream>
 #include "../../include/model/fpm.h"
 
 /**
@@ -125,7 +126,33 @@ int FPM::predictNextNote(vector<int> s, MatrixXd B, MatrixXd N, MatrixXd t, doub
  * @return the next direction in the sequence
  */
 int FPM::predictNextDir(vector<int> s, MatrixXd B, MatrixXd N, MatrixXd t, double k, int upInterval) {
-    //TODO: Fill In!
+    //bring sequence to chaos representation
+    VectorXd x = toChaosRep(std::move(t),k, std::move(s));
+
+    //now find the closest codebook vector
+    int i = findClosestCodebook(x, std::move(B));
+
+    //apply interval based cost
+    RowVectorXd distribution = N.row(i);
+    if(upInterval > 6 && upInterval != 12) {
+        distribution(0,1) = round(distribution(0,1) * exp(-(upInterval-6.0)/TDir));
+    } else if(upInterval < 6 && upInterval != 0){
+        distribution(0,0) = round(distribution(0,0) * exp(-(6.0-upInterval)/TDir));
+    }
+
+    auto totalSamples = (int)distribution.sum();
+
+    //set up a random generator
+    default_random_engine gen;
+    gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
+    uniform_int_distribution<int> rng(1,totalSamples);
+
+    //actually generate a random number and use that to determine value
+    int randNo = rng(gen);
+    if(randNo <= distribution(0,0)) return 0;
+
+    return 1;
+
 }
 
 /**
@@ -136,7 +163,43 @@ int FPM::predictNextDir(vector<int> s, MatrixXd B, MatrixXd N, MatrixXd t, doubl
  * @return the read-in matrix
  */
 MatrixXd FPM::readInMat(string filePath, int rows, int cols) {
-    //TODO: Fill In!
+    vector<vector<double>> temp; //temporary storage for matrix values
+
+    ifstream matFile(filePath);
+    string item;
+
+    vector<double> currentVector;
+
+    //read item by item
+    while(getline(matFile,item,',')) {
+
+        if (!item.compare("\n")) { //exit condition, item only has a newline
+            temp.push_back(currentVector);
+            currentVector.clear();
+            break;
+        }
+
+        if (item.find('\n') != string::npos) { //if we reach a new line
+            temp.push_back(currentVector);
+            currentVector.clear();
+        }
+
+
+        double currentVal = stod(item, nullptr);
+        currentVector.push_back(currentVal);
+
+    }
+
+    //now write into the matrix
+    MatrixXd mat = MatrixXd::Zero(rows,cols);
+
+    for(unsigned int i = 0; i < rows; i++) {
+        for(unsigned int j = 0; j < cols; j++) {
+            mat(i,j) = temp.at(i).at(j);
+        }
+    }
+
+    return mat;
 }
 
 
@@ -212,7 +275,95 @@ void FPM::queueNote(int note, double duration) {
  * @return a matrix of notes and duration
  */
 MatrixXd FPM::combinedPredict() {
-    //TODO: Fill In!
+
+    //do the key detection on the users played phrase
+    vector<pair<pair<int,int>,string>> segmentsAndKeys = detectKey(noteSequence,SEGMENT_LENGTH,MODULATION_PENALTY);
+    vector<int> transposed; //will store transposed phrase
+    vector<int> noDuration; // a temporary copy
+
+    //copy notes into no Duration
+    for (auto currentPair : noteSequence) {
+        noDuration.push_back(currentPair.first);
+    }
+
+    //do all the transposing to C
+    for (const auto &segment : segmentsAndKeys) {
+        //TODO: check slicing happens correctly
+        vector<int> slice(noDuration.begin()+segment.first.first,noDuration.begin()+segment.first.second);
+        vector<int> currentSegment = transpose(slice,segment.second,"C");
+        transposed.insert(transposed.end(),currentSegment.begin(),currentSegment.end());
+    }
+
+    string endKey = segmentsAndKeys.at(segmentsAndKeys.size()-1).second; //get the key to transpose back to
+
+    //now generate the note sequence
+    int outputLen = absSequence.size();
+    int startPointNote = transposed.size();
+    for(int i = 0; i < outputLen; i++) { //generate a sequence equal in size to that which the user played
+        transposed.push_back(predictNextNote(transposed,BNote,NNote,tNote,kNote));
+    }
+
+    //now transpose back to the original key
+    transposed = transpose(transposed,"C",endKey);
+    vector<int> predictedSequence(transposed.begin()+startPointNote,transposed.end());
+
+    //now generate the direction sequence to generate the end sequence
+    int startPointOut = absSequence.size();
+    int prevNote = absSequence.at(absSequence.size()-1);
+    for(unsigned int i = 0; i < outputLen; i++) {
+        int upInterval = mod((mod(predictedSequence.at(i) - 1,12) - mod(prevNote,12)),12) ;
+        int newDirection = predictNextDir(dirSequence,BDir,NDir,tDir,kDir,upInterval);
+
+        if(predictedSequence.at(i) == 0) { //silence
+            absSequence.push_back(0);
+            dirSequence.push_back(newDirection);
+        } else if(mod(predictedSequence.at(i)-1,12) == mod(prevNote,12)) { //same note
+            //try again
+            int newNote = prevNote;
+            int secondDraw = predictNextDir(dirSequence,BDir,NDir,tDir,kDir,upInterval);
+            dirSequence.push_back(newDirection);
+
+            if(secondDraw == 1 && newDirection == 1) { //if both draws are the same, move in that direction
+                newNote += 12;
+                if(newNote > 79) newNote = prevNote;
+            } else if(secondDraw == 0 && newDirection == 0) {
+                newNote -= 12;
+                if(newNote < 24) newNote = prevNote;
+            }
+
+            absSequence.push_back(newNote);
+            prevNote = newNote;
+        } else { //standard case
+            dirSequence.push_back(newDirection);
+            int predictedMod = mod((predictedSequence.at(i)),12);
+            int previousMod = mod(prevNote,12);
+            int newNote;
+
+            if(newDirection == 1) {
+                newNote = prevNote + mod(predictedMod - previousMod,12);
+            } else {
+                newNote = prevNote + mod(previousMod - predictedMod,12);
+            }
+
+            if(newNote < 24) newNote += 12;
+            if(newNote > 79) newNote -= 12;
+
+            absSequence.push_back(newNote);
+            prevNote = newNote;
+        }
+    }
+
+    //put into form for return value
+    //TODO: Rhythmic modifications here!
+    MatrixXd returnPhrase = MatrixXd::Zero(outputLen,2);
+    for(unsigned int i = 0; i < outputLen; i++) {
+        returnPhrase(i,0) = absSequence.at(startPointOut + i);
+        returnPhrase(i,1) = noteSequence.at(i).second;
+    }
+
+    clearState(); // prediction messes with state a bit, so clear it up
+
+    return returnPhrase;
 }
 
 /**

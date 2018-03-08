@@ -17,6 +17,7 @@ using namespace Eigen;
 const string keys[] =  {"A","A#","B","C","C#","D","D#","E","F","F#","G","G#","Am","A#m","Bm","Cm","C#m","Dm","D#m","Em","Fm","F#m","Gm","G#m"};
 #define NUM_KEYS 12 // only considering major keys (drawback in the system)
 #define MODULATION_PENALTY 2.0
+#define SEGMENT_LENGTH 2.0
 const double majorProfile[] = {5.0, 2.0, 3.5, 2.0, 4.5, 4.0, 2.0, 4.5, 2.0, 3.5, 1.5, 4.0};
 const double minorProfile[] = {5.0, 2.0, 3.5, 4.5, 2.0, 4.0, 2.0, 4.5, 3.5, 2.0, 2.5, 4.0};
 
@@ -50,7 +51,7 @@ int keyToVal(string key);
  * @param dst_key the destination key as a string
  * @return the transposed sequence
  */
-vector<pair<int,double>> transpose(vector<pair<int,double>> sequence, string srcKey, string dstKey);
+vector<int> transpose(vector<int> sequence, string srcKey, string dstKey);
 
 /**
  * for an input vector, the key value for a particular

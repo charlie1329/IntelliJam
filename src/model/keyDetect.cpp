@@ -47,11 +47,11 @@ int keyToVal(string key) {
  * @param dst_key the destination key as a string
  * @return the transposed sequence
  */
-vector<pair<int,double>> transpose(vector<pair<int,double>> sequence, string srcKey, string dstKey) {
+vector<int> transpose(vector<int> sequence, string srcKey, string dstKey) {
     int dstVal = keyToVal(std::move(dstKey));
     int srcVal = keyToVal(std::move(srcKey));
 
-    vector<pair<int,double>> transposed;
+    vector<int> transposed;
 
     //can't go between major and minor keys unfortunately
     if((dstVal > 12) && (srcVal <= 12) || (dstVal <= 12 && srcVal > 12)) {
@@ -61,11 +61,11 @@ vector<pair<int,double>> transpose(vector<pair<int,double>> sequence, string src
     int toShift = dstVal - srcVal;
 
     //actually carry out the transposing
-    for (auto currentPair : sequence) {
-        if(currentPair.first == 0) {
-            transposed.push_back(currentPair);
+    for (auto s : sequence) {
+        if(s == 0) {
+            transposed.push_back(s);
         } else {
-            transposed.emplace_back(mod((currentPair.first + toShift - 1),12) + 1,currentPair.second);
+            transposed.push_back(mod((s + toShift - 1),12) + 1);
         }
     }
 
