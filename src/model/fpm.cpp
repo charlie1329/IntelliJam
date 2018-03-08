@@ -37,7 +37,7 @@ VectorXd FPM::toChaosRep(MatrixXd t, double k, vector<int> S) {
 
     //now do the conversion to CBR
     for(auto note : S) {
-       x = applyMap(t.col(note),k,x);
+       x = applyMap(t.col(note),k,x); //TODO: Test this works properly!
     }
 
     return x;

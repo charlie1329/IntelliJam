@@ -40,10 +40,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/include/model/keyDetect.h" afterPath="$PROJECT_DIR$/include/model/keyDetect.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM.dir/src/lstm/auxillary_functions.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM.dir/src/lstm/lstm.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/lstm/auxillary_functions.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/src/lstm/lstm.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir/AutogenOldSettings.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/TRAINING_autogen/mocs_compilation.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/src/esn/esn.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/src/esn/esn_costs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/src/esn/esn_outputs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/TRAINING_ERROR_autogen/mocs_compilation.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir/AutogenOldSettings.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/TRAINING_TEST_autogen/mocs_compilation.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn_costs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST_autogen.dir/AutogenOldSettings.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_autogen.dir/AutogenOldSettings.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/LSTM.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/LSTM_TEST.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/PORT_TEST.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/QT_STUFF.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_mainwindow.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nametile.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_nowplayingbar.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_piano.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/WULQGKC2PH/moc_vmeter.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI_autogen/mocs_compilation.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TEST.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_ERROR.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_ERROR_autogen/mocs_compilation.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_TEST.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_TEST_autogen/mocs_compilation.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/TRAINING_autogen/mocs_compilation.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/error.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/inputReservoirWeights.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/predictions.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/reservoirOutputWeights.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/reservoirReservoirWeights.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/simulated_annealing_error.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/twinkle_twinkle.mid" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/with_bias_error.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/model/keyDetect.cpp" afterPath="$PROJECT_DIR$/src/model/keyDetect.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -97,11 +163,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fpm.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fpm.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="168" column="16" lean-forward="true" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
+            <state relative-caret-position="322">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="e#93#111#0" expanded="true" />
               </folding>
@@ -109,11 +175,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="esn.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="esn.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/esn/esn.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-578">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="e#185#203#0" expanded="true" />
               </folding>
@@ -463,12 +529,12 @@
       <workItem from="1520364691181" duration="527000" />
       <workItem from="1520365244037" duration="5511000" />
       <workItem from="1520418579638" duration="6741000" />
-      <workItem from="1520502710662" duration="4167000" />
+      <workItem from="1520502710662" duration="5517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305722000" />
+    <option name="totallyTimeSpent" value="307072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,7 +551,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37664473" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -788,22 +854,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
+    <entry file="file://$PROJECT_DIR$/src/esn/esn.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="168" column="16" lean-forward="true" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
+        <state relative-caret-position="-578">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
-            <element signature="e#93#111#0" expanded="true" />
+            <element signature="e#185#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/esn/esn.cpp">
+    <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="322">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
-            <element signature="e#185#203#0" expanded="true" />
+            <element signature="e#93#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
