@@ -23,7 +23,7 @@ using namespace Eigen;
 #define NOTE_OFFSET 9 //the offset between my note convention and that of MIDI
 
 /**
- * this function takes the ESN's output
+ * this function takes the model's output
  * and creates a MIDI file based on it
  * in this naive function, no rhythmic information
  * is given, and so the notes are played as quarter(ish) notes
@@ -37,13 +37,13 @@ string naiveMidi(VectorXd prediction);
  * use Microsoft's MIDI API over my own
  * this is due to the severe time lag in
  * using mcisendstring()
- * @param prediction the echo state network prediction
+ * @param prediction the model prediction
  * @param out the output handle for the midi device
  * @param ppqn pulses per quarter note
  * @param tempo the tempo in microseconds per quarter note
  * @return an array of midi events, 3 longs represent 1 event
  */
-unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out, int *ppqn, int *tempo);
+unsigned long *naiveMidiWin(MatrixXd prediction, HMIDISTRM *out, int *ppqn, int *tempo);
 
 
 /**

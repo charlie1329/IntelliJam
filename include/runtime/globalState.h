@@ -9,7 +9,7 @@
 #define FYP_GLOBALSTATE_H
 
 #include "port_processing.h"
-#include "../esn/esn.h"
+#include "../model/fpm.h"
 #include <memory>
 #include <atomic>
 #include <boost/thread.hpp>
@@ -23,7 +23,7 @@ struct globalState {
 
     shared_ptr<passToCallback> callbackData; //to go to port audio callback function
 
-    shared_ptr<ESN> echo; //the echo state network
+    shared_ptr<FPM> fpm; //the combined fractal prediction machine model
 
     PaStream *stream{}; //the port audio stream
 
@@ -38,11 +38,11 @@ struct globalState {
     shared_ptr<HANDLE> event;
 
     //constructor for structure just copies everything in
-    globalState(shared_ptr<passToCallback> cd, shared_ptr<ESN> e, PaStream *s,
+    globalState(shared_ptr<passToCallback> cd, shared_ptr<FPM> f, PaStream *s,
                 shared_ptr<atomic<bool>> run, shared_ptr<boost::mutex> mMtx,
                 shared_ptr<boost::mutex> sMtx, shared_ptr<boost::condition_variable_any> cv,
                 shared_ptr<HMIDISTRM> oh, shared_ptr<HANDLE> ev):
-            callbackData(cd), echo(e), stream(s), running(run), modelMutex(mMtx),
+            callbackData(cd), fpm(f), stream(s), running(run), modelMutex(mMtx),
             streamMutex(sMtx), cond(cv), outHandle(oh), event(ev){}
 };
 

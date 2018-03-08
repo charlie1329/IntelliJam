@@ -50,14 +50,14 @@ string naiveMidi(VectorXd prediction) {
 /**
  * implemented from esnToMidi.h
  * assumes output stream already opened
- * @param prediction the esn prediction
+ * @param prediction the model prediction
  * @param out the output handle for the midi device
  * @param ppqn pulses per quarter note (to be stored here)
  * @param tempo the tempo in microseconds per quarter note
  * @return an array of midi events, where 3 longs represent one event
  */
-unsigned long *naiveMidiWin(VectorXd prediction, HMIDISTRM *out, int *ppqn, int *tempo) {
-
+unsigned long *naiveMidiWin(MatrixXd prediction, HMIDISTRM *out, int *ppqn, int *tempo) {
+    //TODO:Adjust for different rhythms and silence (value 0)
     unsigned int quarterNote = 96;
 
     unsigned long err; //error variable for problems in midi

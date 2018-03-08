@@ -23,12 +23,12 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge);
 
 /**
  * function deals with the output of MIDI in the system
- * @param prediction the ESN prediction/output
+ * @param prediction the fpm prediction/output
  * @param outHandle the output handle for the MIDI stream
  * @param event the event handler for the midi stream
  * @param bridge the bridge to the interface
  * @return any error codes returned from working with the MIDI stream
  */
-int handleMIDI(VectorXd prediction,shared_ptr<HMIDISTRM> outHandle,shared_ptr<HANDLE> event, Bridge *bridge);
+int handleMIDI(MatrixXd prediction,shared_ptr<HMIDISTRM> outHandle,shared_ptr<HANDLE> event, Bridge *bridge);
 
 #endif //FYP_TIMERTHREAD_H

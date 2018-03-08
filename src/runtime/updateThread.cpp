@@ -24,8 +24,8 @@ void updateWorker(const shared_ptr<globalState> &state) {
     shared_ptr<boost::mutex> streamMutex = state->streamMutex;
     shared_ptr<boost::condition_variable_any> cond = state->cond;
 
-    //get the echo state network to reduce de-referencing
-    shared_ptr<ESN> echo = state->echo;
+    //get the fpm to reduce de-referencing
+    shared_ptr<FPM> fpm = state->fpm;
 
     PaError err; //for any port audio error checking
 
@@ -54,7 +54,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
             break;
         }
 
-
+        //TODO: Modify here!
         if(PaUtil_GetRingBufferReadAvailable(&(callback->ringUpdate)) > 0) {
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(callback->ringUpdate),&newInput,1); //read from echo state network
             if(read == 1) { //check read was actually successful

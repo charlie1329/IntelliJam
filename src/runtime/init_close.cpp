@@ -44,10 +44,9 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
 
     //NOTE: PortAudio initialised in preInitSearch()
 
-    //initialise ESN
-    //shared_ptr<ESN> echo(make_shared<ESN>(0.1,0.5,0.3,200,10,1,8,nullptr,nullptr));
-    //cost function not required at runtime
-    shared_ptr<ESN> echo(make_shared<ESN>(INPUT_RES_FILE,RES_RES_FILE,RES_OUT_FILE,roundValInBound,nullptr));
+    //initialise FPM Model
+    shared_ptr<FPM> fpm(make_shared<FPM>(B_NOTE_PATH,N_NOTE_PATH,T_NOTE_PATH,K_NOTE,T_NOTE,
+                                         B_DIR_PATH,N_DIR_PATH,T_DIR_PATH,K_DIR,T_DIR));
 
     //allocate/initialise ring buffer
     PaUtilRingBuffer ringUpdate{};
@@ -91,7 +90,7 @@ pair<PaError, shared_ptr<globalState>> initSystem(unsigned int sampleRate,
     shared_ptr<boost::condition_variable_any> cond(std::make_shared<boost::condition_variable_any>());
 
     //combine into global state
-    shared_ptr<globalState> global(std::make_shared<globalState>(callbackData,echo,stream,running,modelMutex,
+    shared_ptr<globalState> global(std::make_shared<globalState>(callbackData,fpm,stream,running,modelMutex,
                                                                  streamMutex,cond,outHandle,event));
 
     //return global state with no errors found

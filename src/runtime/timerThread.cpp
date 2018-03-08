@@ -29,7 +29,7 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
     shared_ptr<passToCallback> callback = state->callbackData;
 
     //get pointer to echo state network
-    shared_ptr<ESN> echo = state->echo;
+    shared_ptr<FPM> fpm = state->fpm;
 
     //get all synchronisation constructs
     shared_ptr<boost::mutex> modelMutex = state->modelMutex;
@@ -62,18 +62,8 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
 
         //get output from echo state network
         modelMutex->lock();
-        VectorXd output = echo->predict();
+        MatrixXd output = fpm->combinedPredict();
         modelMutex->unlock();
-
-        /*//I had the lick here didn't I
-        output(0,0) = 48;
-        output(1,0) = 50;
-        output(2,0) = 51;
-        output(3,0) = 53;
-        output(4,0) = 50;
-        output(5,0) = 46;
-        output(6,0) = 48;
-        output(7,0) = 48;*/
 
         int midiErr = handleMIDI(output, state->outHandle, state->event, bridge);
         //TODO: Improve prediction to MIDI function!
@@ -113,13 +103,13 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
 /**
  * implemented from timerThread.h
  * handles all the midi output for us
- * @param prediction the prediction/output from the ESN
+ * @param prediction the prediction/output from the fpm
  * @param outHandle the output handle for the midi stream
  * @param event the event handle for the midi stream
  * @param bridge the bridge to the interface
  * @return any error codes
  */
-int handleMIDI(VectorXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event, Bridge *bridge) {
+int handleMIDI(MatrixXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<HANDLE> event, Bridge *bridge) {
 
     MIDIHDR hdr{};
     unsigned long err;

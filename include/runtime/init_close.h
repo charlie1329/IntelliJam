@@ -6,7 +6,6 @@
 #define FYP_INIT_CLOSE_H
 
 #include "globalState.h"
-#include "../esn/esn_outputs.h"
 #include <vector>
 
 using namespace std;
@@ -15,9 +14,16 @@ using namespace std;
 #define RING_SIZE (1048576 / RING_ELEMENT) //1MB ring buffer
 #define SAMPLE_JUMP 1
 
-#define INPUT_RES_FILE "trained_weights/inputReservoirWeightsAnnealing1.csv"
-#define RES_RES_FILE "trained_weights/reservoirReservoirWeightsAnnealing1.csv"
-#define RES_OUT_FILE "trained_weights/reservoirOutputWeightsAnnealing1.csv"
+#define N_NOTE_PATH "matrices/NNote.csv"
+#define B_NOTE_PATH "matrices/BNote.csv"
+#define T_NOTE_PATH "matrices/tNote.csv"
+#define K_NOTE 0.5
+#define T_NOTE 0.4
+#define N_DIR_PATH "matrices/NDir.csv"
+#define B_DIR_PATH "matrices/BDir.csv"
+#define T_DIR_PATH "matrices/tDir.csv"
+#define K_DIR 0.5
+#define T_DIR 1.9
 
 
 /**
