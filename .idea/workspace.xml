@@ -3,33 +3,33 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="FYP" targetName="LSTM_autogen" />
-      <config projectName="FYP" targetName="MIDI_TEST" />
       <config projectName="FYP" targetName="TRAINING" />
-      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_W_GUI_autogen" />
+      <config projectName="FYP" targetName="MIDI_TEST" />
       <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
-      <config projectName="FYP" targetName="RUNTIME" />
-      <config projectName="FYP" targetName="TRAINING_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
       <config projectName="FYP" targetName="TRAINING_TEST" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
+      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
       <config projectName="FYP" targetName="RUNTIME_autogen" />
-      <config projectName="FYP" targetName="MIDI_WIN" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST" />
       <config projectName="FYP" targetName="LSTM" />
       <config projectName="FYP" targetName="TRAINING_TEST_autogen" />
       <config projectName="FYP" targetName="TRAINING_ERROR" />
-      <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
+      <config projectName="FYP" targetName="RUNTIME_W_GUI" />
       <config projectName="FYP" targetName="LSTM_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
-      <config projectName="FYP" targetName="LSTM_TEST" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI_autogen" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE" />
-      <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI" />
-      <config projectName="FYP" targetName="TEST" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT" />
       <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
+      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
+      <config projectName="FYP" targetName="RUNTIME" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT" />
+      <config projectName="FYP" targetName="TRAINING_autogen" />
+      <config projectName="FYP" targetName="LSTM_TEST" />
+      <config projectName="FYP" targetName="TEST" />
+      <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
+      <config projectName="FYP" targetName="MIDI_WIN" />
+      <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
       <config projectName="FYP" targetName="ESN_CORE_TEST" />
     </generated>
   </component>
@@ -40,13 +40,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/include/midi/modelToMidi.h" afterPath="$PROJECT_DIR$/include/midi/modelToMidi.h" />
-      <change beforePath="$PROJECT_DIR$/include/runtime/globalState.h" afterPath="$PROJECT_DIR$/include/runtime/globalState.h" />
-      <change beforePath="$PROJECT_DIR$/include/runtime/init_close.h" afterPath="$PROJECT_DIR$/include/runtime/init_close.h" />
-      <change beforePath="$PROJECT_DIR$/include/runtime/timerThread.h" afterPath="$PROJECT_DIR$/include/runtime/timerThread.h" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" />
       <change beforePath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" afterPath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/init_close.cpp" afterPath="$PROJECT_DIR$/src/runtime/init_close.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/timerThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
       <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -70,8 +69,20 @@
       <file leaf-file-name="modelToMidi.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="59" column="61" lean-forward="false" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+            <state relative-caret-position="175">
+              <caret line="122" column="128" lean-forward="false" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
+              <folding>
+                <element signature="e#167#204#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bridge.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3570">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,8 +91,8 @@
       <file leaf-file-name="updateThread.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+            <state relative-caret-position="158">
+              <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -206,6 +217,12 @@
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bridge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -426,11 +443,12 @@
       <workItem from="1520365244037" duration="5511000" />
       <workItem from="1520418579638" duration="6741000" />
       <workItem from="1520502710662" duration="7052000" />
+      <workItem from="1520598502089" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308607000" />
+    <option name="totallyTimeSpent" value="310033000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,6 +461,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
@@ -612,9 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="55" column="3" lean-forward="false" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-          <folding>
-            <element signature="e#185#202#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="140" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-578">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="e#185#203#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,15 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="215" column="24" lean-forward="false" selection-start-line="215" selection-start-column="24" selection-end-line="215" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4177">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -690,9 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-250">
           <caret line="92" column="81" lean-forward="false" selection-start-line="92" selection-start-column="81" selection-end-line="92" selection-end-column="81" />
-          <folding>
-            <element signature="e#114#159#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,9 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="e#163#187#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2839">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#93#111#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,9 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding>
-            <element signature="e#314#338#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,28 +754,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="59" column="61" lean-forward="false" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime/globalState.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3570">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="122" column="128" lean-forward="false" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
           <folding>
-            <element signature="e#229#257#0" expanded="true" />
+            <element signature="e#167#204#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="16" column="59" lean-forward="true" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        <state relative-caret-position="158">
+          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
           <folding />
         </state>
       </provider>

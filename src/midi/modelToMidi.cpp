@@ -8,6 +8,7 @@
 #include "include/midi/modelToMidi.h"
 #include <ctime>
 #include <iostream>
+#include <cmath>
 
 /**
  * implemented from esnToMidi.h
@@ -57,8 +58,6 @@ string naiveMidi(VectorXd prediction) {
  * @return an array of midi events, where 3 longs represent one event
  */
 unsigned long *naiveMidiWin(MatrixXd prediction, HMIDISTRM *out, int *ppqn, int *tempo) {
-    //TODO:Adjust for different rhythms and silence (value 0)
-    unsigned int quarterNote = 96;
 
     unsigned long err; //error variable for problems in midi
 
@@ -83,31 +82,49 @@ unsigned long *naiveMidiWin(MatrixXd prediction, HMIDISTRM *out, int *ppqn, int 
     *ppqn = 96;
     *tempo = 500000;
 
+    //0 (silence) doesn't get an event
+    int predictionNotZero = 0;
+    for(int i  = 0; i < prediction.rows(); i ++) {
+        if(prediction(i,0) != 0) predictionNotZero++;
+    }
+
+
     //number of messages = 1 program change message + however many notes predicted
-    auto *events = new unsigned long[((prediction.rows() * 2) + 1) * 3];
+    auto *events = new unsigned long[((predictionNotZero * 2) + 1) * 3];
 
     events[0] = 0;
     events[1] = 0; //stupid Windows and its redundant parameters
     events[2] = ((unsigned long)MEVT_SHORTMSG << 24) | 0x00001EC0; //set to guitar sound
     //bit shifting tip from http://midi.teragonaudio.com/tech/stream.htm
 
+    int arrStart = 0;
+    double startTime = 0;
     //note on and note off message for each note played
     for(int i = 0; i < prediction.rows(); i++) {
-        int noteOn = ((i * 2) + 1) * 3;
-        int noteOff = ((i * 2) + 2) * 3;
+
+        if(prediction(i, 0) == 0) {
+            startTime += prediction(i,1);
+            continue;
+        }
+
+        int noteOn = ((arrStart * 2) + 1) * 3;
+        int noteOff = ((arrStart * 2) + 2) * 3;
+        arrStart++; //should keep array intact properly
+
 
         auto currentNote = static_cast<unsigned char>(prediction(i, 0) + NOTE_OFFSET);
         DWORD event = 0x007F0090;
         event |= (currentNote << 8);
 
-        events[noteOn] = 0;
+        events[noteOn] = static_cast<unsigned long>(round(((double)(*ppqn) * (startTime * 1000000.0)) / ((double)(*tempo))));
         events[noteOn + 1] = 0;
         events[noteOn + 2] = ((unsigned long)MEVT_SHORTMSG << 24) | event;
 
-        events[noteOff] = quarterNote;
+        events[noteOff] = static_cast<unsigned long>(round(((double)(*ppqn) * (prediction(i,1) * 1000000.0)) / ((double)(*tempo))));
         events[noteOff + 1] = 0;
         events[noteOff + 2] = ((unsigned long)MEVT_SHORTMSG << 24) | (event & 0xFFFFFF80);
 
+        startTime = 0;
     }
 
     return events;

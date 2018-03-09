@@ -59,7 +59,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(callback->ringUpdate),&newInput,1); //read from echo state network
             if(read == 1) { //check read was actually successful
                 modelMutex->lock();
-                echo->updateReservoir((double)newInput); //update echo state network (now cast to double)
+                //echo->updateReservoir((double)newInput); //update echo state network (now cast to double)
                 modelMutex->unlock();
             }
         }
