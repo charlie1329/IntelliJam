@@ -276,6 +276,14 @@ void FPM::queueNote(int note, double duration) {
  */
 MatrixXd FPM::combinedPredict() {
 
+    //due to timer, we may end on 0, and we don't want this
+    //TODO: Test this!!
+    if(absSequence.at(absSequence.size()-1) == 0) {
+        absSequence.pop_back();
+        noteSequence.pop_back();
+        //due to way things are dealt with with direction, we don't need to pop from here
+    }
+
     //do the key detection on the users played phrase
     vector<pair<pair<int,int>,string>> segmentsAndKeys = detectKey(noteSequence,SEGMENT_LENGTH,MODULATION_PENALTY);
     vector<int> transposed; //will store transposed phrase

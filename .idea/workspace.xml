@@ -3,33 +3,33 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="FYP" targetName="LSTM_autogen" />
-      <config projectName="FYP" targetName="TRAINING" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI_autogen" />
-      <config projectName="FYP" targetName="MIDI_TEST" />
       <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
+      <config projectName="FYP" targetName="TRAINING" />
+      <config projectName="FYP" targetName="MIDI_TEST" />
       <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
+      <config projectName="FYP" targetName="RUNTIME" />
+      <config projectName="FYP" targetName="TRAINING_autogen" />
       <config projectName="FYP" targetName="TRAINING_TEST" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
-      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
       <config projectName="FYP" targetName="RUNTIME_autogen" />
+      <config projectName="FYP" targetName="MIDI_WIN" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST" />
       <config projectName="FYP" targetName="LSTM" />
       <config projectName="FYP" targetName="TRAINING_TEST_autogen" />
       <config projectName="FYP" targetName="TRAINING_ERROR" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI" />
+      <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
       <config projectName="FYP" targetName="LSTM_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
-      <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
-      <config projectName="FYP" targetName="RUNTIME" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT" />
-      <config projectName="FYP" targetName="TRAINING_autogen" />
       <config projectName="FYP" targetName="LSTM_TEST" />
-      <config projectName="FYP" targetName="TEST" />
+      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_W_GUI_autogen" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE" />
       <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_WIN" />
-      <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_W_GUI" />
+      <config projectName="FYP" targetName="TEST" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT" />
+      <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
+      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_CORE_TEST" />
     </generated>
   </component>
@@ -41,11 +41,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" afterPath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
+      <change beforePath="$PROJECT_DIR$/include/runtime/updateThread.h" afterPath="$PROJECT_DIR$/include/runtime/updateThread.h" />
+      <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
       <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -66,33 +63,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modelToMidi.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
+      <file leaf-file-name="updateThread.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="122" column="128" lean-forward="false" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
+            <state relative-caret-position="187">
+              <caret line="83" column="55" lean-forward="false" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
               <folding>
-                <element signature="e#167#204#0" expanded="true" />
+                <element signature="e#99#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bridge.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
+      <file leaf-file-name="fpm.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3570">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="364" column="36" lean-forward="true" selection-start-line="364" selection-start-column="36" selection-end-line="364" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateThread.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
+      <file leaf-file-name="updateThread.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/runtime/updateThread.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="170">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -114,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/interface/main.cpp" />
         <option value="$PROJECT_DIR$/src/interface/nametile.cpp" />
         <option value="$PROJECT_DIR$/src/interface/piano.cpp" />
         <option value="$PROJECT_DIR$/include/interface/squarebutton.h" />
@@ -156,7 +152,6 @@
         <option value="$PROJECT_DIR$/include/model/fpm.h" />
         <option value="$PROJECT_DIR$/include/model/keyDetect.h" />
         <option value="$PROJECT_DIR$/src/model/keyDetect.cpp" />
-        <option value="$PROJECT_DIR$/src/model/fpm.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/globalState.h" />
         <option value="$PROJECT_DIR$/include/runtime/init_close.h" />
         <option value="$PROJECT_DIR$/src/runtime/init_close.cpp" />
@@ -164,6 +159,8 @@
         <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
         <option value="$PROJECT_DIR$/include/midi/modelToMidi.h" />
         <option value="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
+        <option value="$PROJECT_DIR$/src/model/fpm.cpp" />
+        <option value="$PROJECT_DIR$/include/runtime/updateThread.h" />
         <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
       </list>
     </option>
@@ -443,12 +440,13 @@
       <workItem from="1520365244037" duration="5511000" />
       <workItem from="1520418579638" duration="6741000" />
       <workItem from="1520502710662" duration="7052000" />
-      <workItem from="1520598502089" duration="1426000" />
+      <workItem from="1520598502089" duration="1608000" />
+      <workItem from="1520702624971" duration="3276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310033000" />
+    <option name="totallyTimeSpent" value="313491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#97#115#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -669,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,14 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/runtime/updateThread.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime/timers.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148">
@@ -724,21 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2839">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573">
-          <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/runtime/timerThread.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -750,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,25 +735,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3570">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="1042">
           <caret line="122" column="128" lean-forward="false" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
           <folding>
-            <element signature="e#167#204#0" expanded="true" />
+            <element signature="e#167#204#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
+          <folding>
+            <element signature="e#121#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="364" column="36" lean-forward="true" selection-start-line="364" selection-start-column="36" selection-end-line="364" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/runtime/updateThread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="83" column="55" lean-forward="false" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+          <folding>
+            <element signature="e#99#145#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
