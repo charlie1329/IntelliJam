@@ -41,9 +41,14 @@ void updateWorker(const shared_ptr<globalState> &state) {
         freqVec.push_back(A2 * pow(pow(2.0,1.0/12.0),i-24));
     }
 
-    double newInput[FFT_SIZE]; //for storing data for fft
+
+
+    float newInput[FFT_SIZE]; //for storing data for fft
     int currentNote = -1; //what note is currently being played?
     int currentBins = 0; //how long has this note been playing for?
+
+    //initialise the fft object
+    Eigen::FFT<float> fft;
 
     //repeat until system is stopped
     while(*stillRunning) {
@@ -71,7 +76,8 @@ void updateWorker(const shared_ptr<globalState> &state) {
         if(PaUtil_GetRingBufferReadAvailable(&(callback->ringUpdate)) >= FFT_SIZE) {
             ring_buffer_size_t read = PaUtil_ReadRingBuffer(&(callback->ringUpdate),newInput,FFT_SIZE); //read from echo state network
             if(read == FFT_SIZE) { //check read was actually successful
-                int newNote = findNewNote(newInput); //what's being played right now?
+
+                int newNote = findNewNote(newInput,fft,currentNote,freqVec,noteVec); //what's being played right now?
 
                 //decide which action to take depending on the note
                 if(currentNote == -1 && newNote == 0) { //don't accept initial silence as a note
@@ -93,7 +99,6 @@ void updateWorker(const shared_ptr<globalState> &state) {
                 } else if(currentNote == newNote) {
                     currentBins++;
                 }
-
             }
         }
 
@@ -120,22 +125,78 @@ double centOffset(double freq1, double freq2) {
  * @return the closest note to the frequency
  */
 int findClosestNote(double freq, const vector<double> &freqList, const vector<int> &noteList) {
+    if (freq == 0) return 0;
     if(freq <= freqList.at(0)) { //if note smaller than our range
-        return noteList.at(0);
+        double doubled = freq;
+        while(doubled <= freqList.at(0)) {
+            doubled *= 2;
+        }
+        freq = doubled;
     } else if(freq >= freqList.at(freqList.size()-1)) { //if note larger than our range
-        return noteList.at(noteList.size()-1);
-    } else {
-        for (unsigned int i = 0; i < freqList.size()-1; i++) { //only want up until the penultimate item
-            if(freq >= freqList.at(i) && freqList.at(i+1)) {
-                //calculate offsets
-                double leftOffset = fabs(centOffset(freq,freqList.at(i)));
-                double rightOffset = fabs(centOffset(freq,freqList.at(i+1)));
-                if(leftOffset <= rightOffset) {
-                    return noteList.at(i);
-                } else {
-                    return noteList.at(i+1);
-                }
+        double halved = freq;
+        while (halved >= freqList.at(freqList.size()-1)) {
+            halved /= 2.0;
+        }
+        freq = halved;
+    }
+
+    for (unsigned int i = 0; i < freqList.size()-1; i++) { //only want up until the penultimate item
+        if(freq >= freqList.at(i) && freq < freqList.at(i+1)) {
+            //calculate offsets
+            double leftOffset = fabs(centOffset(freq,freqList.at(i)));
+            double rightOffset = fabs(centOffset(freq,freqList.at(i+1)));
+            if(leftOffset <= rightOffset) {
+                return noteList.at(i);
+            } else {
+                return noteList.at(i+1);
             }
         }
     }
+
+}
+
+/**
+ * uses fourier transform to find note being played NOW
+ * @param newInput the raw audio input
+ * @param fft the fft object
+ * @param currentNote the currentNote being played
+ * @param freqList a list of playable frequencies
+ * @param noteList a list of playable notes
+ * @return the note being played
+ */
+int findNewNote(float *newInput, Eigen::FFT<float> fft, int currentNote,
+                const vector<double> &freqList, const vector<int> &noteList) {
+    vector<float> timeVec(newInput, newInput + FFT_SIZE);
+    vector<complex<float>> freqVec;
+
+    fft.fwd(freqVec, timeVec); //actually carry out the fft
+    float maxAbs = -1;
+    int maxBin = -1;
+
+    //find the max bin
+    for(int i = 0; i < freqVec.size(); i++) {
+        float newAbs = abs(freqVec.at(static_cast<unsigned int>(i)));
+        if(newAbs > maxAbs) {
+            maxAbs = newAbs;
+            maxBin = i;
+        }
+    }
+
+    //check it isn't just noise
+    if(maxAbs > NOISE_MIN) {
+        //using the bin, find the note
+        float binRes = ((float)SAMPLE_RATE)/((float)FFT_SIZE);
+        int activeNoteOne = findClosestNote(maxBin*binRes,freqList,noteList);
+        int activeNoteTwo = findClosestNote((maxBin*binRes) + (binRes/2.0),freqList,noteList);
+        if(activeNoteOne == activeNoteTwo) {
+            return activeNoteOne;
+        } else if(activeNoteOne == currentNote || activeNoteTwo == currentNote) { //this does help slightly
+            return currentNote;
+        } else {
+            return activeNoteTwo;
+        }
+    } else {
+        return 0;
+    }
+
 }

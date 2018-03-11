@@ -66,7 +66,6 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
         modelMutex->unlock();
 
         int midiErr = handleMIDI(output, state->outHandle, state->event, bridge);
-        //TODO: Improve prediction to MIDI function!
 
         if(midiErr != 0) {
             //graceful shutdown

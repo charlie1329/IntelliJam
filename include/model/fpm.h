@@ -8,7 +8,7 @@
 #define FYP_FPM_H
 
 #include "keyDetect.h"
-
+#include <random>
 /**
  * class representing the combined fpm model
  * stores all matrices, and all other internal state
@@ -102,6 +102,8 @@ private:
     vector<int> dirSequence;
     int previousNote;
 
+    default_random_engine gen;
+
 public:
 
     /**
@@ -139,6 +141,19 @@ public:
      * member function wipes the arrays for the next round of prediction etc.
      */
     void clearState();
+
+    //SIMPLE GET FUNCTIONS
+    MatrixXd getNNote();
+    MatrixXd getBNote();
+    MatrixXd gettNote();
+    MatrixXd getNDir();
+    MatrixXd getBDir();
+    MatrixXd gettDir();
+
+    vector<int> getAbsQueue();
+    vector<pair<int,double>> getNoteQueue();
+    vector<int> getDirQueue();
+
 
 };
 

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ESN_CORE_TEST_autogen.dir/AutogenOldSettings.cmake"
   "MIDI_TEST_autogen"
   "CMakeFiles/MIDI_TEST_autogen.dir/AutogenOldSettings.cmake"
+  "MODEL_UNIT_autogen"
+  "CMakeFiles/MODEL_UNIT_autogen.dir/AutogenOldSettings.cmake"
   "RUNTIME_W_GUI_autogen"
   "CMakeFiles/RUNTIME_W_GUI_autogen.dir/AutogenOldSettings.cmake"
   "MIDI_WIN_autogen"

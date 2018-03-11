@@ -322,3 +322,14 @@ def runTests():
 
 if __name__ == '__main__':
 	runTests()
+	sequence = [(4,0.371519),(6, 0.371519),(8, 0.18576),(11, 0.18576),(1, 0.18576),(4, 0.371519),(6, 0.18576),(5, 0.18576)]
+	segmentsAndKeys = detectKey(sequence,2.0,2)
+	segments = splitIntoSegments(sequence,2.0)
+	pitchKeyVectors = getPitchKeyValues(segments)
+	bestSums = getBestSums(pitchKeyVectors,2.0)
+	bestPath = getBestPath(bestSums)
+	print(segmentsAndKeys)
+	print(segments)
+	print(pitchKeyVectors)
+	print(bestSums)
+	print(bestPath)

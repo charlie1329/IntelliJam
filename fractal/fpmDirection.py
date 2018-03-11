@@ -107,7 +107,9 @@ def predictNextDir(s,B,N,t,k,upInterval):
 		distribution[0] *= math.exp(-(6.0-upInterval)/T)
 	
 	distribution = np.round(distribution)
+	print('DIS: ' + str(distribution))
 	totalSamples = np.sum(distribution)
+	print('SAMPLES: ' + str(totalSamples))
 	print(distribution)
 	randomNo = random.randint(1,totalSamples)
 	total = 0
@@ -256,14 +258,19 @@ if __name__ == '__main__':
 	B_dir = np.loadtxt('matrices/B_dir.txt')
 	B_dir = np.reshape(B_dir,(5,1)) # careful here!
 	N_dir = np.loadtxt('matrices/N_dir.txt')
-	print(N_dir)
+
 	t_dir = np.loadtxt('matrices/t_dir.txt')
 	t_dir = np.reshape(t_dir,(2,1))
 	k_dir = k
 	outputLen = 20
 
+	print(np.power(N_note,1.0/0.4))
+
 	#sequence = [(46,0.1),(48,0.1),(51,0.1),(53,0.1),(55,0.1),(53,0.1),(51,0.1),(53,0.1),(48,0.1),(51,0.1)]
 	sequence = [(51,0.1),(53,0.1),(55,0.1),(55,0.1),(56,0.1),(55,0.1),(53,0.1),(58,0.1),(60,0.1),(55,0.1)]
 	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, outputLen)
 	print(predictedSequence)
+
+	sequence = [(51,0.371519),(53, 0.371519),(55, 0.18576),(34, 0.18576),(48, 0.18576),(51, 0.371519),(53, 0.18576),(52, 0.18576)]
+	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, 1)
 

@@ -423,6 +423,72 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="MODEL_UNIT">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MODEL_UNIT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MODEL_UNIT_autogen/include"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MODEL_UNIT"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MODEL_UNIT/fast">
+				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MODEL_UNIT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MODEL_UNIT_autogen/include"/>
+					<Add directory="C:/Program Files/boost_1_66_0"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtGui"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtCore"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtANGLE"/>
+					<Add directory="C:/Qt/5.10.0/mingw53_32/include/QtSvg"/>
+					<Add directory="C:/Users/charl/CLionProjects/FYP/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/6.3.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MODEL_UNIT/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="RUNTIME_W_GUI">
 				<Option output="C:/Users/charl/CLionProjects/FYP/cmake-build-release/RUNTIME_W_GUI.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
@@ -1031,6 +1097,16 @@
 					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="MODEL_UNIT_autogen">
+				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 MODEL_UNIT_autogen"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-6~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/charl/CLionProjects/FYP/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="RUNTIME_W_GUI_autogen">
 				<Option working_dir="C:/Users/charl/CLionProjects/FYP/cmake-build-release"/>
 				<Option type="4"/>
@@ -1133,6 +1209,9 @@
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MIDI_WIN_autogen/mocs_compilation.cpp">
 			<Option target="MIDI_WIN"/>
 		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/MODEL_UNIT_autogen/mocs_compilation.cpp">
+			<Option target="MODEL_UNIT"/>
+		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/cmake-build-release/PORT_FUZZ_TEST_autogen/mocs_compilation.cpp">
 			<Option target="PORT_FUZZ_TEST"/>
 		</Unit>
@@ -1232,9 +1311,11 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/model/fpm.h">
+			<Option target="MODEL_UNIT"/>
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/model/keyDetect.h">
+			<Option target="MODEL_UNIT"/>
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/include/port_audio/pa_ringbuffer.c">
@@ -1391,9 +1472,11 @@
 			<Option target="RUNTIME"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/model/fpm.cpp">
+			<Option target="MODEL_UNIT"/>
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/model/keyDetect.cpp">
+			<Option target="MODEL_UNIT"/>
 			<Option target="RUNTIME_W_GUI"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/src/runtime/init_close.cpp">
@@ -1466,6 +1549,9 @@
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/midi/twinkle_twinkle.cpp">
 			<Option target="MIDI_TWINKLE"/>
+		</Unit>
+		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/model/modelTest.cpp">
+			<Option target="MODEL_UNIT"/>
 		</Unit>
 		<Unit filename="C:/Users/charl/CLionProjects/FYP/test/port_audio/pa_fuzz.c">
 			<Option target="PORT_FUZZ_TEST"/>

@@ -227,7 +227,12 @@ if(Boost_FOUND)
 endif()
 
 
-
+set(MODEL_UNIT_FILES include/model/fpm.h
+                     include/model/keyDetect.h
+                     src/model/fpm.cpp
+                     src/model/keyDetect.cpp
+                     test/model/modelTest.cpp)
+add_executable(MODEL_UNIT ${MODEL_UNIT_FILES})
 
 set(RUNTIME_UNIT_FILES include/test/catch.hpp
                        include/runtime/init_close.h

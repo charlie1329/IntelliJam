@@ -9,8 +9,10 @@
 
 #define FFT_SIZE 8192
 #define SAMPLE_RATE 44100.0
+#define NOISE_MIN 0.0
 
 #include "globalState.h"
+#include "../../include/Eigen/unsupported/Eigen/FFT"
 
 /**
  * worker function for thread that deals
@@ -41,8 +43,13 @@ int findClosestNote(double freq, const vector<double> &freqList, const vector<in
 /**
  * uses fourier transform to find note being played NOW
  * @param newInput the raw audio input
+ * @param fft the fft object
+ * @param currentNote the currentNote being played
+ * @param freqList a list of playable frequencies
+ * @param noteList a list of playable notes
  * @return the note being played
  */
-int findNewNote(double *newInput);
+int findNewNote(float *newInput, Eigen::FFT<float> fft, int currentNote,
+                const vector<double> &freqList, const vector<int> &noteList);
 
 #endif //FYP_UPDATETHREAD_H

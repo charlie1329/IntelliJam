@@ -305,10 +305,10 @@ def predictNext(s,B,N,t,k,T):
 
 	# bring sequence to chaos representation
 	x = toChaosRep(t,k,s)
-
+	print('X: ' + str(x))
 	# now find the closest codebook vector
 	i = findClosestCodebook(x,B)
-
+	print('i: ' + str(i))
 	# no need to normalise the probabilities
 	# just take the maximum value
 	# to get the prediction
@@ -317,7 +317,9 @@ def predictNext(s,B,N,t,k,T):
 	# do some random sampling to generate the notes
 	N = np.power(N,(1.0/float(T))) # tilt the distribution
 	distribution = np.round(N[i,:]) 
+	print('Dis: ' + str(distribution))
 	totalSamples = np.sum(distribution)
+	print('Total Samples: ' + str(totalSamples))
 	randomNo = random.randint(1,totalSamples)
 	total = 0
 	for i in range(distribution.shape[0]):

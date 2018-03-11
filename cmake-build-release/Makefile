@@ -188,6 +188,19 @@ MIDI_TEST/fast:
 .PHONY : MIDI_TEST/fast
 
 #=============================================================================
+# Target rules for targets named MODEL_UNIT
+
+# Build rule for target.
+MODEL_UNIT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT
+.PHONY : MODEL_UNIT
+
+# fast build rule for target.
+MODEL_UNIT/fast:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/build
+.PHONY : MODEL_UNIT/fast
+
+#=============================================================================
 # Target rules for targets named RUNTIME_W_GUI
 
 # Build rule for target.
@@ -368,6 +381,19 @@ MIDI_TEST_autogen: cmake_check_build_system
 MIDI_TEST_autogen/fast:
 	$(MAKE) -f CMakeFiles\MIDI_TEST_autogen.dir\build.make CMakeFiles/MIDI_TEST_autogen.dir/build
 .PHONY : MIDI_TEST_autogen/fast
+
+#=============================================================================
+# Target rules for targets named MODEL_UNIT_autogen
+
+# Build rule for target.
+MODEL_UNIT_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT_autogen
+.PHONY : MODEL_UNIT_autogen
+
+# fast build rule for target.
+MODEL_UNIT_autogen/fast:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT_autogen.dir\build.make CMakeFiles/MODEL_UNIT_autogen.dir/build
+.PHONY : MODEL_UNIT_autogen/fast
 
 #=============================================================================
 # Target rules for targets named RUNTIME_W_GUI_autogen
@@ -661,6 +687,33 @@ MIDI_WIN_autogen/mocs_compilation.s: MIDI_WIN_autogen/mocs_compilation.cpp.s
 MIDI_WIN_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/MIDI_WIN_autogen/mocs_compilation.cpp.s
 .PHONY : MIDI_WIN_autogen/mocs_compilation.cpp.s
+
+MODEL_UNIT_autogen/mocs_compilation.obj: MODEL_UNIT_autogen/mocs_compilation.cpp.obj
+
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.obj
+
+# target to build an object file
+MODEL_UNIT_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/MODEL_UNIT_autogen/mocs_compilation.cpp.obj
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.cpp.obj
+
+MODEL_UNIT_autogen/mocs_compilation.i: MODEL_UNIT_autogen/mocs_compilation.cpp.i
+
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+MODEL_UNIT_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/MODEL_UNIT_autogen/mocs_compilation.cpp.i
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.cpp.i
+
+MODEL_UNIT_autogen/mocs_compilation.s: MODEL_UNIT_autogen/mocs_compilation.cpp.s
+
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+MODEL_UNIT_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/MODEL_UNIT_autogen/mocs_compilation.cpp.s
+.PHONY : MODEL_UNIT_autogen/mocs_compilation.cpp.s
 
 PORT_FUZZ_TEST_autogen/mocs_compilation.obj: PORT_FUZZ_TEST_autogen/mocs_compilation.cpp.obj
 
@@ -1454,6 +1507,7 @@ src/model/fpm.obj: src/model/fpm.cpp.obj
 
 # target to build an object file
 src/model/fpm.cpp.obj:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj
 .PHONY : src/model/fpm.cpp.obj
 
@@ -1463,6 +1517,7 @@ src/model/fpm.i: src/model/fpm.cpp.i
 
 # target to preprocess a source file
 src/model/fpm.cpp.i:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.i
 .PHONY : src/model/fpm.cpp.i
 
@@ -1472,6 +1527,7 @@ src/model/fpm.s: src/model/fpm.cpp.s
 
 # target to generate assembly for a file
 src/model/fpm.cpp.s:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.s
 .PHONY : src/model/fpm.cpp.s
 
@@ -1481,6 +1537,7 @@ src/model/keyDetect.obj: src/model/keyDetect.cpp.obj
 
 # target to build an object file
 src/model/keyDetect.cpp.obj:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj
 .PHONY : src/model/keyDetect.cpp.obj
 
@@ -1490,6 +1547,7 @@ src/model/keyDetect.i: src/model/keyDetect.cpp.i
 
 # target to preprocess a source file
 src/model/keyDetect.cpp.i:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.i
 .PHONY : src/model/keyDetect.cpp.i
 
@@ -1499,6 +1557,7 @@ src/model/keyDetect.s: src/model/keyDetect.cpp.s
 
 # target to generate assembly for a file
 src/model/keyDetect.cpp.s:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.s
 .PHONY : src/model/keyDetect.cpp.s
 
@@ -2039,6 +2098,33 @@ test/midi/twinkle_twinkle.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/test/midi/twinkle_twinkle.cpp.s
 .PHONY : test/midi/twinkle_twinkle.cpp.s
 
+test/model/modelTest.obj: test/model/modelTest.cpp.obj
+
+.PHONY : test/model/modelTest.obj
+
+# target to build an object file
+test/model/modelTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/test/model/modelTest.cpp.obj
+.PHONY : test/model/modelTest.cpp.obj
+
+test/model/modelTest.i: test/model/modelTest.cpp.i
+
+.PHONY : test/model/modelTest.i
+
+# target to preprocess a source file
+test/model/modelTest.cpp.i:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/test/model/modelTest.cpp.i
+.PHONY : test/model/modelTest.cpp.i
+
+test/model/modelTest.s: test/model/modelTest.cpp.s
+
+.PHONY : test/model/modelTest.s
+
+# target to generate assembly for a file
+test/model/modelTest.cpp.s:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/test/model/modelTest.cpp.s
+.PHONY : test/model/modelTest.cpp.s
+
 test/port_audio/pa_fuzz.obj: test/port_audio/pa_fuzz.c.obj
 
 .PHONY : test/port_audio/pa_fuzz.obj
@@ -2187,6 +2273,7 @@ help:
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
 	@echo ... rebuild_cache
+	@echo ... MODEL_UNIT
 	@echo ... RUNTIME_W_GUI
 	@echo ... MIDI_WIN
 	@echo ... PORT_FUZZ_TEST
@@ -2202,6 +2289,7 @@ help:
 	@echo ... ESN_SPEED_TEST_autogen
 	@echo ... ESN_CORE_TEST_autogen
 	@echo ... MIDI_TEST_autogen
+	@echo ... MODEL_UNIT_autogen
 	@echo ... RUNTIME_W_GUI_autogen
 	@echo ... MIDI_WIN_autogen
 	@echo ... PORT_FUZZ_TEST_autogen
@@ -2231,6 +2319,9 @@ help:
 	@echo ... MIDI_WIN_autogen/mocs_compilation.obj
 	@echo ... MIDI_WIN_autogen/mocs_compilation.i
 	@echo ... MIDI_WIN_autogen/mocs_compilation.s
+	@echo ... MODEL_UNIT_autogen/mocs_compilation.obj
+	@echo ... MODEL_UNIT_autogen/mocs_compilation.i
+	@echo ... MODEL_UNIT_autogen/mocs_compilation.s
 	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.obj
 	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.i
 	@echo ... PORT_FUZZ_TEST_autogen/mocs_compilation.s
@@ -2369,6 +2460,9 @@ help:
 	@echo ... test/midi/twinkle_twinkle.obj
 	@echo ... test/midi/twinkle_twinkle.i
 	@echo ... test/midi/twinkle_twinkle.s
+	@echo ... test/model/modelTest.obj
+	@echo ... test/model/modelTest.i
+	@echo ... test/model/modelTest.s
 	@echo ... test/port_audio/pa_fuzz.obj
 	@echo ... test/port_audio/pa_fuzz.i
 	@echo ... test/port_audio/pa_fuzz.s

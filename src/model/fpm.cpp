@@ -6,10 +6,10 @@
 #include <utility>
 #include <cmath>
 #include <limits>
-#include <random>
 #include <chrono>
 #include <fstream>
 #include "../../include/model/fpm.h"
+#include <iostream>
 
 /**
  * applies the mapping for the chaos representation conversion
@@ -98,17 +98,25 @@ int FPM::predictNextNote(vector<int> s, MatrixXd B, MatrixXd N, MatrixXd t, doub
 
     //now find the closest codebook vector
     int i = findClosestCodebook(x,std::move(B));
+
     RowVectorXd distribution = N.row(i);
-    auto totalSamples = (int)distribution.sum();
+
+    double maxVal = distribution.maxCoeff();
+
+    distribution /= maxVal;
+
+    double totalSamples = 0;
+    for(int j = 0; j < distribution.cols(); j++) {
+        totalSamples += distribution(0,j);
+    }
 
     //set up a random generator
-    default_random_engine gen;
-    gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
-    uniform_int_distribution<int> rng(1,totalSamples);
+    uniform_real_distribution<double> rng(0,totalSamples);
 
     //do some random sampling to generate the note
-    int randNo = rng(gen);
-    int total = 0;
+    double randNo = rng(gen);
+
+    double total = 0;
     for(int j = 0; j < distribution.cols(); j++) {
         total += distribution(0,j);
         if(randNo <= total) return j;
@@ -143,8 +151,8 @@ int FPM::predictNextDir(vector<int> s, MatrixXd B, MatrixXd N, MatrixXd t, doubl
     auto totalSamples = (int)distribution.sum();
 
     //set up a random generator
-    default_random_engine gen;
-    gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
+    //default_random_engine gen;
+   // gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
     uniform_int_distribution<int> rng(1,totalSamples);
 
     //actually generate a random number and use that to determine value
@@ -237,6 +245,11 @@ FPM::FPM(string BNotePath, string NNotePath, string tNotePath, double kNote, dou
     //scale the NNote matrix by the temperature parameter
     NNote = Eigen::pow(NNote.array(),1.0/TNote);
 
+    //initialise previousNote
+    previousNote = -1;
+
+    //seed random generator
+    gen.seed((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
 
 }
 
@@ -255,7 +268,7 @@ void FPM::queueNote(int note, double duration) {
         noteSequence.emplace_back((note % 12) + 1,duration);
     }
 
-    if(previousNote != 1 && previousNote != note) {
+    if(previousNote != -1 && previousNote != note) {
         if(note > previousNote) {
             dirSequence.push_back(1);
         } else {
@@ -277,7 +290,6 @@ void FPM::queueNote(int note, double duration) {
 MatrixXd FPM::combinedPredict() {
 
     //due to timer, we may end on 0, and we don't want this
-    //TODO: Test this!!
     if(absSequence.at(absSequence.size()-1) == 0) {
         absSequence.pop_back();
         noteSequence.pop_back();
@@ -289,6 +301,7 @@ MatrixXd FPM::combinedPredict() {
     vector<int> transposed; //will store transposed phrase
     vector<int> noDuration; // a temporary copy
 
+
     //copy notes into no Duration
     for (auto currentPair : noteSequence) {
         noDuration.push_back(currentPair.first);
@@ -296,11 +309,11 @@ MatrixXd FPM::combinedPredict() {
 
     //do all the transposing to C
     for (const auto &segment : segmentsAndKeys) {
-        //TODO: check slicing happens correctly
         vector<int> slice(noDuration.begin()+segment.first.first,noDuration.begin()+segment.first.second);
         vector<int> currentSegment = transpose(slice,segment.second,"C");
         transposed.insert(transposed.end(),currentSegment.begin(),currentSegment.end());
     }
+
 
     string endKey = segmentsAndKeys.at(segmentsAndKeys.size()-1).second; //get the key to transpose back to
 
@@ -319,7 +332,7 @@ MatrixXd FPM::combinedPredict() {
     int startPointOut = absSequence.size();
     int prevNote = absSequence.at(absSequence.size()-1);
     for(unsigned int i = 0; i < outputLen; i++) {
-        int upInterval = mod((mod(predictedSequence.at(i) - 1,12) - mod(prevNote,12)),12) ;
+        int upInterval = mod((mod(predictedSequence.at(i) - 1,12) - mod(prevNote,12)),12);
         int newDirection = predictNextDir(dirSequence,BDir,NDir,tDir,kDir,upInterval);
 
         if(predictedSequence.at(i) == 0) { //silence
@@ -350,7 +363,7 @@ MatrixXd FPM::combinedPredict() {
             if(newDirection == 1) {
                 newNote = prevNote + mod(predictedMod - previousMod,12);
             } else {
-                newNote = prevNote + mod(previousMod - predictedMod,12);
+                newNote = prevNote - mod(previousMod - predictedMod,12);
             }
 
             if(newNote < 24) newNote += 12;
@@ -369,6 +382,9 @@ MatrixXd FPM::combinedPredict() {
         returnPhrase(i,1) = noteSequence.at(i).second;
     }
 
+    cout << "FINAL MATRIX: " << endl;
+    cout << returnPhrase << endl;
+
     clearState(); // prediction messes with state a bit, so clear it up
 
     return returnPhrase;
@@ -384,4 +400,34 @@ void FPM::clearState() {
     dirSequence.clear();
     //reinitialise
     previousNote = -1;
+}
+
+//SIMPLE GET FUNCTIONS
+MatrixXd FPM::getNNote() {
+    return NNote;
+}
+MatrixXd FPM::getBNote() {
+    return BNote;
+}
+MatrixXd FPM::gettNote() {
+    return tNote;
+}
+MatrixXd FPM::getNDir() {
+    return NDir;
+}
+MatrixXd FPM::getBDir() {
+    return BDir;
+}
+MatrixXd FPM::gettDir() {
+    return tDir;
+}
+
+vector<int> FPM::getAbsQueue() {
+    return absSequence;
+}
+vector<pair<int,double>> FPM::getNoteQueue() {
+    return noteSequence;
+};
+vector<int> FPM::getDirQueue() {
+    return dirSequence;
 }

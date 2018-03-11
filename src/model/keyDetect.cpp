@@ -6,6 +6,7 @@
 #include <utility>
 
 #include "../../include/model/keyDetect.h"
+#include <iostream>
 
 /**
  * mod function which abides by the rules I want
@@ -85,7 +86,7 @@ double getPitchKeyValue(VectorXd notesPresent, int keyIndex) {
     double pitchVal = 0.0;
 
     for(int i = startPoint; i < startPoint + NUM_KEYS; i++) {
-        pitchVal += (notesPresent(i-startPoint,0) * majorProfile[i % NUM_KEYS]);
+        pitchVal += (notesPresent(i % NUM_KEYS,0) * majorProfile[i-startPoint]);
     }
 
     return pitchVal;
@@ -179,6 +180,7 @@ vector<vector<pair<double,int>>> getBestSums(vector<VectorXd> pitchKeyVectors, d
         firstStep.emplace_back(pitchKeyVectors.at(0)(i,0),-1);
     }
 
+    bestSums.push_back(firstStep);
     //now deal with the rest of the path segments
     vector<pair<double,int>> bestSumi;
     for(unsigned int i = 1; i < pitchKeyVectors.size(); i++) {
@@ -190,7 +192,6 @@ vector<vector<pair<double,int>>> getBestSums(vector<VectorXd> pitchKeyVectors, d
             //do the dynamic programming bit
             for(int unsigned k = 0; k < bestSums.at(i-1).size(); k++) {
                 double newSum = pitchKeyVectors.at(i)(j,0) + bestSums.at(i-1).at(k).first;
-
                 if(j != k) { //add penalty for changing key
                     newSum -= modulationPenalty;
                 }
@@ -273,7 +274,7 @@ vector<pair<pair<int,int>,string>> detectKey(vector<pair<int,double>> sequence,
     //now back track and retrieve the best path of keys
     vector<string> bestPath = getBestPath(bestSums);
 
-    //segmentsAndKeys is a vector of (effectively) triples (startPoint, endPoing+1, key)
+    //segmentsAndKeys is a vector of (effectively) triples (startPoint, endPoint+1, key)
     vector<pair<pair<int,int>,string>> segmentsAndKeys;
     int currentStartPoint = 0;
     for(unsigned int i = 0; i < segments.size(); i++) {
