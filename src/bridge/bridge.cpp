@@ -195,7 +195,7 @@ void Bridge::pianoUpdate(unsigned long *events, int arrSize, int ppqn, int tempo
     for(int i = 3; i < arrSize; i+=3) {
 
         //carry out any sleep if necessary
-        unsigned long millisecondsToSleep = ((events[i]/ppqn)*tempo) / 1000;
+        auto millisecondsToSleep = static_cast<unsigned long>((((double)events[i] / (double)ppqn) * tempo) / 1000);
         if(millisecondsToSleep != 0) {
             boost::this_thread::sleep_for(boost::chrono::milliseconds(millisecondsToSleep));
         }

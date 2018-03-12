@@ -5,6 +5,7 @@
  */
 
 #include "../../include/interface/devicebar.h"
+#include <QPixmap>
 
 /**
  * Constructor just initialises everything and organises the widget
@@ -23,7 +24,8 @@ DeviceBar::DeviceBar(QWidget *parent, shared_ptr<Bridge> bridge):QWidget(parent)
 
     title = new QLabel(this);
 
-    title->setText("IntelliJam");
+    QPixmap image("images/logo_small.png");
+    title->setPixmap(image);
 
     devices->addItem("No Device Selected");
 

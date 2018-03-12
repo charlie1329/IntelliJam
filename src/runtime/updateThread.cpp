@@ -61,6 +61,8 @@ void updateWorker(const shared_ptr<globalState> &state) {
             //not much should be available but its a fairly neat check to make
             ring_buffer_size_t howManyMissed = PaUtil_GetRingBufferReadAvailable(&(callback->ringUpdate));
             PaUtil_AdvanceRingBufferReadIndex(&(callback->ringUpdate), howManyMissed);
+            currentNote = -1;
+            currentBins = 0;
         }
         streamMutex->unlock();
         //do a little bit of error checking
@@ -81,7 +83,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
 
                 //decide which action to take depending on the note
                 if(currentNote == -1 && newNote == 0) { //don't accept initial silence as a note
-                    continue; //TODO: Check calling this here is appropriate!
+                    continue;
                 } else if(currentNote == -1) { //first note being played
                     currentNote = newNote;
                     currentBins = 1;

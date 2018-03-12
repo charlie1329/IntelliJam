@@ -33,7 +33,7 @@ void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge, shared_ptr<atomic<bool
 
         for (int i = 0; i < inArr; i++) {
             double absVal = fabs(read[i]);
-            if(bridge != nullptr) bridge->volumeUpdate(absVal); //TODO: CHECK THIS DOESN'T DAMAGE SPEED
+            if(bridge != nullptr) bridge->volumeUpdate(absVal);
 
             if(playingStarted) { //try to detect when the user has stopped playing
 

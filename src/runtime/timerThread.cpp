@@ -9,6 +9,8 @@
 #include "../../include/runtime/timerThread.h"
 #include "../../include/runtime/timers.h"
 
+#include <iostream>
+
 /**
  * implemented from timerThread.h
  * function deals with coordinating system
@@ -45,7 +47,6 @@ void timerWorker(const shared_ptr<globalState> &state, Bridge *bridge) {
             break;
         }
 
-        //TODO: Improve Timer!!!
         streamMutex->lock();
         err = Pa_AbortStream(state->stream); //use abort over stop for something more immediate
         streamMutex->unlock();

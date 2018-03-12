@@ -188,32 +188,6 @@ MIDI_TEST/fast:
 .PHONY : MIDI_TEST/fast
 
 #=============================================================================
-# Target rules for targets named MODEL_UNIT
-
-# Build rule for target.
-MODEL_UNIT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT
-.PHONY : MODEL_UNIT
-
-# fast build rule for target.
-MODEL_UNIT/fast:
-	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/build
-.PHONY : MODEL_UNIT/fast
-
-#=============================================================================
-# Target rules for targets named RUNTIME_W_GUI
-
-# Build rule for target.
-RUNTIME_W_GUI: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_W_GUI
-.PHONY : RUNTIME_W_GUI
-
-# fast build rule for target.
-RUNTIME_W_GUI/fast:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/build
-.PHONY : RUNTIME_W_GUI/fast
-
-#=============================================================================
 # Target rules for targets named MIDI_WIN
 
 # Build rule for target.
@@ -251,6 +225,32 @@ RUNTIME: cmake_check_build_system
 RUNTIME/fast:
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/build
 .PHONY : RUNTIME/fast
+
+#=============================================================================
+# Target rules for targets named IntelliJam
+
+# Build rule for target.
+IntelliJam: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 IntelliJam
+.PHONY : IntelliJam
+
+# fast build rule for target.
+IntelliJam/fast:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/build
+.PHONY : IntelliJam/fast
+
+#=============================================================================
+# Target rules for targets named MODEL_UNIT
+
+# Build rule for target.
+MODEL_UNIT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT
+.PHONY : MODEL_UNIT
+
+# fast build rule for target.
+MODEL_UNIT/fast:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/build
+.PHONY : MODEL_UNIT/fast
 
 #=============================================================================
 # Target rules for targets named RUNTIME_UNIT
@@ -383,32 +383,6 @@ MIDI_TEST_autogen/fast:
 .PHONY : MIDI_TEST_autogen/fast
 
 #=============================================================================
-# Target rules for targets named MODEL_UNIT_autogen
-
-# Build rule for target.
-MODEL_UNIT_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT_autogen
-.PHONY : MODEL_UNIT_autogen
-
-# fast build rule for target.
-MODEL_UNIT_autogen/fast:
-	$(MAKE) -f CMakeFiles\MODEL_UNIT_autogen.dir\build.make CMakeFiles/MODEL_UNIT_autogen.dir/build
-.PHONY : MODEL_UNIT_autogen/fast
-
-#=============================================================================
-# Target rules for targets named RUNTIME_W_GUI_autogen
-
-# Build rule for target.
-RUNTIME_W_GUI_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 RUNTIME_W_GUI_autogen
-.PHONY : RUNTIME_W_GUI_autogen
-
-# fast build rule for target.
-RUNTIME_W_GUI_autogen/fast:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI_autogen.dir\build.make CMakeFiles/RUNTIME_W_GUI_autogen.dir/build
-.PHONY : RUNTIME_W_GUI_autogen/fast
-
-#=============================================================================
 # Target rules for targets named MIDI_WIN_autogen
 
 # Build rule for target.
@@ -446,6 +420,32 @@ RUNTIME_autogen: cmake_check_build_system
 RUNTIME_autogen/fast:
 	$(MAKE) -f CMakeFiles\RUNTIME_autogen.dir\build.make CMakeFiles/RUNTIME_autogen.dir/build
 .PHONY : RUNTIME_autogen/fast
+
+#=============================================================================
+# Target rules for targets named IntelliJam_autogen
+
+# Build rule for target.
+IntelliJam_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 IntelliJam_autogen
+.PHONY : IntelliJam_autogen
+
+# fast build rule for target.
+IntelliJam_autogen/fast:
+	$(MAKE) -f CMakeFiles\IntelliJam_autogen.dir\build.make CMakeFiles/IntelliJam_autogen.dir/build
+.PHONY : IntelliJam_autogen/fast
+
+#=============================================================================
+# Target rules for targets named MODEL_UNIT_autogen
+
+# Build rule for target.
+MODEL_UNIT_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 MODEL_UNIT_autogen
+.PHONY : MODEL_UNIT_autogen
+
+# fast build rule for target.
+MODEL_UNIT_autogen/fast:
+	$(MAKE) -f CMakeFiles\MODEL_UNIT_autogen.dir\build.make CMakeFiles/MODEL_UNIT_autogen.dir/build
+.PHONY : MODEL_UNIT_autogen/fast
 
 #=============================================================================
 # Target rules for targets named RUNTIME_UNIT_autogen
@@ -552,6 +552,33 @@ ESN_SPEED_TEST_autogen/mocs_compilation.s: ESN_SPEED_TEST_autogen/mocs_compilati
 ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s
 .PHONY : ESN_SPEED_TEST_autogen/mocs_compilation.cpp.s
+
+IntelliJam_autogen/mocs_compilation.obj: IntelliJam_autogen/mocs_compilation.cpp.obj
+
+.PHONY : IntelliJam_autogen/mocs_compilation.obj
+
+# target to build an object file
+IntelliJam_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/IntelliJam_autogen/mocs_compilation.cpp.obj
+.PHONY : IntelliJam_autogen/mocs_compilation.cpp.obj
+
+IntelliJam_autogen/mocs_compilation.i: IntelliJam_autogen/mocs_compilation.cpp.i
+
+.PHONY : IntelliJam_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+IntelliJam_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/IntelliJam_autogen/mocs_compilation.cpp.i
+.PHONY : IntelliJam_autogen/mocs_compilation.cpp.i
+
+IntelliJam_autogen/mocs_compilation.s: IntelliJam_autogen/mocs_compilation.cpp.s
+
+.PHONY : IntelliJam_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+IntelliJam_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/IntelliJam_autogen/mocs_compilation.cpp.s
+.PHONY : IntelliJam_autogen/mocs_compilation.cpp.s
 
 LSTM_TEST_autogen/mocs_compilation.obj: LSTM_TEST_autogen/mocs_compilation.cpp.obj
 
@@ -769,33 +796,6 @@ RUNTIME_UNIT_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/RUNTIME_UNIT_autogen/mocs_compilation.cpp.s
 .PHONY : RUNTIME_UNIT_autogen/mocs_compilation.cpp.s
 
-RUNTIME_W_GUI_autogen/mocs_compilation.obj: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
-
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.obj
-
-# target to build an object file
-RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.obj
-
-RUNTIME_W_GUI_autogen/mocs_compilation.i: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
-
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.i
-
-RUNTIME_W_GUI_autogen/mocs_compilation.s: RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
-
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
-.PHONY : RUNTIME_W_GUI_autogen/mocs_compilation.cpp.s
-
 RUNTIME_autogen/mocs_compilation.obj: RUNTIME_autogen/mocs_compilation.cpp.obj
 
 .PHONY : RUNTIME_autogen/mocs_compilation.obj
@@ -910,8 +910,8 @@ include/port_audio/pa_ringbuffer.obj: include/port_audio/pa_ringbuffer.c.obj
 
 # target to build an object file
 include/port_audio/pa_ringbuffer.c.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_ringbuffer.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.obj
 .PHONY : include/port_audio/pa_ringbuffer.c.obj
 
@@ -921,8 +921,8 @@ include/port_audio/pa_ringbuffer.i: include/port_audio/pa_ringbuffer.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_ringbuffer.c.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_ringbuffer.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.i
 .PHONY : include/port_audio/pa_ringbuffer.c.i
 
@@ -932,8 +932,8 @@ include/port_audio/pa_ringbuffer.s: include/port_audio/pa_ringbuffer.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_ringbuffer.c.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_ringbuffer.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_ringbuffer.c.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_ringbuffer.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_ringbuffer.c.s
 .PHONY : include/port_audio/pa_ringbuffer.c.s
 
@@ -943,8 +943,8 @@ include/port_audio/pa_win_util.obj: include/port_audio/pa_win_util.c.obj
 
 # target to build an object file
 include/port_audio/pa_win_util.c.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_win_util.c.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.obj
 .PHONY : include/port_audio/pa_win_util.c.obj
 
@@ -954,8 +954,8 @@ include/port_audio/pa_win_util.i: include/port_audio/pa_win_util.c.i
 
 # target to preprocess a source file
 include/port_audio/pa_win_util.c.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_win_util.c.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.i
 .PHONY : include/port_audio/pa_win_util.c.i
 
@@ -965,10 +965,19 @@ include/port_audio/pa_win_util.s: include/port_audio/pa_win_util.c.s
 
 # target to generate assembly for a file
 include/port_audio/pa_win_util.c.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/include/port_audio/pa_win_util.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/include/port_audio/pa_win_util.c.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/include/port_audio/pa_win_util.c.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/include/port_audio/pa_win_util.c.s
 .PHONY : include/port_audio/pa_win_util.c.s
+
+intellijam.obj: intellijam.rc.obj
+
+.PHONY : intellijam.obj
+
+# target to build an object file
+intellijam.rc.obj:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/intellijam.rc.obj
+.PHONY : intellijam.rc.obj
 
 src/bridge/bridge.obj: src/bridge/bridge.cpp.obj
 
@@ -976,7 +985,7 @@ src/bridge/bridge.obj: src/bridge/bridge.cpp.obj
 
 # target to build an object file
 src/bridge/bridge.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/bridge/bridge.cpp.obj
 .PHONY : src/bridge/bridge.cpp.obj
 
 src/bridge/bridge.i: src/bridge/bridge.cpp.i
@@ -985,7 +994,7 @@ src/bridge/bridge.i: src/bridge/bridge.cpp.i
 
 # target to preprocess a source file
 src/bridge/bridge.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/bridge/bridge.cpp.i
 .PHONY : src/bridge/bridge.cpp.i
 
 src/bridge/bridge.s: src/bridge/bridge.cpp.s
@@ -994,7 +1003,7 @@ src/bridge/bridge.s: src/bridge/bridge.cpp.s
 
 # target to generate assembly for a file
 src/bridge/bridge.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/bridge/bridge.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/bridge/bridge.cpp.s
 .PHONY : src/bridge/bridge.cpp.s
 
 src/esn/esn.obj: src/esn/esn.cpp.obj
@@ -1007,8 +1016,8 @@ src/esn/esn.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.obj
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.obj
 .PHONY : src/esn/esn.cpp.obj
@@ -1023,8 +1032,8 @@ src/esn/esn.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.i
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.i
 .PHONY : src/esn/esn.cpp.i
@@ -1039,8 +1048,8 @@ src/esn/esn.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn.cpp.s
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn.cpp.s
 .PHONY : src/esn/esn.cpp.s
@@ -1088,8 +1097,8 @@ src/esn/esn_outputs.cpp.obj:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn_outputs.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.obj
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.obj
 .PHONY : src/esn/esn_outputs.cpp.obj
@@ -1104,8 +1113,8 @@ src/esn/esn_outputs.cpp.i:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn_outputs.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.i
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.i
 .PHONY : src/esn/esn_outputs.cpp.i
@@ -1120,8 +1129,8 @@ src/esn/esn_outputs.cpp.s:
 	$(MAKE) -f CMakeFiles\TRAINING_TEST.dir\build.make CMakeFiles/TRAINING_TEST.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_SPEED_TEST.dir\build.make CMakeFiles/ESN_SPEED_TEST.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\ESN_CORE_TEST.dir\build.make CMakeFiles/ESN_CORE_TEST.dir/src/esn/esn_outputs.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/esn/esn_outputs.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/esn/esn_outputs.cpp.s
 	$(MAKE) -f CMakeFiles\TRAINING_ERROR.dir\build.make CMakeFiles/TRAINING_ERROR.dir/src/esn/esn_outputs.cpp.s
 .PHONY : src/esn/esn_outputs.cpp.s
@@ -1132,7 +1141,7 @@ src/interface/controlbar.obj: src/interface/controlbar.cpp.obj
 
 # target to build an object file
 src/interface/controlbar.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/controlbar.cpp.obj
 .PHONY : src/interface/controlbar.cpp.obj
 
 src/interface/controlbar.i: src/interface/controlbar.cpp.i
@@ -1141,7 +1150,7 @@ src/interface/controlbar.i: src/interface/controlbar.cpp.i
 
 # target to preprocess a source file
 src/interface/controlbar.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/controlbar.cpp.i
 .PHONY : src/interface/controlbar.cpp.i
 
 src/interface/controlbar.s: src/interface/controlbar.cpp.s
@@ -1150,7 +1159,7 @@ src/interface/controlbar.s: src/interface/controlbar.cpp.s
 
 # target to generate assembly for a file
 src/interface/controlbar.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/controlbar.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/controlbar.cpp.s
 .PHONY : src/interface/controlbar.cpp.s
 
 src/interface/devicebar.obj: src/interface/devicebar.cpp.obj
@@ -1159,7 +1168,7 @@ src/interface/devicebar.obj: src/interface/devicebar.cpp.obj
 
 # target to build an object file
 src/interface/devicebar.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/devicebar.cpp.obj
 .PHONY : src/interface/devicebar.cpp.obj
 
 src/interface/devicebar.i: src/interface/devicebar.cpp.i
@@ -1168,7 +1177,7 @@ src/interface/devicebar.i: src/interface/devicebar.cpp.i
 
 # target to preprocess a source file
 src/interface/devicebar.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/devicebar.cpp.i
 .PHONY : src/interface/devicebar.cpp.i
 
 src/interface/devicebar.s: src/interface/devicebar.cpp.s
@@ -1177,7 +1186,7 @@ src/interface/devicebar.s: src/interface/devicebar.cpp.s
 
 # target to generate assembly for a file
 src/interface/devicebar.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/devicebar.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/devicebar.cpp.s
 .PHONY : src/interface/devicebar.cpp.s
 
 src/interface/main.obj: src/interface/main.cpp.obj
@@ -1186,7 +1195,7 @@ src/interface/main.obj: src/interface/main.cpp.obj
 
 # target to build an object file
 src/interface/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/main.cpp.obj
 .PHONY : src/interface/main.cpp.obj
 
 src/interface/main.i: src/interface/main.cpp.i
@@ -1195,7 +1204,7 @@ src/interface/main.i: src/interface/main.cpp.i
 
 # target to preprocess a source file
 src/interface/main.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/main.cpp.i
 .PHONY : src/interface/main.cpp.i
 
 src/interface/main.s: src/interface/main.cpp.s
@@ -1204,7 +1213,7 @@ src/interface/main.s: src/interface/main.cpp.s
 
 # target to generate assembly for a file
 src/interface/main.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/main.cpp.s
 .PHONY : src/interface/main.cpp.s
 
 src/interface/mainwindow.obj: src/interface/mainwindow.cpp.obj
@@ -1213,7 +1222,7 @@ src/interface/mainwindow.obj: src/interface/mainwindow.cpp.obj
 
 # target to build an object file
 src/interface/mainwindow.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/mainwindow.cpp.obj
 .PHONY : src/interface/mainwindow.cpp.obj
 
 src/interface/mainwindow.i: src/interface/mainwindow.cpp.i
@@ -1222,7 +1231,7 @@ src/interface/mainwindow.i: src/interface/mainwindow.cpp.i
 
 # target to preprocess a source file
 src/interface/mainwindow.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/mainwindow.cpp.i
 .PHONY : src/interface/mainwindow.cpp.i
 
 src/interface/mainwindow.s: src/interface/mainwindow.cpp.s
@@ -1231,7 +1240,7 @@ src/interface/mainwindow.s: src/interface/mainwindow.cpp.s
 
 # target to generate assembly for a file
 src/interface/mainwindow.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/mainwindow.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/mainwindow.cpp.s
 .PHONY : src/interface/mainwindow.cpp.s
 
 src/interface/nametile.obj: src/interface/nametile.cpp.obj
@@ -1240,7 +1249,7 @@ src/interface/nametile.obj: src/interface/nametile.cpp.obj
 
 # target to build an object file
 src/interface/nametile.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nametile.cpp.obj
 .PHONY : src/interface/nametile.cpp.obj
 
 src/interface/nametile.i: src/interface/nametile.cpp.i
@@ -1249,7 +1258,7 @@ src/interface/nametile.i: src/interface/nametile.cpp.i
 
 # target to preprocess a source file
 src/interface/nametile.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nametile.cpp.i
 .PHONY : src/interface/nametile.cpp.i
 
 src/interface/nametile.s: src/interface/nametile.cpp.s
@@ -1258,7 +1267,7 @@ src/interface/nametile.s: src/interface/nametile.cpp.s
 
 # target to generate assembly for a file
 src/interface/nametile.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nametile.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nametile.cpp.s
 .PHONY : src/interface/nametile.cpp.s
 
 src/interface/nowplayingbar.obj: src/interface/nowplayingbar.cpp.obj
@@ -1267,7 +1276,7 @@ src/interface/nowplayingbar.obj: src/interface/nowplayingbar.cpp.obj
 
 # target to build an object file
 src/interface/nowplayingbar.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nowplayingbar.cpp.obj
 .PHONY : src/interface/nowplayingbar.cpp.obj
 
 src/interface/nowplayingbar.i: src/interface/nowplayingbar.cpp.i
@@ -1276,7 +1285,7 @@ src/interface/nowplayingbar.i: src/interface/nowplayingbar.cpp.i
 
 # target to preprocess a source file
 src/interface/nowplayingbar.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nowplayingbar.cpp.i
 .PHONY : src/interface/nowplayingbar.cpp.i
 
 src/interface/nowplayingbar.s: src/interface/nowplayingbar.cpp.s
@@ -1285,7 +1294,7 @@ src/interface/nowplayingbar.s: src/interface/nowplayingbar.cpp.s
 
 # target to generate assembly for a file
 src/interface/nowplayingbar.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/nowplayingbar.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/nowplayingbar.cpp.s
 .PHONY : src/interface/nowplayingbar.cpp.s
 
 src/interface/piano.obj: src/interface/piano.cpp.obj
@@ -1294,7 +1303,7 @@ src/interface/piano.obj: src/interface/piano.cpp.obj
 
 # target to build an object file
 src/interface/piano.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/piano.cpp.obj
 .PHONY : src/interface/piano.cpp.obj
 
 src/interface/piano.i: src/interface/piano.cpp.i
@@ -1303,7 +1312,7 @@ src/interface/piano.i: src/interface/piano.cpp.i
 
 # target to preprocess a source file
 src/interface/piano.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/piano.cpp.i
 .PHONY : src/interface/piano.cpp.i
 
 src/interface/piano.s: src/interface/piano.cpp.s
@@ -1312,7 +1321,7 @@ src/interface/piano.s: src/interface/piano.cpp.s
 
 # target to generate assembly for a file
 src/interface/piano.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/piano.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/piano.cpp.s
 .PHONY : src/interface/piano.cpp.s
 
 src/interface/squarebutton.obj: src/interface/squarebutton.cpp.obj
@@ -1321,7 +1330,7 @@ src/interface/squarebutton.obj: src/interface/squarebutton.cpp.obj
 
 # target to build an object file
 src/interface/squarebutton.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/squarebutton.cpp.obj
 .PHONY : src/interface/squarebutton.cpp.obj
 
 src/interface/squarebutton.i: src/interface/squarebutton.cpp.i
@@ -1330,7 +1339,7 @@ src/interface/squarebutton.i: src/interface/squarebutton.cpp.i
 
 # target to preprocess a source file
 src/interface/squarebutton.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/squarebutton.cpp.i
 .PHONY : src/interface/squarebutton.cpp.i
 
 src/interface/squarebutton.s: src/interface/squarebutton.cpp.s
@@ -1339,7 +1348,7 @@ src/interface/squarebutton.s: src/interface/squarebutton.cpp.s
 
 # target to generate assembly for a file
 src/interface/squarebutton.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/squarebutton.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/squarebutton.cpp.s
 .PHONY : src/interface/squarebutton.cpp.s
 
 src/interface/vmeter.obj: src/interface/vmeter.cpp.obj
@@ -1348,7 +1357,7 @@ src/interface/vmeter.obj: src/interface/vmeter.cpp.obj
 
 # target to build an object file
 src/interface/vmeter.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/vmeter.cpp.obj
 .PHONY : src/interface/vmeter.cpp.obj
 
 src/interface/vmeter.i: src/interface/vmeter.cpp.i
@@ -1357,7 +1366,7 @@ src/interface/vmeter.i: src/interface/vmeter.cpp.i
 
 # target to preprocess a source file
 src/interface/vmeter.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/vmeter.cpp.i
 .PHONY : src/interface/vmeter.cpp.i
 
 src/interface/vmeter.s: src/interface/vmeter.cpp.s
@@ -1366,7 +1375,7 @@ src/interface/vmeter.s: src/interface/vmeter.cpp.s
 
 # target to generate assembly for a file
 src/interface/vmeter.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/interface/vmeter.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/interface/vmeter.cpp.s
 .PHONY : src/interface/vmeter.cpp.s
 
 src/lstm/auxillary_functions.obj: src/lstm/auxillary_functions.cpp.obj
@@ -1437,9 +1446,9 @@ src/midi/midi.obj: src/midi/midi.cpp.obj
 src/midi/midi.cpp.obj:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/midi.cpp.obj
 .PHONY : src/midi/midi.cpp.obj
 
 src/midi/midi.i: src/midi/midi.cpp.i
@@ -1450,9 +1459,9 @@ src/midi/midi.i: src/midi/midi.cpp.i
 src/midi/midi.cpp.i:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/midi.cpp.i
 .PHONY : src/midi/midi.cpp.i
 
 src/midi/midi.s: src/midi/midi.cpp.s
@@ -1463,9 +1472,9 @@ src/midi/midi.s: src/midi/midi.cpp.s
 src/midi/midi.cpp.s:
 	$(MAKE) -f CMakeFiles\MIDI_TWINKLE.dir\build.make CMakeFiles/MIDI_TWINKLE.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_TEST.dir\build.make CMakeFiles/MIDI_TEST.dir/src/midi/midi.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/midi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/midi.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/midi.cpp.s
 .PHONY : src/midi/midi.cpp.s
 
 src/midi/modelToMidi.obj: src/midi/modelToMidi.cpp.obj
@@ -1474,9 +1483,9 @@ src/midi/modelToMidi.obj: src/midi/modelToMidi.cpp.obj
 
 # target to build an object file
 src/midi/modelToMidi.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/modelToMidi.cpp.obj
 .PHONY : src/midi/modelToMidi.cpp.obj
 
 src/midi/modelToMidi.i: src/midi/modelToMidi.cpp.i
@@ -1485,9 +1494,9 @@ src/midi/modelToMidi.i: src/midi/modelToMidi.cpp.i
 
 # target to preprocess a source file
 src/midi/modelToMidi.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.i
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/modelToMidi.cpp.i
 .PHONY : src/midi/modelToMidi.cpp.i
 
 src/midi/modelToMidi.s: src/midi/modelToMidi.cpp.s
@@ -1496,9 +1505,9 @@ src/midi/modelToMidi.s: src/midi/modelToMidi.cpp.s
 
 # target to generate assembly for a file
 src/midi/modelToMidi.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.s
 	$(MAKE) -f CMakeFiles\MIDI_WIN.dir\build.make CMakeFiles/MIDI_WIN.dir/src/midi/modelToMidi.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/midi/modelToMidi.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/midi/modelToMidi.cpp.s
 .PHONY : src/midi/modelToMidi.cpp.s
 
 src/model/fpm.obj: src/model/fpm.cpp.obj
@@ -1507,8 +1516,8 @@ src/model/fpm.obj: src/model/fpm.cpp.obj
 
 # target to build an object file
 src/model/fpm.cpp.obj:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/fpm.cpp.obj
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj
 .PHONY : src/model/fpm.cpp.obj
 
 src/model/fpm.i: src/model/fpm.cpp.i
@@ -1517,8 +1526,8 @@ src/model/fpm.i: src/model/fpm.cpp.i
 
 # target to preprocess a source file
 src/model/fpm.cpp.i:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/fpm.cpp.i
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.i
 .PHONY : src/model/fpm.cpp.i
 
 src/model/fpm.s: src/model/fpm.cpp.s
@@ -1527,8 +1536,8 @@ src/model/fpm.s: src/model/fpm.cpp.s
 
 # target to generate assembly for a file
 src/model/fpm.cpp.s:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/fpm.cpp.s
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/fpm.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.s
 .PHONY : src/model/fpm.cpp.s
 
 src/model/keyDetect.obj: src/model/keyDetect.cpp.obj
@@ -1537,8 +1546,8 @@ src/model/keyDetect.obj: src/model/keyDetect.cpp.obj
 
 # target to build an object file
 src/model/keyDetect.cpp.obj:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/keyDetect.cpp.obj
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.obj
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj
 .PHONY : src/model/keyDetect.cpp.obj
 
 src/model/keyDetect.i: src/model/keyDetect.cpp.i
@@ -1547,8 +1556,8 @@ src/model/keyDetect.i: src/model/keyDetect.cpp.i
 
 # target to preprocess a source file
 src/model/keyDetect.cpp.i:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/keyDetect.cpp.i
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.i
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.i
 .PHONY : src/model/keyDetect.cpp.i
 
 src/model/keyDetect.s: src/model/keyDetect.cpp.s
@@ -1557,8 +1566,8 @@ src/model/keyDetect.s: src/model/keyDetect.cpp.s
 
 # target to generate assembly for a file
 src/model/keyDetect.cpp.s:
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/model/keyDetect.cpp.s
 	$(MAKE) -f CMakeFiles\MODEL_UNIT.dir\build.make CMakeFiles/MODEL_UNIT.dir/src/model/keyDetect.cpp.s
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.s
 .PHONY : src/model/keyDetect.cpp.s
 
 src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
@@ -1567,8 +1576,8 @@ src/runtime/init_close.obj: src/runtime/init_close.cpp.obj
 
 # target to build an object file
 src/runtime/init_close.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/init_close.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.obj
 .PHONY : src/runtime/init_close.cpp.obj
 
@@ -1578,8 +1587,8 @@ src/runtime/init_close.i: src/runtime/init_close.cpp.i
 
 # target to preprocess a source file
 src/runtime/init_close.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/init_close.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.i
 .PHONY : src/runtime/init_close.cpp.i
 
@@ -1589,8 +1598,8 @@ src/runtime/init_close.s: src/runtime/init_close.cpp.s
 
 # target to generate assembly for a file
 src/runtime/init_close.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/init_close.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/init_close.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/init_close.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/init_close.cpp.s
 .PHONY : src/runtime/init_close.cpp.s
 
@@ -1600,8 +1609,8 @@ src/runtime/port_processing.obj: src/runtime/port_processing.cpp.obj
 
 # target to build an object file
 src/runtime/port_processing.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/port_processing.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.obj
 .PHONY : src/runtime/port_processing.cpp.obj
 
@@ -1611,8 +1620,8 @@ src/runtime/port_processing.i: src/runtime/port_processing.cpp.i
 
 # target to preprocess a source file
 src/runtime/port_processing.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/port_processing.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.i
 .PHONY : src/runtime/port_processing.cpp.i
 
@@ -1622,8 +1631,8 @@ src/runtime/port_processing.s: src/runtime/port_processing.cpp.s
 
 # target to generate assembly for a file
 src/runtime/port_processing.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/port_processing.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/port_processing.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/port_processing.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME_UNIT.dir\build.make CMakeFiles/RUNTIME_UNIT.dir/src/runtime/port_processing.cpp.s
 .PHONY : src/runtime/port_processing.cpp.s
 
@@ -1660,8 +1669,8 @@ src/runtime/timerThread.obj: src/runtime/timerThread.cpp.obj
 
 # target to build an object file
 src/runtime/timerThread.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timerThread.cpp.obj
 .PHONY : src/runtime/timerThread.cpp.obj
 
 src/runtime/timerThread.i: src/runtime/timerThread.cpp.i
@@ -1670,8 +1679,8 @@ src/runtime/timerThread.i: src/runtime/timerThread.cpp.i
 
 # target to preprocess a source file
 src/runtime/timerThread.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timerThread.cpp.i
 .PHONY : src/runtime/timerThread.cpp.i
 
 src/runtime/timerThread.s: src/runtime/timerThread.cpp.s
@@ -1680,8 +1689,8 @@ src/runtime/timerThread.s: src/runtime/timerThread.cpp.s
 
 # target to generate assembly for a file
 src/runtime/timerThread.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timerThread.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timerThread.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timerThread.cpp.s
 .PHONY : src/runtime/timerThread.cpp.s
 
 src/runtime/timers.obj: src/runtime/timers.cpp.obj
@@ -1690,8 +1699,8 @@ src/runtime/timers.obj: src/runtime/timers.cpp.obj
 
 # target to build an object file
 src/runtime/timers.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timers.cpp.obj
 .PHONY : src/runtime/timers.cpp.obj
 
 src/runtime/timers.i: src/runtime/timers.cpp.i
@@ -1700,8 +1709,8 @@ src/runtime/timers.i: src/runtime/timers.cpp.i
 
 # target to preprocess a source file
 src/runtime/timers.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timers.cpp.i
 .PHONY : src/runtime/timers.cpp.i
 
 src/runtime/timers.s: src/runtime/timers.cpp.s
@@ -1710,8 +1719,8 @@ src/runtime/timers.s: src/runtime/timers.cpp.s
 
 # target to generate assembly for a file
 src/runtime/timers.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/timers.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/timers.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/timers.cpp.s
 .PHONY : src/runtime/timers.cpp.s
 
 src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
@@ -1720,8 +1729,8 @@ src/runtime/updateThread.obj: src/runtime/updateThread.cpp.obj
 
 # target to build an object file
 src/runtime/updateThread.cpp.obj:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.obj
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/updateThread.cpp.obj
 .PHONY : src/runtime/updateThread.cpp.obj
 
 src/runtime/updateThread.i: src/runtime/updateThread.cpp.i
@@ -1730,8 +1739,8 @@ src/runtime/updateThread.i: src/runtime/updateThread.cpp.i
 
 # target to preprocess a source file
 src/runtime/updateThread.cpp.i:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.i
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.i
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/updateThread.cpp.i
 .PHONY : src/runtime/updateThread.cpp.i
 
 src/runtime/updateThread.s: src/runtime/updateThread.cpp.s
@@ -1740,8 +1749,8 @@ src/runtime/updateThread.s: src/runtime/updateThread.cpp.s
 
 # target to generate assembly for a file
 src/runtime/updateThread.cpp.s:
-	$(MAKE) -f CMakeFiles\RUNTIME_W_GUI.dir\build.make CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.s
 	$(MAKE) -f CMakeFiles\RUNTIME.dir\build.make CMakeFiles/RUNTIME.dir/src/runtime/updateThread.cpp.s
+	$(MAKE) -f CMakeFiles\IntelliJam.dir\build.make CMakeFiles/IntelliJam.dir/src/runtime/updateThread.cpp.s
 .PHONY : src/runtime/updateThread.cpp.s
 
 src/training_lstm/errorCalculation.obj: src/training_lstm/errorCalculation.cpp.obj
@@ -2272,12 +2281,12 @@ help:
 	@echo ... ESN_SPEED_TEST
 	@echo ... ESN_CORE_TEST
 	@echo ... MIDI_TEST
-	@echo ... rebuild_cache
-	@echo ... MODEL_UNIT
-	@echo ... RUNTIME_W_GUI
 	@echo ... MIDI_WIN
 	@echo ... PORT_FUZZ_TEST
 	@echo ... RUNTIME
+	@echo ... IntelliJam
+	@echo ... rebuild_cache
+	@echo ... MODEL_UNIT
 	@echo ... RUNTIME_UNIT
 	@echo ... TRAINING_ERROR
 	@echo ... LSTM
@@ -2289,11 +2298,11 @@ help:
 	@echo ... ESN_SPEED_TEST_autogen
 	@echo ... ESN_CORE_TEST_autogen
 	@echo ... MIDI_TEST_autogen
-	@echo ... MODEL_UNIT_autogen
-	@echo ... RUNTIME_W_GUI_autogen
 	@echo ... MIDI_WIN_autogen
 	@echo ... PORT_FUZZ_TEST_autogen
 	@echo ... RUNTIME_autogen
+	@echo ... IntelliJam_autogen
+	@echo ... MODEL_UNIT_autogen
 	@echo ... RUNTIME_UNIT_autogen
 	@echo ... TRAINING_ERROR_autogen
 	@echo ... LSTM_autogen
@@ -2304,6 +2313,9 @@ help:
 	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.obj
 	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.i
 	@echo ... ESN_SPEED_TEST_autogen/mocs_compilation.s
+	@echo ... IntelliJam_autogen/mocs_compilation.obj
+	@echo ... IntelliJam_autogen/mocs_compilation.i
+	@echo ... IntelliJam_autogen/mocs_compilation.s
 	@echo ... LSTM_TEST_autogen/mocs_compilation.obj
 	@echo ... LSTM_TEST_autogen/mocs_compilation.i
 	@echo ... LSTM_TEST_autogen/mocs_compilation.s
@@ -2328,9 +2340,6 @@ help:
 	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.obj
 	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.i
 	@echo ... RUNTIME_UNIT_autogen/mocs_compilation.s
-	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.obj
-	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.i
-	@echo ... RUNTIME_W_GUI_autogen/mocs_compilation.s
 	@echo ... RUNTIME_autogen/mocs_compilation.obj
 	@echo ... RUNTIME_autogen/mocs_compilation.i
 	@echo ... RUNTIME_autogen/mocs_compilation.s
@@ -2349,6 +2358,7 @@ help:
 	@echo ... include/port_audio/pa_win_util.obj
 	@echo ... include/port_audio/pa_win_util.i
 	@echo ... include/port_audio/pa_win_util.s
+	@echo ... intellijam.obj
 	@echo ... src/bridge/bridge.obj
 	@echo ... src/bridge/bridge.i
 	@echo ... src/bridge/bridge.s

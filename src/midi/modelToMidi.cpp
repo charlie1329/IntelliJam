@@ -94,7 +94,7 @@ unsigned long *naiveMidiWin(MatrixXd prediction, HMIDISTRM *out, int *ppqn, int 
 
     events[0] = 0;
     events[1] = 0; //stupid Windows and its redundant parameters
-    events[2] = ((unsigned long)MEVT_SHORTMSG << 24) | 0x00001EC0; //set to guitar sound
+    events[2] = ((unsigned long)MEVT_SHORTMSG << 24) | 0x000001C0; //set to guitar sound (1E)
     //bit shifting tip from http://midi.teragonaudio.com/tech/stream.htm
 
     int arrStart = 0;

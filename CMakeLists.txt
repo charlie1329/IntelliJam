@@ -10,6 +10,12 @@ set(CMAKE_CXX_STANDARD 11)
 #removes command line window, may need to switch off for non GUI-oriented targets
 #set(CMAKE_CXX_FLAGS "-mwindows")
 
+#deal with RC stuff
+set(RES_FILES ${CMAKE_CURRENT_SOURCE_DIR}/intellijam.rc)
+set(CMAKE_RC_COMPILER_INIT windres)
+ENABLE_LANGUAGE(RC)
+set(CMAKE_RC_COMPILE_OBJECT
+        "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
 # get boost setup properly
 #set(Boost_DEBUG ON)
 set(BOOST_ROOT "C:/Program Files/boost_1_66_0")
@@ -215,15 +221,15 @@ set(RUNTIME_W_GUI_FILES include/interface/controlbar.h
                         src/model/keyDetect.cpp
                         include/model/fpm.h src/model/fpm.cpp)
 
-add_executable(RUNTIME_W_GUI ${RUNTIME_W_GUI_FILES})
+add_executable(IntelliJam ${RUNTIME_W_GUI_FILES} ${CMAKE_CURRENT_SOURCE_DIR}/intellijam.rc)
 if(Qt5Widgets_FOUND)
-    target_link_libraries(RUNTIME_W_GUI Qt5::Widgets Qt5::Core Qt5::Svg Qt5::Gui)
+    target_link_libraries(IntelliJam Qt5::Widgets Qt5::Core Qt5::Svg Qt5::Gui)
 endif()
-target_link_libraries(RUNTIME_W_GUI ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
-target_link_libraries(RUNTIME_W_GUI winmm.lib)
+target_link_libraries(IntelliJam ${CMAKE_CURRENT_SOURCE_DIR}/libs/portaudio_x86.lib)
+target_link_libraries(IntelliJam winmm.lib)
 #link up the boost libraries
 if(Boost_FOUND)
-    target_link_libraries(RUNTIME_W_GUI ${Boost_LIBRARIES})
+    target_link_libraries(IntelliJam ${Boost_LIBRARIES})
 endif()
 
 

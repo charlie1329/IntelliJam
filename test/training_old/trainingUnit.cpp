@@ -17,7 +17,6 @@
 #include "../../include/esn/esn_costs.h"
 #include "../../include/training_old/simulated_annealing.h"
 
-//TODO: Test rest of functionality!!!
 
 /**
  * tests the functionality of the function readTrainingFile

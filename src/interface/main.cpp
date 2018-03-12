@@ -8,6 +8,7 @@
 #include <QApplication>
 #include <QSplashScreen>
 #include <QMessageBox>
+#include <QIcon>
 
 /**
  * function starts up and runs the system
@@ -19,8 +20,10 @@ int main(int argc, char **argv) {
 
     QApplication a(argc, argv);
 
+    a.setWindowIcon(QIcon("images/logo.png"));
     //set up a splash screen while system starts up
-    QPixmap pixmap("images/ade.png");
+    QPixmap pixmap("images/splash.png"); //Splash Screen Image and Logo kindly designed by Tom Nicklin
+    pixmap = pixmap.scaledToWidth(800);
     QSplashScreen splash(pixmap);
     splash.show();
 

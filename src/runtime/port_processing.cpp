@@ -33,7 +33,6 @@ int audioCallback(const void *input, void *output, unsigned long frameCount,
         //update buffer currently being written to at a different sample rate
         PaUtil_WriteRingBuffer(&(info->ringTimer),in,1);
 
-        //TODO: CHECK THIS IS CORRECT, RELATED TO WHETHER STEREO OR MONO INPUT
         in += 2;
 
     }

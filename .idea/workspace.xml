@@ -3,30 +3,30 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="FYP" targetName="MIDI_TEST_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI_autogen" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE" />
       <config projectName="FYP" targetName="LSTM" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE" />
       <config projectName="FYP" targetName="TRAINING" />
-      <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
       <config projectName="FYP" targetName="TRAINING_TEST_autogen" />
+      <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
       <config projectName="FYP" targetName="RUNTIME_UNIT" />
       <config projectName="FYP" targetName="TRAINING_TEST" />
       <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST" />
-      <config projectName="FYP" targetName="RUNTIME_W_GUI" />
       <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
-      <config projectName="FYP" targetName="TRAINING_ERROR" />
-      <config projectName="FYP" targetName="LSTM_TEST_autogen" />
+      <config projectName="FYP" targetName="IntelliJam_autogen" />
       <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
       <config projectName="FYP" targetName="MIDI_WIN" />
+      <config projectName="FYP" targetName="LSTM_TEST_autogen" />
+      <config projectName="FYP" targetName="TRAINING_ERROR" />
       <config projectName="FYP" targetName="TEST" />
       <config projectName="FYP" targetName="MODEL_UNIT_autogen" />
       <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
+      <config projectName="FYP" targetName="IntelliJam" />
       <config projectName="FYP" targetName="RUNTIME" />
       <config projectName="FYP" targetName="ESN_CORE_TEST" />
-      <config projectName="FYP" targetName="RUNTIME_autogen" />
       <config projectName="FYP" targetName="TRAINING_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_autogen" />
       <config projectName="FYP" targetName="MIDI_WIN_autogen" />
       <config projectName="FYP" targetName="LSTM_TEST" />
       <config projectName="FYP" targetName="MIDI_TEST" />
@@ -46,7 +46,6 @@
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeRuleHashes.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_CORE_TEST_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/progress.make" />
@@ -57,6 +56,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST_autogen.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_TEST_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/LSTM_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_TEST.dir/cmake_clean.cmake" />
@@ -71,6 +71,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MIDI_WIN_autogen.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT_autogen.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/MODEL_UNIT_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/PORT_FUZZ_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/PORT_FUZZ_TEST.dir/cmake_clean.cmake" />
@@ -84,40 +88,42 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_UNIT_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/CXX.includecache" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/flags.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/link.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/fpm.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/model/keyDetect.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/runtime/updateThread.cpp.obj" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI_autogen.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/interface/main.cpp.obj" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_W_GUI.dir/src/midi/modelToMidi.cpp.obj" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_autogen.dir/cmake_clean.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/RUNTIME_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_ERROR_autogen.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_TEST_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_autogen.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TRAINING_autogen.dir/cmake_clean.cmake" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" afterPath="$PROJECT_DIR$/cmake-build-release/FYP.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/MODEL_UNIT.exe" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI.exe" afterPath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI.exe" />
-      <change beforePath="$PROJECT_DIR$/fractal/fpm.py" afterPath="$PROJECT_DIR$/fractal/fpm.py" />
-      <change beforePath="$PROJECT_DIR$/fractal/fpmDirection.py" afterPath="$PROJECT_DIR$/fractal/fpmDirection.py" />
-      <change beforePath="$PROJECT_DIR$/fractal/keyDetection.py" afterPath="$PROJECT_DIR$/fractal/keyDetection.py" />
-      <change beforePath="$PROJECT_DIR$/include/model/fpm.h" afterPath="$PROJECT_DIR$/include/model/fpm.h" />
-      <change beforePath="$PROJECT_DIR$/include/runtime/updateThread.h" afterPath="$PROJECT_DIR$/include/runtime/updateThread.h" />
-      <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/model/keyDetect.cpp" afterPath="$PROJECT_DIR$/src/model/keyDetect.cpp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/RUNTIME_W_GUI.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/include/training_old/hyperParameters.h" afterPath="$PROJECT_DIR$/include/training_old/hyperParameters.h" />
+      <change beforePath="$PROJECT_DIR$/src/bridge/bridge.cpp" afterPath="$PROJECT_DIR$/src/bridge/bridge.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/interface/devicebar.cpp" afterPath="$PROJECT_DIR$/src/interface/devicebar.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/interface/main.cpp" afterPath="$PROJECT_DIR$/src/interface/main.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/interface/mainwindow.cpp" afterPath="$PROJECT_DIR$/src/interface/mainwindow.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/lstm/lstm.cpp" afterPath="$PROJECT_DIR$/src/lstm/lstm.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" afterPath="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/runtime/port_processing.cpp" afterPath="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
       <change beforePath="$PROJECT_DIR$/src/runtime/timerThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/runtime/timers.cpp" afterPath="$PROJECT_DIR$/src/runtime/timers.cpp" />
       <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
+      <change beforePath="$PROJECT_DIR$/test/training_old/trainingUnit.cpp" afterPath="$PROJECT_DIR$/test/training_old/trainingUnit.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -137,38 +143,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fpm.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="385" column="33" lean-forward="false" selection-start-line="385" selection-start-column="33" selection-end-line="385" selection-end-column="33" />
-              <folding>
-                <element signature="e#93#111#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fpm.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/model/fpm.h">
+      <file leaf-file-name="hyperParameters.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/training_old/hyperParameters.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="104" column="30" lean-forward="false" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
-              <folding>
-                <element signature="e#175#197#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modelTest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/model/modelTest.cpp">
+      <file leaf-file-name="trainingUnit.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/training_old/trainingUnit.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="321" column="43" lean-forward="false" selection-start-line="321" selection-start-column="43" selection-end-line="321" selection-end-column="43" />
-              <folding>
-                <element signature="e#121#160#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lstm.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lstm/lstm.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="port_processing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runtime/port_processing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timers.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runtime/timers.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateThread.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1777">
+              <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,14 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/interface/piano.cpp" />
-        <option value="$PROJECT_DIR$/include/interface/squarebutton.h" />
-        <option value="$PROJECT_DIR$/include/interface/controlbar.h" />
-        <option value="$PROJECT_DIR$/include/interface/mainwindow.h" />
-        <option value="$PROJECT_DIR$/src/interface/controlbar.cpp" />
-        <option value="$PROJECT_DIR$/src/interface/mainwindow.cpp" />
-        <option value="$PROJECT_DIR$/include/interface/nowplayingbar.h" />
-        <option value="$PROJECT_DIR$/src/interface/nowplayingbar.cpp" />
         <option value="$PROJECT_DIR$/include/esn/esn_outputs.h" />
         <option value="$PROJECT_DIR$/include/training/trainNetwork.h" />
         <option value="$PROJECT_DIR$/include/esn/esn.h" />
@@ -215,7 +247,6 @@
         <option value="$PROJECT_DIR$/src/training/trainNetwork.cpp" />
         <option value="$PROJECT_DIR$/test/training/calculateError.cpp" />
         <option value="$PROJECT_DIR$/include/readTraining.h" />
-        <option value="$PROJECT_DIR$/src/lstm/lstm.cpp" />
         <option value="$PROJECT_DIR$/test/training/testTraining.csv" />
         <option value="$PROJECT_DIR$/src/training/errorCalculation.h" />
         <option value="$PROJECT_DIR$/include/training/errorCalculation.h" />
@@ -223,7 +254,6 @@
         <option value="$PROJECT_DIR$/test/training/trainingUnit.cpp" />
         <option value="$PROJECT_DIR$/src/training/readTraining.cpp" />
         <option value="$PROJECT_DIR$/src/training/errorCalculation.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/port_processing.h" />
         <option value="$PROJECT_DIR$/include/model/keyDetect.h" />
         <option value="$PROJECT_DIR$/include/runtime/globalState.h" />
@@ -231,15 +261,25 @@
         <option value="$PROJECT_DIR$/src/runtime/init_close.cpp" />
         <option value="$PROJECT_DIR$/include/runtime/timerThread.h" />
         <option value="$PROJECT_DIR$/include/midi/modelToMidi.h" />
-        <option value="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
-        <option value="$PROJECT_DIR$/include/runtime/updateThread.h" />
-        <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/model/keyDetect.cpp" />
         <option value="$PROJECT_DIR$/include/model/fpm.h" />
         <option value="$PROJECT_DIR$/test/model/modelTest.cpp" />
         <option value="$PROJECT_DIR$/src/model/fpm.cpp" />
+        <option value="$PROJECT_DIR$/src/interface/mainwindow.cpp" />
+        <option value="$PROJECT_DIR$/intellijam.rc" />
+        <option value="$PROJECT_DIR$/src/interface/main.cpp" />
+        <option value="$PROJECT_DIR$/src/interface/devicebar.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/bridge/bridge.cpp" />
+        <option value="$PROJECT_DIR$/src/midi/modelToMidi.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
+        <option value="$PROJECT_DIR$/include/runtime/updateThread.h" />
+        <option value="$PROJECT_DIR$/include/training_old/hyperParameters.h" />
+        <option value="$PROJECT_DIR$/test/training_old/trainingUnit.cpp" />
+        <option value="$PROJECT_DIR$/src/lstm/lstm.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/timers.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
       </list>
     </option>
   </component>
@@ -291,24 +331,31 @@
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bridge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="FYP" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="esn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="midi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,11 +384,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RUNTIME_W_GUI">
-    <configuration name="ESN_CORE_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_CORE_TEST_autogen" CONFIG_NAME="Release">
+  <component name="RunManager" selected="Application.ESN_SPEED_TEST">
+    <configuration name="ESN_CORE_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_CORE_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="IntelliJam">
       <envs />
     </configuration>
-    <configuration name="ESN_SPEED_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_W_GUI" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="RUNTIME_W_GUI">
+    <configuration name="ESN_SPEED_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="IntelliJam" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="IntelliJam">
       <envs />
     </configuration>
     <configuration name="ESN_SPEED_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_SPEED_TEST_autogen" CONFIG_NAME="Release">
@@ -351,6 +398,9 @@
       <envs />
     </configuration>
     <configuration name="IntelliJam" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="LSTM">
+      <envs />
+    </configuration>
+    <configuration name="IntelliJam_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="IntelliJam_autogen" CONFIG_NAME="Release">
       <envs />
     </configuration>
     <configuration name="LSTM" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="LSTM">
@@ -404,12 +454,6 @@
     <configuration name="RUNTIME_UNIT_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT_autogen" CONFIG_NAME="Release">
       <envs />
     </configuration>
-    <configuration name="RUNTIME_W_GUI" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_W_GUI" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="RUNTIME_W_GUI">
-      <envs />
-    </configuration>
-    <configuration name="RUNTIME_W_GUI_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_W_GUI_autogen" CONFIG_NAME="Release">
-      <envs />
-    </configuration>
     <configuration name="RUNTIME_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_autogen" CONFIG_NAME="Release">
       <envs />
     </configuration>
@@ -428,37 +472,36 @@
     <configuration name="TRAINING_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_autogen" CONFIG_NAME="Release">
       <envs />
     </configuration>
-    <list size="30">
+    <list size="29">
       <item index="0" class="java.lang.String" itemvalue="Application.ESN_CORE_TEST_autogen" />
       <item index="1" class="java.lang.String" itemvalue="Application.ESN_SPEED_TEST" />
       <item index="2" class="java.lang.String" itemvalue="Application.ESN_SPEED_TEST_autogen" />
       <item index="3" class="java.lang.String" itemvalue="Application.FYP" />
       <item index="4" class="java.lang.String" itemvalue="Application.IntelliJam" />
-      <item index="5" class="java.lang.String" itemvalue="Application.LSTM" />
-      <item index="6" class="java.lang.String" itemvalue="Application.LSTM_autogen" />
-      <item index="7" class="java.lang.String" itemvalue="Application.LSTM_TEST" />
-      <item index="8" class="java.lang.String" itemvalue="Application.LSTM_TEST_autogen" />
-      <item index="9" class="java.lang.String" itemvalue="Application.MIDI_TEST" />
-      <item index="10" class="java.lang.String" itemvalue="Application.MIDI_TEST_autogen" />
-      <item index="11" class="java.lang.String" itemvalue="Application.MIDI_TWINKLE" />
-      <item index="12" class="java.lang.String" itemvalue="Application.MIDI_TWINKLE_autogen" />
-      <item index="13" class="java.lang.String" itemvalue="Application.MIDI_WIN" />
-      <item index="14" class="java.lang.String" itemvalue="Application.MIDI_WIN_autogen" />
-      <item index="15" class="java.lang.String" itemvalue="Application.MODEL_UNIT" />
-      <item index="16" class="java.lang.String" itemvalue="Application.MODEL_UNIT_autogen" />
-      <item index="17" class="java.lang.String" itemvalue="Application.PORT_FUZZ_TEST" />
-      <item index="18" class="java.lang.String" itemvalue="Application.PORT_FUZZ_TEST_autogen" />
-      <item index="19" class="java.lang.String" itemvalue="Application.RUNTIME" />
-      <item index="20" class="java.lang.String" itemvalue="Application.RUNTIME_autogen" />
-      <item index="21" class="java.lang.String" itemvalue="Application.RUNTIME_UNIT" />
-      <item index="22" class="java.lang.String" itemvalue="Application.RUNTIME_UNIT_autogen" />
-      <item index="23" class="java.lang.String" itemvalue="Application.RUNTIME_W_GUI" />
-      <item index="24" class="java.lang.String" itemvalue="Application.RUNTIME_W_GUI_autogen" />
-      <item index="25" class="java.lang.String" itemvalue="Application.TRAINING_autogen" />
-      <item index="26" class="java.lang.String" itemvalue="Application.TRAINING_ERROR" />
-      <item index="27" class="java.lang.String" itemvalue="Application.TRAINING_ERROR_autogen" />
-      <item index="28" class="java.lang.String" itemvalue="Application.TRAINING_TEST" />
-      <item index="29" class="java.lang.String" itemvalue="Application.TRAINING_TEST_autogen" />
+      <item index="5" class="java.lang.String" itemvalue="Application.IntelliJam_autogen" />
+      <item index="6" class="java.lang.String" itemvalue="Application.LSTM" />
+      <item index="7" class="java.lang.String" itemvalue="Application.LSTM_autogen" />
+      <item index="8" class="java.lang.String" itemvalue="Application.LSTM_TEST" />
+      <item index="9" class="java.lang.String" itemvalue="Application.LSTM_TEST_autogen" />
+      <item index="10" class="java.lang.String" itemvalue="Application.MIDI_TEST" />
+      <item index="11" class="java.lang.String" itemvalue="Application.MIDI_TEST_autogen" />
+      <item index="12" class="java.lang.String" itemvalue="Application.MIDI_TWINKLE" />
+      <item index="13" class="java.lang.String" itemvalue="Application.MIDI_TWINKLE_autogen" />
+      <item index="14" class="java.lang.String" itemvalue="Application.MIDI_WIN" />
+      <item index="15" class="java.lang.String" itemvalue="Application.MIDI_WIN_autogen" />
+      <item index="16" class="java.lang.String" itemvalue="Application.MODEL_UNIT" />
+      <item index="17" class="java.lang.String" itemvalue="Application.MODEL_UNIT_autogen" />
+      <item index="18" class="java.lang.String" itemvalue="Application.PORT_FUZZ_TEST" />
+      <item index="19" class="java.lang.String" itemvalue="Application.PORT_FUZZ_TEST_autogen" />
+      <item index="20" class="java.lang.String" itemvalue="Application.RUNTIME" />
+      <item index="21" class="java.lang.String" itemvalue="Application.RUNTIME_autogen" />
+      <item index="22" class="java.lang.String" itemvalue="Application.RUNTIME_UNIT" />
+      <item index="23" class="java.lang.String" itemvalue="Application.RUNTIME_UNIT_autogen" />
+      <item index="24" class="java.lang.String" itemvalue="Application.TRAINING_autogen" />
+      <item index="25" class="java.lang.String" itemvalue="Application.TRAINING_ERROR" />
+      <item index="26" class="java.lang.String" itemvalue="Application.TRAINING_ERROR_autogen" />
+      <item index="27" class="java.lang.String" itemvalue="Application.TRAINING_TEST" />
+      <item index="28" class="java.lang.String" itemvalue="Application.TRAINING_TEST_autogen" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -521,12 +564,15 @@
       <workItem from="1520502710662" duration="7052000" />
       <workItem from="1520598502089" duration="1608000" />
       <workItem from="1520702624971" duration="7273000" />
-      <workItem from="1520763379415" duration="19855000" />
+      <workItem from="1520763379415" duration="20450000" />
+      <workItem from="1520808710138" duration="536000" />
+      <workItem from="1520862822714" duration="669000" />
+      <workItem from="1520866413585" duration="5793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337343000" />
+    <option name="totallyTimeSpent" value="344936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,12 +585,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37664473" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16940789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -557,7 +605,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -603,34 +650,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/esn/esn_costs.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/lstm/auxillary_functions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lstm/auxillary_functions.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="15" lean-forward="false" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_data_extraction/training_pair_generation.py" />
-    <entry file="file://$PROJECT_DIR$/include/training/checkpoint.h" />
     <entry file="file://$PROJECT_DIR$/include/training/fileToEcho.h" />
     <entry file="file://$PROJECT_DIR$/include/training/hyperParameters.h" />
     <entry file="file://$PROJECT_DIR$/include/training/trainNetwork.h" />
@@ -641,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/src/training/simulated_annealing.cpp" />
     <entry file="file://$PROJECT_DIR$/src/training/trainNetwork.cpp" />
     <entry file="file://$PROJECT_DIR$/test/training/calculateError.cpp" />
-    <entry file="file://$PROJECT_DIR$/test/training_old/trainingUnit.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/training/testTraining.csv" />
     <entry file="file://$PROJECT_DIR$/src/training_old/fileToEcho.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,13 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-173">
           <caret line="126" column="16" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lstm/lstm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="355" column="0" lean-forward="true" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -700,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1593">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,23 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3570">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="122" column="128" lean-forward="false" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
-          <folding>
-            <element signature="e#167#204#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Eigen/unsupported/Eigen/src/FFT/ei_fftw_impl.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -763,47 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/port_processing.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/timers.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-913">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/runtime/updateThread.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding>
-            <element signature="e#268#292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="100" column="17" lean-forward="false" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#99#145#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/runtime/init_close.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="92" column="81" lean-forward="false" selection-start-line="92" selection-start-column="81" selection-end-line="92" selection-end-column="81" />
-          <folding>
-            <element signature="e#114#159#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,25 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#121#167#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="234" column="44" lean-forward="false" selection-start-line="234" selection-start-column="44" selection-end-line="234" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,9 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2737">
           <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="32" />
-          <folding>
-            <element signature="e#97#115#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -855,29 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="35" />
-          <folding>
-            <element signature="e#185#202#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/model/fpm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="104" column="30" lean-forward="false" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
-          <folding>
-            <element signature="e#175#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/model/modelTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="321" column="43" lean-forward="false" selection-start-line="321" selection-start-column="43" selection-end-line="321" selection-end-column="43" />
-          <folding>
-            <element signature="e#121#160#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,9 +794,148 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="385" column="33" lean-forward="false" selection-start-line="385" selection-start-column="33" selection-end-line="385" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/model/fpm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="104" column="30" lean-forward="false" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/modelTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="321" column="43" lean-forward="false" selection-start-line="321" selection-start-column="43" selection-end-line="321" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interface/mainwindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intellijam.rc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interface/devicebar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding>
-            <element signature="e#93#111#0" expanded="true" />
+            <element signature="e#91#137#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interface/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#109#156#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="e#121#167#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="197" column="115" lean-forward="false" selection-start-line="197" selection-start-column="115" selection-end-line="197" selection-end-column="115" />
+          <folding>
+            <element signature="e#85#125#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/midi/modelToMidi.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="122" column="132" lean-forward="false" selection-start-line="122" selection-start-column="132" selection-end-line="122" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/runtime/updateThread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/training_old/hyperParameters.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/training_old/trainingUnit.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lstm/lstm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/port_processing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/timers.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1777">
+          <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -62,7 +62,7 @@ void LSTMLayer::initialiseBiasVector(VectorXd &b, unsigned int rows) {
         b(i,0) = distribution(generator);
     }
 
-    //TODO: CHECK THIS IS THE BEST METHOD OF INITIALISATION HERE
+
 
 }
 
@@ -71,7 +71,7 @@ void LSTMLayer::initialiseBiasVector(VectorXd &b, unsigned int rows) {
  * represented by h and C
  */
 void LSTMLayer::resetState() {
-    //TODO: There may be better ways of doing this
+
 
     //reset all values of h and C to 0.0 (for now)
     for(int i = 0; i < h.rows(); i++) {
@@ -118,7 +118,6 @@ LSTMLayer::LSTMLayer(unsigned int inputSize, unsigned int hiddenOutputSize) {
  */
 VectorXd LSTMLayer::update(VectorXd x_t) {
 
-    //TODO: Check efficiency of this
 
     //input gate calculations
     VectorXd i_t = (theta_xi * x_t) + (theta_hi * h) + bias_i;

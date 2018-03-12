@@ -70,8 +70,6 @@ MainWindow::MainWindow(QWidget *parent, shared_ptr<Bridge> newBridge) : QWidget(
     //add connection from file button to now playing bar
     connect(this,SIGNAL(trackChanged(QString)),controlBar->getPlayBar(), SLOT(newTrackSlot(QString)));
 
-    //TODO: Make logo!: this->setWindowIcon();
-
 }
 
 /**
