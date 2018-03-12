@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS_RELEASE  "${CMAKE_CXX_FLAGS_RELEASE} -msse -msse2 -msse3 -op
 set(CMAKE_CXX_STANDARD 11)
 
 #removes command line window, may need to switch off for non GUI-oriented targets
-#set(CMAKE_CXX_FLAGS "-mwindows")
+set(CMAKE_CXX_FLAGS "-mwindows")
 
 #deal with RC stuff
 set(RES_FILES ${CMAKE_CURRENT_SOURCE_DIR}/intellijam.rc)

@@ -375,8 +375,8 @@ MatrixXd FPM::combinedPredict() {
     }
 
     //put into form for return value
-    //TODO: Rhythmic modifications here!
     MatrixXd returnPhrase = MatrixXd::Zero(outputLen,2);
+    shuffle(noteSequence.begin(),noteSequence.end()-1,gen);
     for(unsigned int i = 0; i < outputLen; i++) {
         returnPhrase(i,0) = absSequence.at(startPointOut + i);
         returnPhrase(i,1) = noteSequence.at(i).second;

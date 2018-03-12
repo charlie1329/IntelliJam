@@ -1,4 +1,4 @@
-Using Echo State Networks for Musical Improvisation
+IntelliJam: An Intelligent Agent for Musical Improvisation
 ===================================================
 
 The code in this repository is for the main application
