@@ -229,8 +229,6 @@ def combinedPredict(NNote, BNote, tNote, kNote, TNote, NDir, BDir, tDir, kDir, s
 
 
 
-
-
 if __name__ == '__main__':
 	trainingFile = 'D:/trainingPairsSoftBound.csv'
 	L = 20
@@ -267,10 +265,13 @@ if __name__ == '__main__':
 	print(np.power(N_note,1.0/0.4))
 
 	#sequence = [(46,0.1),(48,0.1),(51,0.1),(53,0.1),(55,0.1),(53,0.1),(51,0.1),(53,0.1),(48,0.1),(51,0.1)]
-	sequence = [(51,0.1),(53,0.1),(55,0.1),(55,0.1),(56,0.1),(55,0.1),(53,0.1),(58,0.1),(60,0.1),(55,0.1)]
-	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, outputLen)
+	sequence = [(50,2),(50,1),(54,1),(55,1),(57,3),(59,2),(57,2),(55,1),(54,1),(55,1),(52,1)]
+	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, len(sequence))
 	print(predictedSequence)
+	rhythm = np.asarray([2,1,1,1,3,2,2,1,1,1,1])
+	np.random.shuffle(rhythm)
+	print(rhythm)
 
-	sequence = [(51,0.371519),(53, 0.371519),(55, 0.18576),(34, 0.18576),(48, 0.18576),(51, 0.371519),(53, 0.18576),(52, 0.18576)]
-	predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, 1)
+	#sequence = [(51,0.371519),(53, 0.371519),(55, 0.18576),(34, 0.18576),(48, 0.18576),(51, 0.371519),(53, 0.18576),(52, 0.18576)]
+	#predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, 1)
 
