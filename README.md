@@ -7,17 +7,17 @@ being built for my final year project.
 Ownership
 ---------
 
-If I have not explicitly authored myself in some source file (namely .h/.c/.cpp files), 
-do not assume I am the author. This repository also contains libraries I may have used, which
+If I have not explicitly authored myself in some source file (namely .h/.c/.cpp/.py/.m files), 
+DO NOT assume I am the author. This repository also contains libraries I may have used, which
 I am clearly not the author of.
 
 
-Other Repositories
-------------------
-
-Other repositories have also been made for the training data generation part of the project.
-This is in a separate repository, stored on my gitlab account at `git.cs.bham.ac.uk`. I will try to link
-the two near the end of the project if I can.
+ICA Folder
+----------
+During the first semester of the project, I had a separate repository, which was
+used for work on blind source separation for training data generation. This repository 
+has been copied across here. THE SAME RULES CONCERNING OWNERSHIP APPLY IN THIS FOLDER TOO,
+i.e. my name being listed as author on top of the file.
 
 Libraries Used
 --------------
