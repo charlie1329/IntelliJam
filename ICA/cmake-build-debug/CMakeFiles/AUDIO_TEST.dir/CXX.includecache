@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sndfile.h
+stdio.h
+-
+stdint.h
+-
+sys/types.h
+-
+
+C:/Users/charl/CLionProjects/ICA/include/audioFileHelpers.h
+sndfile.h
+-
+string
+-
+memory
+-
+utility
+-
+vector
+-
+
+C:/Users/charl/CLionProjects/ICA/src/audioFileHelpers.cpp
+utility
+-
+../include/audioFileHelpers.h
+C:/Users/charl/CLionProjects/ICA/include/audioFileHelpers.h
+
+C:/Users/charl/CLionProjects/ICA/test/audioTest.cpp
+../include/audioFileHelpers.h
+C:/Users/charl/CLionProjects/ICA/include/audioFileHelpers.h
+
