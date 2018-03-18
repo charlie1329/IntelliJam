@@ -121,7 +121,12 @@ int handleMIDI(MatrixXd prediction, shared_ptr<HMIDISTRM> outHandle, shared_ptr<
     unsigned long *midiEvents = naiveMidiWin(prediction,outHandle.get(),&ppqn,&tempo); //form our new output
 
     //get size of event array
-    int arrSize = (prediction.rows() * 2 + 1) * 3;
+    //0 (silence) doesn't get an event
+    int predictionNotZero = 0;
+    for(int i  = 0; i < prediction.rows(); i ++) {
+        if(prediction(i,0) != 0) predictionNotZero++;
+    }
+    int arrSize = ((predictionNotZero * 2) + 1) * 3;
 
     //fill header struct
     hdr.lpData = reinterpret_cast<LPSTR>(midiEvents);

@@ -381,7 +381,6 @@ MatrixXd FPM::combinedPredict() {
         returnPhrase(i,0) = absSequence.at(startPointOut + i);
         returnPhrase(i,1) = noteSequence.at(i).second;
     }
-
     cout << "FINAL MATRIX: " << endl;
     cout << returnPhrase << endl;
 
