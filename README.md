@@ -60,4 +60,6 @@ Qt
 ---
 A `.gitignore' is placed in the `cmake-build-release/runtime' directory to prevent the pushing of a very large amount of Qt files
 up to git. Without these files, IntelliJam will not run. Therefore, IntelliJam should only be run from the local version of the repository,
-which is what is submitted in the submission zip file.
+which is what is submitted in the submission zip file. Alternatively, you can go to your local Qt installation, go to the `Qt/5.10.0/mingw53_32' directory,
+and then copy the the `translations' directory, the entirety of the contents of the `bin' directory, and the contents of the `plugins' directory into the 
+same directory as the IntelliJam executable to run the system. Using the locally submitted repository is much easier though!
