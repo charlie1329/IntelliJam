@@ -24,7 +24,7 @@ Libraries Used
 
 The libraries I have used within this project (and therefore give credit to) are:
 
-* Eigen (Matrix Operations): Found at <eigen.tuxfamily.org>
+* Eigen (Matrix Operations): Found at <https://eigen.tuxfamily.org>
 * libsndfile (Dealing with audio files): Found at <http://www.mega-nerd.com/libsndfile/>
 * PortAudio (Real-time audio library): Found at <http://www.portaudio.com/>
 * Catch (Unit testing library): Found at <https://github.com/catchorg/Catch2>
