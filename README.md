@@ -38,6 +38,9 @@ The libraries I have used within this project (and therefore give credit to) are
 * Matlab STFT/ISTFT implementation: Found at <https://uk.mathworks.com/matlabcentral/fileexchange/45577-inverse-short-time-fourier-transformation--istft--with-matlab-implementation>, written by: Hristo Zhivomirov  
 * Windows MIDI API: Found at: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd798495(v=vs.85).aspx>
 
+Eigen
+-----
+To use Eigen, only a set of header files are required. These are kept within my `include/Eigen' directory for easy use within the project.
 
 PortAudio
 ---------
@@ -52,3 +55,9 @@ here is some certain utility functions, as well as the use of a ring buffer, whi
 in multiple threads. I have a single reader/single writer problem where I can't use mutexes within the callback function
 for fear of priority inversion. Therefore, the best solution is to use the portAudio ring buffer for this, which is what
 it has been designed for.
+
+Qt
+---
+A `.gitignore' is placed in the `cmake-build-release/runtime' directory to prevent the pushing of a very large amount of Qt files
+up to git. Without these files, IntelliJam will not run. Therefore, IntelliJam should only be run from the local version of the repository,
+which is what is submitted in the submission zip file.
