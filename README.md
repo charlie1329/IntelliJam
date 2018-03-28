@@ -40,7 +40,7 @@ The libraries I have used within this project (and therefore give credit to) are
 
 Eigen
 -----
-To use Eigen, only a set of header files are required. These are kept within my `include/Eigen' directory for easy use within the project.
+To use Eigen, only a set of header files are required. These are kept within my `include/Eigen` directory for easy use within the project.
 
 PortAudio
 ---------
