@@ -22,14 +22,22 @@ i.e. my name being listed as author on top of the file.
 Libraries Used
 --------------
 
-This list may be incomplete, but some of the libraries I have used are:
+The libraries I have used within this project (and therefore give credit to) are:
 
-* Eigen (Matrix Operations)
-* libsndfile (Dealing with audio files)
-* PortAudio (Real-time audio library)
-* Catch (Unit testing library)
-* Boost (Threading among other things)
-* Qt (Graphical User Interface)
+* Eigen (Matrix Operations): Found at <eigen.tuxfamily.org>
+* libsndfile (Dealing with audio files): Found at <http://www.mega-nerd.com/libsndfile/>
+* PortAudio (Real-time audio library): Found at <http://www.portaudio.com/>
+* Catch (Unit testing library): Found at <https://github.com/catchorg/Catch2>
+* Boost (Threading among other things): Found at <http://www.boost.org/>
+* Qt (Graphical User Interface): Found at <https://www.qt.io/>
+* Keras (LSTM training): Found at <https://keras.io/>
+* Scipy (Fourier Transform in Python): Found at <https://www.scipy.org/>
+* Numpy: Found at <http://www.numpy.org/>
+* Matplotlib: Found at <https://matplotlib.org/>
+* RobustICA Package: Found at <http://www.i3s.unice.fr/~zarzoso/robustica.html>, written by: Vicente Zarzoso
+* Matlab STFT/ISTFT implementation: Found at <https://uk.mathworks.com/matlabcentral/fileexchange/45577-inverse-short-time-fourier-transformation--istft--with-matlab-implementation>, written by: Hristo Zhivomirov  
+* Windows MIDI API: Found at: <https://msdn.microsoft.com/en-us/library/windows/desktop/dd798495(v=vs.85).aspx>
+
 
 PortAudio
 ---------
