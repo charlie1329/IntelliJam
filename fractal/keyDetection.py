@@ -253,7 +253,7 @@ def runTests():
 	keyVals = []
 	for i in range(1,NUM_KEYS+1):
 		keyVals.append(getPitchKeyValue(segment,i))
-	print('Expected: [8.0, 9.0, 8.0, 14.0, 8.0, 9.0, 10.0, 9.0, 12.0, 5.5, 12.5, 10.5, 10.5, 7.5, 9.5, 11.5, 10.5, 9.0, 6.0, 13.0, 12.0, 5.5, 11.0, 9.5],\n Got: ' + str(keyVals))
+	print('Expected: [8.0, 9.0, 8.0, 14.0, 8.0, 9.0, 10.0, 9.0, 12.0, 5.5, 12.5, 10.5],\n Got: ' + str(keyVals))
 	print('Expected Key: C, Got: ' + valToKey[max(range(len(keyVals)), key=lambda x: keyVals[x]) + 1])
 
 	# test the main functionality
@@ -267,7 +267,7 @@ def runTests():
 
 	pitchKeyVectors = getPitchKeyValues(segments)
 	print('Expected: 4, Got: ' + str(len(pitchKeyVectors)))
-	print('Expected: 24, Got: ' + str(pitchKeyVectors[0].shape[0]))
+	print('Expected: 12, Got: ' + str(pitchKeyVectors[0].shape[0]))
 	
 	firstSegmentInput = [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0]
 	secondSegmentInput = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
@@ -292,14 +292,14 @@ def runTests():
 	bestSums = getBestSums(pitchKeyVectors, modulationPenalty)
 	print('Expected: 4, Got: ' + str(len(bestSums)))
 	print('Expected: 12, Got: ' + str(len(bestSums[0])))
-	print('Expected: , \n Got: ' + str(bestSums))
+	print('Expected: <manually examine>, \n Got: ' + str(bestSums))
 
 	bestPath = getBestPath(bestSums)
 	print('Expected: 4, Got: ' + str(len(bestPath)))
 	print(bestPath)
 
 	segmentsAndKeys = detectKey(sequence,2.0,2)
-	print('Expected: [(0,4,Em),(4,8,Em),(8,11,Em),(11,15,Em)]')
+	print('Expected: [(0,4,C),(4,8,C),(8,11,A),(11,15,C)]')
 	print('Got: ' + str(segmentsAndKeys))
 
 	segmentsAndKeys = detectKey([(4,0.5),(8,0.5),(11,0.5),(3,0.5)],2.0,6)
@@ -307,22 +307,22 @@ def runTests():
 	print('Got: ' + str(segmentsAndKeys))
 
 	segmentsAndKeys = detectKey([(4,0.5),(8,0.5),(11,0.5),(3,0.5),(10,0.5),(3,0.5),(4,0.5),(8,0.5),(3,0.5),(4,1.5)],2.0,2)
-	print('Expected: [C,C,C]')
+	print('Expected: [(0,4,C),(4,8,C),(8,10,C)]')
 	print('Got: ' + str(segmentsAndKeys))
 
 	segmentsAndKeys = detectKey([(4,2.5)],2.0,6)
-	print('Expected: [C]')
+	print('Expected: [(0,1,C)]')
 	print('Got: ' + str(segmentsAndKeys))
 
 	segmentsAndKeys = detectKey([(6,0.2),(8,0.2),(11,0.2),(1,0.2),(3,0.2),(1,0.2),(11,0.2),(8,0.2),(11,0.2),(1,0.2)],2.0,2)
-	print('Expected: [G]')
+	print('Expected: [(0,10,G)]')
 	print('Got: ' + str(segmentsAndKeys))
 	# now want to test it on an example from the paper...
 
 
 if __name__ == '__main__':
 	runTests()
-	sequence = [(4,0.371519),(6, 0.371519),(8, 0.18576),(11, 0.18576),(1, 0.18576),(4, 0.371519),(6, 0.18576),(5, 0.18576)]
+	'''sequence = [(4,0.371519),(6, 0.371519),(8, 0.18576),(11, 0.18576),(1, 0.18576),(4, 0.371519),(6, 0.18576),(5, 0.18576)]
 	segmentsAndKeys = detectKey(sequence,2.0,2)
 	segments = splitIntoSegments(sequence,2.0)
 	pitchKeyVectors = getPitchKeyValues(segments)
@@ -332,4 +332,4 @@ if __name__ == '__main__':
 	print(segments)
 	print(pitchKeyVectors)
 	print(bestSums)
-	print(bestPath)
+	print(bestPath)'''

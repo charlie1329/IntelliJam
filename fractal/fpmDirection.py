@@ -230,7 +230,8 @@ def combinedPredict(NNote, BNote, tNote, kNote, TNote, NDir, BDir, tDir, kDir, s
 
 
 if __name__ == '__main__':
-	trainingFile = 'D:/trainingPairsSoftBound.csv'
+	unitTests()
+	'''trainingFile = 'D:/trainingPairsSoftBound.csv'
 	L = 20
 	k = 0.5
 	magA = 2 # 0 = -, 1 = +
@@ -273,5 +274,5 @@ if __name__ == '__main__':
 	print(rhythm)
 
 	#sequence = [(51,0.371519),(53, 0.371519),(55, 0.18576),(34, 0.18576),(48, 0.18576),(51, 0.371519),(53, 0.18576),(52, 0.18576)]
-	#predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, 1)
+	#predictedSequence = combinedPredict(N_note, B_note, t_note, k_note, T_note, N_dir, B_dir, t_dir, k_dir, sequence, 1)'''
 

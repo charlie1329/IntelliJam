@@ -435,42 +435,30 @@ def unitTests():
 	for i in range(magA):
 		print(corners[i].all() == t[i].all())
 		print("EXPECTED: True")
-
+		
 	print('\nChecking blocks')
 	print(len(blocks))
-	print('EXPECTED: 7')
+	print('EXPECTED: 4')
 	print(blocks[0])
-	print('EXPECTED: [10 11]')
+	print('EXPECTED: [10 11 12]')
 	print(blocks[1])
-	print('EXPECTED: [10 11]')
+	print('EXPECTED: [1 2 3]')
 	print(blocks[2])
-	print('EXPECTED: [11 12]')
+	print('EXPECTED: [2 3 4]')
 	print(blocks[3])
-	print('EXPECTED: [1 2]')
-	print(blocks[4])
-	print('EXPECTED: [2 3]')
-	print(blocks[5])
-	print('EXPECTED: [3 4]')
-	print(blocks[6])
-	print('EXPECTED: [4 5]')
+	print('EXPECTED: [3 4 5]')
 
 	print('\nChecking CBR')
 	print(len(CBR))
-	print('EXPECTED: 7')
+	print('EXPECTED: 4')
 	print(CBR[0])
 	print('EXPECTED: [0.875 0.125 0.875 0.625]')
 	print(CBR[1])
-	print('EXPECTED: [0.875 0.125 0.875 0.625]')
-	print(CBR[2])
-	print('EXPECTED: [0.875 0.625 0.375 0.375]')
-	print(CBR[3])
 	print('EXPECTED: [0.125 0.125 0.625 0.375]')
-	print(CBR[4])
+	print(CBR[2])
 	print('EXPECTED: [0.125 0.125 0.875 0.625]')
-	print(CBR[5])
+	print(CBR[3])
 	print('EXPECTED: [0.125 0.625 0.375 0.375]')
-	print(CBR[6])
-	print('EXPECTED: [0.125 0.875 0.125 0.625]')
 
 	print('\n\nChecking euclideanDistance')
 	x = np.asarray([3, 4, 5, 6])
@@ -517,11 +505,11 @@ def unitTests():
 	print('\n\nChecking formDistributionMatrix')
 	N = formDistributionMatrix(blocks,[np.asarray([0,0,0,0])],13,t,k)
 	print(N)
-	print('EXPECTED: 1 row, 13 columns, [0 0 1 1 1 1 0 0 0 0 0 2 1]')
+	print('EXPECTED: 1 row, 13 columns, [0 0 0 1 1 1 0 0 0 0 0 0 1]')
 
 	print('\n\nChecking predictNext')
-	print(predictNext([1,2],[np.asarray([0,0,0,0])],N,t,k))
-	print('EXPECTED: 11')
+	print(predictNext([1,2],[np.asarray([0,0,0,0])],N,t,k,0.4))
+	print('EXPECTED: Random Sampling! Cant empirically test')
 
 	print('\n\nChecking plotCodebookGraph')
 	plotCodebookGraph('test/exampleMResults.csv')
@@ -571,7 +559,8 @@ def runTiltTests(N, B, t, k):
 
 # the main function to be executed
 if __name__ == '__main__':
-	
+	unitTests()
+	'''
 	# setting up parameters
 	trainingFile = '../trainingData/trainingPairsOneOctaveAllC.csv'
 	L = 20 # ADJUSTABLE
@@ -583,7 +572,7 @@ if __name__ == '__main__':
 	errorMargin = 0.001 # ADJUSTABLE
 	repeats = 3 # ADJUSTABLE (based on time taken to run)
 	M = 6 # Set for one octave, all C
-
+	'''
 	#optimiseFPMCodebooks(trainingFile, L, k, magA, maxM, tau, maxIterations, errorMargin, repeats)
 
 	#plotCodebookGraph('graphs_and_results/codebookOptimisationAllC.csv')
@@ -596,12 +585,12 @@ if __name__ == '__main__':
 	
 
 	#Run the machine!
-	
+	'''
 	B = np.loadtxt('matrices/B_allC.txt')
 	N = np.loadtxt('matrices/N_allC.txt')
 	t = np.loadtxt('matrices/t_allC.txt')
 	k = 0.5
-
+	'''
 	'''
 	newSequence = [46,48,51,53,55,53,51,53,48,51]
 	for i in range(len(newSequence)):
@@ -614,10 +603,10 @@ if __name__ == '__main__':
 	print('First ' + str(numNotes) + ' notes human, last 20 AI')
 	print(newSequence)
 	'''
-	matplotlib.rcParams.update({'font.size': 14})
-	plotCodebookGraph('graphs_and_results/codebookOptimisationDirection.csv')
+	#matplotlib.rcParams.update({'font.size': 14})
+	#plotCodebookGraph('graphs_and_results/codebookOptimisationDirection.csv')
 	#runTiltTests(N,B,t,k)
-
+	
 
 
 
