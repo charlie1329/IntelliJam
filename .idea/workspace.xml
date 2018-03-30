@@ -43,9 +43,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/timerThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/runtime/timers.cpp" afterPath="$PROJECT_DIR$/src/runtime/timers.cpp" />
+      <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -70,40 +71,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bridge.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="199" column="92" lean-forward="false" selection-start-line="199" selection-start-column="92" selection-end-line="199" selection-end-column="92" />
-              <folding>
-                <element signature="e#85#125#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timerThread.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
-              <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-              <folding>
-                <element signature="e#121#167#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fpm.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="382" column="5" lean-forward="false" selection-start-line="382" selection-start-column="5" selection-end-line="382" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -170,11 +137,11 @@
         <option value="$PROJECT_DIR$/test/training_old/trainingUnit.cpp" />
         <option value="$PROJECT_DIR$/src/lstm/lstm.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/port_processing.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/timers.cpp" />
-        <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
         <option value="$PROJECT_DIR$/src/runtime/timerThread.cpp" />
         <option value="$PROJECT_DIR$/src/bridge/bridge.cpp" />
         <option value="$PROJECT_DIR$/src/model/fpm.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
+        <option value="$PROJECT_DIR$/src/runtime/timers.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
@@ -236,6 +203,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FYP" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="FYP" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="esn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -264,91 +242,91 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.ESN_SPEED_TEST">
-    <configuration name="ESN_CORE_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_CORE_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="IntelliJam">
+    <configuration name="ESN_CORE_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_CORE_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
     <configuration name="ESN_SPEED_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="IntelliJam" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="IntelliJam">
       <envs />
     </configuration>
-    <configuration name="ESN_SPEED_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_SPEED_TEST_autogen" CONFIG_NAME="Release">
+    <configuration name="ESN_SPEED_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="ESN_SPEED_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="FYP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="RUNTIME_UNIT">
+    <configuration name="FYP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="IntelliJam" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="LSTM">
+    <configuration name="IntelliJam" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="IntelliJam_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="IntelliJam_autogen" CONFIG_NAME="Release">
+    <configuration name="IntelliJam_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="IntelliJam_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="LSTM" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="LSTM">
+    <configuration name="LSTM" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="LSTM_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="LSTM_TEST">
+    <configuration name="LSTM_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="LSTM_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_TEST_autogen" CONFIG_NAME="Release">
+    <configuration name="LSTM_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="LSTM_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_autogen" CONFIG_NAME="Release">
+    <configuration name="LSTM_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="LSTM_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="MIDI_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TEST_autogen" CONFIG_NAME="Release">
+    <configuration name="MIDI_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_TWINKLE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TWINKLE" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="MIDI_TWINKLE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TWINKLE" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_TWINKLE_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TWINKLE_autogen" CONFIG_NAME="Release">
+    <configuration name="MIDI_TWINKLE_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_TWINKLE_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_WIN" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_WIN" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="MIDI_WIN" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_WIN" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MIDI_WIN_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_WIN_autogen" CONFIG_NAME="Release">
+    <configuration name="MIDI_WIN_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MIDI_WIN_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MODEL_UNIT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MODEL_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="MODEL_UNIT">
+    <configuration name="MODEL_UNIT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MODEL_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="MODEL_UNIT_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MODEL_UNIT_autogen" CONFIG_NAME="Release">
+    <configuration name="MODEL_UNIT_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="MODEL_UNIT_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="PORT_FUZZ_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="PORT_FUZZ_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="PORT_FUZZ_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="PORT_FUZZ_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="PORT_FUZZ_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="PORT_FUZZ_TEST_autogen" CONFIG_NAME="Release">
+    <configuration name="PORT_FUZZ_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="PORT_FUZZ_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="RUNTIME" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="RUNTIME" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="RUNTIME_UNIT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="RUNTIME_UNIT" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="RUNTIME_UNIT_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT_autogen" CONFIG_NAME="Release">
+    <configuration name="RUNTIME_UNIT_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_UNIT_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="RUNTIME_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_autogen" CONFIG_NAME="Release">
+    <configuration name="RUNTIME_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="RUNTIME_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="TRAINING_ERROR" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_ERROR" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING_ERROR">
+    <configuration name="TRAINING_ERROR" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_ERROR" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="TRAINING_ERROR_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_ERROR_autogen" CONFIG_NAME="Release">
+    <configuration name="TRAINING_ERROR_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_ERROR_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="TRAINING_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="TRAINING">
+    <configuration name="TRAINING_TEST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_TEST" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="TRAINING_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_TEST_autogen" CONFIG_NAME="Release">
+    <configuration name="TRAINING_TEST_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_TEST_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
-    <configuration name="TRAINING_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_autogen" CONFIG_NAME="Release">
+    <configuration name="TRAINING_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FYP" TARGET_NAME="TRAINING_autogen" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="FYP" RUN_TARGET_NAME="ESN_SPEED_TEST">
       <envs />
     </configuration>
     <list size="29">
@@ -448,11 +426,12 @@
       <workItem from="1520862822714" duration="669000" />
       <workItem from="1520866413585" duration="7566000" />
       <workItem from="1521397893405" duration="1654000" />
+      <workItem from="1522404696429" duration="2306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348363000" />
+    <option name="totallyTimeSpent" value="350669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -468,7 +447,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37664473" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -534,7 +513,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/training/fileToEcho.h" />
     <entry file="file://$PROJECT_DIR$/include/training/hyperParameters.h" />
     <entry file="file://$PROJECT_DIR$/include/training/trainNetwork.h" />
     <entry file="file://$PROJECT_DIR$/include/training/simulated_annealing.h" />
@@ -680,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#91#137#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,22 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/timers.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/training_old/hyperParameters.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -763,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1768">
           <caret line="104" column="30" lean-forward="false" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,23 +728,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="88" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-          <folding>
-            <element signature="e#121#167#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/fpm.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="6494">
           <caret line="382" column="5" lean-forward="false" selection-start-line="382" selection-start-column="5" selection-end-line="382" selection-end-column="5" />
           <folding />
         </state>
@@ -795,11 +741,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bridge/bridge.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="3383">
           <caret line="199" column="92" lean-forward="false" selection-start-line="199" selection-start-column="92" selection-end-line="199" selection-end-column="92" />
           <folding>
             <element signature="e#85#125#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/updateThread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#145#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/timers.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#96#137#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runtime/timerThread.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+          <folding>
+            <element signature="e#121#167#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/esn/esn_speed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="45" column="31" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="45" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>

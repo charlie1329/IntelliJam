@@ -30,7 +30,6 @@ void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge, shared_ptr<atomic<bool
         auto *read = new float[elementsToRead];
         ring_buffer_size_t inArr = PaUtil_ReadRingBuffer(ring,read,elementsToRead);
 
-
         for (int i = 0; i < inArr; i++) {
             double absVal = fabs(read[i]);
             if(bridge != nullptr) bridge->volumeUpdate(absVal);
@@ -71,6 +70,7 @@ void silenceTimer(PaUtilRingBuffer *ring, Bridge *bridge, shared_ptr<atomic<bool
         }
 
         delete [] read;
+
     }
 
 }

@@ -50,6 +50,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
     //initialise the fft object
     Eigen::FFT<float> fft;
 
+
     //repeat until system is stopped
     while(*stillRunning) {
 
@@ -101,6 +102,7 @@ void updateWorker(const shared_ptr<globalState> &state) {
                 } else if(currentNote == newNote) {
                     currentBins++;
                 }
+
             }
         }
 
