@@ -3,6 +3,7 @@ import numpy as np
 import scipy.io.wavfile as wav
 import sys
 
+# Author: Charlie Street
 
 # This file has to be run under linux to use fork
 

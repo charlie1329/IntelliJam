@@ -1,6 +1,7 @@
 /**
  * file is used to calculate the error of
  * the echo state network in different situations
+ * Author: Charlie Street
  */
 
 #include "../../include/esn/esn_outputs.h"
