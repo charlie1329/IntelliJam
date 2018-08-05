@@ -4,35 +4,35 @@
     <generated>
       <config projectName="FYP" targetName="TRAINING_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
-      <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
+      <config projectName="FYP" targetName="MODEL_UNIT" />
+      <config projectName="FYP" targetName="LSTM" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST" />
       <config projectName="FYP" targetName="RUNTIME" />
       <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
       <config projectName="FYP" targetName="ESN_CORE_TEST" />
+      <config projectName="FYP" targetName="TRAINING_TEST" />
       <config projectName="FYP" targetName="MIDI_TEST" />
       <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
-      <config projectName="FYP" targetName="LSTM_TEST" />
       <config projectName="FYP" targetName="MODEL_UNIT_autogen" />
       <config projectName="FYP" targetName="TEST" />
       <config projectName="FYP" targetName="MIDI_TWINKLE" />
-      <config projectName="FYP" targetName="TRAINING_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
       <config projectName="FYP" targetName="IntelliJam" />
       <config projectName="FYP" targetName="MIDI_WIN" />
-      <config projectName="FYP" targetName="TRAINING_TEST" />
-      <config projectName="FYP" targetName="MODEL_UNIT" />
-      <config projectName="FYP" targetName="LSTM" />
+      <config projectName="FYP" targetName="LSTM_TEST" />
+      <config projectName="FYP" targetName="TRAINING_autogen" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
       <config projectName="FYP" targetName="IntelliJam_autogen" />
+      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
       <config projectName="FYP" targetName="RUNTIME_autogen" />
-      <config projectName="FYP" targetName="TRAINING" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
       <config projectName="FYP" targetName="RUNTIME_UNIT" />
       <config projectName="FYP" targetName="LSTM_TEST_autogen" />
       <config projectName="FYP" targetName="MIDI_WIN_autogen" />
       <config projectName="FYP" targetName="TRAINING_ERROR" />
       <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
+      <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
       <config projectName="FYP" targetName="LSTM_autogen" />
-      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
+      <config projectName="FYP" targetName="TRAINING" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -42,19 +42,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/evaluation/ai1.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/ai2.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/ai3.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/ai4.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/ai5.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/human1.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/human2.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/human3.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/human4.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/evaluation/human5.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/IntelliJam_autogen/mocs_compilation.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/include/port_audio/pa_ringbuffer.c.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/include/port_audio/pa_win_util.c.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/intellijam.rc.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/bridge/bridge.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/esn/esn.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/esn/esn_outputs.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/controlbar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/devicebar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/main.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/mainwindow.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/nametile.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/nowplayingbar.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/piano.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/squarebutton.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/interface/vmeter.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/midi/midi.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/midi/modelToMidi.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/model/fpm.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/model/keyDetect.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/runtime/init_close.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/runtime/port_processing.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/runtime/timerThread.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/runtime/timers.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/src/runtime/updateThread.cpp.obj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam_autogen.dir/AutogenOldSettings.cmake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/WULQGKC2PH/moc_mainwindow.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/WULQGKC2PH/moc_nametile.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/WULQGKC2PH/moc_nowplayingbar.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/WULQGKC2PH/moc_piano.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/WULQGKC2PH/moc_vmeter.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/IntelliJam_autogen/mocs_compilation.cpp" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -436,11 +455,12 @@
       <workItem from="1521397893405" duration="1654000" />
       <workItem from="1522404696429" duration="2306000" />
       <workItem from="1533485257439" duration="460000" />
+      <workItem from="1533486041036" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351129000" />
+    <option name="totallyTimeSpent" value="351174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,7 +476,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25164473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37664473" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
