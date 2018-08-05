@@ -2,37 +2,37 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE" />
-      <config projectName="FYP" targetName="LSTM" />
-      <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
-      <config projectName="FYP" targetName="TRAINING" />
       <config projectName="FYP" targetName="TRAINING_TEST_autogen" />
-      <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT" />
-      <config projectName="FYP" targetName="TRAINING_TEST" />
+      <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
       <config projectName="FYP" targetName="PORT_FUZZ_TEST_autogen" />
       <config projectName="FYP" targetName="ESN_SPEED_TEST" />
-      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
-      <config projectName="FYP" targetName="IntelliJam_autogen" />
-      <config projectName="FYP" targetName="ESN_CORE_TEST_autogen" />
-      <config projectName="FYP" targetName="MIDI_WIN" />
-      <config projectName="FYP" targetName="LSTM_TEST_autogen" />
-      <config projectName="FYP" targetName="TRAINING_ERROR" />
-      <config projectName="FYP" targetName="TEST" />
-      <config projectName="FYP" targetName="MODEL_UNIT_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
-      <config projectName="FYP" targetName="IntelliJam" />
       <config projectName="FYP" targetName="RUNTIME" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE_autogen" />
       <config projectName="FYP" targetName="ESN_CORE_TEST" />
-      <config projectName="FYP" targetName="TRAINING_autogen" />
-      <config projectName="FYP" targetName="RUNTIME_autogen" />
-      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
-      <config projectName="FYP" targetName="LSTM_TEST" />
       <config projectName="FYP" targetName="MIDI_TEST" />
+      <config projectName="FYP" targetName="TRAINING_ERROR_autogen" />
+      <config projectName="FYP" targetName="LSTM_TEST" />
+      <config projectName="FYP" targetName="MODEL_UNIT_autogen" />
+      <config projectName="FYP" targetName="TEST" />
+      <config projectName="FYP" targetName="MIDI_TWINKLE" />
+      <config projectName="FYP" targetName="TRAINING_autogen" />
+      <config projectName="FYP" targetName="IntelliJam" />
+      <config projectName="FYP" targetName="MIDI_WIN" />
+      <config projectName="FYP" targetName="TRAINING_TEST" />
+      <config projectName="FYP" targetName="MODEL_UNIT" />
+      <config projectName="FYP" targetName="LSTM" />
+      <config projectName="FYP" targetName="ESN_SPEED_TEST_autogen" />
+      <config projectName="FYP" targetName="IntelliJam_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_autogen" />
+      <config projectName="FYP" targetName="TRAINING" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT_autogen" />
+      <config projectName="FYP" targetName="RUNTIME_UNIT" />
+      <config projectName="FYP" targetName="LSTM_TEST_autogen" />
+      <config projectName="FYP" targetName="MIDI_WIN_autogen" />
+      <config projectName="FYP" targetName="TRAINING_ERROR" />
       <config projectName="FYP" targetName="PORT_FUZZ_TEST" />
       <config projectName="FYP" targetName="LSTM_autogen" />
-      <config projectName="FYP" targetName="MODEL_UNIT" />
+      <config projectName="FYP" targetName="MIDI_TEST_autogen" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -43,10 +43,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e300c-862a-49f4-8c32-049a54878564" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/ESN_SPEED_TEST.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/IntelliJam.dir/objects.a" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/timers.cpp" afterPath="$PROJECT_DIR$/src/runtime/timers.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/runtime/updateThread.cpp" afterPath="$PROJECT_DIR$/src/runtime/updateThread.cpp" />
+      <change beforePath="$PROJECT_DIR$/evaluation/ai1.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/ai2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/ai3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/ai4.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/ai5.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/human1.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/human2.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/human3.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/human4.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/evaluation/human5.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/model/fpm.cpp" afterPath="$PROJECT_DIR$/src/model/fpm.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -427,11 +435,12 @@
       <workItem from="1520866413585" duration="7566000" />
       <workItem from="1521397893405" duration="1654000" />
       <workItem from="1522404696429" duration="2306000" />
+      <workItem from="1533485257439" duration="460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350669000" />
+    <option name="totallyTimeSpent" value="351129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6494">
           <caret line="382" column="5" lean-forward="false" selection-start-line="382" selection-start-column="5" selection-end-line="382" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,9 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3383">
           <caret line="199" column="92" lean-forward="false" selection-start-line="199" selection-start-column="92" selection-end-line="199" selection-end-column="92" />
-          <folding>
-            <element signature="e#85#125#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,9 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#145#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -763,9 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#96#137#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,9 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-          <folding>
-            <element signature="e#121#167#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="45" column="31" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="45" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>

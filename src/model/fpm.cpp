@@ -356,7 +356,7 @@ MatrixXd FPM::combinedPredict() {
             prevNote = newNote;
         } else { //standard case
             dirSequence.push_back(newDirection);
-            int predictedMod = mod((predictedSequence.at(i)),12);
+            int predictedMod = mod((predictedSequence.at(i)-1),12);
             int previousMod = mod(prevNote,12);
             int newNote;
 
